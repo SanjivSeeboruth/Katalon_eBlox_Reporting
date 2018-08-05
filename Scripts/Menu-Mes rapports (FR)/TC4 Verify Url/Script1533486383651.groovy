@@ -18,6 +18,9 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUiBuiltInKeywords
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
+import java.util.regex.Matcher as Matcher
+import java.util.regex.Pattern as Pattern
+import com.kms.katalon.core.util.KeywordUtil as KeywordUtil
 
 WebUI.waitForPageLoad(10)
 
