@@ -19,19 +19,11 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUiBuiltInKe
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
-WebUI.openBrowser('')
+WebUI.callTestCase(findTestCase('Login/TC1 Login to Mysdworx'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.navigateToUrl('https://internet.acc.sd.dika.be/ebloxreporting/web.sensitive/main/?lang=fr')
+WebUI.waitForPageLoad(10)
 
-WebUI.maximizeWindow()
+WebUI.click(findTestObject('Mes rapports Obj/button_setting_dropdown'))
 
-WebUI.setText(findTestObject('Page_mysdworx - Log in/input_Username'), 'DP_EBLOX_RPP_VASCO')
-
-WebUI.setText(findTestObject('Page_mysdworx - Log in/input_Password'), '5515219')
-
-WebUI.click(findTestObject('Page_mysdworx - Log in/button_Se connecter'))
-
-WebUI.waitForPageLoad(5)
-
-not_run: WebUI.closeBrowser()
+WebUI.click(findTestObject('Mes rapports Obj/a_Dployer tout'))
 
