@@ -89,3 +89,9 @@ WebUI.callTestCase(findTestCase('Menu- Bibliotheque/TC4 Verify Url'), [:], Failu
 
 WebUI.callTestCase(findTestCase('Menu- Comptages/TC Verify Comptages tab'), [:], FailureHandling.STOP_ON_FAILURE)
 
+WebUI.callTestCase(findTestCase('Menu- Comptages/TC2 Verify Nouveau comptage button'), [:], FailureHandling.STOP_ON_FAILURE)
+
+WebUI.callTestCase(findTestCase('Menu- Comptages/TC3 Verify Montants Function'), [:], FailureHandling.STOP_ON_FAILURE)
+
+WebUI.callTestCase(findTestCase('Menu- Comptages/TC4 Verify the creation of a new Comptage'), [:], FailureHandling.STOP_ON_FAILURE)
+

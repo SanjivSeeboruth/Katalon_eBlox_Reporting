@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//*[@id=&quot;s2id_autogen3&quot;]/a/span[2]</value>
+         <value>//*[@id=&quot;s2id_autogen7&quot;]/a/span[2]/b</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
