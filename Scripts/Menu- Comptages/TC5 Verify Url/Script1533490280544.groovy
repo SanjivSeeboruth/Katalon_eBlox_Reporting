@@ -18,20 +18,25 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUiBuiltInKeywords
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
+import java.util.regex.Matcher as Matcher
+import java.util.regex.Pattern as Pattern
+import com.kms.katalon.core.util.KeywordUtil as KeywordUtil
 
-WebUI.openBrowser('')
+WebUI.waitForPageLoad(10)
 
-WebUI.navigateToUrl('https://internet.acc.sd.dika.be/ebloxreporting/web.sensitive/main/?lang=fr')
+url = WebUI.getUrl()
 
-WebUI.maximizeWindow()
+Pattern p = Pattern.compile('00040 ANTILOPE GROEP' // the pattern to search for
+    )
 
-WebUI.setText(findTestObject('Page_mysdworx - Log in/input_Username'), 'DP_EBLOX_RPP_VASCO')
+Matcher m = p.matcher(url)
 
-WebUI.setText(findTestObject('Page_mysdworx - Log in/input_Password'), '194178')
+// now try to find at least one match
+if (m.find()) {
+    String result = m.group()
 
-WebUI.click(findTestObject('Page_mysdworx - Log in/button_Se connecter'))
-
-WebUI.waitForPageLoad(5)
-
-not_run: WebUI.closeBrowser()
+    KeywordUtil.markFailed('The user name and the concern number are present in the URL!')
+} else {
+    KeywordUtil.markPassed('The user name and the concern number are not present in the URL')
+}
 

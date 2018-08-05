@@ -12,15 +12,5 @@ import com.kms.katalon.core.testobject.TestObject as TestObject
 import com.kms.katalon.core.checkpoint.Checkpoint as Checkpoint
 import internal.GlobalVariable as GlobalVariable
 
-WebUI.setText(findTestObject('Comptages Obj/input_comptage_name'), 'testing')
-
-WebUiBuiltInKeywords.click(findTestObject('Comptages Obj/dropdown_arrow'))
-
-WebUI.delay(5)
-
-WebUI.setText(findTestObject('Comptages Obj/input_comptage_type'), 'Attest loonlasten ')
-
-WebUI.click(findTestObject('Comptages Obj/button_Sauvegarder'))
-
-WebUI.acceptAlert()
+WebUI.click(findTestObject('Comptages Obj/button_Nouveau comptage'))
 

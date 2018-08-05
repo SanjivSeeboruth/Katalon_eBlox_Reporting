@@ -75,3 +75,17 @@ WebUI.waitForPageLoad(5)
 
 WebUI.callTestCase(findTestCase('Menu- Bibliotheque/TC Verify Bibliotheque tab'), [:], FailureHandling.STOP_ON_FAILURE)
 
+WebUI.waitForPageLoad(5)
+
+WebUI.callTestCase(findTestCase('Menu- Bibliotheque/TC1 Verify Deployer function'), [:], FailureHandling.STOP_ON_FAILURE)
+
+WebUI.waitForPageLoad(5)
+
+WebUI.callTestCase(findTestCase('Menu- Bibliotheque/TC2 Verify Masquer function'), [:], FailureHandling.STOP_ON_FAILURE)
+
+WebUI.callTestCase(findTestCase('Menu- Bibliotheque/TC3 Verify info icon function'), [:], FailureHandling.STOP_ON_FAILURE)
+
+WebUI.callTestCase(findTestCase('Menu- Bibliotheque/TC4 Verify Url'), [:], FailureHandling.STOP_ON_FAILURE)
+
+WebUI.callTestCase(findTestCase('Menu- Comptages/TC Verify Comptages tab'), [:], FailureHandling.STOP_ON_FAILURE)
+
