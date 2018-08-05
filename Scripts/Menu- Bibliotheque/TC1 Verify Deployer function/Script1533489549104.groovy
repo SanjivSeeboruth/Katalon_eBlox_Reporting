@@ -18,24 +18,10 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUiBuiltInKeywords
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
-import java.util.regex.Matcher as Matcher
-import java.util.regex.Pattern as Pattern
-import com.kms.katalon.core.util.KeywordUtil as KeywordUtil
 
 WebUI.waitForPageLoad(10)
 
-url = WebUI.getUrl()
+WebUI.click(findTestObject('Bibliotheque Obj/button_setting_dropdown'))
 
-Pattern p = Pattern.compile('00040 ANTILOPE GROEP' // the pattern to search for
-	)
+WebUI.click(findTestObject('Bibliotheque Obj/a_Dployer tout'))
 
-Matcher m = p.matcher(url)
-
-// now try to find at least one match
-if (m.find()) {
-	String result = m.group()
-
-	KeywordUtil.markFailed('The user name and the concern number are present in the URL!')
-} else {
-	KeywordUtil.markPassed('The user name and the concern number are not present in the URL')
-}

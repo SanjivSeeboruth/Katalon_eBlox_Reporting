@@ -18,14 +18,25 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUiBuiltInKeywords
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
+import java.util.regex.Matcher as Matcher
+import java.util.regex.Pattern as Pattern
+import com.kms.katalon.core.util.KeywordUtil as KeywordUtil
 
-WebUI.callTestCase(findTestCase('Login/TC1 Login to Mysdworx'), [:], FailureHandling.STOP_ON_FAILURE)
+WebUI.waitForPageLoad(10)
 
-WebUI.waitForPageLoad(5)
+url = WebUI.getUrl()
 
-WebUI.click(findTestObject('Bibliotheque Obj/Bibliothque_tab'))
+Pattern p = Pattern.compile('00040 ANTILOPE GROEP' // the pattern to search for
+    )
 
-WebUI.waitForPageLoad(5)
+Matcher m = p.matcher(url)
 
-WebUI.acceptAlert()
+// now try to find at least one match
+if (m.find()) {
+    String result = m.group()
+
+    KeywordUtil.markFailed('The user name and the concern number are present in the URL!')
+} else {
+    KeywordUtil.markPassed('The user name and the concern number are not present in the URL')
+}
 
