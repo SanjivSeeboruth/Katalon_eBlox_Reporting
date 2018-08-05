@@ -19,9 +19,15 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUiBuiltInKe
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
-WebUI.delay(5)
+WebUI.callTestCase(findTestCase('Login/TC1 Login to Mysdworx'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.click(findTestObject('Mes rapports Obj/button_setting_dropdown'))
+WebUI.waitForPageLoad(5)
 
-WebUI.click(findTestObject('Mes rapports Obj/a_Masquer tout'))
+WebUI.click(findTestObject('Bibliotheque Obj/Bibliothque_tab'))
+
+WebUI.waitForPageLoad(5)
+
+WebUI.click(findTestObject('Bibliotheque Obj/button_setting_dropdown'))
+
+WebUI.click(findTestObject('Bibliotheque Obj/a_Dployer tout'))
 

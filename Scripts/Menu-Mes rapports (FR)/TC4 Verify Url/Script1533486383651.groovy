@@ -19,9 +19,21 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUiBuiltInKe
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
-WebUI.delay(5)
+WebUI.waitForPageLoad(10)
 
-WebUI.click(findTestObject('Mes rapports Obj/button_setting_dropdown'))
+url = WebUI.getUrl()
 
-WebUI.click(findTestObject('Mes rapports Obj/a_Masquer tout'))
+Pattern p = Pattern.compile('00040 ANTILOPE GROEP' // the pattern to search for
+    )
+
+Matcher m = p.matcher(url)
+
+// now try to find at least one match
+if (m.find()) {
+    String result = m.group()
+
+    KeywordUtil.markFailed('The user name and the concern number are present in the URL!')
+} else {
+    KeywordUtil.markPassed('The user name and the concern number are not present in the URL')
+}
 

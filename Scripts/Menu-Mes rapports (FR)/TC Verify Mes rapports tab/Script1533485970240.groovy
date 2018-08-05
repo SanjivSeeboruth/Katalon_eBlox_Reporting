@@ -19,9 +19,5 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUiBuiltInKe
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
-WebUI.delay(5)
-
-WebUI.click(findTestObject('Mes rapports Obj/button_setting_dropdown'))
-
-WebUI.click(findTestObject('Mes rapports Obj/a_Masquer tout'))
+WebUI.click(findTestObject('Mes rapports Obj/Mes rapports_tab'))
 
