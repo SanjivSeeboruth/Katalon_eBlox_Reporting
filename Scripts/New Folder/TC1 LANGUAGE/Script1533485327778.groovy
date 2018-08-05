@@ -22,49 +22,9 @@ import internal.GlobalVariable as GlobalVariable
 'Login eBlox Reporting'
 WebUI.callTestCase(findTestCase('Login/TC1 Login to Mysdworx'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.waitForPageLoad(5)
+WebUI.waitForPageLoad(10)
 
 'Language is set to NL'
 WebUI.callTestCase(findTestCase('Select Language/TC1 Verify NL language'), [:], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.waitForPageLoad(5)
-
-'Open \'Mijn Rapporten\''
-WebUI.callTestCase(findTestCase('Menu-Mes rapports (NL)/TC Verify Mes rapports tab'), [:], FailureHandling.STOP_ON_FAILURE)
-
-'Click \'Alles openklappen\''
-WebUI.callTestCase(findTestCase('Menu-Mes rapports (NL)/TC1 Verify Deployer function'), [:], FailureHandling.STOP_ON_FAILURE)
-
-WebUI.waitForPageLoad(5)
-
-'Click \'Alles toeklappen\''
-WebUI.callTestCase(findTestCase('Menu-Mes rapports (NL)/TC2 Verify Masquer function'), [:], FailureHandling.STOP_ON_FAILURE)
-
-'Click the info icon'
-WebUI.callTestCase(findTestCase('Menu-Mes rapports (NL)/TC3 Verify info icon function'), [:], FailureHandling.STOP_ON_FAILURE)
-
-'Check that the user name and the concern number are not shown in the URL '
-WebUI.callTestCase(findTestCase('Menu-Mes rapports (NL)/TC4 Verify Url'), [:], FailureHandling.STOP_ON_FAILURE)
-
-'Switch language to FR'
-WebUI.callTestCase(findTestCase('Select Language/TC2 Verify FR Language'), [:], FailureHandling.STOP_ON_FAILURE)
-
-WebUI.waitForPageLoad(5)
-
-'Open \'Mes rapports\''
-WebUI.callTestCase(findTestCase('Menu-Mes rapports (FR)/TC Verify Mes rapports tab'), [:], FailureHandling.STOP_ON_FAILURE)
-
-'Click \'\'Déployer tout\''
-WebUI.callTestCase(findTestCase('Menu-Mes rapports (FR)/TC1 Verify Deployer function'), [:], FailureHandling.STOP_ON_FAILURE)
-
-WebUI.waitForPageLoad(5)
-
-'Click \'Masquer tout\' '
-WebUI.callTestCase(findTestCase('Menu-Mes rapports (FR)/TC2 Verify Masquer function'), [:], FailureHandling.STOP_ON_FAILURE)
-
-'Click the info icon'
-WebUI.callTestCase(findTestCase('Menu-Mes rapports (FR)/TC3 Verify info icon function'), [:], FailureHandling.STOP_ON_FAILURE)
-
-'Check that the user name and the concern number are not shown in the URL '
-WebUI.callTestCase(findTestCase('Menu-Mes rapports (FR)/TC4 Verify Url'), [:], FailureHandling.STOP_ON_FAILURE)
-

@@ -19,7 +19,7 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUiBuiltInKe
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
-WebUI.click(findTestObject('Change language link Obj/FR_language'))
+WebUI.click(findTestObject('Change language link Obj/FR_language'), FailureHandling.OPTIONAL)
 
 WebUI.waitForPageLoad(10)
 
