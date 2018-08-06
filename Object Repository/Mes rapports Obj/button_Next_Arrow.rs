@@ -4,7 +4,17 @@
    <name>button_Next_Arrow</name>
    <tag></tag>
    <elementGuidId>c23a72c1-e349-414e-bfa2-fff16073fa12</elementGuidId>
-   <selectorMethod>BASIC</selectorMethod>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//*[@id=&quot;wizard-page&quot;]/div[1]/div[4]/button</value>
+      </entry>
+      <entry>
+         <key>BASIC</key>
+         <value>id(&quot;wizard-page&quot;)/div[@class=&quot;page-header text-center&quot;]/div[@class=&quot;rapp-wizard-nav ng-scope&quot;]/button[@class=&quot;btn btn-link ng-scope&quot;]</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
       <isSelected>true</isSelected>
