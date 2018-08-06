@@ -6,12 +6,12 @@
    <elementGuidId>e800f855-44e1-4d93-8eea-1814f64b265b</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>BASIC</key>
-         <value>/html[@class=&quot;ng-scope&quot;]/body[1]/div[@class=&quot;main-content&quot;]/div[@class=&quot;content&quot;]/ui-view[@class=&quot;ng-scope&quot;]/div[@class=&quot;inner-content my-reports-page ng-scope&quot;]/div[@class=&quot;inner-content-header&quot;]/nav[@class=&quot;navbar navbar-default&quot;]/div[@class=&quot;row&quot;]/div[@class=&quot;col-sm-5 col-md-5 rapp-security-requires-create&quot;]/div[@class=&quot;navbar-btn btn-group pull-right&quot;]/button[@class=&quot;btn btn-default&quot;][count(. | //button[@type = 'button' and @class = 'btn btn-default' and @ui-sref = concat('definitie.wizard.start({ typeOfRapport: ' , &quot;'&quot; , 'extern' , &quot;'&quot; , '})') and @href = '#/definitie/wizard/extern/start']) = count(//button[@type = 'button' and @class = 'btn btn-default' and @ui-sref = concat('definitie.wizard.start({ typeOfRapport: ' , &quot;'&quot; , 'extern' , &quot;'&quot; , '})') and @href = '#/definitie/wizard/extern/start'])]</value>
-      </entry>
-      <entry>
          <key>XPATH</key>
          <value>/html/body/div[1]/div[2]/ui-view/div/div[1]/nav/div/div[2]/div[2]/button[1]</value>
+      </entry>
+      <entry>
+         <key>BASIC</key>
+         <value>/html[@class=&quot;ng-scope&quot;]/body[1]/div[@class=&quot;main-content&quot;]/div[@class=&quot;content&quot;]/ui-view[@class=&quot;ng-scope&quot;]/div[@class=&quot;inner-content my-reports-page ng-scope&quot;]/div[@class=&quot;inner-content-header&quot;]/nav[@class=&quot;navbar navbar-default&quot;]/div[@class=&quot;row&quot;]/div[@class=&quot;col-sm-5 col-md-5 rapp-security-requires-create&quot;]/div[@class=&quot;navbar-btn btn-group pull-right&quot;]/button[@class=&quot;btn btn-default&quot;][count(. | //button[@type = 'button' and @class = 'btn btn-default' and @ui-sref = concat('definitie.wizard.start({ typeOfRapport: ' , &quot;'&quot; , 'extern' , &quot;'&quot; , '})') and @href = '#/definitie/wizard/extern/start']) = count(//button[@type = 'button' and @class = 'btn btn-default' and @ui-sref = concat('definitie.wizard.start({ typeOfRapport: ' , &quot;'&quot; , 'extern' , &quot;'&quot; , '})') and @href = '#/definitie/wizard/extern/start'])]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

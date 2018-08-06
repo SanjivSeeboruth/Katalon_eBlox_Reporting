@@ -29,19 +29,19 @@ WebUI.callTestCase(findTestCase('Select Language/TC1 Verify NL language'), [:], 
 
 WebUI.waitForPageLoad(5)
 
-WebUI.callTestCase(findTestCase('Menu-Mes rapports/TC Verify Mes rapports tab'), [:], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('Mes rapports/Menu-Mes rapports/TC Verify Mes rapports tab'), [:], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.waitForPageLoad(5)
 
-WebUI.callTestCase(findTestCase('Menu-Mes rapports/TC1 Verify Deployer function'), [:], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('Mes rapports/Menu-Mes rapports/TC1 Verify Deployer function'), [:], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.waitForPageLoad(5)
 
-WebUI.callTestCase(findTestCase('Menu-Mes rapports/TC2 Verify Masquer function'), [:], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('Mes rapports/Menu-Mes rapports/TC2 Verify Masquer function'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.callTestCase(findTestCase('Menu-Mes rapports/TC3 Verify info icon function'), [:], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('Mes rapports/Menu-Mes rapports/TC3 Verify info icon function'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.callTestCase(findTestCase('Menu-Mes rapports/TC4 Verify Url'), [:], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('Mes rapports/Menu-Mes rapports/TC4 Verify Url'), [:], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.waitForPageLoad(5)
 
@@ -49,19 +49,19 @@ WebUI.callTestCase(findTestCase('Select Language/TC2 Verify FR Language'), [:], 
 
 WebUI.waitForPageLoad(5)
 
-WebUI.callTestCase(findTestCase('Menu-Mes rapports/TC Verify Mes rapports tab'), [:], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('Mes rapports/Menu-Mes rapports/TC Verify Mes rapports tab'), [:], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.waitForPageLoad(5)
 
-WebUI.callTestCase(findTestCase('Menu-Mes rapports/TC1 Verify Deployer function'), [:], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('Mes rapports/Menu-Mes rapports/TC1 Verify Deployer function'), [:], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.waitForPageLoad(5)
 
-WebUI.callTestCase(findTestCase('Menu-Mes rapports/TC2 Verify Masquer function'), [:], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('Mes rapports/Menu-Mes rapports/TC2 Verify Masquer function'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.callTestCase(findTestCase('Menu-Mes rapports/TC3 Verify info icon function'), [:], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('Mes rapports/Menu-Mes rapports/TC3 Verify info icon function'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.callTestCase(findTestCase('Menu-Mes rapports/TC4 Verify Url'), [:], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('Mes rapports/Menu-Mes rapports/TC4 Verify Url'), [:], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.waitForPageLoad(5)
 
