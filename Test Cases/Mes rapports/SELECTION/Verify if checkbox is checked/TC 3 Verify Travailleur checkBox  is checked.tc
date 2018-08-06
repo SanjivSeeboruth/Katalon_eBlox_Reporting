@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>TC 4 Verify Departement checkBox</name>
+   <name>TC 3 Verify Travailleur checkBox  is checked</name>
    <tag></tag>
    <comment></comment>
-   <testCaseGuid>b9508851-5709-4004-8c27-c3be105b309e</testCaseGuid>
+   <testCaseGuid>d9dbbb9a-87e4-41f8-97ef-859a1582fec1</testCaseGuid>
 </TestCaseEntity>

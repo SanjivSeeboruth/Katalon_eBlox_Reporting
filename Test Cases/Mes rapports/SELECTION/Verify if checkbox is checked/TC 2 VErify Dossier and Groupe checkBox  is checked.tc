@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>TC 5 Verify Caractere juridique du contract checBox</name>
+   <name>TC 2 VErify Dossier and Groupe checkBox  is checked</name>
    <tag></tag>
    <comment></comment>
-   <testCaseGuid>60484d16-1c4a-4f13-9d4d-9a020b57041c</testCaseGuid>
+   <testCaseGuid>b4c2e3e6-6593-4612-9ebf-27da5187a132</testCaseGuid>
 </TestCaseEntity>
