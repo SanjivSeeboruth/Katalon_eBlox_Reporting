@@ -15,15 +15,17 @@ import org.openqa.selenium.Keys as Keys
 
 WebUI.setText(findTestObject('Comptages Obj/input_comptage_name'), 'testing')
 
-WebUiBuiltInKeywords.click(findTestObject('Comptages Obj/dropdown_arrow'))
+WebUI.click(findTestObject('Comptages Obj/dropdown_arrow'))
 
 WebUI.delay(5)
 
-WebUI.setText(findTestObject('Comptages Obj/input_comptage_type'), 'Attest loonlasten ')
+WebUI.setText(findTestObject('Comptages Obj/input_comptage_type'), 'Attestation charges salariales')
 
 WebUI.sendKeys(findTestObject('Comptages Obj/input_comptage_type'), Keys.chord(Keys.ENTER))
 
 WebUI.click(findTestObject('Comptages Obj/button_Sauvegarder'))
 
-WebUI.acceptAlert()
+alertText = WebUI.getAlertText()
+
+WebUI.verifyMatch(alertText, 'Il faut ajouter au moins une plage de codes salariaux', false)
 

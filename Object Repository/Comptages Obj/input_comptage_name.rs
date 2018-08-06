@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//input[@name='oms2NL']</value>
+         <value>/html/body/div[1]/div[2]/ui-view/ui-view/ui-view/div/div/form/div/div/div[1]/div/div/div/div/div[2]/div/div/div/div[2]/div/div/input</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
