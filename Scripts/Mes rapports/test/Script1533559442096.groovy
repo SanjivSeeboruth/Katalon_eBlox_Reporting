@@ -24,6 +24,11 @@ import org.openqa.selenium.WebElement as WebElement
 import com.kms.katalon.core.webui.driver.DriverFactory as DriverFactory
 
 WebDriver driver = DriverFactory.getWebDriver()
+
 WebElement temp = driver.findElement(By.className('select2-results'))
+
 List list = temp.findElement(By.xpath('.//li'))
+
 list.size()
+
+

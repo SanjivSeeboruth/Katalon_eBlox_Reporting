@@ -7,7 +7,11 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>/html/body/div[1]/div[2]/ui-view/ui-view/ui-view/div/div/form/div/div/div[1]/div/div/div/div/div[2]/div/div/div/div[2]/div/div/input</value>
+         <value>.//input[@name='oms2NL']</value>
+      </entry>
+      <entry>
+         <key>BASIC</key>
+         <value>//input[@type = 'text' and @class = 'form-control ng-pristine ng-scope ng-invalid ng-invalid-required ng-valid-maxlength ng-touched' and @name = 'oms2FR' and @ng-model = 'lang.tekst' and @maxlength = '80' and @ng-if = '!vm.isTextarea' and @ng-blur = '!vm.showAll &amp;&amp; vm.copyTalen()' and @ng-required = 'vm.shouldBeRequired &amp;&amp; (lang.taal === $parent.vm.userLanguageCode)' and @required = 'required']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -83,7 +87,7 @@
       <value>required</value>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>true</isSelected>
+      <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
