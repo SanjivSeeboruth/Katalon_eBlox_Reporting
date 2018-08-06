@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>.//input[@name='oms2NL']</value>
+         <value>//input[@name='oms2NL']</value>
       </entry>
       <entry>
          <key>BASIC</key>

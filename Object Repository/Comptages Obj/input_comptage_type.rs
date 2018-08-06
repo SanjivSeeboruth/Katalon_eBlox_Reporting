@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//*[@id=&quot;s2id_autogen4_search&quot;]</value>
+         <value>//*[@id=&quot;s2id_autogen78_search&quot;]</value>
       </entry>
       <entry>
          <key>BASIC</key>
