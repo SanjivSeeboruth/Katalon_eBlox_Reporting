@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC 1 Verify Contrats actifs checkbox  is un-checked</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>55a88cec-676f-4a35-8a50-1d58b6a10e47</testCaseGuid>
+</TestCaseEntity>

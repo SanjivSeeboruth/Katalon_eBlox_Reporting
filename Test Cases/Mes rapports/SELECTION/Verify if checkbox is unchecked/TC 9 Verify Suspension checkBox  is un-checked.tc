@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC 9 Verify Suspension checkBox  is un-checked</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>ac15e426-21eb-42a5-b9bc-5617b45466d3</testCaseGuid>
+</TestCaseEntity>

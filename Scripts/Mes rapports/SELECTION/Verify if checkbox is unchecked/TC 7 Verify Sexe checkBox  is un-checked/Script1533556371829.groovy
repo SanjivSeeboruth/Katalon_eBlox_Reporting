@@ -19,5 +19,5 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUiBuiltInKe
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
-WebUI.check(findTestObject('Mes rapports Obj/SELECTION/Mode de remuneration checkbox'))
+WebUI.uncheck(findTestObject('Mes rapports Obj/SELECTION/Sexe checkbox'))
 

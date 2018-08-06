@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC 5 Verify Caractere juridique du contract checBox  is un-checked</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>bda5d9c7-b9f3-44b8-8035-9fea1e003edd</testCaseGuid>
+</TestCaseEntity>
