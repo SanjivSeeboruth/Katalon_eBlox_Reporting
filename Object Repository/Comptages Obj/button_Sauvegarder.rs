@@ -4,7 +4,17 @@
    <name>button_Sauvegarder</name>
    <tag></tag>
    <elementGuidId>0df5f376-7ae4-4f5a-a369-f1cc8dbda179</elementGuidId>
-   <selectorMethod>BASIC</selectorMethod>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>/html[@class=&quot;ng-scope&quot;]/body[1]/div[@class=&quot;main-content&quot;]/div[@class=&quot;content&quot;]/ui-view[@class=&quot;ng-scope&quot;]/ui-view[@class=&quot;ng-scope&quot;]/ui-view[@class=&quot;ng-scope&quot;]/nav[@class=&quot;navbar navbar-default content-nav content-header ng-scope&quot;]/div[@class=&quot;collapse navbar-collapse pull-right&quot;]/ul[@class=&quot;nav navbar-nav navbar-right ng-scope&quot;]/li[1]/button[@class=&quot;btn btn-primary navbar-btn&quot;][count(. | //button[(text() = ' Sauvegarder' or . = ' Sauvegarder')]) = count(//button[(text() = ' Sauvegarder' or . = ' Sauvegarder')])]</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//button[@ng-click='telwerkvm.goToSaveStateAndAutoSave()']</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
       <isSelected>true</isSelected>

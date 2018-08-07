@@ -6,12 +6,12 @@
    <elementGuidId>9bff96b9-15bc-4150-bca6-60dfe93d4b54</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//*[@id=&quot;s2id_autogen78_search&quot;]</value>
-      </entry>
-      <entry>
          <key>BASIC</key>
          <value>id(&quot;s2id_autogen6_search&quot;)[count(. | //input[@type = 'text' and @autocomplete = 'off' and @autocorrect = 'off' and @autocapitalize = 'off' and @spellcheck = 'false' and @class = 'select2-input select2-focused' and @role = 'combobox' and @aria-expanded = 'true' and @aria-autocomplete = 'list' and @aria-owns = 'select2-results-6' and @id = 's2id_autogen6_search' and @aria-activedescendant = 'select2-result-label-79']) = count(//input[@type = 'text' and @autocomplete = 'off' and @autocorrect = 'off' and @autocapitalize = 'off' and @spellcheck = 'false' and @class = 'select2-input select2-focused' and @role = 'combobox' and @aria-expanded = 'true' and @aria-autocomplete = 'list' and @aria-owns = 'select2-results-6' and @id = 's2id_autogen6_search' and @aria-activedescendant = 'select2-result-label-79'])]</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//*[@id=&quot;s2id_autogen4_search&quot;]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

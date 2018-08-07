@@ -97,11 +97,7 @@ WebUI.setText(findTestObject('Mes rapports Obj/EXECUTION/Description_Dossier and
 
 WebUiBuiltInKeywords.delay(2)
 
-WebUI.click(findTestObject('Mes rapports Obj/EXECUTION/Select Dossier 1'))
-
-WebUI.scrollToElement(findTestObject('Mes rapports Obj/EXECUTION/Description_Dossier and Groupe figure dans'))
-
-WebUI.sendKeys(findTestObject('Mes rapports Obj/EXECUTION/Description_Dossier and Groupe figure dans'), Keys.chord(Keys.ENTER))
+WebUI.sendKeys(findTestObject('Mes rapports Obj/EXECUTION/Select Dossier 1'), Keys.chord(Keys.ENTER))
 
 WebUiBuiltInKeywords.click(findTestObject('Mes rapports Obj/EXECUTION/Description _Date de reference historique'))
 

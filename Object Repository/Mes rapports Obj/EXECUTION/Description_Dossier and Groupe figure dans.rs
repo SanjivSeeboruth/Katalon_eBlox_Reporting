@@ -6,12 +6,12 @@
    <elementGuidId>996b14fd-eb30-4664-96f3-9afd989f8aa8</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//*[@id=&quot;s2id_autogen26&quot;]</value>
-      </entry>
-      <entry>
          <key>BASIC</key>
          <value>//*[@id = 's2id_autogen25']</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//*[@id=&quot;s2id_autogen895&quot;]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>WebUI.click(findTestObject('Comptages Obj/button_Sauvegarder'))</description>
+   <name>TC7 Verify Sauvegarder button</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>4fa4615b-3690-40e8-83b0-394e85492a7e</testCaseGuid>
+</TestCaseEntity>

@@ -21,11 +21,9 @@ WebUI.click(findTestObject('Comptages Obj/dropdown_arrow'))
 
 WebUI.delay(5)
 
-WebUI.setText(findTestObject('Comptages Obj/input_comptage_type'), 'Attestation charges salariales')
+WebUI.setText(findTestObject('Comptages Obj/input_comptage_type'), 'Attest loonlasten')
 
 WebUI.sendKeys(findTestObject('Comptages Obj/input_comptage_type'), Keys.chord(Keys.ENTER))
-
-WebUI.click(findTestObject('Comptages Obj/button_Sauvegarder'))
 
 alertText = WebUI.getAlertText()
 

@@ -7,12 +7,12 @@ name = 1AA0221 - 01 - DRUKKERIJ ANTILOPE NV</description>
    <elementGuidId>fbb55227-933e-48fc-9962-28a3f81ef156</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//div[@id='select2-result-label-219']</value>
-      </entry>
-      <entry>
          <key>BASIC</key>
          <value>//*[@id = 'select2-result-label-1016' and @class = 'select2-result-label']</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='select2-drop']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

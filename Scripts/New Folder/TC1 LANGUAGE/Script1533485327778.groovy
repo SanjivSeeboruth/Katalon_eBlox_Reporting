@@ -95,5 +95,7 @@ WebUI.callTestCase(findTestCase('Menu- Comptages/TC3 Verify Montants Function'),
 
 WebUI.callTestCase(findTestCase('Menu- Comptages/TC4 Verify the creation of a new Comptage'), [:], FailureHandling.STOP_ON_FAILURE)
 
+WebUI.callTestCase(findTestCase('Menu- Comptages/TC7 Verify Sauvegarder button'), [:], FailureHandling.STOP_ON_FAILURE)
+
 WebUI.closeBrowser()
 
