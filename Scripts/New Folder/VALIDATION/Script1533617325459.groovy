@@ -19,19 +19,22 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUiBuiltInKe
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
-WebUI.openBrowser('')
+WebUI.callTestCase(findTestCase('Login/TC1 Login to Mysdworx'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.navigateToUrl('https://internet.acc.sd.dika.be/ebloxreporting/web.sensitive/main/?lang=fr')
+WebUI.waitForPageLoad(10)
 
-WebUI.maximizeWindow()
+WebUI.callTestCase(findTestCase('Select Language/TC1 Verify NL language'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.setText(findTestObject('Page_mysdworx - Log in/input_Username'), 'DP_EBLOX_RPP_VASCO')
+WebUI.callTestCase(findTestCase('Mes rapports/Verify Nouveau rapport button'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.setText(findTestObject('Page_mysdworx - Log in/input_Password'), '320518')
+WebUI.callTestCase(findTestCase('Mes rapports/Mes rapports - BASE DE RAPPORT/TC1  Verify radio button creer un tout nouveau rapport - Copy'), 
+    [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.click(findTestObject('Page_mysdworx - Log in/button_Se connecter'))
+WebUI.callTestCase(findTestCase('Mes rapports/TC Verify the next button arrow'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.waitForPageLoad(5)
+WebUI.waitForPageLoad(10)
 
-not_run: WebUI.closeBrowser()
+WebUI.callTestCase(findTestCase('Mes rapports/TC Verify the next button arrow'), [:], FailureHandling.STOP_ON_FAILURE)
+
+WebUI.verifyTextPresent('Gelieve minstens één kolom toe te voegen.', true)
 

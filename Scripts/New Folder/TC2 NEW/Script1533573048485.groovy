@@ -18,6 +18,7 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUiBuiltInKeywords
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
+import org.openqa.selenium.Keys as Keys
 
 WebUI.callTestCase(findTestCase('Login/TC1 Login to Mysdworx'), [:], FailureHandling.STOP_ON_FAILURE)
 
@@ -87,4 +88,42 @@ WebUI.callTestCase(findTestCase('Mes rapports/Mes rapports - SELECTION/Verify if
 WebUI.callTestCase(findTestCase('Verify URL/TC Verify Url'), [:], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.callTestCase(findTestCase('Mes rapports/TC Verify the next button arrow'), [:], FailureHandling.STOP_ON_FAILURE)
+
+WebUI.waitForPageLoad(10)
+
+WebUiBuiltInKeywords.click(findTestObject('Mes rapports Obj/EXECUTION/Description_Dossier and Groupe figure dans'))
+
+WebUI.setText(findTestObject('Mes rapports Obj/EXECUTION/Description_Dossier and Groupe figure dans'), '1AS1462 - 02 - ADDAX COMMUNICATIONS NV')
+
+WebUiBuiltInKeywords.delay(2)
+
+WebUI.click(findTestObject('Mes rapports Obj/EXECUTION/Select Dossier 1'))
+
+WebUI.scrollToElement(findTestObject('Mes rapports Obj/EXECUTION/Description_Dossier and Groupe figure dans'))
+
+WebUI.sendKeys(findTestObject('Mes rapports Obj/EXECUTION/Description_Dossier and Groupe figure dans'), Keys.chord(Keys.ENTER))
+
+WebUiBuiltInKeywords.click(findTestObject('Mes rapports Obj/EXECUTION/Description _Date de reference historique'))
+
+WebUiBuiltInKeywords.delay(2)
+
+WebUiBuiltInKeywords.click(findTestObject('Mes rapports Obj/EXECUTION/Description_Date de reference historique - Dernier jour mois precedent'))
+
+WebUI.check(findTestObject('Mes rapports Obj/EXECUTION/HIstorique- checkbox'))
+
+WebUiBuiltInKeywords.click(findTestObject('Mes rapports Obj/EXECUTION/Historique_Period_dropdown'))
+
+WebUiBuiltInKeywords.click(findTestObject('Mes rapports Obj/EXECUTION/Historique_Period - Dernier 12 mois'))
+
+WebUI.click(findTestObject('Mes rapports Obj/EXECUTION/Button executer'))
+
+WebUI.waitForPageLoad(10)
+
+WebUI.verifyAlertPresent(10)
+
+WebUI.acceptAlert()
+
+WebUI.getAlertText()
+
+println(WebUI.getAlertText())
 

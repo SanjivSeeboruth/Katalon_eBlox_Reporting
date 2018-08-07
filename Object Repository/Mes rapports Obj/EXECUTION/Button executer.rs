@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>Description _Date de reference historique</name>
+   <name>Button executer</name>
    <tag></tag>
-   <elementGuidId>ceaefde2-dc1b-4cce-950d-ee1d31c73666</elementGuidId>
+   <elementGuidId>976b1dda-6288-4c1e-8d09-f233bde20681</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//*[@id=&quot;uitvoering-parameters&quot;]/div/div[2]/div/div/table/tbody/tr[4]/td[2]/div/div/rapp-date-prompt/div/div/rapp-special-values/div/button</value>
+         <value>//*[@id=&quot;parameters&quot;]/div/form/div[2]/div/div/div/ul/li[2]/button</value>
       </entry>
       <entry>
          <key>BASIC</key>
+         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

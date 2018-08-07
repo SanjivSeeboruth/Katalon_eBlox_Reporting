@@ -7,21 +7,25 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
+         <value>//*[@id=&quot;rowParameter&quot;]/div[1]/div[1]/div[2]/div/div/div[2]/div[2]/rapp-bereik-prompt/div/div/rapp-special-values/div/ul/li[8]/a/span</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
          <value></value>
       </entry>
       <entry>
          <key>BASIC</key>
-         <value></value>
+         <value>//*[@id=&quot;rowParameter&quot;]/div[1]/div[1]/div[2]/div/div/div[2]/div[2]/rapp-bereik-prompt/div/div/rapp-special-values/div/ul/li[8]/a[count(. | //*[@class = 'text ng-binding font-bold']) = count(//*[@class = 'text ng-binding font-bold'])]</value>
       </entry>
    </selectorCollection>
-   <selectorMethod>BASIC</selectorMethod>
+   <selectorMethod>XPATH</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//*[@id=&quot;rowParameter&quot;]/div[1]/div[1]/div[2]/div/div/div[2]/div[2]/rapp-bereik-prompt/div/div/rapp-special-values/div/ul/li[8]/a/span</value>
+      <value>//*[@id=&quot;rowParameter&quot;]/div[1]/div[1]/div[2]/div/div/div[2]/div[2]/rapp-bereik-prompt/div/div/rapp-special-values/div/ul/li[8]/a</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>

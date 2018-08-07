@@ -6,11 +6,15 @@
    <elementGuidId>d06c5067-b267-4fe3-a8fc-64d23a65e304</elementGuidId>
    <selectorCollection>
       <entry>
+         <key>XPATH</key>
+         <value>//*[@id=&quot;rowParameter&quot;]/div[1]/div[1]/div[2]/div/div/div[2]/div[2]/rapp-bereik-prompt/div/div/rapp-special-values/div/button</value>
+      </entry>
+      <entry>
          <key>BASIC</key>
-         <value></value>
+         <value>//*[@id = 'historischUitvoeren' and @class = 'ng-pristine ng-untouched ng-valid']</value>
       </entry>
    </selectorCollection>
-   <selectorMethod>BASIC</selectorMethod>
+   <selectorMethod>XPATH</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
       <isSelected>true</isSelected>
