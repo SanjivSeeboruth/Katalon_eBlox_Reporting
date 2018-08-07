@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//*[@id=&quot;veldInEdit&quot;]/div/div[1]/div[1]</value>
+         <value>//*[@id=&quot;wizard-page&quot;]/div[2]/div/div/div[1]/div/div/div[2]/div/table/tbody/tr[4]/td[1]/strong</value>
       </entry>
       <entry>
          <key>BASIC</key>
