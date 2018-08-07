@@ -15,9 +15,11 @@ import com.kms.katalon.core.testobject.ObjectRepository as ObjectRepository
 import com.kms.katalon.core.testobject.TestObject as TestObject
 import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WSBuiltInKeywords
 import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
+import com.kms.katalon.core.webui.driver.DriverFactory as DriverFactory
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUiBuiltInKeywords
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
+import org.openqa.selenium.WebDriver as WebDriver
 
 WebUI.callTestCase(findTestCase('Login/TC1 Login to Mysdworx'), [:], FailureHandling.STOP_ON_FAILURE)
 
@@ -37,4 +39,33 @@ WebUI.waitForPageLoad(10)
 WebUI.callTestCase(findTestCase('Mes rapports/TC Verify the next button arrow'), [:], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.verifyTextPresent('Gelieve minstens één kolom toe te voegen.', true)
+
+WebUI.callTestCase(findTestCase('Mes rapports/Mes rapports - CONTENU/TC Verify input field - Copy'), [:], FailureHandling.STOP_ON_FAILURE)
+
+WebUI.callTestCase(findTestCase('Mes rapports/TC Verify the next button arrow'), [:], FailureHandling.STOP_ON_FAILURE)
+
+WebUI.waitForPageLoad(10)
+
+WebUI.verifyElementPresent(findTestObject('Mes rapports Obj/SELECTION/Active Contrat/exclamation icon'), 20)
+
+WebUI.callTestCase(findTestCase('Mes rapports/Mes rapports - SELECTION/Verify if checkbox is unchecked/TC 10 Deselect all checkbox'), 
+    [:], FailureHandling.STOP_ON_FAILURE)
+
+WebUI.callTestCase(findTestCase('Mes rapports/TC Verify the next button arrow'), [:], FailureHandling.STOP_ON_FAILURE)
+
+WebUI.waitForPageLoad(10)
+
+WebUI.click(findTestObject('Mes rapports Obj/EXECUTION/Button executer'))
+
+WebUI.verifyElementPresent(findTestObject('Mes rapports Obj/SELECTION/Active Contrat/exclamation icon'), 20)
+
+WebUI.click(findTestObject('Mes rapports Obj/EXECUTION/Annuler button'))
+
+WebUI.click(findTestObject('Page_mysdworx - Aanmelden/Terugkeren'))
+
+WebUI.click(findTestObject('Mes rapports Obj/EXECUTION/Annuler button'))
+
+WebUI.click(findTestObject('Page_mysdworx - Aanmelden/niew rapport annuleren'))
+
+WebUI.closeBrowser()
 

@@ -127,3 +127,5 @@ WebUI.getAlertText()
 
 println(WebUI.getAlertText())
 
+WebUI.closeBrowser()
+

@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>VALIDATION</name>
+   <name>TC 10 Deselect all checkbox</name>
    <tag></tag>
    <comment></comment>
-   <testCaseGuid>f279a514-f027-49c4-9fcd-3f4421579ce3</testCaseGuid>
+   <testCaseGuid>4b7bd61a-95e3-408c-82d4-b0935329bd4b</testCaseGuid>
 </TestCaseEntity>
