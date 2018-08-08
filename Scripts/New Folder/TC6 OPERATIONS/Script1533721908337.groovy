@@ -63,3 +63,7 @@ WebUI.setText(findTestObject('Page_eBlox Rapportering/Operation/Operation -Descr
 
 WebUI.click(findTestObject('Page_eBlox Rapportering/Operation/Operation - Sauvegarder button'))
 
+WebUI.setText(findTestObject('Page_eBlox Rapportering/Operation/Operation - Nom'), 'Bewerking 1')
+
+WebUI.setText(findTestObject('Page_eBlox Rapportering/Operation/Operation -Description'), 'Brutoloon + Bedrag Toeslag 1')
+
