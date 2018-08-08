@@ -61,3 +61,5 @@ WebUI.setText(findTestObject('Page_eBlox Rapportering/Operation/Operation - Nom'
 
 WebUI.setText(findTestObject('Page_eBlox Rapportering/Operation/Operation -Description'), 'test')
 
+WebUI.click(findTestObject('Page_eBlox Rapportering/Operation/Operation - Sauvegarder button'))
+
