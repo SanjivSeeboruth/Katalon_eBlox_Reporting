@@ -29,7 +29,7 @@ WebUI.waitForPageLoad(10)
 
 WebUI.callTestCase(findTestCase('Mes rapports/Menu-Mes rapports/TC Verify Mes rapports tab'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.setText(findTestObject('Mes rapports Obj/input search filter'), 'TEST 2 MAU JAN 2018 (sanjiv)')
+WebUI.setText(findTestObject('Mes rapports Obj/input search filter'), 'REG BEWERKINGEN')
 
 WebUI.click(findTestObject('Page_eBlox Reporting/Search_Icon'))
 
@@ -42,46 +42,3 @@ WebUI.waitForPageLoad(10)
 WebUI.click(findTestObject('Page_eBlox Rapportering/Definition'))
 
 WebUiBuiltInKeywords.click(findTestObject('Page_eBlox Rapportering/Contenu'))
-
-WebUI.callTestCase(findTestCase('Verify URL/TC Verify Url'), [:], FailureHandling.STOP_ON_FAILURE)
-
-WebUiBuiltInKeywords.click(findTestObject('Page_eBlox Rapportering/Selection'))
-
-WebUI.callTestCase(findTestCase('Verify URL/TC Verify Url'), [:], FailureHandling.STOP_ON_FAILURE)
-
-WebUiBuiltInKeywords.click(findTestObject('Page_eBlox Rapportering/Tableau croise'))
-
-WebUI.callTestCase(findTestCase('Verify URL/TC Verify Url'), [:], FailureHandling.STOP_ON_FAILURE)
-
-WebUiBuiltInKeywords.click(findTestObject('Page_eBlox Rapportering/Graphiques'))
-
-WebUI.callTestCase(findTestCase('Verify URL/TC Verify Url'), [:], FailureHandling.STOP_ON_FAILURE)
-
-WebUI.verifyTextPresent('Niet-historisch uitvoeren', true)
-
-WebUI.verifyTextPresent('Historisch uitvoeren', true)
-
-WebUiBuiltInKeywords.click(findTestObject('Page_eBlox Rapportering/Operations'))
-
-WebUI.callTestCase(findTestCase('Verify URL/TC Verify Url'), [:], FailureHandling.STOP_ON_FAILURE)
-
-WebUiBuiltInKeywords.click(findTestObject('Page_eBlox Rapportering/List button'))
-
-result = WebUI.getText(findTestObject('input search filter'))
-
-if (result == 'TEST 2 MAU JAN 2018 (sanjiv)') {
-    KeywordUtil.markPassed('Text is still present')
-}
-
-WebUI.click(findTestObject('Mes rapports Obj/select report'))
-
-WebUI.callTestCase(findTestCase('Verify URL/TC Verify Url'), [:], FailureHandling.STOP_ON_FAILURE)
-
-WebUI.click(findTestObject('Mes rapports Obj/EXECUTION/Historique_Period_dropdown'))
-
-WebUI.click(findTestObject('Mes rapports Obj/EXECUTION/Historique_Period - Dernier 12 mois'))
-
-WebUI.click(findTestObject('Mes rapports Obj/EXECUTION/Button executer'))
-
-WebUI.callTestCase(findTestCase('Select Language/TC2 Verify FR Language'), [:], FailureHandling.STOP_ON_FAILURE)
-
