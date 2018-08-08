@@ -42,3 +42,22 @@ WebUI.waitForPageLoad(10)
 WebUI.click(findTestObject('Page_eBlox Rapportering/Definition'))
 
 WebUiBuiltInKeywords.click(findTestObject('Page_eBlox Rapportering/Contenu'))
+
+WebUI.waitForPageLoad(10)
+
+WebUI.verifyTextPresent('Naam werknemer', true)
+
+WebUiBuiltInKeywords.verifyTextPresent('Brutoloon ', true)
+
+WebUI.click(findTestObject('Page_eBlox Rapportering/Operations'))
+
+WebUI.waitForPageLoad(10)
+
+WebUI.click(findTestObject('Page_eBlox Rapportering/Operation/Nouvelle operation'))
+
+WebUI.waitForPageLoad(5)
+
+WebUI.setText(findTestObject('Page_eBlox Rapportering/Operation/Operation - Nom'), 'test')
+
+WebUI.setText(findTestObject('Page_eBlox Rapportering/Operation/Operation -Description'), 'test')
+

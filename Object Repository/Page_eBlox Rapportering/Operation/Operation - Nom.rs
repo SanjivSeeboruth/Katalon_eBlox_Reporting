@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
-   <description>TEST 2 MAU JAN 2018 (sanjiv)</description>
-   <name>select report</name>
+   <description></description>
+   <name>Operation - Nom</name>
    <tag></tag>
-   <elementGuidId>341c7ba7-8ea9-4825-8082-3e4fbc0190d3</elementGuidId>
+   <elementGuidId>00eb1cae-e878-4c12-bd77-421398636f35</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
@@ -11,7 +11,7 @@
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//span[@text='TEST 2 MAU JAN 2018 (SANJIV)']</value>
+         <value>//input[@name='oms2FRinfo']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

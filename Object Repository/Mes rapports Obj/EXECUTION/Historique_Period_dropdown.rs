@@ -6,12 +6,11 @@
    <elementGuidId>d7d9c1dc-c99c-41ac-a241-1fa5354c0cbd</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//*[@id=&quot;rowParameter&quot;]/div[1]/div[1]/div[2]/div/div/div[2]/div[2]/rapp-bereik-prompt/div/div/rapp-special-values/div/button</value>
+         <key>BASIC</key>
       </entry>
       <entry>
-         <key>BASIC</key>
-         <value></value>
+         <key>XPATH</key>
+         <value>//*[@id=&quot;rowParameter&quot;]/div[1]/div[1]/div[2]/div/div/div[2]/div[2]/rapp-bereik-prompt/div/div/rapp-special-values/div/button</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

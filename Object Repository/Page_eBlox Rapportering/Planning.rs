@@ -11,7 +11,7 @@
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//a[@href='#/definitie/edit/27962/scheduling']</value>
+         <value>/html/body/div[1]/div[2]/ui-view/div/div[2]/div/div[1]/ul/li[7]/a</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

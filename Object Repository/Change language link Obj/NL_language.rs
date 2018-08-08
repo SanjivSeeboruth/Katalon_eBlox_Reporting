@@ -6,10 +6,6 @@
    <elementGuidId>70fbf306-39f2-4778-b45d-ae7c039d4979</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value></value>
-      </entry>
-      <entry>
          <key>BASIC</key>
          <value>id(&quot;navbar-anchor&quot;)/div[@class=&quot;nav nav-navbar&quot;]/div[@class=&quot;user-info navbar-right hidden-xs&quot;]/div[@class=&quot;user-actions&quot;]/rapp-language-switcher[@class=&quot;ng-isolate-scope&quot;]/ul[@class=&quot;list-inline list-unstyled lang&quot;]/li[@class=&quot;ng-scope&quot;]/a[@class=&quot;ng-binding&quot;][count(. | //a[@ng-click = 'changeLanguageVm.switchPageToLanguage(lang)' and (text() = '
             NL   
@@ -20,6 +16,9 @@
         ' or . = '
             NL   
         ')])]</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>

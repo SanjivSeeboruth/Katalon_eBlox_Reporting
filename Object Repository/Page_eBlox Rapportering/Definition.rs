@@ -11,10 +11,10 @@
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>/html/body/div[1]/div[2]/ui-view/div/div[1]/nav/div/ul[1]/li[4]/div/a[1]</value>
+         <value>/html/body/div[1]/div[2]/ui-view/div/div[1]/nav/div/ul/li[4]/div/a[1]</value>
       </entry>
    </selectorCollection>
-   <selectorMethod>BASIC</selectorMethod>
+   <selectorMethod>XPATH</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
       <isSelected>true</isSelected>

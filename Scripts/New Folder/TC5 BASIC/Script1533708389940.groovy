@@ -41,6 +41,8 @@ WebUI.waitForPageLoad(10)
 
 WebUI.click(findTestObject('Page_eBlox Rapportering/Definition'))
 
+WebUI.waitForPageLoad(10)
+
 WebUiBuiltInKeywords.click(findTestObject('Page_eBlox Rapportering/Contenu'))
 
 WebUI.callTestCase(findTestCase('Verify URL/TC Verify Url'), [:], FailureHandling.STOP_ON_FAILURE)
@@ -57,7 +59,7 @@ WebUiBuiltInKeywords.click(findTestObject('Page_eBlox Rapportering/Graphiques'))
 
 WebUI.callTestCase(findTestCase('Verify URL/TC Verify Url'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.verifyTextPresent('Niet-historisch uitvoeren', true)
+WebUI.verifyTextPresent('Niet-historisch uitvoeren', false)
 
 WebUI.verifyTextPresent('Historisch uitvoeren', true)
 
@@ -67,7 +69,7 @@ WebUI.callTestCase(findTestCase('Verify URL/TC Verify Url'), [:], FailureHandlin
 
 WebUiBuiltInKeywords.click(findTestObject('Page_eBlox Rapportering/List button'))
 
-result = WebUI.getText(findTestObject('input search filter'))
+result = WebUI.getText(findTestObject('Mes rapports Obj/input search filter'))
 
 if (result == 'TEST 2 MAU JAN 2018 (sanjiv)') {
     KeywordUtil.markPassed('Text is still present')

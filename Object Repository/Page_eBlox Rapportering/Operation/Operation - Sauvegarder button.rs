@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
-   <description>TEST 2 MAU JAN 2018 (sanjiv)</description>
-   <name>select report</name>
+   <description></description>
+   <name>Operation - Sauvegarder button</name>
    <tag></tag>
-   <elementGuidId>341c7ba7-8ea9-4825-8082-3e4fbc0190d3</elementGuidId>
+   <elementGuidId>2b6e6e5d-a2c6-429f-af4f-abb53609c04a</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
@@ -11,7 +11,7 @@
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//span[@text='TEST 2 MAU JAN 2018 (SANJIV)']</value>
+         <value>/html/body/div[1]/div[2]/ui-view/div/div[1]/nav/div/ul[2]/li[1]/button</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
