@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>a_Definitie</name>
+   <tag></tag>
+   <elementGuidId>16b77141-6eca-4bc0-ac50-f346fca10f4a</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>/html[@class=&quot;ng-scope&quot;]/body[1]/div[@class=&quot;main-content&quot;]/div[@class=&quot;content&quot;]/ui-view[@class=&quot;ng-scope&quot;]/div[@class=&quot;inner-content ng-scope&quot;]/div[@class=&quot;ng-scope&quot;]/nav[@class=&quot;navbar navbar-default content-nav content-header ng-scope&quot;]/div[@class=&quot;collapse navbar-collapse&quot;]/ul[@class=&quot;nav navbar-nav navbar-left&quot;]/li[4]/div[@class=&quot;btn-group navbar-btn&quot;]/a[@class=&quot;btn btn-default btn-secondary&quot;]</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>/html/body/div[1]/div[2]/ui-view/div/div[1]/nav/div/ul[1]/li[4]/div/a[1]</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>a</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>btn btn-default btn-secondary</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>
+                        Definitie
+                    </value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>/html[@class=&quot;ng-scope&quot;]/body[1]/div[@class=&quot;main-content&quot;]/div[@class=&quot;content&quot;]/ui-view[@class=&quot;ng-scope&quot;]/div[@class=&quot;inner-content ng-scope&quot;]/div[@class=&quot;ng-scope&quot;]/nav[@class=&quot;navbar navbar-default content-nav content-header ng-scope&quot;]/div[@class=&quot;collapse navbar-collapse&quot;]/ul[@class=&quot;nav navbar-nav navbar-left&quot;]/li[4]/div[@class=&quot;btn-group navbar-btn&quot;]/a[@class=&quot;btn btn-default btn-secondary&quot;]</value>
+   </webElementProperties>
+</WebElementEntity>

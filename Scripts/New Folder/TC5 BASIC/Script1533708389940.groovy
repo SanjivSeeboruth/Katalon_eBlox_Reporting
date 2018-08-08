@@ -29,29 +29,27 @@ WebUI.setText(findTestObject('Mes rapports Obj/input search filter'), 'TEST 2 MA
 
 WebUI.click(findTestObject('Page_eBlox Reporting/Search_Icon'))
 
+WebUI.delay(2)
+
 WebUI.click(findTestObject('Mes rapports Obj/select report'))
 
 WebUI.waitForPageLoad(10)
 
 WebUI.click(findTestObject('Page_eBlox Reporting/a_Dfinition'))
 
-WebUiBuiltInKeywords.click(findTestObject('Page_eBlox Rapportering/Contenu'))
+WebUiBuiltInKeywords.click(findTestObject('Page_eBlox Rapportering/Tableau croise'))
 
 WebUI.callTestCase(findTestCase('Verify URL/TC Verify Url'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUiBuiltInKeywords.click(findTestObject('Page_eBlox Rapportering/a_Definitie'))
+WebUiBuiltInKeywords.click(findTestObject('Page_eBlox Rapportering/Selection'))
 
 WebUI.callTestCase(findTestCase('Verify URL/TC Verify Url'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUiBuiltInKeywords.click(findTestObject('Page_eBlox Rapportering/a_Eigenschappen'))
+WebUiBuiltInKeywords.click(findTestObject('Page_eBlox Rapportering/Proprietes'))
 
 WebUI.callTestCase(findTestCase('Verify URL/TC Verify Url'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUiBuiltInKeywords.click(findTestObject('Page_eBlox Rapportering/a_Draaitabel'))
-
-WebUI.callTestCase(findTestCase('Verify URL/TC Verify Url'), [:], FailureHandling.STOP_ON_FAILURE)
-
-WebUiBuiltInKeywords.click(findTestObject('Page_eBlox Rapportering/a_Grafieken'))
+WebUiBuiltInKeywords.click(findTestObject('Page_eBlox Rapportering/Graphiques'))
 
 WebUI.callTestCase(findTestCase('Verify URL/TC Verify Url'), [:], FailureHandling.STOP_ON_FAILURE)
 
@@ -59,7 +57,7 @@ WebUI.verifyTextPresent('Niet-historisch uitvoeren', true)
 
 WebUI.verifyTextPresent('Historisch uitvoeren', true)
 
-WebUiBuiltInKeywords.click(findTestObject('Page_eBlox Rapportering/a_Bewerkingen'))
+WebUiBuiltInKeywords.click(findTestObject('Page_eBlox Rapportering/Operations'))
 
 WebUI.callTestCase(findTestCase('Verify URL/TC Verify Url'), [:], FailureHandling.STOP_ON_FAILURE)
 

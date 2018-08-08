@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>Planning</name>
+   <tag></tag>
+   <elementGuidId>a884e16a-8013-494b-9019-f0c14c318c05</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>/html[@class=&quot;ng-scope&quot;]/body[1]/div[@class=&quot;main-content&quot;]/div[@class=&quot;content&quot;]/ui-view[@class=&quot;ng-scope&quot;]/div[@class=&quot;inner-content ng-scope&quot;]/div[@class=&quot;ng-scope&quot;]/div[@class=&quot;inner-content-body definitie-page ng-scope&quot;]/div[@class=&quot;content-navigator&quot;]/ul[@class=&quot;list-tree-unstyled&quot;]/li[@class=&quot;ng-scope active&quot;]/a[1][count(. | //a[@href = '#/definitie/edit/27956/scheduling']) = count(//a[@href = '#/definitie/edit/27956/scheduling'])]</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//a[@href='#/definitie/edit/27962/scheduling']</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>a</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>ui-sref</name>
+      <type>Main</type>
+      <value>definitie.edit.scheduling.index({id:navvm.rapport.id})</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>href</name>
+      <type>Main</type>
+      <value>#/definitie/edit/27956/scheduling</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>
+                    Planning
+                </value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>/html[@class=&quot;ng-scope&quot;]/body[1]/div[@class=&quot;main-content&quot;]/div[@class=&quot;content&quot;]/ui-view[@class=&quot;ng-scope&quot;]/div[@class=&quot;inner-content ng-scope&quot;]/div[@class=&quot;ng-scope&quot;]/div[@class=&quot;inner-content-body definitie-page ng-scope&quot;]/div[@class=&quot;content-navigator&quot;]/ul[@class=&quot;list-tree-unstyled&quot;]/li[@class=&quot;ng-scope active&quot;]/a[1]</value>
+   </webElementProperties>
+</WebElementEntity>

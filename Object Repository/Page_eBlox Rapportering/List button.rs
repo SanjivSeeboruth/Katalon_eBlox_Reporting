@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>List button</name>
+   <tag></tag>
+   <elementGuidId>feeec315-8813-4a73-9d90-e89f0069f086</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>/html/body/div[1]/div[2]/ui-view/div/div[1]/nav/div/ul[1]/li[1]/a</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>a</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>ui-sref</name>
+      <type>Main</type>
+      <value>mijnrapporten</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>btn btn-default navbar-btn</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>href</name>
+      <type>Main</type>
+      <value>#/mijnrapporten</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>/ui-view[@class=&quot;ng-scope&quot;]/div[@class=&quot;inner-content ng-scope&quot;]/div[@class=&quot;ng-scope&quot;]/nav[@class=&quot;navbar navbar-default content-nav content-header ng-scope&quot;]/div[@class=&quot;collapse navbar-collapse&quot;]/ul[@class=&quot;nav navbar-nav navbar-left&quot;]/li[1]/a[@class=&quot;btn btn-default navbar-btn&quot;]</value>
+   </webElementProperties>
+</WebElementEntity>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>Search_Icon</name>
+   <tag></tag>
+   <elementGuidId>191df126-2407-41a1-b5d5-6b20165ce122</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>/html/body/div[1]/div[2]/ui-view/div/div[1]/nav/div/div[1]/form/rapp-search-input/div/div/div</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>div</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>input-group-addon</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>/html[@class=&quot;ng-scope&quot;]/body[1]/div[@class=&quot;main-content&quot;]/div[@class=&quot;content&quot;]/ui-view[@class=&quot;ng-scope&quot;]/div[@class=&quot;inner-content my-reports-page ng-scope&quot;]/div[@class=&quot;inner-content-header&quot;]/nav[@class=&quot;navbar navbar-default&quot;]/div[@class=&quot;row&quot;]/div[@class=&quot;col-sm-7 col-md-7&quot;]/form[@class=&quot;navbar-form ng-pristine ng-valid ng-valid-maxlength&quot;]/rapp-search-input[@class=&quot;ng-isolate-scope&quot;]/div[@class=&quot;form-group&quot;]/div[@class=&quot;input-group&quot;]/div[@class=&quot;input-group-addon&quot;]</value>
+   </webElementProperties>
+</WebElementEntity>
