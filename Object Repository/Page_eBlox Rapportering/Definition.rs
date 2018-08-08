@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>a_Definitie</name>
+   <name>Definition</name>
    <tag></tag>
    <elementGuidId>16b77141-6eca-4bc0-ac50-f346fca10f4a</elementGuidId>
    <selectorCollection>

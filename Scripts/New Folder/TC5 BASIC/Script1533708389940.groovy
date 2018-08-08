@@ -21,7 +21,11 @@ import internal.GlobalVariable as GlobalVariable
 
 WebUI.callTestCase(findTestCase('Login/TC1 Login to Mysdworx'), [:], FailureHandling.STOP_ON_FAILURE)
 
+WebUI.waitForPageLoad(10)
+
 WebUI.callTestCase(findTestCase('Select Language/TC1 Verify NL language'), [:], FailureHandling.STOP_ON_FAILURE)
+
+WebUI.waitForPageLoad(10)
 
 WebUI.callTestCase(findTestCase('Mes rapports/Menu-Mes rapports/TC Verify Mes rapports tab'), [:], FailureHandling.STOP_ON_FAILURE)
 
@@ -37,7 +41,7 @@ WebUI.waitForPageLoad(10)
 
 WebUI.click(findTestObject('Page_eBlox Reporting/a_Dfinition'))
 
-WebUiBuiltInKeywords.click(findTestObject('Page_eBlox Rapportering/Tableau croise'))
+WebUiBuiltInKeywords.click(findTestObject('Page_eBlox Rapportering/Contenu'))
 
 WebUI.callTestCase(findTestCase('Verify URL/TC Verify Url'), [:], FailureHandling.STOP_ON_FAILURE)
 
@@ -45,7 +49,7 @@ WebUiBuiltInKeywords.click(findTestObject('Page_eBlox Rapportering/Selection'))
 
 WebUI.callTestCase(findTestCase('Verify URL/TC Verify Url'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUiBuiltInKeywords.click(findTestObject('Page_eBlox Rapportering/Proprietes'))
+WebUiBuiltInKeywords.click(findTestObject('Page_eBlox Rapportering/Tableau croise'))
 
 WebUI.callTestCase(findTestCase('Verify URL/TC Verify Url'), [:], FailureHandling.STOP_ON_FAILURE)
 
