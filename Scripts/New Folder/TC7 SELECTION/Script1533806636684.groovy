@@ -82,3 +82,5 @@ WebUiBuiltInKeywords.sendKeys(findTestObject('Page_eBlox Rapportering/Selection 
 
 WebUI.click(findTestObject('Page_eBlox Rapportering/Operation/Operation - Sauvegarder button'))
 
+WebUiBuiltInKeywords.click(findTestObject('Page_eBlox Rapportering/Selection Etendue/Execute tab button'))
+
