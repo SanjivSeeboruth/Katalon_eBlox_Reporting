@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>Formula 1</name>
+   <name>Criteria condition number</name>
    <tag></tag>
-   <elementGuidId>26a139ca-ba95-412d-abd5-b4fe76b27037</elementGuidId>
+   <elementGuidId>6db2c6a7-3c7c-433f-b4e2-e6ca0d14325b</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//*[@id=&quot;select2-chosen-14&quot;]</value>
+         <value>//*[@id=&quot;numericPromtSimpleValue&quot;]</value>
       </entry>
       <entry>
          <key>BASIC</key>

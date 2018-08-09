@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>Formula 1</name>
+   <name>Dropdown criteria for condition</name>
    <tag></tag>
-   <elementGuidId>26a139ca-ba95-412d-abd5-b4fe76b27037</elementGuidId>
+   <elementGuidId>bc42e66d-3112-4a12-b912-1c36722e3916</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//*[@id=&quot;select2-chosen-14&quot;]</value>
+         <value>//*[@id=&quot;rapp-disable-toevoegen-knoppen-tabel&quot;]/table/tbody/tr/td/div[2]/div/div/div/ul/li/div/div/div/ui-view/div/form/div/div[1]/div/div[1]/rapp-button-dropdown/div/button</value>
       </entry>
       <entry>
          <key>BASIC</key>

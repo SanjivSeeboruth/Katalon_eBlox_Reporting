@@ -22,7 +22,7 @@ import org.openqa.selenium.Keys as Keys
 
 WebUI.callTestCase(findTestCase('Login/TC1 Login to Mysdworx'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.waitForPageLoad(10)
+WebUI.waitForPageLoad(20)
 
 WebUI.callTestCase(findTestCase('Select Language/TC1 Verify NL language'), [:], FailureHandling.STOP_ON_FAILURE)
 
@@ -46,15 +46,19 @@ WebUiBuiltInKeywords.click(findTestObject('Page_eBlox Rapportering/Contenu'))
 
 WebUI.waitForPageLoad(10)
 
-WebUI.verifyTextPresent('Naam werknemer', true)
+not_run: WebUI.verifyTextPresent('Naam werknemer', false)
 
-WebUiBuiltInKeywords.verifyTextPresent('Brutoloon ', true)
+not_run: WebUiBuiltInKeywords.verifyTextPresent('Brutoloon ', false)
 
 WebUI.click(findTestObject('Page_eBlox Rapportering/Operations'))
 
 WebUI.waitForPageLoad(10)
 
 WebUI.click(findTestObject('Page_eBlox Rapportering/Operation/Nouvelle operation'))
+
+WebUI.click(findTestObject('Page_eBlox Rapportering/Operation/Nouvelle operation - Numeric'))
+
+WebUI.mouseOver(findTestObject('Page_eBlox Rapportering/Operation/mouse over operation list test'))
 
 WebUI.waitForPageLoad(5)
 
@@ -64,9 +68,9 @@ WebUI.setText(findTestObject('Page_eBlox Rapportering/Operation/Operation -Descr
 
 WebUI.click(findTestObject('Page_eBlox Rapportering/Operation/Operation - Sauvegarder button'))
 
-WebUI.setText(findTestObject('Page_eBlox Rapportering/Operation/Operation - Nom'), 'Bewerking 1')
+WebUI.setText(findTestObject('Page_eBlox Rapportering/Operation/Operation - Nom'), 'Bewerking 2')
 
-WebUI.setText(findTestObject('Page_eBlox Rapportering/Operation/Operation -Description'), 'Brutoloon + Bedrag Toeslag 1')
+WebUI.setText(findTestObject('Page_eBlox Rapportering/Operation/Operation -Description'), 'Brutoloon + Bedrag Toeslag 2')
 
 WebUI.click(findTestObject('Page_eBlox Rapportering/Operation/Formula 1'))
 
@@ -79,6 +83,36 @@ WebUI.click(findTestObject('Page_eBlox Rapportering/Operation/Formula 2'))
 WebUiBuiltInKeywords.setText(findTestObject('Page_eBlox Rapportering/Operation/Formula 2 input text'), 'Bedrag Toeslag 1')
 
 WebUiBuiltInKeywords.sendKeys(findTestObject('Page_eBlox Rapportering/Operation/Formula 2 input text'), Keys.chord(Keys.ENTER))
+
+WebUI.click(findTestObject('Page_eBlox Rapportering/Operation/Operation - Sauvegarder button'))
+
+WebUI.click(findTestObject('Page_eBlox Rapportering/Operation/Ajouter plus button operation'))
+
+WebUI.click(findTestObject('Page_eBlox Rapportering/Operation/Operation - Conditon button'))
+
+WebUI.click(findTestObject('Page_eBlox Rapportering/Operation/Operation - Nouvelle condition'))
+
+WebUiBuiltInKeywords.click(findTestObject('Page_eBlox Rapportering/Operation/Operation - input condition name'))
+
+WebUI.setText(findTestObject('Page_eBlox Rapportering/Operation/Operation - input condition name'), 'Conditie Bewerking 1')
+
+WebUI.click(findTestObject('Page_eBlox Rapportering/Operation/Conditions - Nom - plus icon'))
+
+WebUI.setText(findTestObject('Page_eBlox Rapportering/Operation/Input condition for plus icon'), 'Brutoloon')
+
+WebUiBuiltInKeywords.sendKeys(findTestObject('Page_eBlox Rapportering/Operation/Input condition for plus icon'), Keys.chord(
+        Keys.ENTER))
+
+WebUI.delay(2)
+
+WebUI.click(findTestObject('Page_eBlox Rapportering/Operation/Dropdown criteria for condition'))
+
+WebUI.click(findTestObject('Page_eBlox Rapportering/Operation/Criteria - est inferieur a'))
+
+WebUI.click(findTestObject('Page_eBlox Rapportering/Operation/Criteria condition number'))
+
+'not sending text'
+WebUI.setText(findTestObject('Page_eBlox Rapportering/Operation/Criteria condition number'), '800')
 
 WebUI.click(findTestObject('Page_eBlox Rapportering/Operation/Operation - Sauvegarder button'))
 

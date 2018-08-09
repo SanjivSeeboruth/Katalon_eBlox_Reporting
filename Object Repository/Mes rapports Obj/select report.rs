@@ -11,7 +11,7 @@
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//span[@text='TEST 2 MAU JAN 2018 (SANJIV)']</value>
+         <value>//span[@text='REG BEWERKING']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

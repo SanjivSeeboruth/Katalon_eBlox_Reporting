@@ -11,7 +11,7 @@
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//input[@id='s2id_autogen8_search']</value>
+         <value>//input[@id='s2id_autogen14_search']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

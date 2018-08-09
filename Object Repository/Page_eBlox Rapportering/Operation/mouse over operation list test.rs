@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
-   <description></description>
-   <name>Formula 2 input text</name>
+   <description>//*[@id=&quot;bewerkingform&quot;]/div/table/tbody[1]/tr</description>
+   <name>mouse over operation list test</name>
    <tag></tag>
-   <elementGuidId>819d0d86-6f30-4317-9659-1fa92eb6d665</elementGuidId>
+   <elementGuidId>be8835a7-445e-44f2-83f2-6ac535c61927</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
@@ -11,7 +11,7 @@
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//input[@id='s2id_autogen16_search']</value>
+         <value>//*[@id=&quot;bewerkingform&quot;]/div/table/tbody[1]/tr</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

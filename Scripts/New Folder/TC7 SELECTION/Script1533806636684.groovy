@@ -18,20 +18,40 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUiBuiltInKeywords
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
+import org.openqa.selenium.Keys as Keys
 
-WebUI.openBrowser('')
+WebUI.callTestCase(findTestCase('Login/TC1 Login to Mysdworx'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.navigateToUrl('https://internet.acc.sd.dika.be/ebloxreporting/web.sensitive/main/?lang=fr')
+WebUI.waitForPageLoad(50)
 
-WebUI.maximizeWindow()
+WebUI.callTestCase(findTestCase('Select Language/TC1 Verify NL language'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.setText(findTestObject('Page_mysdworx - Log in/input_Username'), 'DP_EBLOX_RPP_VASCO')
+WebUI.setText(findTestObject('Mes rapports Obj/input search filter'), 'REG SELECTIE')
 
-WebUI.setText(findTestObject('Page_mysdworx - Log in/input_Password'), '201075')
+not_run: WebUI.verifyTextPresent('REG SELECTIE', true)
 
-WebUI.click(findTestObject('Page_mysdworx - Log in/button_Se connecter'))
+WebUI.click(findTestObject('Mes rapports Obj/TESTING select a report'))
 
-WebUI.waitForPageLoad(5)
+WebUI.waitForPageLoad(10)
 
-not_run: WebUI.closeBrowser()
+WebUI.click(findTestObject('Page_eBlox Rapportering/Definition'))
+
+WebUI.waitForPageLoad(10)
+
+WebUI.click(findTestObject('Page_eBlox Rapportering/Selection'))
+
+WebUI.waitForPageLoad(10)
+
+WebUI.click(findTestObject('Page_eBlox Rapportering/Operation/Conditions - Nom - plus icon'))
+
+WebUI.setText(findTestObject('Page_eBlox Rapportering/Operation/Input condition for plus icon'), 'Geslacht')
+
+WebUiBuiltInKeywords.sendKeys(findTestObject('Page_eBlox Rapportering/Operation/Input condition for plus icon'), Keys.chord(
+        Keys.ENTER))
+
+WebUiBuiltInKeywords.click(findTestObject('Page_eBlox Rapportering/Operation/Dropdown criteria for condition'))
+
+WebUiBuiltInKeywords.click(findTestObject('Page_eBlox Rapportering/Selection Etendue/est egale a - is gelijk aan'))
+
+WebUiBuiltInKeywords.click(findTestObject('Page_eBlox Rapportering/Selection Etendue/Valeur - Man'))
 

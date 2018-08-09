@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>Formula 1</name>
+   <name>Input condition for plus icon</name>
    <tag></tag>
-   <elementGuidId>26a139ca-ba95-412d-abd5-b4fe76b27037</elementGuidId>
+   <elementGuidId>6f1d088a-d0c4-4aeb-941c-3a4575f3b9cb</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//*[@id=&quot;select2-chosen-14&quot;]</value>
+         <value>//*[@id=&quot;s2id_autogen29136_search&quot;]</value>
       </entry>
       <entry>
          <key>BASIC</key>

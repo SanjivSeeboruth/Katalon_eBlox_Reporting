@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>Formula 1</name>
+   <name>Conditions - Nom - plus icon</name>
    <tag></tag>
-   <elementGuidId>26a139ca-ba95-412d-abd5-b4fe76b27037</elementGuidId>
+   <elementGuidId>9f446daf-63bd-40c1-91a9-9123c85f815c</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//*[@id=&quot;select2-chosen-14&quot;]</value>
+         <key>BASIC</key>
+         <value></value>
       </entry>
       <entry>
-         <key>BASIC</key>
+         <key>XPATH</key>
+         <value>//*[@id=&quot;rapp-disable-toevoegen-knoppen-tabel&quot;]/table/tfoot/tr/td/div/button[1]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

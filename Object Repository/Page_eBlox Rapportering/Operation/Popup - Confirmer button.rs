@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>Formula 1</name>
+   <name>Popup - Confirmer button</name>
    <tag></tag>
-   <elementGuidId>26a139ca-ba95-412d-abd5-b4fe76b27037</elementGuidId>
+   <elementGuidId>e2ae0742-2a9b-4923-9574-55647e40f5c0</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//*[@id=&quot;select2-chosen-14&quot;]</value>
+         <key>BASIC</key>
+         <value></value>
       </entry>
       <entry>
-         <key>BASIC</key>
+         <key>XPATH</key>
+         <value>//*[@id=&quot;condities-popup&quot;]/div[2]/div/div[3]/button[1]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
