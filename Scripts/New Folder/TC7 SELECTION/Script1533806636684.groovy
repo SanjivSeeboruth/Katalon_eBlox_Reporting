@@ -74,7 +74,11 @@ WebUiBuiltInKeywords.click(findTestObject('Page_eBlox Rapportering/Selection Ete
 
 WebUiBuiltInKeywords.click(findTestObject('Page_eBlox Rapportering/Selection Etendue/Select date option'))
 
-WebUiBuiltInKeywords.setText(findTestObject('Page_eBlox Rapportering/Selection Etendue/Valeur - Man'), 'Man')
+WebUiBuiltInKeywords.click(findTestObject('Page_eBlox Rapportering/Selection Etendue/Select date'), FailureHandling.STOP_ON_FAILURE)
 
-WebUiBuiltInKeywords.sendKeys(findTestObject('Page_eBlox Rapportering/Selection Etendue/Input Valeur'), Keys.chord(Keys.ENTER))
+WebUiBuiltInKeywords.setText(findTestObject('Page_eBlox Rapportering/Selection Etendue/Input date'), '01/01/1990 ')
+
+WebUiBuiltInKeywords.sendKeys(findTestObject('Page_eBlox Rapportering/Selection Etendue/Input date'), Keys.chord(Keys.ENTER))
+
+WebUI.click(findTestObject('Page_eBlox Rapportering/Operation/Operation - Sauvegarder button'))
 
