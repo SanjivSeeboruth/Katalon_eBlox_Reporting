@@ -25,7 +25,7 @@ WebUI.setText(findTestObject('Comptages Obj/input_comptage_type'), 'Attest loonl
 
 WebUI.sendKeys(findTestObject('Comptages Obj/input_comptage_type'), Keys.chord(Keys.ENTER))
 
-alertText = WebUI.getAlertText()
+/*alertText = WebUI.getAlertText()
 
-println(alertText)
+println(alertText)*/
 

@@ -18,6 +18,7 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUiBuiltInKeywords
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
+import org.openqa.selenium.Keys as Keys
 
 'Login eBlox Reporting'
 WebUI.callTestCase(findTestCase('Login/TC1 Login to Mysdworx'), [:], FailureHandling.STOP_ON_FAILURE)
@@ -96,6 +97,12 @@ WebUI.callTestCase(findTestCase('Menu- Comptages/TC3 Verify Montants Function'),
 WebUI.callTestCase(findTestCase('Menu- Comptages/TC4 Verify the creation of a new Comptage'), [:], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.callTestCase(findTestCase('Menu- Comptages/TC7 Verify Sauvegarder button'), [:], FailureHandling.STOP_ON_FAILURE)
+
+WebUI.setText(findTestObject('Mes rapports Obj/input search filter'), 'test to delete')
+
+WebUI.sendKeys(findTestObject('Mes rapports Obj/input search filter'), Keys.chord(Keys.ENTER))
+
+WebUiBuiltInKeywords.click(findTestObject('Comptages Obj/Delete Comptages'))
 
 WebUI.closeBrowser()
 

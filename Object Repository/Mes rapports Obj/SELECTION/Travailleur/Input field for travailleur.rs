@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>Input condition for plus icon</name>
+   <name>Input field for travailleur</name>
    <tag></tag>
-   <elementGuidId>6f1d088a-d0c4-4aeb-941c-3a4575f3b9cb</elementGuidId>
+   <elementGuidId>939df73e-8610-4dd1-8425-522c3e6c99e0</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//*[@id=&quot;select2-drop&quot;]/div</value>
+         <value>//*[@id=&quot;s2id_autogen404&quot;]</value>
       </entry>
       <entry>
          <key>BASIC</key>
+         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

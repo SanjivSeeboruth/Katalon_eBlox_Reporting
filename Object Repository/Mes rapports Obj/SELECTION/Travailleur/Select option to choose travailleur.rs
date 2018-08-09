@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>Input condition for plus icon</name>
+   <name>Select option to choose travailleur</name>
    <tag></tag>
-   <elementGuidId>6f1d088a-d0c4-4aeb-941c-3a4575f3b9cb</elementGuidId>
+   <elementGuidId>f7a19bd4-5783-4325-b899-7ae434b46cfd</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//*[@id=&quot;select2-drop&quot;]/div</value>
+         <value>//*[@id=&quot;wizard-page&quot;]/div[2]/div/div/div/div/div[1]/div[2]/div/div/form/div/div/div[3]/div/div/div[1]/rapp-multiselect-prompt/div/div/button</value>
       </entry>
       <entry>
          <key>BASIC</key>
+         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

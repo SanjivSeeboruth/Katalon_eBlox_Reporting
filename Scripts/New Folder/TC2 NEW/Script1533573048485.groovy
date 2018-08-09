@@ -37,6 +37,8 @@ WebUI.callTestCase(findTestCase('Mes rapports/Mes rapports - BASE DE RAPPORT/TC1
 
 WebUI.callTestCase(findTestCase('Verify URL/TC Verify Url'), [:], FailureHandling.STOP_ON_FAILURE)
 
+WebUI.waitForPageLoad(10)
+
 WebUI.callTestCase(findTestCase('Mes rapports/TC Verify the next button arrow'), [:], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.waitForPageLoad(10)
@@ -66,6 +68,16 @@ WebUI.click(findTestObject('Mes rapports Obj/SELECTION/Travailleur/Click on Trav
 WebUI.delay(2)
 
 WebUI.click(findTestObject('Mes rapports Obj/SELECTION/Travailleur/figure dans'))
+
+WebUiBuiltInKeywords.click(findTestObject('Mes rapports Obj/SELECTION/Travailleur/Select option to choose travailleur'))
+
+WebUiBuiltInKeywords.click(findTestObject('Mes rapports Obj/SELECTION/Travailleur/travail - list option'))
+
+WebUiBuiltInKeywords.click(findTestObject('Mes rapports Obj/SELECTION/Travailleur/Input field for travailleur'))
+
+WebUiBuiltInKeywords.sendKeys(findTestObject('Mes rapports Obj/SELECTION/Travailleur/Input field for travailleur'), '0000013 - SIHAPAN GNA PHOUANGPHANH - 1AF0273 - ANTILOPE KARTONNAGE')
+
+WebUI.mouseOverOffset(findTestObject('Mes rapports Obj/SELECTION/Travailleur/Input field for travailleur'), 100, -20)
 
 WebUI.callTestCase(findTestCase('Mes rapports/Mes rapports - SELECTION/Verify if checkbox is unchecked/TC 1 Verify Contrats actifs checkbox  is un-checked'), 
     [:], FailureHandling.STOP_ON_FAILURE)

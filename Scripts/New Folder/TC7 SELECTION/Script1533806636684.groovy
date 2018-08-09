@@ -19,6 +19,7 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUiBuiltInKe
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
+import com.kms.katalon.core.testobject.ConditionType
 
 WebUI.callTestCase(findTestCase('Login/TC1 Login to Mysdworx'), [:], FailureHandling.STOP_ON_FAILURE)
 
@@ -84,3 +85,19 @@ WebUI.click(findTestObject('Page_eBlox Rapportering/Operation/Operation - Sauveg
 
 WebUiBuiltInKeywords.click(findTestObject('Page_eBlox Rapportering/Selection Etendue/Execute tab button'))
 
+def newId = WebUI.executeJavaScript('return $("input[type="text""]").attr("id")', [])
+
+println (newId)
+/*myTestObject = new TestObject("customObject")
+
+List<TestObjectProperty> properties = new ArrayList<TestObjectProperty>()
+
+properties.add(new TestObjectProperty("id", ConditionType.EQUALS, newId))
+
+//Set object
+
+myTestObject.setProperties(properties)
+
+//and finally check your box
+
+WebUI.click(myTestObject)*/
