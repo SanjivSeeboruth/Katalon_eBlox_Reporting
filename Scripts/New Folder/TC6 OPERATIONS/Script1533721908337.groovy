@@ -18,6 +18,7 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUiBuiltInKeywords
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
+import org.openqa.selenium.Keys as Keys
 
 WebUI.callTestCase(findTestCase('Login/TC1 Login to Mysdworx'), [:], FailureHandling.STOP_ON_FAILURE)
 
@@ -66,4 +67,18 @@ WebUI.click(findTestObject('Page_eBlox Rapportering/Operation/Operation - Sauveg
 WebUI.setText(findTestObject('Page_eBlox Rapportering/Operation/Operation - Nom'), 'Bewerking 1')
 
 WebUI.setText(findTestObject('Page_eBlox Rapportering/Operation/Operation -Description'), 'Brutoloon + Bedrag Toeslag 1')
+
+WebUI.click(findTestObject('Page_eBlox Rapportering/Operation/Formula 1'))
+
+WebUiBuiltInKeywords.setText(findTestObject('Page_eBlox Rapportering/Operation/Fomula 1 input text'), 'Brutoloon')
+
+WebUiBuiltInKeywords.sendKeys(findTestObject('Page_eBlox Rapportering/Operation/Fomula 1 input text'), Keys.chord(Keys.ENTER))
+
+WebUI.click(findTestObject('Page_eBlox Rapportering/Operation/Formula 2'))
+
+WebUiBuiltInKeywords.setText(findTestObject('Page_eBlox Rapportering/Operation/Formula 2 input text'), 'Bedrag Toeslag 1')
+
+WebUiBuiltInKeywords.sendKeys(findTestObject('Page_eBlox Rapportering/Operation/Formula 2 input text'), Keys.chord(Keys.ENTER))
+
+WebUI.click(findTestObject('Page_eBlox Rapportering/Operation/Operation - Sauvegarder button'))
 

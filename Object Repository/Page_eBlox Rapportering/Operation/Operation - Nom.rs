@@ -11,7 +11,7 @@
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//input[@name='oms2FRinfo']</value>
+         <value>//*[@id=&quot;veldInEdit&quot;]/div/div[2]/div[1]/div[2]/div/div/div[1]/div/div/input</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
