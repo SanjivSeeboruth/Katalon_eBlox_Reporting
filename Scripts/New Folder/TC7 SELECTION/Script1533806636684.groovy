@@ -55,3 +55,26 @@ WebUiBuiltInKeywords.click(findTestObject('Page_eBlox Rapportering/Selection Ete
 
 WebUiBuiltInKeywords.click(findTestObject('Page_eBlox Rapportering/Selection Etendue/Valeur - Man'))
 
+WebUiBuiltInKeywords.setText(findTestObject('Page_eBlox Rapportering/Selection Etendue/Valeur - Man'), 'Man')
+
+WebUiBuiltInKeywords.sendKeys(findTestObject('Page_eBlox Rapportering/Selection Etendue/Input Valeur'), Keys.chord(Keys.ENTER))
+
+WebUI.click(findTestObject('Page_eBlox Rapportering/Operation/Conditions - Nom - plus icon'))
+
+WebUI.delay(2)
+
+WebUI.setText(findTestObject('Page_eBlox Rapportering/Operation/Input condition for plus icon'), 'Geboortedatum')
+
+WebUiBuiltInKeywords.sendKeys(findTestObject('Page_eBlox Rapportering/Operation/Input condition for plus icon'), Keys.chord(
+        Keys.ENTER))
+
+WebUiBuiltInKeywords.click(findTestObject('Page_eBlox Rapportering/Operation/Dropdown criteria for condition'))
+
+WebUiBuiltInKeywords.click(findTestObject('Page_eBlox Rapportering/Selection Etendue/est plus petit que - is kleiner dan'))
+
+WebUiBuiltInKeywords.click(findTestObject('Page_eBlox Rapportering/Selection Etendue/Select date option'))
+
+WebUiBuiltInKeywords.setText(findTestObject('Page_eBlox Rapportering/Selection Etendue/Valeur - Man'), 'Man')
+
+WebUiBuiltInKeywords.sendKeys(findTestObject('Page_eBlox Rapportering/Selection Etendue/Input Valeur'), Keys.chord(Keys.ENTER))
+
