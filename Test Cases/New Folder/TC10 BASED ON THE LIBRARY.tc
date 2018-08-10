@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>TC BASED ON THE LIBRARY</name>
+   <name>TC10 BASED ON THE LIBRARY</name>
    <tag></tag>
    <comment></comment>
    <testCaseGuid>cad700b7-e60b-43ed-a892-745c0a7a12b9</testCaseGuid>
