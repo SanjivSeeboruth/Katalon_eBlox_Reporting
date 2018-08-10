@@ -29,7 +29,7 @@ WebUI.waitForPageLoad(10)
 
 WebUI.callTestCase(findTestCase('Mes rapports/Menu-Mes rapports/TC Verify Mes rapports tab'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.setText(findTestObject('Mes rapports Obj/input search filter'), 'REG BEWERKINGEN')
+WebUI.setText(findTestObject('Mes rapports Obj/input search filter'), 'REG HIST GROEP')
 
 WebUI.click(findTestObject('Page_eBlox Reporting/Search_Icon'))
 
