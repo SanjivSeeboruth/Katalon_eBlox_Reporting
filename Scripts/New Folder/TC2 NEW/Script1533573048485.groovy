@@ -11,6 +11,7 @@ import com.kms.katalon.core.testcase.TestCase as TestCase
 import com.kms.katalon.core.testcase.TestCaseFactory as TestCaseFactory
 import com.kms.katalon.core.testdata.TestData as TestData
 import com.kms.katalon.core.testdata.TestDataFactory as TestDataFactory
+import com.kms.katalon.core.testobject.ConditionType as ConditionType
 import com.kms.katalon.core.testobject.ObjectRepository as ObjectRepository
 import com.kms.katalon.core.testobject.TestObject as TestObject
 import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WSBuiltInKeywords
@@ -73,11 +74,19 @@ WebUiBuiltInKeywords.click(findTestObject('Mes rapports Obj/SELECTION/Travailleu
 
 WebUiBuiltInKeywords.click(findTestObject('Mes rapports Obj/SELECTION/Travailleur/travail - list option'))
 
-WebUiBuiltInKeywords.click(findTestObject('Mes rapports Obj/SELECTION/Travailleur/Input field for travailleur'))
+def inputWorker = WebUI.modifyObjectProperty(findTestObject('Mes rapports Obj/SELECTION/Travailleur/Input field for travailleur'), 
+    'id', 'contains', 's2id_autogen', true)
 
-WebUiBuiltInKeywords.sendKeys(findTestObject('Mes rapports Obj/SELECTION/Travailleur/Input field for travailleur'), '0000013 - SIHAPAN GNA PHOUANGPHANH - 1AF0273 - ANTILOPE KARTONNAGE')
+WebUI.click(inputWorker)
 
-WebUI.mouseOverOffset(findTestObject('Mes rapports Obj/SELECTION/Travailleur/Input field for travailleur'), 100, -20)
+//WebUiBuiltInKeywords.click(findTestObject('Mes rapports Obj/SELECTION/Travailleur/Input field for travailleur'))
+WebUiBuiltInKeywords.setText(findTestObject('Mes rapports Obj/SELECTION/Travailleur/Input field for travailleur'), '0000013 - SIHAPAN GNA PHOUANGPHANH - 1AF0273 - ANTILOPE KARTONNAGE')
+
+def myTestObject = new TestObject('Select_travailleur_by_name')
+
+myTestObject.addProperty('xpath', ConditionType.EQUALS, '//div[@id=\'select2-drop\']//ul[@class=\'select2-results\']//li[@role=\'presentation\']//div[contains(text(),\'0000013 - SIHAPAN GNA PHOUANGPHANH - 1AF0273 - ANTILOPE KARTONNAGE\')]')
+
+WebUI.click(myTestObject)
 
 WebUI.callTestCase(findTestCase('Mes rapports/Mes rapports - SELECTION/Verify if checkbox is unchecked/TC 1 Verify Contrats actifs checkbox  is un-checked'), 
     [:], FailureHandling.STOP_ON_FAILURE)
