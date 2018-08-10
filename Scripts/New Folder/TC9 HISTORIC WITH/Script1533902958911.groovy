@@ -23,3 +23,21 @@ WebUI.callTestCase(findTestCase('Login/TC1 Login to Mysdworx'), [:], FailureHand
 
 WebUI.waitForPageLoad(10)
 
+WebUI.callTestCase(findTestCase('Select Language/TC1 Verify NL language'), [:], FailureHandling.STOP_ON_FAILURE)
+
+WebUI.waitForPageLoad(10)
+
+WebUI.callTestCase(findTestCase('Mes rapports/Menu-Mes rapports/TC Verify Mes rapports tab'), [:], FailureHandling.STOP_ON_FAILURE)
+
+WebUI.setText(findTestObject('Mes rapports Obj/input search filter'), 'REG BEWERKINGEN')
+
+WebUI.click(findTestObject('Page_eBlox Reporting/Search_Icon'))
+
+WebUI.delay(2)
+
+WebUI.click(findTestObject('Mes rapports Obj/select report'))
+
+WebUI.waitForPageLoad(10)
+
+WebUI.click(findTestObject('Mes rapports Obj/EXECUTION/Button executer'))
+
