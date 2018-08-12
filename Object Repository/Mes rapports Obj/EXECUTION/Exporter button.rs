@@ -1,21 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>button_setting_dropdown</name>
+   <name>Exporter button</name>
    <tag></tag>
-   <elementGuidId>007bc611-8c89-45fb-b23d-35c409c09d41</elementGuidId>
+   <elementGuidId>d8bd3ac3-deb5-42b3-9206-371be55e19b4</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//div[@class='input-group']//div[@class='btn-group']//button[@class='btn btn-default dropdown-toggle']</value>
-      </entry>
-      <entry>
          <key>BASIC</key>
-         <value>//div[@class='input-group']//div[@class='btn-group']//button[@class='btn btn-default dropdown-toggle'][count(. | //button[@type = 'button' and @class = 'btn btn-default dropdown-toggle' and @data-toggle = 'dropdown']) = count(//button[@type = 'button' and @class = 'btn btn-default dropdown-toggle' and @data-toggle = 'dropdown'])]</value>
+         <value>//*[@id=&quot;parameters&quot;]/div/form/div[2]/div/div/div/ul/li[3]/div/button[1][count(. | //button[@type = 'button']) = count(//button[@type = 'button'])]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//*[@id=&quot;parameters&quot;]/div/form/div[2]/div/div/div/ul/li[3]/div/button[1]</value>
+   </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
@@ -33,38 +36,29 @@
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
+      <name>title</name>
+      <type>Main</type>
+      <value>Exporteer naar excel</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
       <name>class</name>
       <type>Main</type>
-      <value>btn btn-default dropdown-toggle</value>
+      <value>btn btn-default</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>data-toggle</name>
+      <name>ng-click</name>
       <type>Main</type>
-      <value>dropdown</value>
-   </webElementProperties>
-   <webElementProperties>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>aria-expanded</name>
-      <type>Main</type>
-      <value>true</value>
-   </webElementProperties>
-   <webElementProperties>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>text</name>
-      <type>Main</type>
-      <value>
-                                      
-                                </value>
+      <value>pagevm.downloadExcelFile(parametersvm.rapport,uitvoeringParametersForm)</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>xpath</name>
+      <name>ng-disabled</name>
       <type>Main</type>
-      <value>//div[@class='input-group']//div[@class='btn-group']//button[@class='btn btn-default dropdown-toggle']</value>
+      <value>pagevm.processing || !(parametersvm.rapport.exportInhoud || parametersvm.rapport.exportDraaitabel || ((parametersvm.rapport.exportEigenGrafiek || parametersvm.rapport.sdSuggestieGebruiken) &amp;&amp;  !(parametersvm.rapport.kenmerken.historischUitvoeren &amp;&amp; parametersvm.rapport.kenmerken.aggregatiePeriode === 0)))</value>
    </webElementProperties>
 </WebElementEntity>

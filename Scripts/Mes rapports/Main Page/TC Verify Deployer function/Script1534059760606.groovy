@@ -21,6 +21,8 @@ import internal.GlobalVariable as GlobalVariable
 
 WebUI.waitForPageLoad(10)
 
+WebUI.waitForElementClickable(findTestObject('Mes rapports Obj/button_setting_dropdown'), 10)
+
 WebUI.click(findTestObject('Mes rapports Obj/button_setting_dropdown'))
 
 WebUI.click(findTestObject('Mes rapports Obj/a_Dployer tout'))

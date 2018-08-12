@@ -21,7 +21,7 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUiBuiltInKe
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
-TestData excelData = findTestData('Data Files/Data/testData')
+TestData excelData = findTestData('Data Files/Data/testData1')
 
 //TestObject dynamicObject = new TestObject().addProperty("xpath", ConditionType.EQUALS, xpath)
 //println(excelData.getRowNumbers())excelData.getRowNumbers()

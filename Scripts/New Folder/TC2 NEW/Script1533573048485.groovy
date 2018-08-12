@@ -79,9 +79,6 @@ def inputWorker = WebUI.modifyObjectProperty(findTestObject('Mes rapports Obj/SE
 
 WebUI.click(inputWorker)
 
-//WebUiBuiltInKeywords.click(findTestObject('Mes rapports Obj/SELECTION/Travailleur/Input field for travailleur'))
-WebUiBuiltInKeywords.setText(findTestObject('Mes rapports Obj/SELECTION/Travailleur/Input field for travailleur'), '0000013 - SIHAPAN GNA PHOUANGPHANH - 1AF0273 - ANTILOPE KARTONNAGE')
-
 def myTestObject = new TestObject('Select_travailleur_by_name')
 
 myTestObject.addProperty('xpath', ConditionType.EQUALS, '//div[@id=\'select2-drop\']//ul[@class=\'select2-results\']//li[@role=\'presentation\']//div[contains(text(),\'0000013 - SIHAPAN GNA PHOUANGPHANH - 1AF0273 - ANTILOPE KARTONNAGE\')]')
@@ -112,13 +109,16 @@ WebUI.callTestCase(findTestCase('Mes rapports/TC Verify the next button arrow'),
 
 WebUI.waitForPageLoad(10)
 
-WebUiBuiltInKeywords.click(findTestObject('Mes rapports Obj/EXECUTION/Description_Dossier and Groupe figure dans'))
+def inputDossier = WebUI.modifyObjectProperty(findTestObject('Mes rapports Obj/EXECUTION/Description_Dossier and Groupe figure dans'), 
+    'id', 'contains', 's2id_autogen', true)
 
-WebUI.setText(findTestObject('Mes rapports Obj/EXECUTION/Description_Dossier and Groupe figure dans'), '1AS1462 - 02 - ADDAX COMMUNICATIONS NV')
+WebUI.click(inputDossier)
+
+def myInputDossier = new TestObject('Select_dossier_by_name')
+
+myInputDossier.addProperty('xpath', ConditionType.EQUALS, '//div[@id=\'select2-drop\']//ul[@class=\'select2-results\']//li[@role=\'presentation\']//div[contains(text(),\'1AA0221 - 01 - DRUKKERIJ ANTILOPE NV\')]')
 
 WebUiBuiltInKeywords.delay(2)
-
-WebUI.sendKeys(findTestObject('Mes rapports Obj/EXECUTION/Select Dossier 1'), Keys.chord(Keys.ENTER))
 
 WebUiBuiltInKeywords.click(findTestObject('Mes rapports Obj/EXECUTION/Description _Date de reference historique'))
 
@@ -132,9 +132,17 @@ WebUiBuiltInKeywords.click(findTestObject('Mes rapports Obj/EXECUTION/Historique
 
 WebUiBuiltInKeywords.click(findTestObject('Mes rapports Obj/EXECUTION/Historique_Period - Dernier 12 mois'))
 
+WebUI.callTestCase(findTestCase('Verify URL/TC Verify Url'), [:], FailureHandling.STOP_ON_FAILURE)
+
 WebUI.click(findTestObject('Mes rapports Obj/EXECUTION/Button executer'))
 
 WebUI.waitForPageLoad(10)
+
+WebUiBuiltInKeywords.click(findTestObject('Mes rapports Obj/EXECUTION/Graphique button'))
+
+WebUI.waitForPageLoad(10)
+
+WebUiBuiltInKeywords.click(findTestObject('Mes rapports Obj/EXECUTION/Montrer button'))
 
 WebUI.verifyAlertPresent(10)
 

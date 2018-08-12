@@ -7,11 +7,11 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//*[@id=&quot;s2id_autogen404&quot;]</value>
+         <value></value>
       </entry>
       <entry>
          <key>BASIC</key>
-         <value>//*[contains(@id, 's2id_autogen') and @ref_element = 'Object Repository/Mes rapports Obj/SELECTION/Travailleur/Parent form' and @ref_element_is_shadow_root = 'true']</value>
+         <value>//*[contains(@id, 's2id_autogen') and @class = 'select2-input' and @ref_element = 'Object Repository/Mes rapports Obj/SELECTION/Travailleur/Parent form' and @ref_element_is_shadow_root = 'true']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -33,15 +33,36 @@
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>ref_element</name>
+      <name>xpath</name>
       <type>Main</type>
-      <value>Object Repository/Mes rapports Obj/SELECTION/Travailleur/Parent form</value>
+      <value>//div[@class='select2-container select2-container-multi ng-pristine ng-untouched ng-valid ng-scope']//ul[@class='select2-choices']//li[@class='select2-search-field']//input[@class='select2-input']</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>ref_element_is_shadow_root</name>
+      <name>type</name>
       <type>Main</type>
-      <value>true</value>
+      <value>text</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>autocomplete</name>
+      <type>Main</type>
+      <value>off</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>autocorrect</name>
+      <type>Main</type>
+      <value>off</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>autocapitalize</name>
+      <type>Main</type>
+      <value>off</value>
    </webElementProperties>
 </WebElementEntity>

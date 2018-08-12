@@ -67,5 +67,5 @@ WebUI.click(findTestObject('Mes rapports Obj/EXECUTION/Annuler button'))
 
 WebUI.click(findTestObject('Page_mysdworx - Aanmelden/niew rapport annuleren'))
 
-WebUI.closeBrowser()
+not_run: WebUI.closeBrowser()
 

@@ -27,7 +27,7 @@ WebUI.callTestCase(findTestCase('Select Language/TC1 Verify NL language'), [:], 
 
 WebUI.waitForPageLoad(10)
 
-WebUI.callTestCase(findTestCase('Mes rapports/Menu-Mes rapports/TC Verify Mes rapports tab'), [:], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('Mes rapports/Main Page/TC Verify Mes rapports tab'), [:], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.setText(findTestObject('Mes rapports Obj/input search filter'), 'REG HIST GROEP')
 

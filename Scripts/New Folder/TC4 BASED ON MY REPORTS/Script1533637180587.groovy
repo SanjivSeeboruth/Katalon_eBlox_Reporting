@@ -62,9 +62,15 @@ WebUI.waitForPageLoad(10)
 
 WebUI.callTestCase(findTestCase('Verify URL/TC Verify Url'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.click(findTestObject('Mes rapports Obj/EXECUTION/Historique_Period_dropdown'))
+WebUI.delay(2)
 
-WebUI.click(findTestObject('Mes rapports Obj/EXECUTION/Historique_Period - Dernier 12 mois'))
+WebUI.click(findTestObject('Mes rapports Obj/EXECUTION/Description _Date de reference historique'))
+
+WebUI.delay(2)
+
+WebUI.click(findTestObject('Mes rapports Obj/EXECUTION/Description_Date de reference historique - Dernier jour mois precedent'))
+
+WebUI.click(findTestObject('Mes rapports Obj/EXECUTION/Exporter button'))
 
 WebUI.waitForPageLoad(10)
 

@@ -1,15 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>Annuler button</name>
+   <name>Graphique button</name>
    <tag></tag>
-   <elementGuidId>654c1035-b63e-40da-b3a6-ac5a1a06ea86</elementGuidId>
+   <elementGuidId>58509008-2f93-4bae-97d7-208276bcf30c</elementGuidId>
    <selectorCollection>
-      <entry>
-         <key>XPATH</key>
-         <value>
-</value>
-      </entry>
       <entry>
          <key>BASIC</key>
          <value></value>
@@ -20,29 +15,36 @@
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>xpath</name>
+      <name>class</name>
       <type>Main</type>
-      <value>//*[@id=&quot;wizard-page&quot;]/nav/div/ul[2]/li/button</value>
+      <value>btn btn-default</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>tag</name>
+      <name>ng-class</name>
       <type>Main</type>
-      <value>button</value>
+      <value>{'btn-secondary':pagevm.uitvoeringVisualisatie === 3}</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>ng-disabled</name>
+      <type>Main</type>
+      <value>pagevm.processing || !pagevm.rapportExecuted || !pagevm.rapport.hasGrafieken</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>ng-click</name>
       <type>Main</type>
-      <value>navvm.gaNaarLijstZonderFormBehaviour()</value>
+      <value>pagevm.changeVisualisation(parametersvm.rapport,uitvoeringParametersForm,3)</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>class</name>
+      <name>xpath</name>
       <type>Main</type>
-      <value>btn btn-default navbar-btn </value>
+      <value>//*[@id=&quot;parameters&quot;]/div/form/div[2]/div/div/div/ul/li[1]/div/a[3]</value>
    </webElementProperties>
 </WebElementEntity>
