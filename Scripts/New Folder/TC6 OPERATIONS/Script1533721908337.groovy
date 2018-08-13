@@ -42,7 +42,7 @@ WebUI.waitForPageLoad(10)
 
 WebUI.click(findTestObject('Page_eBlox Rapportering/Definition'))
 
-WebUiBuiltInKeywords.click(findTestObject('Page_eBlox Rapportering/Contenu'))
+WebUI.click(findTestObject('Page_eBlox Rapportering/Contenu'))
 
 WebUI.waitForPageLoad(10)
 
@@ -74,15 +74,15 @@ WebUI.setText(findTestObject('Page_eBlox Rapportering/Operation/Operation -Descr
 
 WebUI.click(findTestObject('Page_eBlox Rapportering/Operation/Formula 1'))
 
-WebUiBuiltInKeywords.setText(findTestObject('Page_eBlox Rapportering/Operation/Fomula 1 input text'), 'Brutoloon')
+WebUI.setText(findTestObject('Page_eBlox Rapportering/Operation/Fomula 1 input text'), 'Brutoloon')
 
-WebUiBuiltInKeywords.sendKeys(findTestObject('Page_eBlox Rapportering/Operation/Fomula 1 input text'), Keys.chord(Keys.ENTER))
+WebUI.sendKeys(findTestObject('Page_eBlox Rapportering/Operation/Fomula 1 input text'), Keys.chord(Keys.ENTER))
 
 WebUI.click(findTestObject('Page_eBlox Rapportering/Operation/Formula 2'))
 
-WebUiBuiltInKeywords.setText(findTestObject('Page_eBlox Rapportering/Operation/Formula 2 input text'), 'Bedrag Toeslag 1')
+WebUI.setText(findTestObject('Page_eBlox Rapportering/Operation/Formula 2 input text'), 'Bedrag Toeslag 1')
 
-WebUiBuiltInKeywords.sendKeys(findTestObject('Page_eBlox Rapportering/Operation/Formula 2 input text'), Keys.chord(Keys.ENTER))
+WebUI.sendKeys(findTestObject('Page_eBlox Rapportering/Operation/Formula 2 input text'), Keys.chord(Keys.ENTER))
 
 WebUI.click(findTestObject('Page_eBlox Rapportering/Operation/Operation - Sauvegarder button'))
 
@@ -92,7 +92,7 @@ WebUI.click(findTestObject('Page_eBlox Rapportering/Operation/Operation - Condit
 
 WebUI.click(findTestObject('Page_eBlox Rapportering/Operation/Operation - Nouvelle condition'))
 
-WebUiBuiltInKeywords.click(findTestObject('Page_eBlox Rapportering/Operation/Operation - input condition name'))
+WebUI.click(findTestObject('Page_eBlox Rapportering/Operation/Operation - input condition name'))
 
 WebUI.setText(findTestObject('Page_eBlox Rapportering/Operation/Operation - input condition name'), 'Conditie Bewerking 1')
 
@@ -100,7 +100,7 @@ WebUI.click(findTestObject('Page_eBlox Rapportering/Operation/Conditions - Nom -
 
 WebUI.setText(findTestObject('Page_eBlox Rapportering/Operation/Input condition for plus icon'), 'Brutoloon')
 
-WebUiBuiltInKeywords.sendKeys(findTestObject('Page_eBlox Rapportering/Operation/Input condition for plus icon'), Keys.chord(
+WebUI.sendKeys(findTestObject('Page_eBlox Rapportering/Operation/Input condition for plus icon'), Keys.chord(
         Keys.ENTER))
 
 WebUI.delay(2)

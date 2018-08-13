@@ -19,7 +19,7 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUiBuiltInKe
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
-import com.kms.katalon.core.testobject.ConditionType
+import com.kms.katalon.core.testobject.ConditionType as ConditionType
 
 WebUI.callTestCase(findTestCase('Login/TC1 Login to Mysdworx'), [:], FailureHandling.STOP_ON_FAILURE)
 
@@ -45,20 +45,25 @@ WebUI.waitForPageLoad(10)
 
 WebUI.click(findTestObject('Page_eBlox Rapportering/Operation/Conditions - Nom - plus icon'))
 
+WebUI.delay(2)
+
+WebUI.click(findTestObject('Page_eBlox Rapportering/Operation/Input condition for plus icon'), FailureHandling.STOP_ON_FAILURE)
+
 WebUI.setText(findTestObject('Page_eBlox Rapportering/Operation/Input condition for plus icon'), 'Geslacht')
 
-WebUiBuiltInKeywords.sendKeys(findTestObject('Page_eBlox Rapportering/Operation/Input condition for plus icon'), Keys.chord(
-        Keys.ENTER))
+WebUI.delay(2)
 
-WebUiBuiltInKeywords.click(findTestObject('Page_eBlox Rapportering/Operation/Dropdown criteria for condition'))
+WebUI.sendKeys(findTestObject('Page_eBlox Rapportering/Operation/Input condition for plus icon'), Keys.chord(Keys.ENTER))
 
-WebUiBuiltInKeywords.click(findTestObject('Page_eBlox Rapportering/Selection Etendue/est egale a - is gelijk aan'))
+WebUI.click(findTestObject('Page_eBlox Rapportering/Operation/Dropdown criteria for condition'))
 
-WebUiBuiltInKeywords.click(findTestObject('Page_eBlox Rapportering/Selection Etendue/Valeur - Man'))
+WebUI.click(findTestObject('Page_eBlox Rapportering/Selection Etendue/est egale a - is gelijk aan'))
 
-WebUiBuiltInKeywords.setText(findTestObject('Page_eBlox Rapportering/Selection Etendue/Valeur - Man'), 'Man')
+WebUI.click(findTestObject('Page_eBlox Rapportering/Selection Etendue/Valeur - Man'))
 
-WebUiBuiltInKeywords.sendKeys(findTestObject('Page_eBlox Rapportering/Selection Etendue/Input Valeur'), Keys.chord(Keys.ENTER))
+WebUI.setText(findTestObject('Page_eBlox Rapportering/Selection Etendue/Valeur - Man'), 'Man')
+
+WebUI.sendKeys(findTestObject('Page_eBlox Rapportering/Selection Etendue/Input Valeur'), Keys.chord(Keys.ENTER))
 
 WebUI.click(findTestObject('Page_eBlox Rapportering/Operation/Conditions - Nom - plus icon'))
 
@@ -66,38 +71,25 @@ WebUI.delay(2)
 
 WebUI.setText(findTestObject('Page_eBlox Rapportering/Operation/Input condition for plus icon'), 'Geboortedatum')
 
-WebUiBuiltInKeywords.sendKeys(findTestObject('Page_eBlox Rapportering/Operation/Input condition for plus icon'), Keys.chord(
-        Keys.ENTER))
+WebUI.sendKeys(findTestObject('Page_eBlox Rapportering/Operation/Input condition for plus icon'), Keys.chord(Keys.ENTER))
 
-WebUiBuiltInKeywords.click(findTestObject('Page_eBlox Rapportering/Operation/Dropdown criteria for condition'))
+WebUI.click(findTestObject('Page_eBlox Rapportering/Operation/Dropdown criteria for condition'))
 
-WebUiBuiltInKeywords.click(findTestObject('Page_eBlox Rapportering/Selection Etendue/est plus petit que - is kleiner dan'))
+WebUI.click(findTestObject('Page_eBlox Rapportering/Selection Etendue/est plus petit que - is kleiner dan'))
 
-WebUiBuiltInKeywords.click(findTestObject('Page_eBlox Rapportering/Selection Etendue/Select date option'))
+WebUI.click(findTestObject('Page_eBlox Rapportering/Selection Etendue/Select date option'))
 
-WebUiBuiltInKeywords.click(findTestObject('Page_eBlox Rapportering/Selection Etendue/Select date'), FailureHandling.STOP_ON_FAILURE)
+WebUI.click(findTestObject('Page_eBlox Rapportering/Selection Etendue/Select date'), FailureHandling.STOP_ON_FAILURE)
 
-WebUiBuiltInKeywords.setText(findTestObject('Page_eBlox Rapportering/Selection Etendue/Input date'), '01/01/1990 ')
+WebUI.setText(findTestObject('Page_eBlox Rapportering/Selection Etendue/Input date'), '01/01/1990 ')
 
-WebUiBuiltInKeywords.sendKeys(findTestObject('Page_eBlox Rapportering/Selection Etendue/Input date'), Keys.chord(Keys.ENTER))
+WebUI.sendKeys(findTestObject('Page_eBlox Rapportering/Selection Etendue/Input date'), Keys.chord(Keys.ENTER))
 
 WebUI.click(findTestObject('Page_eBlox Rapportering/Operation/Operation - Sauvegarder button'))
 
-WebUiBuiltInKeywords.click(findTestObject('Page_eBlox Rapportering/Selection Etendue/Execute tab button'))
+WebUI.click(findTestObject('Page_eBlox Rapportering/Selection Etendue/Execute tab button'))
 
 def newId = WebUI.executeJavaScript('return $("input[type="text""]").attr("id")', [])
 
-println (newId)
-/*myTestObject = new TestObject("customObject")
+println(newId)
 
-List<TestObjectProperty> properties = new ArrayList<TestObjectProperty>()
-
-properties.add(new TestObjectProperty("id", ConditionType.EQUALS, newId))
-
-//Set object
-
-myTestObject.setProperties(properties)
-
-//and finally check your box
-
-WebUI.click(myTestObject)*/

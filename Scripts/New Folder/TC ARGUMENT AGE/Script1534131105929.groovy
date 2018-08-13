@@ -11,6 +11,7 @@ import com.kms.katalon.core.testcase.TestCase as TestCase
 import com.kms.katalon.core.testcase.TestCaseFactory as TestCaseFactory
 import com.kms.katalon.core.testdata.TestData as TestData
 import com.kms.katalon.core.testdata.TestDataFactory as TestDataFactory
+import com.kms.katalon.core.testobject.ConditionType as ConditionType
 import com.kms.katalon.core.testobject.ObjectRepository as ObjectRepository
 import com.kms.katalon.core.testobject.TestObject as TestObject
 import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WSBuiltInKeywords
@@ -19,19 +20,23 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUiBuiltInKe
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
-WebUI.openBrowser('')
+WebUI.callTestCase(findTestCase('Login/TC1 Login to Mysdworx'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.navigateToUrl('https://internet.acc.sd.dika.be/ebloxreporting/web.sensitive/main/?lang=fr')
+WebUI.waitForPageLoad(10)
 
-WebUI.maximizeWindow()
+WebUI.callTestCase(findTestCase('Select Language/TC1 Verify NL language'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.setText(findTestObject('Page_mysdworx - Log in/input_Username'), 'DP_EBLOX_RPP_VASCO')
+WebUI.callTestCase(findTestCase('Mes rapports/Main Page/TC Verify Mes rapports tab'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.setText(findTestObject('Page_mysdworx - Log in/input_Password'), '508338')
+WebUI.setText(findTestObject('Mes rapports Obj/input search filter'), 'REG ARGUMENT LEEFTIJD')
 
-WebUI.click(findTestObject('Page_mysdworx - Log in/button_Se connecter'))
+WebUI.click(findTestObject('Page_eBlox Reporting/Search_Icon'))
 
-WebUI.waitForPageLoad(5)
+def myTestObject = new TestObject('Select_report')
 
-not_run: WebUI.closeBrowser()
+myTestObject.addProperty('xpath', ConditionType.EQUALS, '//a[@class=\'hide-on-hover\']//span[@text=\'REG LEEFTIJD ARGUMENT\']')
+
+WebUI.click(myTestObject)
+
+WebUI.click(findTestObject('Mes rapports Obj/EXECUTION/Button executer'))
 
