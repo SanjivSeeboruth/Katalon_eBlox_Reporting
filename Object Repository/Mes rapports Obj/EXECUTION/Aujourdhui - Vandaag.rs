@@ -1,17 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>Definition</name>
+   <name>Aujourdhui - Vandaag</name>
    <tag></tag>
-   <elementGuidId>16b77141-6eca-4bc0-ac50-f346fca10f4a</elementGuidId>
+   <elementGuidId>f682ef16-aebd-4f59-9e68-6ab1697c8f20</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>/html/body/div[1]/div[2]/ui-view/div/div[1]/nav/div/ul/li[4]/div/a[1]</value>
-      </entry>
-      <entry>
          <key>BASIC</key>
-         <value>//div[@class='btn-group navbar-btn']//a[@class='btn btn-default btn-secondary'][count(. | //a[@class = 'btn btn-default btn-secondary']) = count(//a[@class = 'btn btn-default btn-secondary'])]</value>
+         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -21,29 +17,27 @@
       <matchCondition>equals</matchCondition>
       <name>tag</name>
       <type>Main</type>
-      <value>a</value>
+      <value>span</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>class</name>
       <type>Main</type>
-      <value>btn btn-default btn-secondary</value>
+      <value>text ng-binding</value>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>false</isSelected>
+      <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>text</name>
+      <name>ng-class</name>
       <type>Main</type>
-      <value>
-                        Definitie
-                    </value>
+      <value>{'font-bold': specialValuesVm.selectedValue == specialValue.text}</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//div[@class='btn-group navbar-btn']//a[@class='btn btn-default btn-secondary']</value>
+      <value>//*[@id=&quot;uitvoering-parameters&quot;]/div/div[2]/div/div/table/tbody/tr[2]/td[2]/div/div/rapp-date-prompt/div/div/rapp-special-values/div/ul/li[1]/a/span</value>
    </webElementProperties>
 </WebElementEntity>

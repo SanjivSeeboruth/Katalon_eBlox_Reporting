@@ -6,12 +6,12 @@
    <elementGuidId>7d2ae4b4-5ae7-49d0-9be6-8cce4944b581</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>BASIC</key>
-         <value>/html[@class=&quot;ng-scope&quot;]/body[1]/div[@class=&quot;main-content&quot;]/div[@class=&quot;content&quot;]/ui-view[@class=&quot;ng-scope&quot;]/div[@class=&quot;inner-content ng-scope&quot;]/div[@class=&quot;ng-scope&quot;]/div[@class=&quot;inner-content-body definitie-page ng-scope&quot;]/div[@class=&quot;content-navigator&quot;]/ul[@class=&quot;list-tree-unstyled&quot;]/li[3]/a[1][count(. | //a[@href = '#/definitie/edit/27956/eigenschappen']) = count(//a[@href = '#/definitie/edit/27956/eigenschappen'])]</value>
-      </entry>
-      <entry>
          <key>XPATH</key>
          <value>/html/body/div[1]/div[2]/ui-view/div/div[2]/div/div[1]/ul/li[2]/a</value>
+      </entry>
+      <entry>
+         <key>BASIC</key>
+         <value>/html[@class=&quot;ng-scope&quot;]/body[1]/div[@class=&quot;main-content&quot;]/div[@class=&quot;content&quot;]/ui-view[@class=&quot;ng-scope&quot;]/div[@class=&quot;inner-content ng-scope&quot;]/div[@class=&quot;ng-scope&quot;]/div[@class=&quot;inner-content-body definitie-page ng-scope&quot;]/div[@class=&quot;content-navigator&quot;]/ul[@class=&quot;list-tree-unstyled&quot;]/li[3]/a[1][count(. | //a[@href = '#/definitie/edit/27956/eigenschappen']) = count(//a[@href = '#/definitie/edit/27956/eigenschappen'])]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

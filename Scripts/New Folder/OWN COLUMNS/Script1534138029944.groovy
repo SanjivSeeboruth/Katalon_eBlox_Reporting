@@ -22,19 +22,19 @@ import internal.GlobalVariable as GlobalVariable
 
 WebUI.callTestCase(findTestCase('Login/TC1 Login to Mysdworx'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.waitForPageLoad(10)
+WebUiBuiltInKeywords.waitForPageLoad(10)
 
 WebUI.callTestCase(findTestCase('Select Language/TC1 Verify NL language'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.callTestCase(findTestCase('Mes rapports/Main Page/TC Verify Mes rapports tab'), [:], FailureHandling.STOP_ON_FAILURE)
+WebUiBuiltInKeywords.waitForPageLoad(10)
 
-WebUI.setText(findTestObject('Mes rapports Obj/input search filter'), 'REG ARGUMENT LEEFTIJD')
+WebUI.setText(findTestObject('Mes rapports Obj/input search filter'), 'REG EIGEN RUBRIEK')
 
 WebUI.click(findTestObject('Page_eBlox Reporting/Search_Icon'))
 
 def myTestObject = new TestObject('Select_report')
 
-myTestObject.addProperty('xpath', ConditionType.EQUALS, '//a[@class=\'hide-on-hover\']//span[@text=\'REG LEEFTIJD ARGUMENT\']')
+myTestObject.addProperty('xpath', ConditionType, '//span[@text=\'REG EIGEN RUBRIEK\']')
 
 WebUI.click(myTestObject)
 
@@ -44,20 +44,7 @@ WebUI.click(findTestObject('Mes rapports Obj/EXECUTION/Description _Date de refe
 
 WebUI.delay(2)
 
-WebUI.click(findTestObject('Mes rapports Obj/EXECUTION/Aujourdhui - Vandaag'))
+WebUI.click(findTestObject('Mes rapports Obj/EXECUTION/Description_Date de reference historique - Dernier jour mois precedent'))
 
 WebUI.click(findTestObject('Mes rapports Obj/EXECUTION/Button executer'))
-
-WebUI.waitForPageLoad(10)
-
-def inputDossier = WebUI.modifyObjectProperty(findTestObject('Mes rapports Obj/EXECUTION/Description_Dossier and Groupe figure dans'),
-	'id', 'contains', 's2id_autogen', true)
-
-WebUI.click(inputDossier)
-
-def myDonneeCalculees = new TestObject('Select_donnee')
-
-myDonneeCalculees.addProperty('xpath', ConditionType.EQUALS, '//div[@id=\'select2-drop\']//ul[@class=\'select2-results\']//li[@role=\'presentation\']//div[contains(text(),\'(alle looncodes)\')]')
-
-
 
