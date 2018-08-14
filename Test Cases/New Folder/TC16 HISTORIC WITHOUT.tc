@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>TC HISTORIC WITHOUT</name>
+   <name>TC16 HISTORIC WITHOUT</name>
    <tag></tag>
    <comment></comment>
    <testCaseGuid>ec2fb1c2-2810-427f-9aac-4627f0b3ada1</testCaseGuid>

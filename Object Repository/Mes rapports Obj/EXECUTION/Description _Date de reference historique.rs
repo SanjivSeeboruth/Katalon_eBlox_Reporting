@@ -7,15 +7,13 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value></value>
-      </entry>
-      <entry>
-         <key>BASIC</key>
-         <value>//*[@id=&quot;uitvoering-parameters&quot;]/div/div[2]/div/div/table/tbody/tr[4]/td[2]/div/div/rapp-date-prompt/div/div/rapp-special-values/div/button[count(. | //button[@type = 'button' and @class = 'btn pull-left btn-default rapp-selected-prompt-button dropdown-toggle ' and @data-toggle = 'dropdown']) = count(//button[@type = 'button' and @class = 'btn pull-left btn-default rapp-selected-prompt-button dropdown-toggle ' and @data-toggle = 'dropdown'])]</value>
       </entry>
       <entry>
          <key>CSS</key>
-         <value></value>
+      </entry>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[@id=&quot;uitvoering-parameters&quot;]/div/div[2]/div/div/table/tbody/tr[2]/td[2]/div/div/rapp-date-prompt/div/div/rapp-special-values/div/button[count(. | //button[@type = 'button' and @class = 'btn pull-left btn-default rapp-selected-prompt-button dropdown-toggle ' and @data-toggle = 'dropdown']) = count(//button[@type = 'button' and @class = 'btn pull-left btn-default rapp-selected-prompt-button dropdown-toggle ' and @data-toggle = 'dropdown'])]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -46,7 +44,7 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//*[@id=&quot;uitvoering-parameters&quot;]/div/div[2]/div/div/table/tbody/tr[4]/td[2]/div/div/rapp-date-prompt/div/div/rapp-special-values/div/button</value>
+      <value>//*[@id=&quot;uitvoering-parameters&quot;]/div/div[2]/div/div/table/tbody/tr[2]/td[2]/div/div/rapp-date-prompt/div/div/rapp-special-values/div/button</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>

@@ -22,42 +22,25 @@ import internal.GlobalVariable as GlobalVariable
 
 WebUI.callTestCase(findTestCase('Login/TC1 Login to Mysdworx'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.waitForPageLoad(10)
+WebUiBuiltInKeywords.waitForPageLoad(10)
 
 WebUI.callTestCase(findTestCase('Select Language/TC1 Verify NL language'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.callTestCase(findTestCase('Mes rapports/Main Page/TC Verify Mes rapports tab'), [:], FailureHandling.STOP_ON_FAILURE)
+WebUiBuiltInKeywords.waitForPageLoad(10)
 
-WebUI.setText(findTestObject('Mes rapports Obj/input search filter'), 'REG ARGUMENT LEEFTIJD')
+WebUI.setText(findTestObject('Mes rapports Obj/input search filter'), 'REG RUBRIEK')
 
 WebUI.click(findTestObject('Page_eBlox Reporting/Search_Icon'))
 
-def myTestObject = new TestObject('Select_report')
+def REG_RUBRIEK = new TestObject('Select_report')
 
-myTestObject.addProperty('xpath', ConditionType.EQUALS, '//a[@class=\'hide-on-hover\']//span[@text=\'REG LEEFTIJD ARGUMENT\']')
+REG_RUBRIEK.addProperty('xpath', ConditionType, '//a[@class=\'hide-on-hover\']//span[@text=\'REG + RUBRIEK\']')
 
-WebUI.click(myTestObject)
+WebUI.click(REG_RUBRIEK)
 
-WebUI.delay(2)
+WebUI.click(findTestObject('Page_eBlox Rapportering/Definition'))
 
-WebUI.click(findTestObject('Mes rapports Obj/EXECUTION/Description _Date de reference historique'))
-
-WebUI.delay(2)
-
-WebUI.click(findTestObject('Mes rapports Obj/EXECUTION/Aujourdhui - Vandaag'))
+WebUI.click(findTestObject('Page_eBlox Rapportering/Contenu'))
 
 WebUI.click(findTestObject('Mes rapports Obj/EXECUTION/Button executer'))
-
-WebUI.waitForPageLoad(10)
-
-def inputDossier = WebUI.modifyObjectProperty(findTestObject('Mes rapports Obj/EXECUTION/Description_Dossier and Groupe figure dans'),
-	'id', 'contains', 's2id_autogen', true)
-
-WebUI.click(inputDossier)
-
-def myDonneeCalculees = new TestObject('Select_donnee')
-
-myDonneeCalculees.addProperty('xpath', ConditionType.EQUALS, '//div[@id=\'select2-drop\']//ul[@class=\'select2-results\']//li[@role=\'presentation\']//div[contains(text(),\'(alle looncodes)\')]')
-
-
 
