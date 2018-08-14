@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>TC DIVIDED BY 0</name>
+   <name>TC13 DIVIDED BY 0</name>
    <tag></tag>
    <comment></comment>
    <testCaseGuid>70964be9-2480-4368-be0d-9ab9c2443ffd</testCaseGuid>

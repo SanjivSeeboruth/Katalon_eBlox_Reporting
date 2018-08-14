@@ -34,11 +34,13 @@ WebUI.click(findTestObject('Page_eBlox Reporting/Search_Icon'))
 
 def myTestObject = new TestObject('Select_report')
 
-myTestObject.addProperty('xpath', ConditionType, '//span[@text=\'REG EIGEN RUBRIEK\']')
+myTestObject.addProperty("xpath", ConditionType.EQUALS, "//span[@text=\'REG EIGEN RUBRIEK\']")
 
 WebUI.click(myTestObject)
 
 WebUI.delay(2)
+
+WebUI.waitForElementClickable(findTestObject('Mes rapports Obj/EXECUTION/Description _Date de reference historique'), 10)
 
 WebUI.click(findTestObject('Mes rapports Obj/EXECUTION/Description _Date de reference historique'))
 
