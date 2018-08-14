@@ -34,7 +34,7 @@ WebUI.click(findTestObject('Page_eBlox Reporting/Search_Icon'))
 
 def myTestObject = new TestObject('Select_report')
 
-myTestObject.addProperty('xpath', ConditionType.EQUALS, '//a[@class=\'hide-on-hover\']//span[@text=\'REG LEEFTIJD ARGUMENT\']')
+myTestObject.addProperty("xpath", ConditionType.EQUALS, "//a[@class=\'hide-on-hover\']//span[@text=\'REG LEEFTIJD ARGUMENT\']")
 
 WebUI.click(myTestObject)
 

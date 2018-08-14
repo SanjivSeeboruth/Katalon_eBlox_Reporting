@@ -11,7 +11,7 @@ import com.kms.katalon.core.testcase.TestCase as TestCase
 import com.kms.katalon.core.testcase.TestCaseFactory as TestCaseFactory
 import com.kms.katalon.core.testdata.TestData as TestData
 import com.kms.katalon.core.testdata.TestDataFactory as TestDataFactory
-import com.kms.katalon.core.testobject.ConditionType
+import com.kms.katalon.core.testobject.ConditionType as ConditionType
 import com.kms.katalon.core.testobject.ObjectRepository as ObjectRepository
 import com.kms.katalon.core.testobject.TestObject as TestObject
 import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WSBuiltInKeywords
@@ -19,6 +19,7 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUiBuiltInKeywords
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
+import org.openqa.selenium.Keys as Keys
 
 WebUI.callTestCase(findTestCase('Login/TC1 Login to Mysdworx'), [:], FailureHandling.STOP_ON_FAILURE)
 
@@ -32,15 +33,17 @@ WebUI.setText(findTestObject('Mes rapports Obj/input search filter'), 'REG NEGAT
 
 WebUI.click(findTestObject('Page_eBlox Reporting/Search_Icon'))
 
-def myTestObject = new TestObject('Select_report')
+def myTestObject = new TestObject('Select_report_NEGATIEF')
 
-myTestObject.addProperty('xpath', ConditionType, '//span[@text=\'REG NEGATIEF\']')
+myTestObject.addProperty('xpath', ConditionType.EQUALS, '//a[@ui-sref=\'uitvoering.index({id:item.id})\']//span[@text=\'REG NEGATIEF\']')
 
 WebUI.click(myTestObject)
 
 WebUiBuiltInKeywords.waitForPageLoad(10)
 
 WebUI.delay(2)
+
+WebUI.waitForElementClickable(findTestObject('Mes rapports Obj/EXECUTION/Description _Date de reference historique'), 10)
 
 WebUI.click(findTestObject('Mes rapports Obj/EXECUTION/Description _Date de reference historique'))
 
@@ -51,3 +54,4 @@ WebUI.click(findTestObject('Mes rapports Obj/EXECUTION/Aujourdhui - Vandaag'))
 WebUI.click(findTestObject('Mes rapports Obj/EXECUTION/Button executer'))
 
 WebUI.waitForPageLoad(10)
+

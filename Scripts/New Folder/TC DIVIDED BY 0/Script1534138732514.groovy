@@ -34,17 +34,27 @@ WebUI.click(findTestObject('Page_eBlox Reporting/Search_Icon'))
 
 def myTestObject = new TestObject('Select_report')
 
-myTestObject.addProperty('xpath', ConditionType, '//span[@text=\'REG BEWERKING\']')
+myTestObject.addProperty('xpath', ConditionType.EQUALS, '//span[@text=\'REG BEWERKING\']')
 
 WebUI.click(myTestObject)
 
+WebUI.waitForElementClickable(findTestObject('Mes rapports Obj/EXECUTION/Description _Date de reference historique'), 10)
+
+WebUI.click(findTestObject('Mes rapports Obj/EXECUTION/Description _Date de reference historique'))
+
+WebUI.click(findTestObject('Mes rapports Obj/EXECUTION/Description_Date de reference historique - Dernier jour mois precedent'))
+
 WebUI.click(findTestObject('Mes rapports Obj/EXECUTION/Button executer'))
 
-WebUiBuiltInKeywords.waitForPageLoad(10)
+WebUiBuiltInKeywords.waitForPageLoad(15)
 
 WebUI.callTestCase(findTestCase('Select Language/TC2 Verify FR Language'), [:], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.click(findTestObject('Mes rapports Obj/EXECUTION/Button executer'))
+
+WebUI.click(findTestObject('Mes rapports Obj/EXECUTION/Description _Date de reference historique'))
+
+WebUI.click(findTestObject('Mes rapports Obj/EXECUTION/Description_Date de reference historique - Dernier jour mois precedent'))
 
 WebUiBuiltInKeywords.waitForPageLoad(10)
 

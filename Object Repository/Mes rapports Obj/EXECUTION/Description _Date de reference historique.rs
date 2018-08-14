@@ -13,7 +13,7 @@
       </entry>
       <entry>
          <key>BASIC</key>
-         <value>//*[@id=&quot;uitvoering-parameters&quot;]/div/div[2]/div/div/table/tbody/tr[2]/td[2]/div/div/rapp-date-prompt/div/div/rapp-special-values/div/button[count(. | //button[@type = 'button' and @class = 'btn pull-left btn-default rapp-selected-prompt-button dropdown-toggle ' and @data-toggle = 'dropdown']) = count(//button[@type = 'button' and @class = 'btn pull-left btn-default rapp-selected-prompt-button dropdown-toggle ' and @data-toggle = 'dropdown'])]</value>
+         <value>//*[@id=&quot;uitvoering-parameters&quot;]/div/div[2]/div/div/table/tbody/tr[2]/td[2]/div/div/rapp-date-prompt/div/div/rapp-special-values/div/button[count(. | //button[@type = 'button' and @class = 'btn pull-left btn-default rapp-selected-prompt-button dropdown-toggle ' and @data-toggle = 'dropdown' and @style = 'font-weight: normal; text-align: left; width: 100%;' and @ref_element = 'Object Repository/Mes rapports Obj/EXECUTION/Parent_Valeur a indiquer' and @ref_element_is_shadow_root = 'true']) = count(//button[@type = 'button' and @class = 'btn pull-left btn-default rapp-selected-prompt-button dropdown-toggle ' and @data-toggle = 'dropdown' and @style = 'font-weight: normal; text-align: left; width: 100%;' and @ref_element = 'Object Repository/Mes rapports Obj/EXECUTION/Parent_Valeur a indiquer' and @ref_element_is_shadow_root = 'true'])]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -54,7 +54,7 @@
       <value>button</value>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>false</isSelected>
+      <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>style</name>
       <type>Main</type>

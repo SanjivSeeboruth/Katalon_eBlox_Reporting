@@ -34,7 +34,7 @@ WebUI.click(findTestObject('Page_eBlox Reporting/Search_Icon'))
 
 def myTestObject = new TestObject('Select_report')
 
-myTestObject.addProperty('xpath', ConditionType.EQUALS, '//span[@text=\'REG HIST GROEP\']')
+myTestObject.addProperty("xpath", ConditionType.EQUALS, "//span[@text=\'REG HIST GROEP\']")
 
 WebUI.click(myTestObject)
 
@@ -45,7 +45,7 @@ WebUI.click(inputDossier)
 
 def myDonneeCalculees = new TestObject('Select_donnee')
 
-myDonneeCalculees.addProperty('xpath', ConditionType.EQUALS, '//div[@id=\'select2-drop\']//ul[@class=\'select2-results\']//li[@role=\'presentation\']//div[contains(text(),\'(alle looncodes)\')]')
+myDonneeCalculees.addProperty("xpath", ConditionType.EQUALS,"//div[@id=\'select2-drop\']//ul[@class=\'select2-results\']//li[@role=\'presentation\']//div[contains(text(),\'(alle looncodes)\')]")
 
 WebUI.click(myDonneeCalculees)
 
