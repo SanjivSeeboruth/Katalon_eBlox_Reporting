@@ -2,6 +2,7 @@ import static com.kms.katalon.core.checkpoint.CheckpointFactory.findCheckpoint
 import static com.kms.katalon.core.testcase.TestCaseFactory.findTestCase
 import static com.kms.katalon.core.testdata.TestDataFactory.findTestData
 import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
+import java.util.concurrent.locks.Condition as Condition
 import com.kms.katalon.core.checkpoint.Checkpoint as Checkpoint
 import com.kms.katalon.core.checkpoint.CheckpointFactory as CheckpointFactory
 import com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords as MobileBuiltInKeywords
@@ -20,35 +21,16 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUiBuiltInKe
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
-WebUI.callTestCase(findTestCase('Login/TC1 Login to Mysdworx'), [:], FailureHandling.STOP_ON_FAILURE)
+TestData excelData = findTestData('Data Files/Data/INTERNAL')
 
-WebUI.waitForPageLoad(10)
+//TestObject dynamicObject = new TestObject().addProperty("xpath", ConditionType.EQUALS, xpath)
+//println(excelData.getRowNumbers())excelData.getRowNumbers()
+for (int i = 1; i <= 2; i++) {
+    WebUI.setText(findTestObject('Mes rapports Obj/CONTENU/input_Contenu_Selecteur'), excelData.getValue('Name', i))
+	WebUI.delay(3)
+    WebUI.click(findTestObject('Mes rapports Obj/CONTENU/Selecteur Obj NL/' + excelData.getValue('Object name', i)))
+	WebUI.delay(3)
+    WebUI.click(findTestObject('Mes rapports Obj/CONTENU/click_Remove_text'))
+}
 
-WebUI.callTestCase(findTestCase('Select Language/TC1 Verify NL language'), [:], FailureHandling.STOP_ON_FAILURE)
-
-WebUI.callTestCase(findTestCase('Mes rapports/Main Page/TC Verify Mes rapports tab'), [:], FailureHandling.STOP_ON_FAILURE)
-
-WebUI.setText(findTestObject('Mes rapports Obj/input search filter'), 'REG ARGUMENT LEEFTIJD')
-
-WebUI.click(findTestObject('Page_eBlox Reporting/Search_Icon'))
-
-def myTestObject = new TestObject('Select_report')
-
-myTestObject.addProperty('xpath', ConditionType.EQUALS, '//a[@class=\'hide-on-hover\']//span[@text=\'REG LEEFTIJD ARGUMENT\']')
-
-WebUI.click(myTestObject)
-
-WebUI.delay(2)
-
-WebUI.waitForElementClickable(findTestObject('Mes rapports Obj/EXECUTION/Description _Date de reference historique'), 10)
-
-WebUI.click(findTestObject('Mes rapports Obj/EXECUTION/Description _Date de reference historique'))
-
-WebUI.delay(2)
-
-WebUI.click(findTestObject('Mes rapports Obj/EXECUTION/Aujourdhui - Vandaag'))
-
-WebUI.click(findTestObject('Mes rapports Obj/EXECUTION/Button executer'))
-
-WebUI.waitForPageLoad(10)
 

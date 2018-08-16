@@ -1,17 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>Contenu</name>
+   <name>New button dropdown</name>
    <tag></tag>
-   <elementGuidId>70508efb-3c8e-4867-bbd9-e6070d35aa8e</elementGuidId>
+   <elementGuidId>36c83991-d274-475a-b077-4ec535b969df</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>/html/body/div[1]/div[2]/ui-view/div/div[2]/div/div[1]/ul/li[1]/a</value>
-      </entry>
-      <entry>
          <key>BASIC</key>
-         <value>//li[@rapp-security-functionaliteit='DefinitieInhoud']//a[count(. | //a[@ui-sref = 'definitie.edit.inhoud.index({id:navvm.rapport.id})' and contains(@href, '#/definitie/edit/')]) = count(//a[@ui-sref = 'definitie.edit.inhoud.index({id:navvm.rapport.id})' and contains(@href, '#/definitie/edit/')])]</value>
+         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -21,36 +17,34 @@
       <matchCondition>equals</matchCondition>
       <name>tag</name>
       <type>Main</type>
-      <value>a</value>
+      <value>button</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>ui-sref</name>
+      <name>type</name>
       <type>Main</type>
-      <value>definitie.edit.inhoud.index({id:navvm.rapport.id})</value>
+      <value>button</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
-      <matchCondition>contains</matchCondition>
-      <name>href</name>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
       <type>Main</type>
-      <value>#/definitie/edit/</value>
+      <value>btn btn-default dropdown-toggle</value>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>false</isSelected>
+      <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>text</name>
+      <name>data-toggle</name>
       <type>Main</type>
-      <value>
-                    Inhoud
-                </value>
+      <value>dropdown</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//li[@rapp-security-functionaliteit='DefinitieInhoud']//a</value>
+      <value>/html/body/div[1]/div[2]/ui-view/div/div[1]/nav/div/div[2]/div[2]/button[2]</value>
    </webElementProperties>
 </WebElementEntity>

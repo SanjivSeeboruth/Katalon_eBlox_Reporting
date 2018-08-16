@@ -11,7 +11,6 @@ import com.kms.katalon.core.testcase.TestCase as TestCase
 import com.kms.katalon.core.testcase.TestCaseFactory as TestCaseFactory
 import com.kms.katalon.core.testdata.TestData as TestData
 import com.kms.katalon.core.testdata.TestDataFactory as TestDataFactory
-import com.kms.katalon.core.testobject.ConditionType as ConditionType
 import com.kms.katalon.core.testobject.ObjectRepository as ObjectRepository
 import com.kms.katalon.core.testobject.TestObject as TestObject
 import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WSBuiltInKeywords
@@ -22,33 +21,41 @@ import internal.GlobalVariable as GlobalVariable
 
 WebUI.callTestCase(findTestCase('Login/TC1 Login to Mysdworx'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.waitForPageLoad(10)
+WebUiBuiltInKeywords.waitForPageLoad(10)
 
 WebUI.callTestCase(findTestCase('Select Language/TC1 Verify NL language'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.callTestCase(findTestCase('Mes rapports/Main Page/TC Verify Mes rapports tab'), [:], FailureHandling.STOP_ON_FAILURE)
+WebUiBuiltInKeywords.waitForPageLoad(10)
 
-WebUI.setText(findTestObject('Mes rapports Obj/input search filter'), 'REG ARGUMENT LEEFTIJD')
+WebUI.click(findTestObject('Mes rapports Obj/New button dropdown'))
 
-WebUI.click(findTestObject('Page_eBlox Reporting/Search_Icon'))
+WebUI.click(findTestObject('Mes rapports Obj/intern option'))
 
-def myTestObject = new TestObject('Select_report')
+WebUI.callTestCase(findTestCase('Mes rapports/Mes rapports - BASE DE RAPPORT/TC1  Verify radio button creer un tout nouveau rapport'), 
+    [:], FailureHandling.STOP_ON_FAILURE)
 
-myTestObject.addProperty('xpath', ConditionType.EQUALS, '//a[@class=\'hide-on-hover\']//span[@text=\'REG LEEFTIJD ARGUMENT\']')
+WebUI.callTestCase(findTestCase('Mes rapports/TC Verify the next button arrow'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.click(myTestObject)
+WebUiBuiltInKeywords.waitForPageLoad(10)
 
-WebUI.delay(2)
+WebUI.callTestCase(findTestCase('Mes rapports/Mes rapports - CONTENU/TC Verify input field INTERNAL'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.waitForElementClickable(findTestObject('Mes rapports Obj/EXECUTION/Description _Date de reference historique'), 10)
+WebUI.callTestCase(findTestCase('Mes rapports/TC Verify the next button arrow'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.click(findTestObject('Mes rapports Obj/EXECUTION/Description _Date de reference historique'))
+WebUiBuiltInKeywords.waitForPageLoad(10)
 
-WebUI.delay(2)
+WebUI.callTestCase(findTestCase('Mes rapports/Mes rapports - SELECTION/Verify if checkbox is unchecked/TC 10 Deselect all checkbox'), 
+    [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.click(findTestObject('Mes rapports Obj/EXECUTION/Aujourdhui - Vandaag'))
+WebUI.callTestCase(findTestCase('Mes rapports/TC Verify the next button arrow'), [:], FailureHandling.STOP_ON_FAILURE)
+
+WebUiBuiltInKeywords.waitForPageLoad(10)
 
 WebUI.click(findTestObject('Mes rapports Obj/EXECUTION/Button executer'))
 
-WebUI.waitForPageLoad(10)
+WebUiBuiltInKeywords.waitForPageLoad(10)
+
+WebUI.callTestCase(findTestCase('Mes rapports/TC Verify the next button arrow'), [:], FailureHandling.STOP_ON_FAILURE)
+
+WebUI.sendKeys(findTestObject(null), '')
 

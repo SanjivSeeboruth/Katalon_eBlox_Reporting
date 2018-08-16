@@ -1,17 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>Definition</name>
+   <name>Generalites - input name</name>
    <tag></tag>
-   <elementGuidId>16b77141-6eca-4bc0-ac50-f346fca10f4a</elementGuidId>
+   <elementGuidId>27bfbe76-f874-4c82-97e3-918c7f7869a4</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>/html/body/div[1]/div[2]/ui-view/div/div[1]/nav/div/ul/li[4]/div/a[1]</value>
-      </entry>
-      <entry>
          <key>BASIC</key>
-         <value>//div[@class='btn-group']//a[@class='btn btn-default ng-scope ng-isolate-scope'][count(. | //a[@class = 'btn btn-default ng-scope ng-isolate-scope' and @ng-if = '!pagevm.rapport.isHardcodedReport' and @rapp-definitie-link-niveau = '2' and @rapp-definitie-link-copy = '0' and @rapp-definitie-link-uitvoering-visualisatie = '1']) = count(//a[@class = 'btn btn-default ng-scope ng-isolate-scope' and @ng-if = '!pagevm.rapport.isHardcodedReport' and @rapp-definitie-link-niveau = '2' and @rapp-definitie-link-copy = '0' and @rapp-definitie-link-uitvoering-visualisatie = '1'])]</value>
+         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -21,57 +17,69 @@
       <matchCondition>equals</matchCondition>
       <name>tag</name>
       <type>Main</type>
-      <value>a</value>
+      <value>input</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>type</name>
+      <type>Main</type>
+      <value>text</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>class</name>
       <type>Main</type>
-      <value>btn btn-default ng-scope ng-isolate-scope</value>
-   </webElementProperties>
-   <webElementProperties>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>text</name>
-      <type>Main</type>
-      <value>
-                        Definitie
-                    </value>
+      <value>form-control ng-pristine ng-untouched ng-scope ng-invalid ng-invalid-required ng-valid-maxlength</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>xpath</name>
+      <name>name</name>
       <type>Main</type>
-      <value>//div[@class='btn-group']//a[@class='btn btn-default ng-scope ng-isolate-scope']</value>
+      <value>oms2FR</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>ng-model</name>
+      <type>Main</type>
+      <value>lang.tekst</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>maxlength</name>
+      <type>Main</type>
+      <value>80</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>ng-if</name>
       <type>Main</type>
-      <value>!pagevm.rapport.isHardcodedReport</value>
+      <value>!vm.isTextarea</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>rapp-definitie-link-niveau</name>
+      <name>ng-blur</name>
       <type>Main</type>
-      <value>2</value>
+      <value>!vm.showAll &amp;&amp; vm.copyTalen()</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>rapp-definitie-link-copy</name>
+      <name>ng-required</name>
       <type>Main</type>
-      <value>0</value>
+      <value>vm.shouldBeRequired &amp;&amp; (lang.taal === $parent.vm.userLanguageCode)</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>rapp-definitie-link-uitvoering-visualisatie</name>
+      <name>xpath</name>
       <type>Main</type>
-      <value>1</value>
+      <value>//*[@id=&quot;wizard-page&quot;]/div[2]/div/div/div/form/div[1]/div/div/div[2]/div[1]/div/div/div/div[2]/div/div/input</value>
    </webElementProperties>
 </WebElementEntity>

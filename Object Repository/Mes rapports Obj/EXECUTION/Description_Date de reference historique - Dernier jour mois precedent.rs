@@ -11,7 +11,7 @@
       </entry>
       <entry>
          <key>BASIC</key>
-         <value></value>
+         <value>//span[contains(text(),'Laatste dag vorige maand')][count(. | //span[@class = 'text ng-binding' and @ng-class = concat('{' , &quot;'&quot; , 'font-bold' , &quot;'&quot; , ': specialValuesVm.selectedValue == specialValue.text}')]) = count(//span[@class = 'text ng-binding' and @ng-class = concat('{' , &quot;'&quot; , 'font-bold' , &quot;'&quot; , ': specialValuesVm.selectedValue == specialValue.text}')])]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -42,6 +42,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//span[contains(text(),'Dernier jour mois précédent')]</value>
+      <value>//span[contains(text(),'Laatste dag vorige maand')]</value>
    </webElementProperties>
 </WebElementEntity>

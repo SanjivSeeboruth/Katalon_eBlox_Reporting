@@ -34,13 +34,11 @@ WebUI.click(findTestObject('Page_eBlox Reporting/Search_Icon'))
 
 def REG_RUBRIEK = new TestObject('Select_report')
 
-REG_RUBRIEK.addProperty('xpath', ConditionType, '//a[@class=\'hide-on-hover\']//span[@text=\'REG + RUBRIEK\']')
+REG_RUBRIEK.addProperty('xpath', ConditionType.EQUALS, '//a[@class=\'hide-on-hover\']//span[@text=\'REG + RUBRIEK\']')
 
 WebUI.click(REG_RUBRIEK)
 
 WebUI.click(findTestObject('Page_eBlox Rapportering/Definition'))
-
-WebUI.click(findTestObject('Page_eBlox Rapportering/Contenu'))
 
 WebUI.click(findTestObject('Mes rapports Obj/EXECUTION/Button executer'))
 
