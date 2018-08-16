@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value></value>
+         <value>//input[@type = 'checkbox' and @id = 'exportEigenGrafiek' and @name = 'exportEigenGrafiek']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -31,13 +31,13 @@
       <matchCondition>equals</matchCondition>
       <name>id</name>
       <type>Main</type>
-      <value>exportSDSuggestie</value>
+      <value>exportEigenGrafiek</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>name</name>
       <type>Main</type>
-      <value>exportSDSuggestie</value>
+      <value>exportEigenGrafiek</value>
    </webElementProperties>
 </WebElementEntity>

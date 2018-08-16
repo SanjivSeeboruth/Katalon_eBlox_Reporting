@@ -68,6 +68,8 @@ WebUI.click(findTestObject('Mes rapports Obj/EXECUTION/Description _Date de refe
 
 WebUI.delay(5)
 
+WebUI.waitForElementClickable(findTestObject('Mes rapports Obj/EXECUTION/Aujourdhui - Vandaag'), 5)
+
 WebUI.click(findTestObject('Mes rapports Obj/EXECUTION/Aujourdhui - Vandaag'))
 
 WebUI.delay(2)
@@ -82,15 +84,24 @@ WebUI.click(findTestObject('Mes rapports Obj/EXECUTION/Button executer'))
 
 WebUI.waitForPageLoad(20)
 
+WebUI.waitForElementClickable(findTestObject('Mes rapports Obj/EXECUTION/Exporter button'), 5)
+
 WebUI.click(findTestObject('Mes rapports Obj/EXECUTION/Exporter button'))
 
 WebUI.waitForPageLoad(20)
 
-WebUI.click(findTestObject('Page_eBlox Rapportering/Definition'))
+WebUI.waitForElementClickable(findTestObject('Page_eBlox Rapportering/Definition'), 5)
+
+def definition  = WebUI.modifyObjectProperty(findTestObject('Page_eBlox Rapportering/Definition'), 'xpath', 'equals',
+	'/html/body/div[1]/div[2]/ui-view/div/div[1]/nav/div/ul[1]/li[4]/div/a[1]', true)
+
+WebUI.click(definition)
 
 WebUI.waitForPageLoad(10)
 
 WebUI.click(findTestObject('Page_eBlox Rapportering/Proprietes'))
+
+WebUI.delay(2)
 
 WebUI.uncheck(findTestObject('Page_eBlox Rapportering/Definition - Proprietes - Options d exportation/Graphiques - propres graphiques checkbox'))
 
@@ -100,6 +111,37 @@ WebUI.uncheck(findTestObject('Page_eBlox Rapportering/Definition - Proprietes - 
 
 WebUI.verifyElementChecked(findTestObject('Page_eBlox Rapportering/Definition - Proprietes - Options d exportation/Contenu checkbox'), 
     2)
+
+WebUI.click(findTestObject('Page_eBlox Rapportering/Execution tab'))
+
+WebUI.waitForPageLoad(10)
+
+WebUI.click(findTestObject('Mes rapports Obj/EXECUTION/Exporter button'))
+
+WebUI.waitForPageLoad(20)
+
+WebUI.waitForElementClickable(findTestObject('Page_eBlox Rapportering/Definition'), 5)
+
+//WebUI.click(findTestObject('Page_eBlox Rapportering/Definition'))
+
+WebUI.click(definition)
+
+WebUI.waitForPageLoad(10)
+
+WebUI.click(findTestObject('Page_eBlox Rapportering/Proprietes'))
+
+WebUI.delay(2)
+
+WebUI.uncheck(findTestObject('Page_eBlox Rapportering/Definition - Proprietes - Options d exportation/Graphiques - propres graphiques checkbox'))
+
+WebUI.uncheck(findTestObject('Page_eBlox Rapportering/Definition - Proprietes - Options d exportation/Graphiques - suggestions SD checkbox'))
+
+WebUI.delay(2)
+
+WebUI.uncheck(findTestObject('Page_eBlox Rapportering/Definition - Proprietes - Options d exportation/Tableau croise checkbox'))
+
+WebUI.uncheck(findTestObject('Page_eBlox Rapportering/Definition - Proprietes - Options d exportation/Contenu checkbox'), 
+    FailureHandling.STOP_ON_FAILURE)
 
 WebUI.click(findTestObject('Page_eBlox Rapportering/Execution tab'))
 

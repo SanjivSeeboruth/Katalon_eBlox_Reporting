@@ -11,7 +11,7 @@
       </entry>
       <entry>
          <key>BASIC</key>
-         <value>//div[@class='btn-group']//a[@class='btn btn-default ng-scope ng-isolate-scope'][count(. | //a[@class = 'btn btn-default ng-scope ng-isolate-scope' and @ng-if = '!pagevm.rapport.isHardcodedReport' and @rapp-definitie-link-niveau = '2' and @rapp-definitie-link-copy = '0' and @rapp-definitie-link-uitvoering-visualisatie = '1']) = count(//a[@class = 'btn btn-default ng-scope ng-isolate-scope' and @ng-if = '!pagevm.rapport.isHardcodedReport' and @rapp-definitie-link-niveau = '2' and @rapp-definitie-link-copy = '0' and @rapp-definitie-link-uitvoering-visualisatie = '1'])]</value>
+         <value>//a[contains(text(), 'Definitie')][count(. | //a[@class = 'btn btn-default ng-scope ng-isolate-scope' and @rapp-definitie-link-route = 'definitie' and @rapp-definitie-link = '28063']) = count(//a[@class = 'btn btn-default ng-scope ng-isolate-scope' and @rapp-definitie-link-route = 'definitie' and @rapp-definitie-link = '28063'])]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -41,13 +41,13 @@
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
-      <matchCondition>equals</matchCondition>
+      <matchCondition>contains</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//div[@class='btn-group']//a[@class='btn btn-default ng-scope ng-isolate-scope']</value>
+      <value>//a[contains(text(), 'Definitie')]</value>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>true</isSelected>
+      <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>ng-if</name>
       <type>Main</type>
@@ -56,22 +56,15 @@
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>rapp-definitie-link-niveau</name>
+      <name>rapp-definitie-link-route</name>
       <type>Main</type>
-      <value>2</value>
+      <value>definitie</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>rapp-definitie-link-copy</name>
+      <name>rapp-definitie-link</name>
       <type>Main</type>
-      <value>0</value>
-   </webElementProperties>
-   <webElementProperties>
-      <isSelected>true</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>rapp-definitie-link-uitvoering-visualisatie</name>
-      <type>Main</type>
-      <value>1</value>
+      <value>28063</value>
    </webElementProperties>
 </WebElementEntity>
