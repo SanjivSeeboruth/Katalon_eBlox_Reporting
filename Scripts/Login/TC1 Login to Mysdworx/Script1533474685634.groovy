@@ -27,11 +27,11 @@ WebUI.maximizeWindow()
 
 WebUI.setText(findTestObject('Page_mysdworx - Log in/input_Username'), 'DP_EBLOX_RPP_VASCO')
 
-WebUI.setText(findTestObject('Page_mysdworx - Log in/input_Password'), '879082')
+WebUI.setText(findTestObject('Page_mysdworx - Log in/input_Password'), '770334')
 
 WebUI.click(findTestObject('Page_mysdworx - Log in/button_Se connecter'))
 
-WebUI.waitForPageLoad(5)
+WebUI.waitForPageLoad(10)
 
 not_run: WebUI.closeBrowser()
 
