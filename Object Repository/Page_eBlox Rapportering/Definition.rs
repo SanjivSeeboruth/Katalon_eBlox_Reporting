@@ -14,7 +14,7 @@
          <value>//a[contains(text(), 'Definitie')][count(. | //a[@class = 'btn btn-default ng-scope ng-isolate-scope' and @rapp-definitie-link-route = 'definitie' and @rapp-definitie-link = '28063']) = count(//a[@class = 'btn btn-default ng-scope ng-isolate-scope' and @rapp-definitie-link-route = 'definitie' and @rapp-definitie-link = '28063'])]</value>
       </entry>
    </selectorCollection>
-   <selectorMethod>BASIC</selectorMethod>
+   <selectorMethod>XPATH</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
       <isSelected>true</isSelected>

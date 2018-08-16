@@ -38,7 +38,10 @@ WebUI.click(myTestObject)
 
 WebUI.waitForPageLoad(10)
 
-WebUI.click(findTestObject('Page_eBlox Rapportering/Definition'))
+def definition = WebUI.modifyObjectProperty(findTestObject('Page_eBlox Rapportering/Definition'), 'xpath', 'equals', '/html/body/div[1]/div[2]/ui-view/div/div[1]/nav/div/ul[1]/li[4]/div/a[1]', 
+    true)
+
+WebUI.click(definition)
 
 WebUI.waitForPageLoad(10)
 
@@ -63,6 +66,8 @@ WebUI.click(findTestObject('Page_eBlox Rapportering/Execution tab'))
 WebUI.waitForPageLoad(10)
 
 WebUI.waitForElementClickable(findTestObject('Mes rapports Obj/EXECUTION/Description _Date de reference historique'), 10)
+
+WebUI.delay(2)
 
 WebUI.click(findTestObject('Mes rapports Obj/EXECUTION/Description _Date de reference historique'))
 
@@ -92,10 +97,10 @@ WebUI.waitForPageLoad(20)
 
 WebUI.waitForElementClickable(findTestObject('Page_eBlox Rapportering/Definition'), 5)
 
-def definition  = WebUI.modifyObjectProperty(findTestObject('Page_eBlox Rapportering/Definition'), 'xpath', 'equals',
-	'/html/body/div[1]/div[2]/ui-view/div/div[1]/nav/div/ul[1]/li[4]/div/a[1]', true)
+def definition1 = WebUI.modifyObjectProperty(findTestObject('Page_eBlox Rapportering/Definition'), 'xpath', 'equals', '/html/body/div[1]/div[2]/ui-view/div/div[1]/nav/div/ul[1]/li[4]/div/a[1]', 
+    true)
 
-WebUI.click(definition)
+WebUI.click(definition1)
 
 WebUI.waitForPageLoad(10)
 
@@ -123,8 +128,10 @@ WebUI.waitForPageLoad(20)
 WebUI.waitForElementClickable(findTestObject('Page_eBlox Rapportering/Definition'), 5)
 
 //WebUI.click(findTestObject('Page_eBlox Rapportering/Definition'))
+def definition2 = WebUI.modifyObjectProperty(findTestObject('Page_eBlox Rapportering/Definition'), 'xpath', 'equals', '/html/body/div[1]/div[2]/ui-view/div/div[1]/nav/div/ul[1]/li[4]/div/a[1]', 
+    true)
 
-WebUI.click(definition)
+WebUI.click(definition2)
 
 WebUI.waitForPageLoad(10)
 
