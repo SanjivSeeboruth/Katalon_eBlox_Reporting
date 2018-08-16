@@ -2,6 +2,7 @@ import static com.kms.katalon.core.checkpoint.CheckpointFactory.findCheckpoint
 import static com.kms.katalon.core.testcase.TestCaseFactory.findTestCase
 import static com.kms.katalon.core.testdata.TestDataFactory.findTestData
 import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
+import com.google.common.collect.FilteredEntryMultimap.Keys as Keys
 import com.kms.katalon.core.checkpoint.Checkpoint as Checkpoint
 import com.kms.katalon.core.checkpoint.CheckpointFactory as CheckpointFactory
 import com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords as MobileBuiltInKeywords
@@ -18,6 +19,7 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUiBuiltInKeywords
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
+import org.openqa.selenium.Keys as Keys
 
 WebUI.callTestCase(findTestCase('Login/TC1 Login to Mysdworx'), [:], FailureHandling.STOP_ON_FAILURE)
 
@@ -57,5 +59,26 @@ WebUiBuiltInKeywords.waitForPageLoad(10)
 
 WebUI.callTestCase(findTestCase('Mes rapports/TC Verify the next button arrow'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.sendKeys(findTestObject(null), '')
+WebUiBuiltInKeywords.waitForPageLoad(10)
+
+WebUI.waitForElementPresent(findTestObject('Mes rapports Obj/PROPRIETES/Generalites - input name'), 10)
+
+WebUI.setText(findTestObject('Mes rapports Obj/PROPRIETES/Generalites - input name'), 'TEST REG IPS 12.08.2018')
+
+WebUI.click(findTestObject('Page_eBlox Reporting/click_DropDown_Menu_arrow'))
+
+def Foldername = WebUI.modifyObjectProperty(findTestObject('Page_eBlox Reporting/input_Folder_Name'), 'id', 'contains', 
+    's2id_autogen', true)
+
+WebUI.setText(Foldername, 'TEST REG IPS DATUM')
+
+/*WebUI.setText(findTestObject('Page_eBlox Reporting/input_Folder_Name'), 'Sanjiv')*/
+/*WebUI.sendKeys(findTestObject('Page_eBlox Reporting/input_Folder_Name'), Keys.chord(Keys.ENTER))*/
+WebUI.sendKeys(Foldername, Keys.chord(Keys.ENTER))
+
+WebUI.click(findTestObject('Page_eBlox Reporting/button_Sauvegarder'))
+
+not_run: WebUI.click(findTestObject('Page_eBlox Reporting/button_Vers Mes rapports'))
+
+not_run: WebUI.click(findTestObject('Page_eBlox Reporting/select_FolderName'))
 

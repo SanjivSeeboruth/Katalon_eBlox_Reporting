@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>button_Sauvegarder</name>
+   <name>Berekende gegevens - looncode komt voor in</name>
    <tag></tag>
-   <elementGuidId>f78ef1ad-ea7d-41ab-aae4-8fea8c97605b</elementGuidId>
+   <elementGuidId>21bdd0f8-549f-4295-902d-535ec70bbc9d</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//*[@id=&quot;wizard-page&quot;]/nav/div/ul[2]/li/div/button[count(. | //button[@class = 'btn btn-primary navbar-btn rapp-complete-wizard-button ng-scope' and @ng-click = 'navvm.saveOpEindeWizard(opslaanButtonVm.rapport)']) = count(//button[@class = 'btn btn-primary navbar-btn rapp-complete-wizard-button ng-scope' and @ng-click = 'navvm.saveOpEindeWizard(opslaanButtonVm.rapport)'])]</value>
+         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,34 +17,34 @@
       <matchCondition>equals</matchCondition>
       <name>tag</name>
       <type>Main</type>
-      <value>button</value>
+      <value>input</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>type</name>
+      <type>Main</type>
+      <value>text</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>class</name>
       <type>Main</type>
-      <value>btn btn-primary navbar-btn rapp-complete-wizard-button ng-scope</value>
+      <value>select2-input</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>ng-click</name>
+      <matchCondition>contains</matchCondition>
+      <name>id</name>
       <type>Main</type>
-      <value>navvm.saveOpEindeWizard(opslaanButtonVm.rapport)</value>
-   </webElementProperties>
-   <webElementProperties>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>text</name>
-      <type>Main</type>
-      <value>Sauvegarder</value>
+      <value>s2id_autogen</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//*[@id=&quot;wizard-page&quot;]/nav/div/ul[2]/li/div/button</value>
+      <value>//*[@id=&quot;s2id_autogen12&quot;]</value>
    </webElementProperties>
 </WebElementEntity>
