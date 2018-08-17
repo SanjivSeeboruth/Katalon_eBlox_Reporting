@@ -93,3 +93,4 @@ def newId = WebUI.executeJavaScript('return $("input[type="text""]").attr("id")'
 
 println(newId)
 
+WebUI.closeBrowser()

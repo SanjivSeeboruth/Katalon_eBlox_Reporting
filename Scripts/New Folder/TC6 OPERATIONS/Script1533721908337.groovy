@@ -96,6 +96,7 @@ WebUI.click(findTestObject('Page_eBlox Rapportering/Operation/Operation - input 
 
 WebUI.setText(findTestObject('Page_eBlox Rapportering/Operation/Operation - input condition name'), 'Conditie Bewerking 1')
 
+WebUI.closeBrowser()
 WebUI.click(findTestObject('Page_eBlox Rapportering/Operation/Conditions - Nom - plus icon'))
 
 WebUI.setText(findTestObject('Page_eBlox Rapportering/Operation/Input condition for plus icon'), 'Brutoloon')

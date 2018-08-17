@@ -60,3 +60,4 @@ WebUI.click(findTestObject('Mes rapports Obj/EXECUTION/Button executer'))
 
 WebUiBuiltInKeywords.waitForPageLoad(10)
 
+WebUI.closeBrowser()

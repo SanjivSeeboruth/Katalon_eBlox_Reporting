@@ -42,3 +42,4 @@ WebUI.click(findTestObject('Page_eBlox Rapportering/Definition'))
 
 WebUI.click(findTestObject('Mes rapports Obj/EXECUTION/Button executer'))
 
+WebUI.closeBrowser()

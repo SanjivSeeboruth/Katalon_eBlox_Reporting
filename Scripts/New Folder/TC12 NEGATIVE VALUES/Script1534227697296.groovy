@@ -55,3 +55,4 @@ WebUI.click(findTestObject('Mes rapports Obj/EXECUTION/Button executer'))
 
 WebUI.waitForPageLoad(10)
 
+WebUI.closeBrowser()

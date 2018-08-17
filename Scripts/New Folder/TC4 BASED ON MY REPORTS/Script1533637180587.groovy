@@ -74,3 +74,4 @@ WebUI.click(findTestObject('Mes rapports Obj/EXECUTION/Exporter button'))
 
 WebUI.waitForPageLoad(10)
 
+WebUI.closeBrowser()

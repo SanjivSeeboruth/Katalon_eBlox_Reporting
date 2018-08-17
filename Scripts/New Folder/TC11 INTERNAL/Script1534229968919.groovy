@@ -82,3 +82,4 @@ not_run: WebUI.click(findTestObject('Page_eBlox Reporting/button_Vers Mes rappor
 
 not_run: WebUI.click(findTestObject('Page_eBlox Reporting/select_FolderName'))
 
+WebUI.closeBrowser()

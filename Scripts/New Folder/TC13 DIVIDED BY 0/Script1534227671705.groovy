@@ -58,3 +58,4 @@ WebUI.click(findTestObject('Mes rapports Obj/EXECUTION/Description_Date de refer
 
 WebUiBuiltInKeywords.waitForPageLoad(10)
 
+WebUI.closeBrowser()

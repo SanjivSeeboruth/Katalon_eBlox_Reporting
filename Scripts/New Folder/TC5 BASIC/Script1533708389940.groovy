@@ -87,3 +87,4 @@ WebUI.click(findTestObject('Mes rapports Obj/EXECUTION/Graphique button'))
 
 WebUI.callTestCase(findTestCase('Select Language/TC2 Verify FR Language'), [:], FailureHandling.STOP_ON_FAILURE)
 
+WebUI.closeBrowser()

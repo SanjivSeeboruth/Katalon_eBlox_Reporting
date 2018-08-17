@@ -64,3 +64,4 @@ WebUI.callTestCase(findTestCase('Mes rapports/TC Verify the next button arrow'),
 
 WebUI.click(findTestObject('Mes rapports Obj/EXECUTION/Button executer'))
 
+WebUI.closeBrowser()

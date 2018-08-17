@@ -50,3 +50,4 @@ WebUI.click(findTestObject('Mes rapports Obj/EXECUTION/Description_Date de refer
 
 WebUI.click(findTestObject('Mes rapports Obj/EXECUTION/Button executer'))
 
+WebUI.closeBrowser()

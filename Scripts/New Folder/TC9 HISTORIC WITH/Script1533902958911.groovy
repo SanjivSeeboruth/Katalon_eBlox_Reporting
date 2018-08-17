@@ -62,3 +62,4 @@ WebUI.sendKeys(myDonneeCalculees2, Keys.chord(Keys.ESCAPE))
 
 WebUI.click(findTestObject('Mes rapports Obj/EXECUTION/Button executer'))
 
+WebUI.closeBrowser()
