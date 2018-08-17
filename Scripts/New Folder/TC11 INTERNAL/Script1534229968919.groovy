@@ -65,6 +65,16 @@ WebUiBuiltInKeywords.waitForPageLoad(10)
 
 WebUI.waitForElementPresent(findTestObject('Mes rapports Obj/PROPRIETES/Generalites - input name'), 10)
 
+WebUI.waitForElementClickable(findTestObject('Mes rapports Obj/PROPRIETES/Name - Language dropdown'), 5)
+
+WebUI.click(findTestObject('Mes rapports Obj/PROPRIETES/Name - Language dropdown'))
+
+WebUI.delay(1)
+
+WebUI.click(findTestObject('Mes rapports Obj/PROPRIETES/Name - Francais'))
+
+WebUI.focus(findTestObject('Mes rapports Obj/PROPRIETES/Generalites - input name'), FailureHandling.STOP_ON_FAILURE)
+
 WebUI.setText(findTestObject('Mes rapports Obj/PROPRIETES/Generalites - input name'), 'TEST REG IPS 12.08.2018')
 
 WebUI.click(findTestObject('Page_eBlox Reporting/click_DropDown_Menu_arrow'))

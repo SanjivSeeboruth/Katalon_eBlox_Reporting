@@ -85,7 +85,7 @@ myTestObject.addProperty('xpath', ConditionType.EQUALS, '//div[@id=\'select2-dro
 
 WebUI.click(myTestObject)
 
-WebUI.click(findTestObject('Mes rapports Obj/SELECTION/Travailleur/testEsc'), FailureHandling.STOP_ON_FAILURE)
+WebUI.focus(findTestObject('Mes rapports Obj/SELECTION/Travailleur/testEsc'), FailureHandling.STOP_ON_FAILURE)
 
 WebUI.click(findTestObject('Mes rapports Obj/SELECTION/Travailleur/testEsc'), FailureHandling.STOP_ON_FAILURE)
 

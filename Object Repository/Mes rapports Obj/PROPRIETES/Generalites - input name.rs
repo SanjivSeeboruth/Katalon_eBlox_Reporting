@@ -11,7 +11,7 @@
       </entry>
       <entry>
          <key>BASIC</key>
-         <value>//*[@id=&quot;wizard-page&quot;]/div[2]/div/div/div/form/div[1]/div/div/div[2]/div[1]/div/div/div/div[2]/div/div/input[count(. | //input[@type = 'text' and @class = 'form-control ng-pristine ng-untouched ng-scope ng-invalid ng-invalid-required ng-valid-maxlength' and @name = 'oms2FR' and @ng-model = 'lang.tekst' and @maxlength = '80' and @ng-if = '!vm.isTextarea' and @ng-blur = '!vm.showAll &amp;&amp; vm.copyTalen()' and @ng-required = 'vm.shouldBeRequired &amp;&amp; (lang.taal === $parent.vm.userLanguageCode)']) = count(//input[@type = 'text' and @class = 'form-control ng-pristine ng-untouched ng-scope ng-invalid ng-invalid-required ng-valid-maxlength' and @name = 'oms2FR' and @ng-model = 'lang.tekst' and @maxlength = '80' and @ng-if = '!vm.isTextarea' and @ng-blur = '!vm.showAll &amp;&amp; vm.copyTalen()' and @ng-required = 'vm.shouldBeRequired &amp;&amp; (lang.taal === $parent.vm.userLanguageCode)'])]</value>
+         <value>//*[@id=&quot;wizard-page&quot;]/div[2]/div/div/div/form/div[1]/div/div/div[2]/div[1]/div/div/div/div[1]/div/div/input[count(. | //input[@type = 'text' and @class = 'form-control ng-pristine ng-untouched ng-scope ng-invalid ng-invalid-required ng-valid-maxlength' and @name = 'oms2FR' and @ng-model = 'lang.tekst' and @maxlength = '80' and @ng-if = '!vm.isTextarea' and @ng-blur = '!vm.showAll &amp;&amp; vm.copyTalen()' and @ng-required = 'vm.shouldBeRequired &amp;&amp; (lang.taal === $parent.vm.userLanguageCode)']) = count(//input[@type = 'text' and @class = 'form-control ng-pristine ng-untouched ng-scope ng-invalid ng-invalid-required ng-valid-maxlength' and @name = 'oms2FR' and @ng-model = 'lang.tekst' and @maxlength = '80' and @ng-if = '!vm.isTextarea' and @ng-blur = '!vm.showAll &amp;&amp; vm.copyTalen()' and @ng-required = 'vm.shouldBeRequired &amp;&amp; (lang.taal === $parent.vm.userLanguageCode)'])]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -84,6 +84,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//*[@id=&quot;wizard-page&quot;]/div[2]/div/div/div/form/div[1]/div/div/div[2]/div[1]/div/div/div/div[2]/div/div/input</value>
+      <value>//*[@id=&quot;wizard-page&quot;]/div[2]/div/div/div/form/div[1]/div/div/div[2]/div[1]/div/div/div/div[1]/div/div/input</value>
    </webElementProperties>
 </WebElementEntity>

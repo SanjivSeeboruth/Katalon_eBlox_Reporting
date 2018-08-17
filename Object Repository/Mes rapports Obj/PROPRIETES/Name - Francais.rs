@@ -1,17 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>testEsc</name>
+   <name>Name - Francais</name>
    <tag></tag>
-   <elementGuidId>467c4cfe-5ebb-4872-9387-420ecc762f48</elementGuidId>
+   <elementGuidId>1329bf7d-16e8-4927-848d-d6131c454d36</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value></value>
-      </entry>
-      <entry>
          <key>BASIC</key>
-         <value>//*[@id=&quot;navbar-anchor&quot;]/div[1]/p[count(. | //span[@class = 'badge']) = count(//span[@class = 'badge'])]</value>
+         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -21,20 +17,13 @@
       <matchCondition>equals</matchCondition>
       <name>tag</name>
       <type>Main</type>
-      <value>span</value>
+      <value>a</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>class</name>
-      <type>Main</type>
-      <value>badge</value>
-   </webElementProperties>
-   <webElementProperties>
-      <isSelected>true</isSelected>
-      <matchCondition>contains</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//*[@id=&quot;navbar-anchor&quot;]/div[1]/p</value>
+      <value>//*[@id=&quot;wizard-page&quot;]/div[2]/div/div/div/form/div[1]/div/div/div[2]/div[1]/div/div/div/div[1]/div/div/div/ul/li[2]/a</value>
    </webElementProperties>
 </WebElementEntity>
