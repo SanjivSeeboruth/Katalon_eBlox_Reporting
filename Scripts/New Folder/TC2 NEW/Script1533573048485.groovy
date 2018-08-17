@@ -85,7 +85,9 @@ myTestObject.addProperty('xpath', ConditionType.EQUALS, '//div[@id=\'select2-dro
 
 WebUI.click(myTestObject)
 
-WebUI.doubleClick(findTestObject(inputWorker))
+WebUI.click(findTestObject('Mes rapports Obj/SELECTION/Travailleur/testEsc'), FailureHandling.STOP_ON_FAILURE)
+
+WebUI.click(findTestObject('Mes rapports Obj/SELECTION/Travailleur/testEsc'), FailureHandling.STOP_ON_FAILURE)
 
 /*def inputWorkerEsc = WebUI.modifyObjectProperty(findTestObject('Mes rapports Obj/SELECTION/Travailleur/testEsc'), 'id', 
     'contains', 's2id_autogen', true)

@@ -53,6 +53,8 @@ WebUI.callTestCase(findTestCase('Mes rapports/TC Verify the next button arrow'),
 
 WebUiBuiltInKeywords.waitForPageLoad(10)
 
+WebUI.waitForElementClickable(findTestObject('Mes rapports Obj/EXECUTION/Button executer'), 5)
+
 WebUI.click(findTestObject('Mes rapports Obj/EXECUTION/Button executer'))
 
 WebUiBuiltInKeywords.waitForPageLoad(10)
@@ -83,3 +85,4 @@ not_run: WebUI.click(findTestObject('Page_eBlox Reporting/button_Vers Mes rappor
 not_run: WebUI.click(findTestObject('Page_eBlox Reporting/select_FolderName'))
 
 WebUI.closeBrowser()
+

@@ -33,9 +33,11 @@ WebUI.setText(findTestObject('Mes rapports Obj/input search filter'), 'TEST 2 MA
 
 WebUI.click(findTestObject('Page_eBlox Reporting/Search_Icon'))
 
-WebUI.delay(2)
+def myTestObject = new TestObject('Select_report')
 
-WebUI.click(findTestObject('Mes rapports Obj/select report'))
+myTestObject.addProperty('xpath', ConditionType.EQUALS, '//a[@class=\'hide-on-hover\']//span[@text=\'test 2 mau jan 2018 (sanjiv)\']')
+
+WebUI.click(myTestObject)
 
 WebUI.waitForPageLoad(10)
 

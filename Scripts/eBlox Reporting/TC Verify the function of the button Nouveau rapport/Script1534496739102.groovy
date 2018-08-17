@@ -18,27 +18,4 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUiBuiltInKeywords
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
-import javax.swing.JFrame
-import javax.swing.JOptionPane
-
-WebUI.openBrowser('')
-
-WebUI.navigateToUrl('https://internet.acc.sd.dika.be/ebloxreporting/web.sensitive/main/?lang=fr')
-
-WebUI.maximizeWindow()
-
-WebUI.setText(findTestObject('Page_mysdworx - Log in/input_Username'), 'DP_EBLOX_RPP_VASCO')
-
-JFrame frame = new JFrame("User Input Frame")
-frame.requestFocus()
-String pass = JOptionPane.showInputDialog(frame, "Enter the password from token!!")
-WebUI.delay(5)
-
-WebUI.setText(findTestObject('Page_mysdworx - Log in/input_Password'), pass)
-
-WebUI.click(findTestObject('Page_mysdworx - Log in/button_Se connecter'))
-
-WebUI.waitForPageLoad(10)
-
-not_run: WebUI.closeBrowser()
 

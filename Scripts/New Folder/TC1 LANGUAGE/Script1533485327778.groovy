@@ -98,11 +98,5 @@ WebUI.callTestCase(findTestCase('Menu- Comptages/TC4 Verify the creation of a ne
 
 WebUI.callTestCase(findTestCase('Menu- Comptages/TC7 Verify Sauvegarder button'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.setText(findTestObject('Mes rapports Obj/input search filter'), 'test to delete')
-
-WebUI.sendKeys(findTestObject('Mes rapports Obj/input search filter'), Keys.chord(Keys.ENTER))
-
-WebUiBuiltInKeywords.click(findTestObject('Comptages Obj/Delete Comptages'))
-
 WebUI.closeBrowser()
 
