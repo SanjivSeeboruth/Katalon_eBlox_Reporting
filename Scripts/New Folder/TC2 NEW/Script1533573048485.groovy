@@ -85,6 +85,12 @@ myTestObject.addProperty('xpath', ConditionType.EQUALS, '//div[@id=\'select2-dro
 
 WebUI.click(myTestObject)
 
+WebUI.doubleClick(findTestObject(inputWorker))
+
+/*def inputWorkerEsc = WebUI.modifyObjectProperty(findTestObject('Mes rapports Obj/SELECTION/Travailleur/testEsc'), 'id', 
+    'contains', 's2id_autogen', true)
+
+WebUI.click(inputWorkerEsc)*/
 WebUI.callTestCase(findTestCase('Mes rapports/Mes rapports - SELECTION/Verify if checkbox is unchecked/TC 1 Verify Contrats actifs checkbox  is un-checked'), 
     [:], FailureHandling.STOP_ON_FAILURE)
 
