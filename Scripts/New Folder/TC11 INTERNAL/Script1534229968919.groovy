@@ -77,16 +77,18 @@ WebUI.focus(findTestObject('Mes rapports Obj/PROPRIETES/Generalites - input name
 
 WebUI.setText(findTestObject('Mes rapports Obj/PROPRIETES/Generalites - input name'), 'TEST REG IPS 12.08.2018')
 
-WebUI.click(findTestObject('Page_eBlox Reporting/click_DropDown_Menu_arrow'))
+WebUI.waitForElementClickable(findTestObject('Mes rapports Obj/PROPRIETES/Generalities - Dossier dropdown'), 5)
 
-def Foldername = WebUI.modifyObjectProperty(findTestObject('Page_eBlox Reporting/input_Folder_Name'), 'id', 'contains', 
-    's2id_autogen', true)
+WebUI.click(findTestObject('Mes rapports Obj/PROPRIETES/Generalities - Dossier dropdown'))
 
-WebUI.setText(Foldername, 'TEST REG IPS DATUM')
+def Dossier = WebUI.modifyObjectProperty(findTestObject('Mes rapports Obj/PROPRIETES/Generalites - Input Dossier name'), 
+    'id', 'contains', 's2id_autogen', true)
+
+WebUI.setText(Dossier, 'TEST REG IPS DATUM')
 
 /*WebUI.setText(findTestObject('Page_eBlox Reporting/input_Folder_Name'), 'Sanjiv')*/
 /*WebUI.sendKeys(findTestObject('Page_eBlox Reporting/input_Folder_Name'), Keys.chord(Keys.ENTER))*/
-WebUI.sendKeys(Foldername, Keys.chord(Keys.ENTER))
+WebUI.sendKeys(Dossier, Keys.chord(Keys.ENTER))
 
 WebUI.click(findTestObject('Page_eBlox Reporting/button_Sauvegarder'))
 
