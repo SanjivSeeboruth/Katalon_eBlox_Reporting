@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value></value>
+         <value>//*[@id=&quot;s2id_autogen3&quot;]/a[count(. | //a[@href = 'javascript:void(0)' and @class = 'select2-choice']) = count(//a[@href = 'javascript:void(0)' and @class = 'select2-choice'])]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -35,7 +35,7 @@
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
-      <matchCondition>equals</matchCondition>
+      <matchCondition>contains</matchCondition>
       <name>xpath</name>
       <type>Main</type>
       <value>//*[@id=&quot;s2id_autogen3&quot;]/a</value>

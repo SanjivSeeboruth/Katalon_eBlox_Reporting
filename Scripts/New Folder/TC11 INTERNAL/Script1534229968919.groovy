@@ -77,18 +77,20 @@ WebUI.focus(findTestObject('Mes rapports Obj/PROPRIETES/Generalites - input name
 
 WebUI.setText(findTestObject('Mes rapports Obj/PROPRIETES/Generalites - input name'), 'TEST REG IPS 12.08.2018')
 
-WebUI.waitForElementClickable(findTestObject('Mes rapports Obj/PROPRIETES/Generalities - Dossier dropdown'), 5)
+def map = WebUI.modifyObjectProperty(findTestObject('Mes rapports Obj/PROPRIETES/Generalities - Dossier dropdown'),
+	'xpath', 'contains', '//*[@id="s2id_autogen17"]/a', true)
 
-WebUI.click(findTestObject('Mes rapports Obj/PROPRIETES/Generalities - Dossier dropdown'))
+WebUI.click(map)
 
 def Dossier = WebUI.modifyObjectProperty(findTestObject('Mes rapports Obj/PROPRIETES/Generalites - Input Dossier name'), 
     'id', 'contains', 's2id_autogen', true)
 
 WebUI.setText(Dossier, 'TEST REG IPS DATUM')
 
-/*WebUI.setText(findTestObject('Page_eBlox Reporting/input_Folder_Name'), 'Sanjiv')*/
-/*WebUI.sendKeys(findTestObject('Page_eBlox Reporting/input_Folder_Name'), Keys.chord(Keys.ENTER))*/
-WebUI.sendKeys(Dossier, Keys.chord(Keys.ENTER))
+def Dossier1 = WebUI.modifyObjectProperty(findTestObject('Mes rapports Obj/PROPRIETES/Generalites - Input Dossier name'),
+	'id', 'contains', 's2id_autogen', true)
+
+WebUI.sendKeys(Dossier1, Keys.chord(Keys.ENTER))
 
 WebUI.click(findTestObject('Page_eBlox Reporting/button_Sauvegarder'))
 
