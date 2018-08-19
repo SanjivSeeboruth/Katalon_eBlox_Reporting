@@ -150,11 +150,19 @@ WebUI.click(findTestObject('Mes rapports Obj/SELECTION/Travailleur/Page_eBlox Re
 
 WebUI.delay(2)
 
-WebUI.click(findTestObject('Mes rapports Obj/EXECUTION/Description _Date de reference historique'))
+def historic = WebUI.modifyObjectProperty(findTestObject('Mes rapports Obj/EXECUTION/Description _Date de reference historique'), 
+    'xpath', 'equals', '//*[@id="uitvoering-parameters"]/div/div[2]/div/div/table/tbody/tr[4]/td[2]/div/div/rapp-date-prompt/div/div/rapp-special-values/div/button', 
+    true)
+
+WebUI.click(historic)
 
 WebUI.delay(2)
 
-WebUI.click(findTestObject('Mes rapports Obj/EXECUTION/Description_Date de reference historique - Dernier jour mois precedent'))
+def historicType = new TestObject('Select_historic_Type')
+
+historicType.addProperty('xpath', ConditionType.EQUALS, '//span[contains(text(),\'Laatste dag vorige maand\')]')
+
+WebUI.click(historicType)
 
 WebUI.check(findTestObject('Mes rapports Obj/EXECUTION/HIstorique- checkbox'))
 
