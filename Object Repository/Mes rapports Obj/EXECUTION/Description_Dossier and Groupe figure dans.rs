@@ -11,7 +11,7 @@
       </entry>
       <entry>
          <key>BASIC</key>
-         <value>//div[@class='select2-container select2-container-multi ng-pristine ng-untouched ng-valid-required ng-invalid ng-invalid-select2-multi']//ul[@class='select2-choices']//li[@class='select2-search-field']//input[@class='select2-input'][count(. | //*[contains(@id, 's2id_autogen') and @class = 'select2-input' and @autocomplete = 'off' and @autocorrect = 'off' and @autocapitalize = 'off' and @spellcheck = 'false']) = count(//*[contains(@id, 's2id_autogen') and @class = 'select2-input' and @autocomplete = 'off' and @autocorrect = 'off' and @autocapitalize = 'off' and @spellcheck = 'false'])]</value>
+         <value>//*[@id=&quot;s2id_autogen113&quot;][count(. | //input[contains(@id, 's2id_autogen') and @class = 'select2-input' and @autocomplete = 'off' and @autocorrect = 'off' and @autocapitalize = 'off' and @spellcheck = 'false' and @type = 'text']) = count(//input[contains(@id, 's2id_autogen') and @class = 'select2-input' and @autocomplete = 'off' and @autocorrect = 'off' and @autocapitalize = 'off' and @spellcheck = 'false' and @type = 'text'])]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -35,7 +35,7 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//div[@class='select2-container select2-container-multi ng-pristine ng-untouched ng-valid-required ng-invalid ng-invalid-select2-multi']//ul[@class='select2-choices']//li[@class='select2-search-field']//input[@class='select2-input']</value>
+      <value>//*[@id=&quot;s2id_autogen113&quot;]</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -64,5 +64,19 @@
       <name>spellcheck</name>
       <type>Main</type>
       <value>false</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>type</name>
+      <type>Main</type>
+      <value>text</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>input</value>
    </webElementProperties>
 </WebElementEntity>
