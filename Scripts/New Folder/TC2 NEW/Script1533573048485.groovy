@@ -93,14 +93,6 @@ WebUI.click(myTestObject2)
 
 WebUI.click(findTestObject('Mes rapports Obj/SELECTION/Travailleur/Page_eBlox Reporting/New Test Object'))
 
-//0000041 - CHATEL MURIEL - 1AF0273 - ANTILOPE KARTONNAGE
-//WebUI.sendKeys(findTestObject('Mes rapports Obj/SELECTION/Travailleur/testEsc'), Keys.chord(Keys.ESCAPE))
-//WebUI.click(findTestObject('Mes rapports Obj/SELECTION/Travailleur/testEsc'), FailureHandling.STOP_ON_FAILURE)
-not_run: def inputWorkerEsc = WebUI.modifyObjectProperty(findTestObject('Mes rapports Obj/SELECTION/Travailleur/testEsc'), 
-    'id', 'contains', 's2id_autogen', true)
-
-not_run: WebUI.sendKeys(inputWorkerEsc, Keys.chord(Keys.CONTROL))
-
 WebUI.callTestCase(findTestCase('Mes rapports/Mes rapports - SELECTION/Verify if checkbox is unchecked/TC 1 Verify Contrats actifs checkbox  is un-checked'), 
     [:], FailureHandling.STOP_ON_FAILURE)
 
@@ -144,7 +136,14 @@ def myInputDossier1 = new TestObject('Select_dossier_by_name')
 
 myInputDossier1.addProperty('xpath', ConditionType.EQUALS, '//div[@id=\'select2-drop\']//ul[@class=\'select2-results\']//li[@role=\'presentation\']//div[contains(text(),\'1AA0221 - 01 - DRUKKERIJ ANTILOPE NV\')]')
 
-WebUI.focus(myInputDossier1)
+WebUI.click(myInputDossier1)
+
+def myInputDossier2 = new TestObject('Select_dossier_by_name')
+
+myInputDossier2.addProperty('xpath', ConditionType.EQUALS, '//div[@id=\'select2-drop\']//ul[@class=\'select2-results\']//li[@role=\'presentation\']//div[contains(text(),\'1AF0273 - 03 - ANTILOPE KARTONNAGE')
+
+WebUI.click(myInputDossier2)
+//1AF0273 - 03 - ANTILOPE KARTONNAGE
 
 WebUI.click(findTestObject('Mes rapports Obj/SELECTION/Travailleur/Page_eBlox Reporting/closetest'), FailureHandling.STOP_ON_FAILURE)
 
@@ -176,19 +175,17 @@ WebUI.click(findTestObject('Mes rapports Obj/EXECUTION/Button executer'))
 
 WebUI.waitForPageLoad(10)
 
+WebUI.waitForElementClickable(findTestObject('Mes rapports Obj/EXECUTION/Graphique button'), 10)
+
 WebUI.click(findTestObject('Mes rapports Obj/EXECUTION/Graphique button'))
 
 WebUI.waitForPageLoad(10)
 
-WebUI.click(findTestObject('Mes rapports Obj/EXECUTION/Montrer button'))
+WebUI.click(findTestObject('Mes rapports Obj/EXECUTION/Annuler button'))
 
-WebUI.verifyAlertPresent(10)
+WebUI.delay(2)
 
-WebUI.acceptAlert()
-
-WebUI.getAlertText()
-
-println(WebUI.getAlertText())
+WebUI.click(findTestObject('Mes rapports Obj/EXECUTION/Annuler nouveau rapport'))
 
 WebUI.closeBrowser()
 
