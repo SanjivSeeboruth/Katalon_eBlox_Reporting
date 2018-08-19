@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description>//*[@id=&quot;select2-drop&quot;]</description>
+   <name>closetest</name>
+   <tag></tag>
+   <elementGuidId>e4292b44-7320-457f-9513-17f8db759c00</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//*[@id=&quot;select2-drop-mask&quot;]</value>
+      </entry>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[@id=&quot;uitvoering-parameters&quot;]/div/div[2]/div/div/table/tbody/tr[3]/td[2]/div/div/div/div[count(. | //div[@class = 'select2-drop select2-drop-multi select2-display-none select2-drop-active' and @id = 'select2-drop']) = count(//div[@class = 'select2-drop select2-drop-multi select2-display-none select2-drop-active' and @id = 'select2-drop'])]</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>select2-drop select2-drop-multi select2-display-none select2-drop-active</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>div</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>id</name>
+      <type>Main</type>
+      <value>select2-drop</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//*[@id=&quot;uitvoering-parameters&quot;]/div/div[2]/div/div/table/tbody/tr[3]/td[2]/div/div/div/div</value>
+   </webElementProperties>
+</WebElementEntity>

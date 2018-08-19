@@ -91,6 +91,8 @@ myTestObject2.addProperty('xpath', ConditionType.EQUALS, '//div[@id=\'select2-dr
 
 WebUI.click(myTestObject2)
 
+WebUI.click(findTestObject('Mes rapports Obj/SELECTION/Travailleur/Page_eBlox Reporting/New Test Object'))
+
 //0000041 - CHATEL MURIEL - 1AF0273 - ANTILOPE KARTONNAGE
 //WebUI.sendKeys(findTestObject('Mes rapports Obj/SELECTION/Travailleur/testEsc'), Keys.chord(Keys.ESCAPE))
 //WebUI.click(findTestObject('Mes rapports Obj/SELECTION/Travailleur/testEsc'), FailureHandling.STOP_ON_FAILURE)
@@ -143,6 +145,10 @@ def myInputDossier1 = new TestObject('Select_dossier_by_name')
 myInputDossier1.addProperty('xpath', ConditionType.EQUALS, '//div[@id=\'select2-drop\']//ul[@class=\'select2-results\']//li[@role=\'presentation\']//div[contains(text(),\'1AA0221 - 01 - DRUKKERIJ ANTILOPE NV\')]')
 
 WebUI.focus(myInputDossier1)
+
+WebUI.click(findTestObject('Mes rapports Obj/SELECTION/Travailleur/Page_eBlox Reporting/closetest'), FailureHandling.STOP_ON_FAILURE)
+
+WebUI.delay(2)
 
 WebUI.click(findTestObject('Mes rapports Obj/EXECUTION/Description _Date de reference historique'))
 
