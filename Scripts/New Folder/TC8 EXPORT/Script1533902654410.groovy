@@ -38,7 +38,7 @@ WebUI.click(myTestObject)
 
 WebUI.waitForPageLoad(10)
 
-def definition = WebUI.modifyObjectProperty(findTestObject('Page_eBlox Rapportering/Definition'), 'xpath', 'equals', '/html/body/div[1]/div[2]/ui-view/div/div[1]/nav/div/ul[1]/li[4]/div/a[1]', 
+def definition = WebUI.modifyObjectProperty(findTestObject('Page_eBlox Rapportering/Definition'), 'xpath', 'equals', '//a[contains(text(),\'Definitie\')]', 
     true)
 
 WebUI.click(definition)
@@ -89,20 +89,21 @@ WebUI.click(findTestObject('Mes rapports Obj/EXECUTION/Button executer'))
 
 WebUI.waitForPageLoad(20)
 
-def export1 = WebUI.modifyObjectProperty(findTestObject('Mes rapports Obj/EXECUTION/Exporter button'), 'title', 'equals', 'Exporteer naar excel',
-	true)
+WebUI.delay(5)
+
+def export1 = WebUI.modifyObjectProperty(findTestObject('Mes rapports Obj/EXECUTION/Exporter button'), 'title', 'equals', 
+    'Exporteer naar excel', true)
 
 WebUI.click(export1)
 
 /*WebUI.waitForElementClickable(findTestObject('Mes rapports Obj/EXECUTION/Exporter button'), 5)
 
 WebUI.click(findTestObject('Mes rapports Obj/EXECUTION/Exporter button'))*/
-
 WebUI.waitForPageLoad(60)
 
 WebUI.waitForElementClickable(findTestObject('Page_eBlox Rapportering/Definition'), 5)
 
-def definition1 = WebUI.modifyObjectProperty(findTestObject('Page_eBlox Rapportering/Definition'), 'xpath', 'equals', '/html/body/div[1]/div[2]/ui-view/div/div[1]/nav/div/ul[1]/li[4]/div/a[1]', 
+def definition1 = WebUI.modifyObjectProperty(findTestObject('Page_eBlox Rapportering/Definition'), 'xpath', 'equals', '//a[contains(text(),\'Definitie\')]', 
     true)
 
 WebUI.click(definition1)
@@ -126,8 +127,8 @@ WebUI.click(findTestObject('Page_eBlox Rapportering/Execution tab'))
 
 WebUI.waitForPageLoad(10)
 
-def export2 = WebUI.modifyObjectProperty(findTestObject('Mes rapports Obj/EXECUTION/Exporter button'), 'title', 'equals', 'Exporteer naar excel',
-	true)
+def export2 = WebUI.modifyObjectProperty(findTestObject('Mes rapports Obj/EXECUTION/Exporter button'), 'title', 'equals', 
+    'Exporteer naar excel', true)
 
 WebUI.click(export2)
 
@@ -162,8 +163,8 @@ WebUI.click(findTestObject('Page_eBlox Rapportering/Execution tab'))
 
 WebUI.waitForPageLoad(10)
 
-def export3 = WebUI.modifyObjectProperty(findTestObject('Mes rapports Obj/EXECUTION/Exporter button'), 'title', 'equals', 'Exporteer naar excel',
-	true)
+def export3 = WebUI.modifyObjectProperty(findTestObject('Mes rapports Obj/EXECUTION/Exporter button'), 'title', 'equals', 
+    'Exporteer naar excel', true)
 
 WebUI.click(export3)
 

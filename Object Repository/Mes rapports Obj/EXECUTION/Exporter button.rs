@@ -6,18 +6,22 @@
    <elementGuidId>d8bd3ac3-deb5-42b3-9206-371be55e19b4</elementGuidId>
    <selectorCollection>
       <entry>
+         <key>XPATH</key>
+         <value>//button[@title='Exporteer naar excel']</value>
+      </entry>
+      <entry>
          <key>BASIC</key>
-         <value>//button[@title='Exporteer naar excel'][count(. | //button[@type = 'button' and @title = 'Exporteer naar excel' and @class = 'btn btn-default' and @ng-click = 'pagevm.downloadExcelFile(parametersvm.rapport,uitvoeringParametersForm)' and @ng-disabled = 'pagevm.processing || !(parametersvm.rapport.exportInhoud || parametersvm.rapport.exportDraaitabel || ((parametersvm.rapport.exportEigenGrafiek || parametersvm.rapport.sdSuggestieGebruiken) &amp;&amp;  !(parametersvm.rapport.kenmerken.historischUitvoeren &amp;&amp; parametersvm.rapport.kenmerken.aggregatiePeriode === 0)))']) = count(//button[@type = 'button' and @title = 'Exporteer naar excel' and @class = 'btn btn-default' and @ng-click = 'pagevm.downloadExcelFile(parametersvm.rapport,uitvoeringParametersForm)' and @ng-disabled = 'pagevm.processing || !(parametersvm.rapport.exportInhoud || parametersvm.rapport.exportDraaitabel || ((parametersvm.rapport.exportEigenGrafiek || parametersvm.rapport.sdSuggestieGebruiken) &amp;&amp;  !(parametersvm.rapport.kenmerken.historischUitvoeren &amp;&amp; parametersvm.rapport.kenmerken.aggregatiePeriode === 0)))'])]</value>
+         <value>//*[@id=&quot;parameters&quot;]/div/form/div[2]/div/div/div/ul/li[3]/div/button[1][count(. | //button[@type = 'button' and @title = 'Exporteer naar excel' and @class = 'btn btn-default' and @ng-click = 'pagevm.downloadExcelFile(parametersvm.rapport,uitvoeringParametersForm)' and @ng-disabled = 'pagevm.processing || !(parametersvm.rapport.exportInhoud || parametersvm.rapport.exportDraaitabel || ((parametersvm.rapport.exportEigenGrafiek || parametersvm.rapport.sdSuggestieGebruiken) &amp;&amp;  !(parametersvm.rapport.kenmerken.historischUitvoeren &amp;&amp; parametersvm.rapport.kenmerken.aggregatiePeriode === 0)))']) = count(//button[@type = 'button' and @title = 'Exporteer naar excel' and @class = 'btn btn-default' and @ng-click = 'pagevm.downloadExcelFile(parametersvm.rapport,uitvoeringParametersForm)' and @ng-disabled = 'pagevm.processing || !(parametersvm.rapport.exportInhoud || parametersvm.rapport.exportDraaitabel || ((parametersvm.rapport.exportEigenGrafiek || parametersvm.rapport.sdSuggestieGebruiken) &amp;&amp;  !(parametersvm.rapport.kenmerken.historischUitvoeren &amp;&amp; parametersvm.rapport.kenmerken.aggregatiePeriode === 0)))'])]</value>
       </entry>
    </selectorCollection>
-   <selectorMethod>BASIC</selectorMethod>
+   <selectorMethod>XPATH</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//button[@title='Exporteer naar excel']</value>
+      <value>//*[@id=&quot;parameters&quot;]/div/form/div[2]/div/div/div/ul/li[3]/div/button[1]</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
