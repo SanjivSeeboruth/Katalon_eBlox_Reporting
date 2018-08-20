@@ -10,7 +10,7 @@
       </entry>
       <entry>
          <key>BASIC</key>
-         <value>//*[@id=&quot;uitvoering-parameters&quot;]/div/div[2]/div/div/table/tbody/tr[4]/td[2]/div/div/rapp-date-prompt/div/div/rapp-special-values/div/button[count(. | //button[@type = 'button' and @class = 'btn pull-left btn-default rapp-selected-prompt-button dropdown-toggle ' and @data-toggle = 'dropdown' and @style = 'font-weight: normal; text-align: left; width: 100%;']) = count(//button[@type = 'button' and @class = 'btn pull-left btn-default rapp-selected-prompt-button dropdown-toggle ' and @data-toggle = 'dropdown' and @style = 'font-weight: normal; text-align: left; width: 100%;'])]</value>
+         <value>//*[@id=&quot;uitvoering-parameters&quot;]/div/div[2]/div/div/table/tbody/tr[2]/td[2]/div/div/rapp-date-prompt/div/div/rapp-special-values/div/button[count(. | //*[@type = 'button' and @class = 'btn pull-left btn-default rapp-selected-prompt-button dropdown-toggle ' and @data-toggle = 'dropdown' and @style = 'font-weight: normal; text-align: left; width: 100%;']) = count(//*[@type = 'button' and @class = 'btn pull-left btn-default rapp-selected-prompt-button dropdown-toggle ' and @data-toggle = 'dropdown' and @style = 'font-weight: normal; text-align: left; width: 100%;'])]</value>
       </entry>
       <entry>
          <key>CSS</key>
@@ -44,7 +44,7 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//*[@id=&quot;uitvoering-parameters&quot;]/div/div[2]/div/div/table/tbody/tr[4]/td[2]/div/div/rapp-date-prompt/div/div/rapp-special-values/div/button</value>
+      <value>//*[@id=&quot;uitvoering-parameters&quot;]/div/div[2]/div/div/table/tbody/tr[2]/td[2]/div/div/rapp-date-prompt/div/div/rapp-special-values/div/button</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -52,5 +52,12 @@
       <name>style</name>
       <type>Main</type>
       <value>font-weight: normal; text-align: left; width: 100%;</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>button</value>
    </webElementProperties>
 </WebElementEntity>

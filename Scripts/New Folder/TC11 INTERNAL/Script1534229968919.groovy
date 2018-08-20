@@ -12,6 +12,7 @@ import com.kms.katalon.core.testcase.TestCase as TestCase
 import com.kms.katalon.core.testcase.TestCaseFactory as TestCaseFactory
 import com.kms.katalon.core.testdata.TestData as TestData
 import com.kms.katalon.core.testdata.TestDataFactory as TestDataFactory
+import com.kms.katalon.core.testobject.ConditionType as ConditionType
 import com.kms.katalon.core.testobject.ObjectRepository as ObjectRepository
 import com.kms.katalon.core.testobject.TestObject as TestObject
 import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WSBuiltInKeywords
@@ -77,26 +78,47 @@ WebUI.focus(findTestObject('Mes rapports Obj/PROPRIETES/Generalites - input name
 
 WebUI.setText(findTestObject('Mes rapports Obj/PROPRIETES/Generalites - input name'), 'TEST REG IPS 12.08.2018')
 
-def map = WebUI.modifyObjectProperty(findTestObject('Mes rapports Obj/PROPRIETES/Generalities - Dossier dropdown'),
-	'xpath', 'contains', '//*[@id="s2id_autogen17"]/a', true)
+def map = WebUI.modifyObjectProperty(findTestObject('Mes rapports Obj/PROPRIETES/Generalities - Dossier dropdown'), 'xpath', 
+    'contains', '//*[@id="s2id_autogen17"]/a', true)
 
 WebUI.click(map)
 
-def Dossier = WebUI.modifyObjectProperty(findTestObject('Mes rapports Obj/PROPRIETES/Generalites - Input Dossier name'), 
-    'id', 'contains', 's2id_autogen', true)
+WebUI.delay(1)
 
-WebUI.setText(Dossier, 'TEST REG IPS DATUM')
+def mapName = new TestObject('Select_map_name')
 
-def Dossier1 = WebUI.modifyObjectProperty(findTestObject('Mes rapports Obj/PROPRIETES/Generalites - Input Dossier name'),
-	'id', 'contains', 's2id_autogen', true)
+mapName.addProperty('xpath', ConditionType.EQUALS, '//div[contains(text(),\'TEST REG IPS DATUM\')]')
 
-WebUI.sendKeys(Dossier1, Keys.chord(Keys.ENTER))
+WebUI.click(mapName)
 
-WebUI.click(findTestObject('Page_eBlox Reporting/button_Sauvegarder'))
+//div[contains(text(),'TEST REG IPS DATUM')]
+not_run: WebUI.click(findTestObject('Page_eBlox Reporting/button_Sauvegarder'))
+
+WebUiBuiltInKeywords.waitForPageLoad(10)
+
+WebUI.click(findTestObject('Admin Obj/Admin_tab'))
+
+WebUiBuiltInKeywords.click(findTestObject('Admin Obj/Concerns'))
+
+WebUiBuiltInKeywords.waitForPageLoad(10)
+
+def selectConcern = new TestObject('Select_concern_number')
+
+selectConcern.addProperty('xpath', ConditionType.EQUALS, '//a[@ui-sref=\'admin.concernInfo.detail({id:concern.concernNr})\']//span[contains(text(),\'00040\')]')
+
+WebUI.click(selectConcern)
+
+def userConcern = new TestObject('User_concern_number')
+
+userConcern.addProperty('xpath', ConditionType.EQUALS, '//li[@ng-repeat=\'user in concernDetailVm.concern.users\']//a[contains(text(),\'00040_02\')]')
+
+WebUI.click(userConcern)
+
+WebUiBuiltInKeywords.waitForPageLoad(10)
 
 not_run: WebUI.click(findTestObject('Page_eBlox Reporting/button_Vers Mes rapports'))
 
 not_run: WebUI.click(findTestObject('Page_eBlox Reporting/select_FolderName'))
 
-WebUI.closeBrowser()
+not_run: WebUI.closeBrowser()
 

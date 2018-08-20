@@ -43,9 +43,11 @@ WebUiBuiltInKeywords.waitForPageLoad(10)
 
 WebUI.delay(2)
 
-WebUI.waitForElementClickable(findTestObject('Mes rapports Obj/EXECUTION/Description _Date de reference historique'), 10)
+def historic = WebUI.modifyObjectProperty(findTestObject('Mes rapports Obj/EXECUTION/Description _Date de reference historique'), 
+    'xpath', 'contains', '//*[@id="uitvoering-parameters"]/div/div[2]/div/div/table/tbody/tr[2]/td[2]/div/div/rapp-date-prompt/div/div/rapp-special-values/div/button', 
+    true)
 
-WebUI.click(findTestObject('Mes rapports Obj/EXECUTION/Description _Date de reference historique'))
+WebUI.click(historic)
 
 WebUI.delay(2)
 
@@ -55,4 +57,7 @@ WebUI.click(findTestObject('Mes rapports Obj/EXECUTION/Button executer'))
 
 WebUI.waitForPageLoad(10)
 
+WebUI.delay(10)
+
 WebUI.closeBrowser()
+

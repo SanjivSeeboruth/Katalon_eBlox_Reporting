@@ -6,11 +6,15 @@
    <elementGuidId>f78ef1ad-ea7d-41ab-aae4-8fea8c97605b</elementGuidId>
    <selectorCollection>
       <entry>
+         <key>XPATH</key>
+         <value>//*[@id=&quot;wizard-page&quot;]/nav/div/ul[2]/li/div/button</value>
+      </entry>
+      <entry>
          <key>BASIC</key>
          <value>//*[@id=&quot;wizard-page&quot;]/nav/div/ul[2]/li/div/button[count(. | //button[@class = 'btn btn-primary navbar-btn rapp-complete-wizard-button ng-scope' and @ng-click = 'navvm.saveOpEindeWizard(opslaanButtonVm.rapport)']) = count(//button[@class = 'btn btn-primary navbar-btn rapp-complete-wizard-button ng-scope' and @ng-click = 'navvm.saveOpEindeWizard(opslaanButtonVm.rapport)'])]</value>
       </entry>
    </selectorCollection>
-   <selectorMethod>BASIC</selectorMethod>
+   <selectorMethod>XPATH</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
       <isSelected>true</isSelected>

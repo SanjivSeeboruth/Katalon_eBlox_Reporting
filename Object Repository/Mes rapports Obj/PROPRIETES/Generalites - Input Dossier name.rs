@@ -11,7 +11,7 @@
       </entry>
       <entry>
          <key>BASIC</key>
-         <value></value>
+         <value>//*[@id=&quot;s2id_autogen18_search&quot;][count(. | //input[@type = 'text' and @class = 'select2-input' and @role = 'combobox' and contains(@id, 's2id_autogen18_search')]) = count(//input[@type = 'text' and @class = 'select2-input' and @role = 'combobox' and contains(@id, 's2id_autogen18_search')])]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -53,7 +53,7 @@
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
-      <matchCondition>contains</matchCondition>
+      <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
       <value>//*[@id=&quot;s2id_autogen18_search&quot;]</value>
