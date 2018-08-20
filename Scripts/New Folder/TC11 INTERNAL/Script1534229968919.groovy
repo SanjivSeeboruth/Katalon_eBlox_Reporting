@@ -92,7 +92,13 @@ mapName.addProperty('xpath', ConditionType.EQUALS, '//div[contains(text(),\'TEST
 WebUI.click(mapName)
 
 //div[contains(text(),'TEST REG IPS DATUM')]
-not_run: WebUI.click(findTestObject('Page_eBlox Reporting/button_Sauvegarder'))
+//button[contains(text(),'Opslaan')]
+//not_run: WebUI.click(findTestObject('Page_eBlox Reporting/button_Sauvegarder'))
+
+def sauvegarder_Button = WebUI.modifyObjectProperty(findTestObject('Page_eBlox Reporting/button_Sauvegarder'), 'xpath',
+	'equals', '//button[contains(text(),\'Opslaan\')]', true)
+
+WebUI.click(sauvegarder_Button)
 
 WebUiBuiltInKeywords.waitForPageLoad(10)
 
