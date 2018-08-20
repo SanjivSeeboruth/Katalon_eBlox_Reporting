@@ -137,8 +137,7 @@ WebUI.waitForPageLoad(60)
 WebUI.waitForElementClickable(findTestObject('Page_eBlox Rapportering/Definition'), 5)
 
 //WebUI.click(findTestObject('Page_eBlox Rapportering/Definition'))
-def definition2 = WebUI.modifyObjectProperty(findTestObject('Page_eBlox Rapportering/Definition'), 'xpath', 'equals', '/html/body/div[1]/div[2]/ui-view/div/div[1]/nav/div/ul[1]/li[4]/div/a[1]', 
-    true)
+def definition2 = WebUI.modifyObjectProperty(findTestObject('Page_eBlox Rapportering/Definition'), 'xpath', 'equals', '//a[contains(text(),\'Definitie\')]', true)
 
 WebUI.click(definition2)
 
