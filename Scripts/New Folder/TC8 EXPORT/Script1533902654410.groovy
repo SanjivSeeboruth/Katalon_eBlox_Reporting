@@ -89,11 +89,16 @@ WebUI.click(findTestObject('Mes rapports Obj/EXECUTION/Button executer'))
 
 WebUI.waitForPageLoad(20)
 
-WebUI.waitForElementClickable(findTestObject('Mes rapports Obj/EXECUTION/Exporter button'), 5)
+def export1 = WebUI.modifyObjectProperty(findTestObject('Mes rapports Obj/EXECUTION/Exporter button'), 'title', 'equals', 'Exporteer naar excel',
+	true)
 
-WebUI.click(findTestObject('Mes rapports Obj/EXECUTION/Exporter button'))
+WebUI.click(export1)
 
-WebUI.waitForPageLoad(20)
+/*WebUI.waitForElementClickable(findTestObject('Mes rapports Obj/EXECUTION/Exporter button'), 5)
+
+WebUI.click(findTestObject('Mes rapports Obj/EXECUTION/Exporter button'))*/
+
+WebUI.waitForPageLoad(60)
 
 WebUI.waitForElementClickable(findTestObject('Page_eBlox Rapportering/Definition'), 5)
 
@@ -121,9 +126,12 @@ WebUI.click(findTestObject('Page_eBlox Rapportering/Execution tab'))
 
 WebUI.waitForPageLoad(10)
 
-WebUI.click(findTestObject('Mes rapports Obj/EXECUTION/Exporter button'))
+def export2 = WebUI.modifyObjectProperty(findTestObject('Mes rapports Obj/EXECUTION/Exporter button'), 'title', 'equals', 'Exporteer naar excel',
+	true)
 
-WebUI.waitForPageLoad(20)
+WebUI.click(export2)
+
+WebUI.waitForPageLoad(60)
 
 WebUI.waitForElementClickable(findTestObject('Page_eBlox Rapportering/Definition'), 5)
 
@@ -154,8 +162,12 @@ WebUI.click(findTestObject('Page_eBlox Rapportering/Execution tab'))
 
 WebUI.waitForPageLoad(10)
 
-WebUI.click(findTestObject('Mes rapports Obj/EXECUTION/Exporter button'))
+def export3 = WebUI.modifyObjectProperty(findTestObject('Mes rapports Obj/EXECUTION/Exporter button'), 'title', 'equals', 'Exporteer naar excel',
+	true)
 
-WebUI.waitForPageLoad(20)
+WebUI.click(export3)
+
+WebUI.waitForPageLoad(60)
 
 WebUI.closeBrowser()
+
