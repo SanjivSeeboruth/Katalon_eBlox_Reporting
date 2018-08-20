@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//*[@id=&quot;parameters&quot;]/div/form/div[2]/div/div/div/ul/li[3]/div/button[1][count(. | //button[@type = 'button']) = count(//button[@type = 'button'])]</value>
+         <value>//button[@title='Exporteer naar excel'][count(. | //button[@type = 'button' and @title = 'Exporteer naar excel' and @class = 'btn btn-default' and @ng-click = 'pagevm.downloadExcelFile(parametersvm.rapport,uitvoeringParametersForm)' and @ng-disabled = 'pagevm.processing || !(parametersvm.rapport.exportInhoud || parametersvm.rapport.exportDraaitabel || ((parametersvm.rapport.exportEigenGrafiek || parametersvm.rapport.sdSuggestieGebruiken) &amp;&amp;  !(parametersvm.rapport.kenmerken.historischUitvoeren &amp;&amp; parametersvm.rapport.kenmerken.aggregatiePeriode === 0)))']) = count(//button[@type = 'button' and @title = 'Exporteer naar excel' and @class = 'btn btn-default' and @ng-click = 'pagevm.downloadExcelFile(parametersvm.rapport,uitvoeringParametersForm)' and @ng-disabled = 'pagevm.processing || !(parametersvm.rapport.exportInhoud || parametersvm.rapport.exportDraaitabel || ((parametersvm.rapport.exportEigenGrafiek || parametersvm.rapport.sdSuggestieGebruiken) &amp;&amp;  !(parametersvm.rapport.kenmerken.historischUitvoeren &amp;&amp; parametersvm.rapport.kenmerken.aggregatiePeriode === 0)))'])]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,7 +17,7 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//*[@id=&quot;parameters&quot;]/div/form/div[2]/div/div/div/ul/li[3]/div/button[1]</value>
+      <value>//button[@title='Exporteer naar excel']</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>

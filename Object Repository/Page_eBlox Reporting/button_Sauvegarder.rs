@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//*[@id=&quot;wizard-page&quot;]/nav/div/ul[2]/li/div/button</value>
+         <value>//button[contains(text(),'Opslaan')]</value>
       </entry>
       <entry>
          <key>BASIC</key>
