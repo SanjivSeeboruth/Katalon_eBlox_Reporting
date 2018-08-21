@@ -12,7 +12,7 @@
       </entry>
       <entry>
          <key>BASIC</key>
-         <value>//*[@id=&quot;wizard-page&quot;]/nav/div/ul[2]/li/button[count(. | //button[@class = 'btn btn-default navbar-btn ']) = count(//button[@class = 'btn btn-default navbar-btn '])]</value>
+         <value>//*[@id=&quot;wizard-page&quot;]/nav/div/ul[2]/li/button[count(. | //button[@ng-click = 'navvm.gaNaarLijstZonderFormBehaviour()' and @class = 'btn btn-default navbar-btn ']) = count(//button[@ng-click = 'navvm.gaNaarLijstZonderFormBehaviour()' and @class = 'btn btn-default navbar-btn '])]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -32,7 +32,7 @@
       <value>button</value>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>false</isSelected>
+      <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>ng-click</name>
       <type>Main</type>

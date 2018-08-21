@@ -63,7 +63,11 @@ WebUI.click(findTestObject('Mes rapports Obj/EXECUTION/Annuler button'))
 
 WebUI.click(findTestObject('Page_mysdworx - Aanmelden/Terugkeren'))
 
+WebUI.waitForElementClickable(findTestObject('Mes rapports Obj/EXECUTION/Annuler button'), 10)
+
 WebUI.click(findTestObject('Mes rapports Obj/EXECUTION/Annuler button'))
+
+WebUI.waitForPageLoad(10)
 
 WebUI.click(findTestObject('Page_mysdworx - Aanmelden/niew rapport annuleren'))
 

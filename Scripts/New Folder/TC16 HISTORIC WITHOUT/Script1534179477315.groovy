@@ -34,9 +34,11 @@ WebUI.click(findTestObject('Page_eBlox Reporting/Search_Icon'))
 
 def myTestObject = new TestObject('Select_report')
 
-myTestObject.addProperty("xpath", ConditionType.EQUALS, "//span[@text=\'REG HIST GROEP\']")
+myTestObject.addProperty('xpath', ConditionType.EQUALS, '//span[@text=\'REG HIST GROEP\']')
 
 WebUI.click(myTestObject)
+
+WebUiBuiltInKeywords.waitForPageLoad(10)
 
 def inputDossier = WebUI.modifyObjectProperty(findTestObject('Mes rapports Obj/EXECUTION/Description_Dossier and Groupe figure dans'), 
     'id', 'contains', 's2id_autogen', true)
@@ -45,15 +47,14 @@ WebUI.click(inputDossier)
 
 def myDonneeCalculees = new TestObject('Select_donnee')
 
-myDonneeCalculees.addProperty("xpath", ConditionType.EQUALS,"//div[@id=\'select2-drop\']//ul[@class=\'select2-results\']//li[@role=\'presentation\']//div[contains(text(),\'(alle looncodes)\')]")
+myDonneeCalculees.addProperty('xpath', ConditionType.EQUALS, '//div[@id=\'select2-drop\']//ul[@class=\'select2-results\']//li[@role=\'presentation\']//div[contains(text(),\'(alle looncodes)\')]')
 
 WebUI.click(myDonneeCalculees)
 
-def inputDossier1 = WebUI.modifyObjectProperty(findTestObject('Mes rapports Obj/EXECUTION/Description_Dossier and Groupe figure dans'),
-	'id', 'contains', 's2id_autogen', true)
+def inputDossier1 = WebUI.modifyObjectProperty(findTestObject('Mes rapports Obj/EXECUTION/Description_Dossier and Groupe figure dans'), 
+    'id', 'contains', 's2id_autogen', true)
 
 //WebUI.click(inputDossier1)
-
 WebUI.sendKeys(inputDossier1, Keys.chord(Keys.ESCAPE))
 
 WebUI.click(findTestObject('Mes rapports Obj/EXECUTION/Button executer'))
@@ -61,3 +62,4 @@ WebUI.click(findTestObject('Mes rapports Obj/EXECUTION/Button executer'))
 WebUiBuiltInKeywords.waitForPageLoad(10)
 
 WebUI.closeBrowser()
+
