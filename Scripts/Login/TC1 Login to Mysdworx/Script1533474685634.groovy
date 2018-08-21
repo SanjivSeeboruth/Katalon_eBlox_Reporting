@@ -18,8 +18,8 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUiBuiltInKeywords
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
-import javax.swing.JFrame
-import javax.swing.JOptionPane
+import javax.swing.JFrame as JFrame
+import javax.swing.JOptionPane as JOptionPane
 
 WebUI.openBrowser('')
 
@@ -29,10 +29,13 @@ WebUI.maximizeWindow()
 
 WebUI.setText(findTestObject('Page_mysdworx - Log in/input_Username'), 'DP_EBLOX_RPP_VASCO')
 
-JFrame frame = new JFrame("User Input Frame")
+JFrame frame = new JFrame('User Input Frame')
+
 frame.requestFocus()
-String pass = JOptionPane.showInputDialog(frame, "Enter the password from token!!")
-WebUI.delay(5)
+
+String pass = JOptionPane.showInputDialog(frame, 'Enter the password from token!!')
+
+WebUI.delay(2)
 
 WebUI.setText(findTestObject('Page_mysdworx - Log in/input_Password'), pass)
 

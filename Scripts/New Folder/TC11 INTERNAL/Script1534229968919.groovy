@@ -94,13 +94,18 @@ WebUI.click(mapName)
 //div[contains(text(),'TEST REG IPS DATUM')]
 //button[contains(text(),'Opslaan')]
 //not_run: WebUI.click(findTestObject('Page_eBlox Reporting/button_Sauvegarder'))
-
-def sauvegarder_Button = WebUI.modifyObjectProperty(findTestObject('Page_eBlox Reporting/button_Sauvegarder'), 'xpath',
-	'equals', '//button[contains(text(),\'Opslaan\')]', true)
+def sauvegarder_Button = WebUI.modifyObjectProperty(findTestObject('Page_eBlox Reporting/button_Sauvegarder'), 'xpath', 
+    'equals', '//button[contains(text(),\'Opslaan\')]', true)
 
 WebUI.click(sauvegarder_Button)
 
 WebUiBuiltInKeywords.waitForPageLoad(10)
+
+WebUI.click(findTestObject('Mes rapports Obj/EXECUTION/Annuler nouveau rapport'))
+
+WebUiBuiltInKeywords.waitForPageLoad(10)
+
+WebUI.waitForElementClickable(findTestObject('Admin Obj/Admin_tab'), 10)
 
 WebUI.click(findTestObject('Admin Obj/Admin_tab'))
 

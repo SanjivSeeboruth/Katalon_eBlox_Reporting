@@ -41,6 +41,8 @@ WebUI.setText(findTestObject('Mes rapports Obj/BASE DE RAPPORT/Bibliotheque - dr
 
 WebUI.sendKeys(findTestObject('Mes rapports Obj/BASE DE RAPPORT/Bibliotheque - dropdowm input'), Keys.chord(Keys.ENTER))
 
+WebUI.delay(1)
+
 WebUI.callTestCase(findTestCase('Mes rapports/TC Verify the next button arrow'), [:], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.waitForPageLoad(10)
@@ -65,3 +67,4 @@ WebUI.callTestCase(findTestCase('Mes rapports/TC Verify the next button arrow'),
 WebUI.click(findTestObject('Mes rapports Obj/EXECUTION/Button executer'))
 
 WebUI.closeBrowser()
+

@@ -6,11 +6,15 @@
    <elementGuidId>57fc03c1-6b43-4e3d-b4a3-d3c1ac7f5eb6</elementGuidId>
    <selectorCollection>
       <entry>
+         <key>XPATH</key>
+         <value>/html/body/div[5]/div/div/div[3]/button[1]</value>
+      </entry>
+      <entry>
          <key>BASIC</key>
-         <value></value>
+         <value>/html/body/div[4]/div/div/div[3]/button[1][count(. | //button[@class = 'btn btn-primary' and @ng-click = 'wizardWarningVerlatenVm.ok()']) = count(//button[@class = 'btn btn-primary' and @ng-click = 'wizardWarningVerlatenVm.ok()'])]</value>
       </entry>
    </selectorCollection>
-   <selectorMethod>BASIC</selectorMethod>
+   <selectorMethod>XPATH</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
       <isSelected>true</isSelected>

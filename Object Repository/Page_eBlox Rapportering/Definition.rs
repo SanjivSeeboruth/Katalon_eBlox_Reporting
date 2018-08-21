@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>/html/body/div[1]/div[2]/ui-view/div/div[1]/nav/div/ul/li[4]/div/a[1]</value>
+         <value>//a[contains(text(),\'Definitie\')]</value>
       </entry>
       <entry>
          <key>BASIC</key>
