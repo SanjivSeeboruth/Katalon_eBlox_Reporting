@@ -38,7 +38,11 @@ REG_RUBRIEK.addProperty('xpath', ConditionType.EQUALS, '//a[@class=\'hide-on-hov
 
 WebUI.click(REG_RUBRIEK)
 
-def definition = WebUI.modifyObjectProperty(findTestObject('Page_eBlox Rapportering/Definition'), 'xpath', 'equals', '//a[contains(text(),\'Definitie\')]', 
+WebUiBuiltInKeywords.waitForPageLoad(10)
+
+WebUI.waitForElementClickable(findTestObject('Page_eBlox Rapportering/Definition'), 10)
+
+def definition = WebUI.modifyObjectProperty(findTestObject('Page_eBlox Rapportering/Definition'), 'xpath', 'contains', '//a[contains(text(),\'Definitie\')]', 
     true)
 
 WebUI.click(definition)
@@ -46,3 +50,4 @@ WebUI.click(definition)
 WebUI.click(findTestObject('Mes rapports Obj/EXECUTION/Button executer'))
 
 WebUI.closeBrowser()
+
