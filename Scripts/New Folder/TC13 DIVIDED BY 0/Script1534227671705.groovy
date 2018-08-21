@@ -40,22 +40,32 @@ WebUI.click(myTestObject)
 
 WebUiBuiltInKeywords.waitForPageLoad(10)
 
-WebUI.waitForElementClickable(findTestObject('Mes rapports Obj/EXECUTION/Ref historic - DOB'), 10)
+WebUI.delay(2)
 
-def historic = WebUI.modifyObjectProperty(findTestObject('Mes rapports Obj/EXECUTION/Ref historic - DOB'), 'xpath', 'contains', 
+WebUI.click(findTestObject('Mes rapports Obj/EXECUTION/Description _Date de reference historique'))
+
+WebUI.delay(2)
+
+WebUI.click(findTestObject('Mes rapports Obj/EXECUTION/Description_Date de reference historique - Dernier jour mois precedent'))
+
+WebUI.delay(5)
+
+/*WebUI.waitForElementPresent(findTestObject('Mes rapports Obj/EXECUTION/Ref historic - dropdown'), 10)
+
+WebUI.waitForElementClickable(findTestObject('Mes rapports Obj/EXECUTION/Ref historic - dropdown'), 10)
+
+def historic = WebUI.modifyObjectProperty(findTestObject('Mes rapports Obj/EXECUTION/Ref historic - dropdown'), 'xpath', 'contains', 
     '//*[@id="uitvoering-parameters"]/div/div[2]/div/div/table/tbody/tr[4]/td[2]/div/div/rapp-date-prompt/div/div/rapp-special-values/div/button', 
     true)
 
 WebUI.click(historic)
 
-WebUI.delay(2)
-
-def historicType = new TestObject('Select_historic_Type')
+WebUI.delay(2)*/
+/*def historicType = new TestObject('Select_historic_Type')
 
 historicType.addProperty('xpath', ConditionType.EQUALS, '//span[contains(text(),\'Laatste dag vorige maand\')]')
 
-WebUI.click(historicType)
-
+WebUI.click(historicType)*/
 WebUI.click(findTestObject('Mes rapports Obj/EXECUTION/Button executer'))
 
 WebUiBuiltInKeywords.waitForPageLoad(15)
@@ -66,11 +76,18 @@ WebUI.click(findTestObject('Mes rapports Obj/EXECUTION/Button executer'))
 
 WebUiBuiltInKeywords.waitForPageLoad(10)
 
-def historicFR = WebUI.modifyObjectProperty(findTestObject('Mes rapports Obj/EXECUTION/Ref historic - DOB'), 'xpath', 'equals', 
+WebUI.waitForElementPresent(findTestObject('Mes rapports Obj/EXECUTION/Ref historic - dropdown'), 10)
+
+WebUI.waitForElementPresent(findTestObject('Mes rapports Obj/EXECUTION/Ref historic - dropdown'), 10)
+
+/*def historicFR = WebUI.modifyObjectProperty(findTestObject('Mes rapports Obj/EXECUTION/Ref historic - dropdown'), 'xpath', 'contains', 
     '//*[@id="uitvoering-parameters"]/div/div[2]/div/div/table/tbody/tr[4]/td[2]/div/div/rapp-date-prompt/div/div/rapp-special-values/div/button', 
     true)
 
-WebUI.click(historicFR)
+WebUI.click(historicFR)*/
+WebUI.delay(2)
+
+WebUI.click(findTestObject('Mes rapports Obj/EXECUTION/Description _Date de reference historique'))
 
 WebUI.delay(2)
 
@@ -80,8 +97,12 @@ historicTypeFR.addProperty('xpath', ConditionType.EQUALS, '//span[contains(text(
 
 WebUI.click(historicTypeFR)
 
+WebUI.delay(5)
+
 WebUiBuiltInKeywords.waitForPageLoad(10)
 
-//Dernier jour mois precedent
-not_run: WebUI.closeBrowser()
+////*[@id="parameters"]/div/form/div[2]/div/div/div/ul/li[2]/button
+WebUI.click(findTestObject('Mes rapports Obj/EXECUTION/Button executer'))
+
+WebUI.closeBrowser()
 

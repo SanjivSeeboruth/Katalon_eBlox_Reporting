@@ -51,7 +51,7 @@ WebUI.callTestCase(findTestCase('Mes rapports/TC Verify the next button arrow'),
 
 WebUI.waitForPageLoad(10)
 
-WebUI.callTestCase(findTestCase('Mes rapports/Mes rapports - SELECTION/Verify if checkbox is unchecked/TC 1 Verify Contrats actifs checkbox  is un-checked'), 
+WebUI.callTestCase(findTestCase('Mes rapports/Mes rapports - SELECTION/Verify if checkbox is unchecked/TC 10 Deselect all checkbox'), 
     [:], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.callTestCase(findTestCase('Verify URL/TC Verify Url'), [:], FailureHandling.STOP_ON_FAILURE)
@@ -72,6 +72,14 @@ WebUI.click(findTestObject('Mes rapports Obj/EXECUTION/Description_Date de refer
 
 WebUI.click(findTestObject('Mes rapports Obj/EXECUTION/Exporter button'))
 
-WebUI.waitForPageLoad(10)
+WebUI.delay(5)
+
+def export = WebUI.modifyObjectProperty(findTestObject('Mes rapports Obj/EXECUTION/Exporter button'), 'title', 'equals', 
+    'Exporteer naar excel', true)
+
+WebUI.click(export)
+
+WebUI.waitForPageLoad(20)
 
 WebUI.closeBrowser()
+
