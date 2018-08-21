@@ -38,10 +38,13 @@ myTestObject.addProperty('xpath', ConditionType.EQUALS, '//span[@text=\'REG BEWE
 
 WebUI.click(myTestObject)
 
+WebUiBuiltInKeywords.waitForPageLoad(10)
 
-def historic = WebUI.modifyObjectProperty(findTestObject('Mes rapports Obj/EXECUTION/Description _Date de reference historique'),
-	'xpath', 'equals', '//*[@id="uitvoering-parameters"]/div/div[2]/div/div/table/tbody/tr[4]/td[2]/div/div/rapp-date-prompt/div/div/rapp-special-values/div/button',
-	true)
+WebUI.waitForElementClickable(findTestObject('Mes rapports Obj/EXECUTION/Ref historic - DOB'), 10)
+
+def historic = WebUI.modifyObjectProperty(findTestObject('Mes rapports Obj/EXECUTION/Ref historic - DOB'), 'xpath', 'contains', 
+    '//*[@id="uitvoering-parameters"]/div/div[2]/div/div/table/tbody/tr[4]/td[2]/div/div/rapp-date-prompt/div/div/rapp-special-values/div/button', 
+    true)
 
 WebUI.click(historic)
 
@@ -61,9 +64,11 @@ WebUI.callTestCase(findTestCase('Select Language/TC2 Verify FR Language'), [:], 
 
 WebUI.click(findTestObject('Mes rapports Obj/EXECUTION/Button executer'))
 
-def historicFR = WebUI.modifyObjectProperty(findTestObject('Mes rapports Obj/EXECUTION/Description _Date de reference historique'),
-	'xpath', 'equals', '//*[@id="uitvoering-parameters"]/div/div[2]/div/div/table/tbody/tr[4]/td[2]/div/div/rapp-date-prompt/div/div/rapp-special-values/div/button',
-	true)
+WebUiBuiltInKeywords.waitForPageLoad(10)
+
+def historicFR = WebUI.modifyObjectProperty(findTestObject('Mes rapports Obj/EXECUTION/Ref historic - DOB'), 'xpath', 'equals', 
+    '//*[@id="uitvoering-parameters"]/div/div[2]/div/div/table/tbody/tr[4]/td[2]/div/div/rapp-date-prompt/div/div/rapp-special-values/div/button', 
+    true)
 
 WebUI.click(historicFR)
 
@@ -71,11 +76,12 @@ WebUI.delay(2)
 
 def historicTypeFR = new TestObject('Select_historic_Type')
 
-historicTypeFR.addProperty('xpath', ConditionType.EQUALS, '//span[contains(text(),\'Dernier jour mois precedent\')]')
+historicTypeFR.addProperty('xpath', ConditionType.EQUALS, '//span[contains(text(),\'Dernier jour mois précédent\')]')
 
 WebUI.click(historicTypeFR)
 
 WebUiBuiltInKeywords.waitForPageLoad(10)
+
 //Dernier jour mois precedent
 not_run: WebUI.closeBrowser()
 
