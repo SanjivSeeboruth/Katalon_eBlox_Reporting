@@ -38,7 +38,10 @@ REG_RUBRIEK.addProperty('xpath', ConditionType.EQUALS, '//a[@class=\'hide-on-hov
 
 WebUI.click(REG_RUBRIEK)
 
-WebUI.click(findTestObject('Page_eBlox Rapportering/Definition'))
+def definition = WebUI.modifyObjectProperty(findTestObject('Page_eBlox Rapportering/Definition'), 'xpath', 'equals', '//a[contains(text(),\'Definitie\')]', 
+    true)
+
+WebUI.click(definition)
 
 WebUI.click(findTestObject('Mes rapports Obj/EXECUTION/Button executer'))
 
