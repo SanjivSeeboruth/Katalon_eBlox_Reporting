@@ -11,29 +11,19 @@ import com.kms.katalon.core.testcase.TestCase as TestCase
 import com.kms.katalon.core.testcase.TestCaseFactory as TestCaseFactory
 import com.kms.katalon.core.testdata.TestData as TestData
 import com.kms.katalon.core.testdata.TestDataFactory as TestDataFactory
+import com.kms.katalon.core.testobject.ConditionType
 import com.kms.katalon.core.testobject.ObjectRepository as ObjectRepository
 import com.kms.katalon.core.testobject.TestObject as TestObject
-import com.kms.katalon.core.util.KeywordUtil as KeywordUtil
 import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WSBuiltInKeywords
 import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUiBuiltInKeywords
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
-WebUI.waitForElementClickable(findTestObject('Change language link Obj/NL_language'), 50)
+WebUI.delay(2)
 
-//WebUI.verifyElementPresent('Change language link Obj/NL_language', 5, FailureHandling.STOP_ON_FAILURE)
+def myInputDossier = new TestObject('Select_dossier_by_name')
 
-boolean verify_NL_link = WebUI.verifyElementClickable(findTestObject('Change language link Obj/NL_language'))
+myInputDossier.addProperty('xpath', ConditionType.EQUALS, '//div[@id=\'select2-drop\']//ul[@class=\'select2-results\']//li[@role=\'presentation\']//div[contains(text(),\'1AS1462 - 02 - ADDAX COMMUNICATIONS NV\')]')
 
-if (verify_NL_link.equals(true)) {
-    KeywordUtil.markPassed("NL link is clickable !")
-}
-else{
-	KeywordUtil.markFailed("NL link is not clickable!!")
-}
-
-WebUI.click(findTestObject('Change language link Obj/NL_language'))
-
-WebUI.waitForPageLoad(10)
-
+WebUI.click(myInputDossier)

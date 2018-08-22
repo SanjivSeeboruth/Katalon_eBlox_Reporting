@@ -23,9 +23,9 @@ import internal.GlobalVariable as GlobalVariable
 
 TestData excelData = findTestData('Data Files/Data/testData')
 
-//TestObject dynamicObject = new TestObject().addProperty("xpath", ConditionType.EQUALS, xpath)
-//println(excelData.getRowNumbers())excelData.getRowNumbers()
-for (int i = 1; i <= 6; i++) {
+def no_Of_Rows = excelData.getRowNumbers()
+
+for (int i = 1; i <= no_Of_Rows; i++) {
     WebUI.setText(findTestObject('Mes rapports Obj/CONTENU/input_Contenu_Selecteur'), excelData.getValue('Name', i))
 	WebUI.delay(3)
     WebUI.click(findTestObject('Mes rapports Obj/CONTENU/Selecteur Obj NL/' + excelData.getValue('Object Name', i)))

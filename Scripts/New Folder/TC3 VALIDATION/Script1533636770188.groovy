@@ -94,5 +94,5 @@ WebUI.click(findTestObject('Mes rapports Obj/EXECUTION/Annuler nouveau rapport')
 
 WebUI.waitForPageLoad(25)
 
-WebUI.closeBrowser()
+not_run: WebUI.closeBrowser()
 

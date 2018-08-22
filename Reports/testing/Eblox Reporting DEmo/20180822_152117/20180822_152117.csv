@@ -1,0 +1,7 @@
+Suite/Test/Step Name,Browser,Description,Start time,End time,Duration,Status
+Eblox Reporting DEmo,Chrome 68.0.3440.106,,2018-08-22 15:21:19,2018-08-22 15:22:00,41.506s,FAILED
+,,,,,,
+Test Cases/New Folder/TC2 NEW,Chrome 68.0.3440.106,,2018-08-22 15:21:19,2018-08-22 15:22:00,40.551s,FAILED
+callTestCase,Chrome 68.0.3440.106,,2018-08-22 15:21:20,2018-08-22 15:21:44,24.834s,PASSED
+waitForPageLoad,Chrome 68.0.3440.106,,2018-08-22 15:21:44,2018-08-22 15:21:44,0.011s,PASSED
+callTestCase,Chrome 68.0.3440.106,,2018-08-22 15:21:44,2018-08-22 15:22:00,15.157s,FAILED
