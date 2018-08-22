@@ -89,4 +89,10 @@
       <isRun>true</isRun>
       <testCaseId>Test Cases/New Folder/TC11 INTERNAL</testCaseId>
    </testCaseLink>
+   <testCaseLink>
+      <guid>22e01fad-64bb-4a45-834c-9f36d8ae7f69</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/New Folder/TC8 EXPORT</testCaseId>
+   </testCaseLink>
 </TestSuiteEntity>
