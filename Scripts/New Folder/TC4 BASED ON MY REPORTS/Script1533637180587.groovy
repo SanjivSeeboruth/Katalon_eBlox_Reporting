@@ -51,6 +51,8 @@ WebUI.callTestCase(findTestCase('Mes rapports/TC Verify the next button arrow'),
 
 WebUI.waitForPageLoad(10)
 
+WebUI.delay(5)
+
 WebUI.callTestCase(findTestCase('Mes rapports/Mes rapports - SELECTION/Verify if checkbox is unchecked/TC 10 Deselect all checkbox'), 
     [:], FailureHandling.STOP_ON_FAILURE)
 

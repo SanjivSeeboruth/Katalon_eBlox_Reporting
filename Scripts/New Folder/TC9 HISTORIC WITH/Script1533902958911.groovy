@@ -46,9 +46,8 @@ WebUI.waitForPageLoad(10)
 def myDonneeCalculees1 = WebUI.modifyObjectProperty(findTestObject('Mes rapports Obj/EXECUTION/Berekende gegevens - looncode komt voor in'), 
     'id', 'contains', 's2id_autogen', true)
 
-def myDonneeCalculees2 = WebUI.modifyObjectProperty(findTestObject('Mes rapports Obj/EXECUTION/Berekende gegevens - looncode komt voor in'),
-	'id', 'contains', 's2id_autogen', true)
-
+def myDonneeCalculees2 = WebUI.modifyObjectProperty(findTestObject('Mes rapports Obj/EXECUTION/Berekende gegevens - looncode komt voor in'), 
+    'id', 'contains', 's2id_autogen', true)
 
 WebUI.click(myDonneeCalculees1)
 
@@ -58,8 +57,12 @@ myDonneeCalculees.addProperty('xpath', ConditionType.EQUALS, '//div[@id=\'select
 
 WebUI.click(myDonneeCalculees)
 
-WebUI.sendKeys(myDonneeCalculees2, Keys.chord(Keys.ESCAPE))
+//WebUI.sendKeys(myDonneeCalculees2, Keys.chord(Keys.ESCAPE))
+WebUI.click(findTestObject('Mes rapports Obj/SELECTION/Travailleur/Page_eBlox Reporting/New Test Object'))
 
 WebUI.click(findTestObject('Mes rapports Obj/EXECUTION/Button executer'))
 
+WebUI.delay(5)
+
 WebUI.closeBrowser()
+

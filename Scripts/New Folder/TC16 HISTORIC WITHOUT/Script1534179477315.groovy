@@ -40,7 +40,7 @@ WebUI.click(myTestObject)
 
 WebUiBuiltInKeywords.waitForPageLoad(10)
 
-def inputDossier = WebUI.modifyObjectProperty(findTestObject('Mes rapports Obj/EXECUTION/Description_Dossier and Groupe figure dans'), 
+def inputDossier = WebUI.modifyObjectProperty(findTestObject('Mes rapports Obj/EXECUTION/Donnees calculees - Le code salarial apparait dans'), 
     'id', 'contains', 's2id_autogen', true)
 
 WebUI.click(inputDossier)
@@ -51,15 +51,13 @@ myDonneeCalculees.addProperty('xpath', ConditionType.EQUALS, '//div[@id=\'select
 
 WebUI.click(myDonneeCalculees)
 
-def inputDossier1 = WebUI.modifyObjectProperty(findTestObject('Mes rapports Obj/EXECUTION/Description_Dossier and Groupe figure dans'), 
-    'id', 'contains', 's2id_autogen', true)
-
-//WebUI.click(inputDossier1)
-WebUI.sendKeys(inputDossier1, Keys.chord(Keys.ESCAPE))
+WebUI.click(findTestObject('Mes rapports Obj/SELECTION/Travailleur/Page_eBlox Reporting/New Test Object'))
 
 WebUI.click(findTestObject('Mes rapports Obj/EXECUTION/Button executer'))
 
 WebUiBuiltInKeywords.waitForPageLoad(10)
+
+WebUI.delay(10)
 
 WebUI.closeBrowser()
 

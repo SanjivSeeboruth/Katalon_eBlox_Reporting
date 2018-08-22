@@ -1,7 +1,6 @@
 import static com.kms.katalon.core.checkpoint.CheckpointFactory.findCheckpoint
 import static com.kms.katalon.core.testcase.TestCaseFactory.findTestCase
 import static com.kms.katalon.core.testdata.TestDataFactory.findTestData
-import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
 import com.kms.katalon.core.checkpoint.Checkpoint as Checkpoint
 import com.kms.katalon.core.checkpoint.CheckpointFactory as CheckpointFactory
 import com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords as MobileBuiltInKeywords
@@ -20,6 +19,8 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUiBuiltInKe
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.WebDriver as WebDriver
+//import org.openqa.selenium.chrome.ChromeDriveromeDriver
+import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
 
 WebUI.callTestCase(findTestCase('Login/TC1 Login to Mysdworx'), [:], FailureHandling.STOP_ON_FAILURE)
 
@@ -38,9 +39,15 @@ WebUI.waitForPageLoad(10)
 
 WebUI.callTestCase(findTestCase('Mes rapports/TC Verify the next button arrow'), [:], FailureHandling.STOP_ON_FAILURE)
 
+WebUI.waitForPageLoad(10)
+
 WebUI.verifyTextPresent('Gelieve minstens één kolom toe te voegen.', true)
 
+WebUI.waitForPageLoad(10)
+
 WebUI.callTestCase(findTestCase('Mes rapports/Mes rapports - CONTENU/TC Verify input field - Copy'), [:], FailureHandling.STOP_ON_FAILURE)
+
+WebUI.waitForPageLoad(10)
 
 WebUI.callTestCase(findTestCase('Mes rapports/TC Verify the next button arrow'), [:], FailureHandling.STOP_ON_FAILURE)
 
@@ -59,17 +66,31 @@ WebUI.click(findTestObject('Mes rapports Obj/EXECUTION/Button executer'))
 
 WebUI.verifyElementPresent(findTestObject('Mes rapports Obj/SELECTION/Active Contrat/exclamation icon'), 20)
 
+WebUI.waitForElementClickable(findTestObject('Mes rapports Obj/EXECUTION/Annuler button'), 10)
+
 WebUI.click(findTestObject('Mes rapports Obj/EXECUTION/Annuler button'))
 
+WebUI.focus(findTestObject('Mes rapports Obj/EXECUTION/Annuler Modal'))
+
 WebUI.click(findTestObject('Page_mysdworx - Aanmelden/Terugkeren'))
+
+WebUI.delay(2)
+
+WebUI.focus(findTestObject('Mes rapports Obj/EXECUTION/Annuler button'))
 
 WebUI.waitForElementClickable(findTestObject('Mes rapports Obj/EXECUTION/Annuler button'), 10)
 
 WebUI.click(findTestObject('Mes rapports Obj/EXECUTION/Annuler button'))
 
-WebUI.waitForPageLoad(10)
+WebUI.delay(2)
 
-WebUI.click(findTestObject('Page_mysdworx - Aanmelden/niew rapport annuleren'))
+WebUI.focus(findTestObject('Mes rapports Obj/EXECUTION/Annuler Modal'))
+
+WebUI.waitForElementClickable(findTestObject('Mes rapports Obj/EXECUTION/Annuler nouveau rapport'), 10)
+
+WebUI.click(findTestObject('Mes rapports Obj/EXECUTION/Annuler nouveau rapport'))
+
+WebUI.waitForPageLoad(25)
 
 WebUI.closeBrowser()
 

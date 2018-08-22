@@ -101,7 +101,7 @@ WebUI.click(sauvegarder_Button)
 
 WebUiBuiltInKeywords.waitForPageLoad(10)
 
-WebUI.click(findTestObject('Mes rapports Obj/EXECUTION/Annuler nouveau rapport'))
+not_run: WebUI.click(findTestObject('Mes rapports Obj/EXECUTION/Annuler nouveau rapport'))
 
 WebUiBuiltInKeywords.waitForPageLoad(10)
 
@@ -131,5 +131,5 @@ not_run: WebUI.click(findTestObject('Page_eBlox Reporting/button_Vers Mes rappor
 
 not_run: WebUI.click(findTestObject('Page_eBlox Reporting/select_FolderName'))
 
-not_run: WebUI.closeBrowser()
+WebUI.closeBrowser()
 

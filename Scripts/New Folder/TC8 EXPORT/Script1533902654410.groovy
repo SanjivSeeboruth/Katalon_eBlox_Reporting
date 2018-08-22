@@ -38,7 +38,7 @@ WebUI.click(myTestObject)
 
 WebUI.waitForPageLoad(10)
 
-def definition = WebUI.modifyObjectProperty(findTestObject('Page_eBlox Rapportering/Definition'), 'xpath', 'equals', '//a[contains(text(),\'Definitie\')]', 
+def definition = WebUI.modifyObjectProperty(findTestObject('Page_eBlox Rapportering/Definition'), 'xpath', 'contains', '//a[contains(text(),\'Definitie\')]', 
     true)
 
 WebUI.click(definition)
@@ -91,6 +91,8 @@ WebUI.waitForPageLoad(20)
 
 WebUI.delay(5)
 
+WebUI.waitForElementClickable(findTestObject('Mes rapports Obj/EXECUTION/Exporter button'), 5)
+
 def export1 = WebUI.modifyObjectProperty(findTestObject('Mes rapports Obj/EXECUTION/Exporter button'), 'title', 'equals', 
     'Exporteer naar excel', true)
 
@@ -103,7 +105,7 @@ WebUI.waitForPageLoad(60)
 
 WebUI.waitForElementClickable(findTestObject('Page_eBlox Rapportering/Definition'), 5)
 
-def definition1 = WebUI.modifyObjectProperty(findTestObject('Page_eBlox Rapportering/Definition'), 'xpath', 'equals', '//a[contains(text(),\'Definitie\')]', 
+def definition1 = WebUI.modifyObjectProperty(findTestObject('Page_eBlox Rapportering/Definition'), 'xpath', 'contains', '//li//div[@class=\'btn-group\']//a[contains(text(),\'Definitie\')]', 
     true)
 
 WebUI.click(definition1)
@@ -135,9 +137,9 @@ WebUI.click(export2)
 WebUI.waitForPageLoad(60)
 
 //WebUI.waitForElementClickable(findTestObject('Page_eBlox Rapportering/Definition'), 5)
-
 //WebUI.click(findTestObject('Page_eBlox Rapportering/Definition'))
-def definition2 = WebUI.modifyObjectProperty(findTestObject('Page_eBlox Rapportering/Definition'), 'xpath', 'equals', '//a[contains(text(),\'Definitie\')]', true)
+def definition2 = WebUI.modifyObjectProperty(findTestObject('Page_eBlox Rapportering/Definition'), 'xpath', 'equals', '//li//div[@class=\'btn-group\']//a[contains(text(),\'Definitie\')]', 
+    true)
 
 WebUI.click(definition2)
 

@@ -52,6 +52,8 @@ WebUI.callTestCase(findTestCase('Mes rapports/TC Verify the next button arrow'),
 
 WebUI.waitForPageLoad(10)
 
+WebUI.delay(2)
+
 WebUI.callTestCase(findTestCase('Mes rapports/Mes rapports - SELECTION/Verify if checkbox is checked/TC 2 VErify Dossier and Groupe checkBox  is checked'), 
     [:], FailureHandling.STOP_ON_FAILURE)
 
@@ -140,12 +142,13 @@ WebUI.click(myInputDossier1)
 
 def myInputDossier2 = new TestObject('Select_dossier_by_name')
 
-myInputDossier2.addProperty('xpath', ConditionType.EQUALS, '//div[@id=\'select2-drop\']//ul[@class=\'select2-results\']//li[@role=\'presentation\']//div[contains(text(),\'1AF0273 - 03 - ANTILOPE KARTONNAGE')
+myInputDossier2.addProperty('xpath', ConditionType.EQUALS, '//div[@id=\'select2-drop\']//ul[@class=\'select2-results\']//li[@role=\'presentation\']//div[contains(text(),\'1AF0273 - 03 - ANTILOPE KARTONNAGE\')]')
 
 WebUI.click(myInputDossier2)
-//1AF0273 - 03 - ANTILOPE KARTONNAGE
 
-WebUI.click(findTestObject('Mes rapports Obj/SELECTION/Travailleur/Page_eBlox Reporting/closetest'), FailureHandling.STOP_ON_FAILURE)
+//1AF0273 - 03 - ANTILOPE KARTONNAGE
+//WebUI.click(findTestObject('Mes rapports Obj/SELECTION/Travailleur/Page_eBlox Reporting/closetest'), FailureHandling.STOP_ON_FAILURE)
+WebUI.click(findTestObject('Mes rapports Obj/SELECTION/Travailleur/Page_eBlox Reporting/New Test Object'))
 
 WebUI.delay(2)
 
@@ -173,7 +176,9 @@ WebUI.callTestCase(findTestCase('Verify URL/TC Verify Url'), [:], FailureHandlin
 
 WebUI.click(findTestObject('Mes rapports Obj/EXECUTION/Button executer'))
 
-WebUI.waitForPageLoad(10)
+WebUI.delay(5)
+
+WebUI.waitForPageLoad(20)
 
 WebUI.waitForElementClickable(findTestObject('Mes rapports Obj/EXECUTION/Graphique button'), 10)
 
@@ -185,7 +190,11 @@ WebUI.click(findTestObject('Mes rapports Obj/EXECUTION/Annuler button'))
 
 WebUI.delay(2)
 
+WebUI.focus(findTestObject('Mes rapports Obj/EXECUTION/Annuler Modal'))
+
 WebUI.click(findTestObject('Mes rapports Obj/EXECUTION/Annuler nouveau rapport'))
+
+WebUI.waitForPageLoad(25)
 
 WebUI.closeBrowser()
 

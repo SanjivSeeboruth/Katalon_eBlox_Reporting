@@ -7,7 +7,8 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>/html/body/div[5]/div/div/div[3]/button[1]</value>
+         <value>//div[@class='modal fade  in']//div[@class='modal-dialog ']//div[@class='modal-content']//div[@class='modal-footer ng-scope']//button[contains(text(),'Nieuw rapport annuleren')]
+    </value>
       </entry>
       <entry>
          <key>BASIC</key>

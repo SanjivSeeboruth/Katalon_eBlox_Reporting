@@ -4,7 +4,7 @@
    <name>Demo</name>
    <tag></tag>
    <isRerun>false</isRerun>
-   <lastRun>2018-08-21T12:06:12</lastRun>
+   <lastRun>2018-08-21T17:08:03</lastRun>
    <mailRecipient></mailRecipient>
    <numberOfRerun>0</numberOfRerun>
    <pageLoadTimeout>30</pageLoadTimeout>
@@ -46,5 +46,47 @@
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/New Folder/TC17 ARGUMENT AGE</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>1645240d-820f-4230-99a6-a53e0ceb001d</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/New Folder/TC15 COLUMNS</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>85cbccfb-fd7d-4b6b-8767-f65c711565ad</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/New Folder/TC3 VALIDATION</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>77c5bbc4-429a-4169-a06f-12df328a6629</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/New Folder/TC9 HISTORIC WITH</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>4182fa1b-d985-4d03-9fc5-cc6e2cedffef</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/New Folder/TC2 NEW</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>f26a10bc-da3d-4482-96a6-6103404ed235</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/New Folder/TC16 HISTORIC WITHOUT</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>8ada80df-ab45-4a51-a379-862416c70222</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/New Folder/TC13 DIVIDED BY 0</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>76903b2b-d0fa-46af-bbe7-53b33d7dba13</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/New Folder/TC11 INTERNAL</testCaseId>
    </testCaseLink>
 </TestSuiteEntity>
