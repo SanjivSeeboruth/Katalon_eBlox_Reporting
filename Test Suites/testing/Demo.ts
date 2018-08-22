@@ -4,19 +4,13 @@
    <name>Demo</name>
    <tag></tag>
    <isRerun>false</isRerun>
-   <lastRun>2018-08-21T17:08:03</lastRun>
+   <lastRun>2018-08-22T09:57:56</lastRun>
    <mailRecipient></mailRecipient>
    <numberOfRerun>0</numberOfRerun>
    <pageLoadTimeout>30</pageLoadTimeout>
    <pageLoadTimeoutDefault>true</pageLoadTimeoutDefault>
    <rerunFailedTestCasesOnly>false</rerunFailedTestCasesOnly>
    <testSuiteGuid>1a88622e-b2e4-471b-9508-48bb5f07229b</testSuiteGuid>
-   <testCaseLink>
-      <guid>49d29288-af13-4a2b-9ba2-d52ee524ebaf</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/New Folder/TC1 LANGUAGE</testCaseId>
-   </testCaseLink>
    <testCaseLink>
       <guid>4182fa1b-d985-4d03-9fc5-cc6e2cedffef</guid>
       <isReuseDriver>false</isReuseDriver>
@@ -28,6 +22,12 @@
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/New Folder/TC3 VALIDATION</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>49d29288-af13-4a2b-9ba2-d52ee524ebaf</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/New Folder/TC1 LANGUAGE</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>25378ae3-9feb-4396-a73d-3ff4baaa20f4</guid>
@@ -52,12 +52,6 @@
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/New Folder/TC10 BASED ON THE LIBRARY</testCaseId>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>76903b2b-d0fa-46af-bbe7-53b33d7dba13</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/New Folder/TC11 INTERNAL</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>6b9cfd91-447b-4037-9339-e727c6ad2ddb</guid>
@@ -94,5 +88,11 @@
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/New Folder/TC17 ARGUMENT AGE</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>76903b2b-d0fa-46af-bbe7-53b33d7dba13</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/New Folder/TC11 INTERNAL</testCaseId>
    </testCaseLink>
 </TestSuiteEntity>

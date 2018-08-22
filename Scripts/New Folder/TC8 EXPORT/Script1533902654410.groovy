@@ -110,8 +110,6 @@ WebUI.waitForPageLoad(60)
 
 WebUI.waitForElementClickable(findTestObject('Page_eBlox Rapportering/Definition'), 15)
 
-WebUI.waitForElementClickable(findTestObject('Page_eBlox Rapportering/Definition'), 5)
-
 def definition1 = WebUI.modifyObjectProperty(findTestObject('Page_eBlox Rapportering/Definition'), 'xpath', 'contains', 
     '//li//div[@class=\'btn-group\']//a[contains(text(),\'Definitie\')]', true)
 
