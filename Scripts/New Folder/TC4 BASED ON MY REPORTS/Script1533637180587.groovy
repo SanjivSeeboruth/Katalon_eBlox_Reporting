@@ -72,14 +72,12 @@ WebUI.delay(2)
 
 WebUI.click(findTestObject('Mes rapports Obj/EXECUTION/Description_Date de reference historique - Dernier jour mois precedent'))
 
-WebUI.click(findTestObject('Mes rapports Obj/EXECUTION/Exporter button'))
+WebUI.waitForElementClickable(findTestObject('Mes rapports Obj/EXECUTION/Exporter button'), 5)
 
-WebUI.delay(5)
-
-def export = WebUI.modifyObjectProperty(findTestObject('Mes rapports Obj/EXECUTION/Exporter button'), 'title', 'equals', 
+def export1 = WebUI.modifyObjectProperty(findTestObject('Mes rapports Obj/EXECUTION/Exporter button'), 'title', 'equals', 
     'Exporteer naar excel', true)
 
-WebUI.click(export)
+WebUI.click(export1)
 
 WebUI.waitForPageLoad(20)
 

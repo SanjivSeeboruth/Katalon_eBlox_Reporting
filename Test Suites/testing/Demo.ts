@@ -4,7 +4,7 @@
    <name>Demo</name>
    <tag></tag>
    <isRerun>false</isRerun>
-   <lastRun>2018-08-22T09:57:56</lastRun>
+   <lastRun>2018-08-22T11:01:53</lastRun>
    <mailRecipient></mailRecipient>
    <numberOfRerun>0</numberOfRerun>
    <pageLoadTimeout>30</pageLoadTimeout>
@@ -94,5 +94,11 @@
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/New Folder/TC11 INTERNAL</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>5aa4dcfa-2893-4159-926f-de9621effbc2</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/New Folder/TC5 BASIC</testCaseId>
    </testCaseLink>
 </TestSuiteEntity>

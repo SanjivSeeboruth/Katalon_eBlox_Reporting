@@ -113,11 +113,15 @@ WebUiBuiltInKeywords.click(findTestObject('Admin Obj/Concerns'))
 
 WebUiBuiltInKeywords.waitForPageLoad(10)
 
+WebUI.delay(2)
+
 def selectConcern = new TestObject('Select_concern_number')
 
 selectConcern.addProperty('xpath', ConditionType.EQUALS, '//a[@ui-sref=\'admin.concernInfo.detail({id:concern.concernNr})\']//span[contains(text(),\'00040\')]')
 
 WebUI.click(selectConcern)
+
+WebUI.delay(2)
 
 def userConcern = new TestObject('User_concern_number')
 
