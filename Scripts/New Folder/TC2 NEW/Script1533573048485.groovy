@@ -119,12 +119,14 @@ WebUI.callTestCase(findTestCase('Mes rapports/TC Verify the next button arrow'),
 
 WebUI.waitForPageLoad(10)
 
+WebUI.delay(2)
+
 def inputDossier = WebUI.modifyObjectProperty(findTestObject('Mes rapports Obj/EXECUTION/Description_Dossier and Groupe figure dans'), 
     'id', 'contains', 's2id_autogen', true)
 
-WebUI.delay(2, FailureHandling.STOP_ON_FAILURE)
-
 WebUI.click(inputDossier)
+
+WebUI.delay(2)
 
 def myInputDossier = new TestObject('Select_dossier_by_name')
 
