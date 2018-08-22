@@ -30,12 +30,6 @@
       <testCaseId>Test Cases/New Folder/TC1 LANGUAGE</testCaseId>
    </testCaseLink>
    <testCaseLink>
-      <guid>25378ae3-9feb-4396-a73d-3ff4baaa20f4</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/New Folder/TC4 BASED ON MY REPORTS</testCaseId>
-   </testCaseLink>
-   <testCaseLink>
       <guid>22e01fad-64bb-4a45-834c-9f36d8ae7f69</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
@@ -100,5 +94,11 @@
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/New Folder/TC5 BASIC</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>25378ae3-9feb-4396-a73d-3ff4baaa20f4</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/New Folder/TC4 BASED ON MY REPORTS</testCaseId>
    </testCaseLink>
 </TestSuiteEntity>
