@@ -44,6 +44,8 @@ WebUI.callTestCase(findTestCase('Mes rapports/TC Verify the next button arrow'),
 
 WebUI.waitForPageLoad(10)
 
+WebUI.delay(2)
+
 WebUI.callTestCase(findTestCase('Mes rapports/Mes rapports - CONTENU/TC Verify input field'), [:], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.callTestCase(findTestCase('Verify URL/TC Verify Url'), [:], FailureHandling.STOP_ON_FAILURE)

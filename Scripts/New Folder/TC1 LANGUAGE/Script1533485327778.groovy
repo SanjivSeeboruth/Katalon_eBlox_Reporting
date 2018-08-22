@@ -46,6 +46,8 @@ WebUI.callTestCase(findTestCase('Mes rapports/Main Page/TC Verify Url'), [:], Fa
 
 WebUI.waitForPageLoad(5)
 
+WebUI.delay(1)
+
 WebUI.callTestCase(findTestCase('Select Language/TC2 Verify FR Language'), [:], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.waitForPageLoad(5)

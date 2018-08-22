@@ -55,6 +55,8 @@ WebUI.waitForPageLoad(10)
 
 WebUI.verifyElementPresent(findTestObject('Mes rapports Obj/SELECTION/Active Contrat/exclamation icon'), 20)
 
+WebUI.delay(3)
+
 WebUI.callTestCase(findTestCase('Mes rapports/Mes rapports - SELECTION/Verify if checkbox is unchecked/TC 10 Deselect all checkbox'), 
     [:], FailureHandling.STOP_ON_FAILURE)
 

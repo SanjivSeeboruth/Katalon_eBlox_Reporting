@@ -51,6 +51,9 @@ WebUI.click(findTestObject('Page_eBlox Rapportering/Proprietes'))
 
 WebUI.waitForPageLoad(10)
 
+WebUI.waitForElementClickable(findTestObject('Page_eBlox Rapportering/Definition - Proprietes - Options d exportation/Contenu checkbox'), 
+    2)
+
 WebUI.verifyElementChecked(findTestObject('Page_eBlox Rapportering/Definition - Proprietes - Options d exportation/Contenu checkbox'), 
     2)
 
