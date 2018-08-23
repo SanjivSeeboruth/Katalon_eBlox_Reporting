@@ -7,11 +7,10 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value></value>
       </entry>
       <entry>
          <key>BASIC</key>
-         <value>//*[contains(@id, 's2id_autogen') and @class = 'select2-input' and @ref_element = 'Object Repository/Mes rapports Obj/SELECTION/Travailleur/Parent form' and @ref_element_is_shadow_root = 'true']</value>
+         <value>//div[@class='select2-container select2-container-multi ng-pristine ng-untouched ng-valid ng-scope']//ul[@class='select2-choices']//li[@class='select2-search-field']//input[@class='select2-input'][count(. | //*[contains(@id, 's2id_autogen') and @class = 'select2-input' and @type = 'text' and @autocomplete = 'off' and @autocorrect = 'off' and @autocapitalize = 'off']) = count(//*[contains(@id, 's2id_autogen') and @class = 'select2-input' and @type = 'text' and @autocomplete = 'off' and @autocorrect = 'off' and @autocapitalize = 'off'])]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
