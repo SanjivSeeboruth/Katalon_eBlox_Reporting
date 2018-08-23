@@ -19,30 +19,30 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUiBuiltInKe
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
-WebUI.callTestCase(findTestCase('Mes rapports/Mes rapports - SELECTION/Verify if checkbox is unchecked/TC 1 Verify Contrats actifs checkbox  is un-checked'), 
+WebUI.callTestCase(findTestCase('Sub Script/Navigation_Menu/Mes rapports/Mes rapports - SELECTION/Verify if checkbox is unchecked/TC 1 Verify Contrats actifs checkbox  is un-checked'), 
     [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.callTestCase(findTestCase('Mes rapports/Mes rapports - SELECTION/Verify if checkbox is unchecked/TC 2 VErify Dossier and Groupe checkBox  is un-checked'), 
+WebUI.callTestCase(findTestCase('Sub Script/Navigation_Menu/Mes rapports/Mes rapports - SELECTION/Verify if checkbox is unchecked/TC 2 VErify Dossier and Groupe checkBox  is un-checked'), 
     [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.callTestCase(findTestCase('Mes rapports/Mes rapports - SELECTION/Verify if checkbox is unchecked/TC 3 Verify Travailleur checkBox  is un-checked'), 
+WebUI.callTestCase(findTestCase('Sub Script/Navigation_Menu/Mes rapports/Mes rapports - SELECTION/Verify if checkbox is unchecked/TC 3 Verify Travailleur checkBox  is un-checked'), 
     [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.callTestCase(findTestCase('Mes rapports/Mes rapports - SELECTION/Verify if checkbox is unchecked/TC 4 Verify Departement checkBox  is un-checked'), 
+WebUI.callTestCase(findTestCase('Sub Script/Navigation_Menu/Mes rapports/Mes rapports - SELECTION/Verify if checkbox is unchecked/TC 4 Verify Departement checkBox  is un-checked'), 
     [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.callTestCase(findTestCase('Mes rapports/Mes rapports - SELECTION/Verify if checkbox is unchecked/TC 5 Verify Caractere juridique du contract checBox  is un-checked'), 
+WebUI.callTestCase(findTestCase('Sub Script/Navigation_Menu/Mes rapports/Mes rapports - SELECTION/Verify if checkbox is unchecked/TC 5 Verify Caractere juridique du contract checBox  is un-checked'), 
     [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.callTestCase(findTestCase('Mes rapports/Mes rapports - SELECTION/Verify if checkbox is unchecked/TC 6 Verify Pays de naissance checkBox  is un-checked'), 
+WebUI.callTestCase(findTestCase('Sub Script/Navigation_Menu/Mes rapports/Mes rapports - SELECTION/Verify if checkbox is unchecked/TC 6 Verify Pays de naissance checkBox  is un-checked'), 
     [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.callTestCase(findTestCase('Mes rapports/Mes rapports - SELECTION/Verify if checkbox is unchecked/TC 7 Verify Sexe checkBox  is un-checked'), 
+WebUI.callTestCase(findTestCase('Sub Script/Navigation_Menu/Mes rapports/Mes rapports - SELECTION/Verify if checkbox is unchecked/TC 7 Verify Sexe checkBox  is un-checked'), 
     [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.callTestCase(findTestCase('Mes rapports/Mes rapports - SELECTION/Verify if checkbox is unchecked/TC 8 Verify Mode de remuneration checkBox  is un-checked'), 
+WebUI.callTestCase(findTestCase('Sub Script/Navigation_Menu/Mes rapports/Mes rapports - SELECTION/Verify if checkbox is unchecked/TC 8 Verify Mode de remuneration checkBox  is un-checked'), 
     [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.callTestCase(findTestCase('Mes rapports/Mes rapports - SELECTION/Verify if checkbox is unchecked/TC 9 Verify Suspension checkBox  is un-checked'), 
+WebUI.callTestCase(findTestCase('Sub Script/Navigation_Menu/Mes rapports/Mes rapports - SELECTION/Verify if checkbox is unchecked/TC 9 Verify Suspension checkBox  is un-checked'), 
     [:], FailureHandling.STOP_ON_FAILURE)
 

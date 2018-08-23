@@ -24,7 +24,7 @@ WebUI.callTestCase(findTestCase('Login/TC1 Login to Mysdworx'), [:], FailureHand
 
 WebUI.callTestCase(findTestCase('Select Language/TC1 Verify NL language'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.callTestCase(findTestCase('Mes rapports/Main Page/TC Verify Mes rapports tab'), [:], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('Sub Script/Navigation_Menu/Mes rapports/Main Page/TC Verify Mes rapports tab'), [:], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.setText(findTestObject('Mes rapports Obj/input search filter'), 'REG EXPORT')
 

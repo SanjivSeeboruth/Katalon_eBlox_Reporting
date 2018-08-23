@@ -31,7 +31,7 @@ WebUI.callTestCase(findTestCase('Select Language/TC1 Verify NL language'), [:], 
 
 WebUI.waitForPageLoad(10)
 
-WebUI.callTestCase(findTestCase('Mes rapports/Main Page/TC Verify Mes rapports tab'), [:], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('Sub Script/Navigation_Menu/Mes rapports/Main Page/TC Verify Mes rapports tab'), [:], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.setText(findTestObject('Mes rapports Obj/input search filter'), 'TEST 2 MAU JAN 2018 (sanjiv)')
 
