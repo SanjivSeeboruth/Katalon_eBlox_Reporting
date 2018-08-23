@@ -33,4 +33,6 @@ for (int i = 1; i <= no_Of_Rows; i++) {
     WebUI.click(findTestObject('Mes rapports Obj/CONTENU/click_Remove_text'))
 }
 
+WebUI.waitForPageLoad(10)
+
 
