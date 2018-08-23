@@ -29,11 +29,16 @@ for (int i = 1; i <= no_Of_Rows; i++) {
     WebUI.setText(findTestObject('Mes rapports Obj/CONTENU/input_Contenu_Selecteur'), excelData.getValue('Name', i))
 
     WebUI.delay(3)
-
-    WebUI.click(findTestObject('Mes rapports Obj/CONTENU/Selecteur Obj NL/' + excelData.getValue('Object Name', i)))
-
+	
+	def selecteur = new TestObject('Choisir_selecteur')
+	
+	selecteur.addProperty('xpath', ConditionType.EQUALS, "//span[contains(text(),\'"+ excelData.getValue('Object Name', i) +"\')]")
+	
+	WebUI.click(selecteur)
+	
     WebUI.delay(3)
 
     WebUI.click(findTestObject('Mes rapports Obj/CONTENU/click_Remove_text'))
 }
+
 

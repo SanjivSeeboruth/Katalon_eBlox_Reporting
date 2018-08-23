@@ -9,6 +9,10 @@
          <key>XPATH</key>
          <value>//*[@id=&quot;wizard-page&quot;]/div[2]/div/div/div/div/div[1]/div[2]/div/div/form/div/div/div[2]/div/span/label/rapp-link-dropdown/div/ul/li[1]/a</value>
       </entry>
+      <entry>
+         <key>BASIC</key>
+         <value>//a[(text() = 'figure dans' or . = 'figure dans')]</value>
+      </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>

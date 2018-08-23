@@ -28,7 +28,7 @@ WebUI.callTestCase(findTestCase('Sub Script/Select Language/TC1 Verify NL langua
 
 WebUI.waitForPageLoad(10)
 
-WebUI.callTestCase(findTestCase('Sub Script/Navigation_Menu/Menu_Mes_rapports/Verify Nouveau rapport button'), [:], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('Sub Script/Navigation_Menu/Menu_Mes_rapports/TC Verify Nouveau rapport button'), [:], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.waitForPageLoad(10)
 

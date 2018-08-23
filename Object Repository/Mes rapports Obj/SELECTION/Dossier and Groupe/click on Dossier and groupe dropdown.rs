@@ -9,6 +9,16 @@
          <key>XPATH</key>
          <value>//*[@id=&quot;wizard-page&quot;]/div[2]/div/div/div/div/div[1]/div[2]/div/div/form/div/div/div[2]/div/span/label/rapp-link-dropdown/div/a/span/rapp-display-from-list/span</value>
       </entry>
+      <entry>
+         <key>BASIC</key>
+         <value>//a[(text() = '
+        
+            ne figure pas dans
+    ' or . = '
+        
+            ne figure pas dans
+    ')]</value>
+      </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>

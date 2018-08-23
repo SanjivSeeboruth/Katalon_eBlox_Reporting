@@ -13,13 +13,23 @@ import com.kms.katalon.core.testdata.TestData as TestData
 import com.kms.katalon.core.testdata.TestDataFactory as TestDataFactory
 import com.kms.katalon.core.testobject.ObjectRepository as ObjectRepository
 import com.kms.katalon.core.testobject.TestObject as TestObject
+import com.kms.katalon.core.util.KeywordUtil
 import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WSBuiltInKeywords
 import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUiBuiltInKeywords
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
-WebUI.click(findTestObject('Change language link Obj/FR_language'), FailureHandling.OPTIONAL)
+boolean verify_FR_link = WebUI.verifyElementClickable(findTestObject('Change language link Obj/FR_language'))
+
+if (verify_FR_link.equals(true)) {
+	KeywordUtil.markPassed("NL link is clickable !")
+}
+else{
+	KeywordUtil.markFailed("NL link is not clickable!!")
+}
+
+WebUI.click(findTestObject('Change language link Obj/FR_language'))
 
 WebUI.waitForPageLoad(10)
 

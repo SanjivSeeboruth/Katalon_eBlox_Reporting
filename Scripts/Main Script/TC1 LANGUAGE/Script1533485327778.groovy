@@ -23,66 +23,44 @@ import org.openqa.selenium.Keys as Keys
 'Login eBlox Reporting'
 WebUI.callTestCase(findTestCase('Login/TC1 Login to Mysdworx'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.waitForPageLoad(10)
-
 'Language is set to NL'
 WebUI.callTestCase(findTestCase('Sub Script/Select Language/TC1 Verify NL language'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.waitForPageLoad(5)
-
 WebUI.callTestCase(findTestCase('Sub Script/Navigation_Menu/Menu_Mes_rapports/TC Verify Mes rapports tab'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.waitForPageLoad(5)
+WebUI.callTestCase(findTestCase('Sub Script/Navigation_Menu/Menu_Mes_rapports/Main_Content/TC Verify Deployer function'), 
+    [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.callTestCase(findTestCase('Sub Script/Navigation_Menu/Menu_Mes_rapports/Main_Content/TC Verify Deployer function'), [:], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('Sub Script/Navigation_Menu/Menu_Mes_rapports/Main_Content/TC Verify Masquer function'), 
+    [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.waitForPageLoad(5)
-
-WebUI.callTestCase(findTestCase('Sub Script/Navigation_Menu/Menu_Mes_rapports/Main_Content/TC Verify Masquer function'), [:], FailureHandling.STOP_ON_FAILURE)
-
-WebUI.callTestCase(findTestCase('Sub Script/Navigation_Menu/Menu_Mes_rapports/Main_Content/TC Verify info icon function'), [:], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('Sub Script/Navigation_Menu/Menu_Mes_rapports/Main_Content/TC Verify info icon function'), 
+    [:], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.callTestCase(findTestCase('Sub Script/Navigation_Menu/Menu_Mes_rapports/Main_Content/TC Verify Url'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.waitForPageLoad(5)
-
-WebUI.delay(1)
-
 WebUI.callTestCase(findTestCase('Sub Script/Select Language/TC2 Verify FR Language'), [:], FailureHandling.STOP_ON_FAILURE)
-
-WebUI.waitForPageLoad(5)
 
 WebUI.callTestCase(findTestCase('Sub Script/Navigation_Menu/Menu_Mes_rapports/TC Verify Mes rapports tab'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.waitForPageLoad(5)
+WebUI.callTestCase(findTestCase('Sub Script/Navigation_Menu/Menu_Mes_rapports/Main_Content/TC Verify Deployer function'), 
+    [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.callTestCase(findTestCase('Sub Script/Navigation_Menu/Menu_Mes_rapports/Main_Content/TC Verify Deployer function'), [:], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('Sub Script/Navigation_Menu/Menu_Mes_rapports/Main_Content/TC Verify Masquer function'), 
+    [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.waitForPageLoad(5)
-
-WebUI.callTestCase(findTestCase('Sub Script/Navigation_Menu/Menu_Mes_rapports/Main_Content/TC Verify Masquer function'), [:], FailureHandling.STOP_ON_FAILURE)
-
-WebUI.callTestCase(findTestCase('Sub Script/Navigation_Menu/Menu_Mes_rapports/Main_Content/TC Verify info icon function'), [:], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('Sub Script/Navigation_Menu/Menu_Mes_rapports/Main_Content/TC Verify info icon function'), 
+    [:], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.callTestCase(findTestCase('Sub Script/Navigation_Menu/Menu_Mes_rapports/Main_Content/TC Verify Url'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.waitForPageLoad(5)
-
 WebUI.callTestCase(findTestCase('Sub Script/Select Language/TC2 Verify FR Language'), [:], FailureHandling.STOP_ON_FAILURE)
-
-WebUI.waitForPageLoad(5)
 
 WebUI.callTestCase(findTestCase('Sub Script/Select Language/TC1 Verify NL language'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.waitForPageLoad(5)
-
 WebUI.callTestCase(findTestCase('Sub Script/Navigation_Menu/Menu_Bibliotheque/TC Verify Bibliotheque tab'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.waitForPageLoad(5)
-
 WebUI.callTestCase(findTestCase('Sub Script/Navigation_Menu/Menu_Bibliotheque/TC1 Verify Deployer function'), [:], FailureHandling.STOP_ON_FAILURE)
-
-WebUI.waitForPageLoad(5)
 
 WebUI.callTestCase(findTestCase('Sub Script/Navigation_Menu/Menu_Bibliotheque/TC2 Verify Masquer function'), [:], FailureHandling.STOP_ON_FAILURE)
 
@@ -96,7 +74,8 @@ WebUI.callTestCase(findTestCase('Sub Script/Navigation_Menu/Menu_Comptages/TC2 V
 
 WebUI.callTestCase(findTestCase('Sub Script/Navigation_Menu/Menu_Comptages/TC3 Verify Montants Function'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.callTestCase(findTestCase('Sub Script/Navigation_Menu/Menu_Comptages/TC4 Verify the creation of a new Comptage'), [:], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('Sub Script/Navigation_Menu/Menu_Comptages/TC4 Verify the creation of a new Comptage'), 
+    [:], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.callTestCase(findTestCase('Sub Script/Navigation_Menu/Menu_Comptages/TC7 Verify Sauvegarder button'), [:], FailureHandling.STOP_ON_FAILURE)
 
