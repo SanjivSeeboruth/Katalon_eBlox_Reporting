@@ -15,6 +15,6 @@
       <guid>8d336146-86d2-4c72-aed3-be342c48da8e</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/New Folder/TC2 NEW</testCaseId>
+      <testCaseId>Test Cases/Main Script/TC2 NEW</testCaseId>
    </testCaseLink>
 </TestSuiteEntity>
