@@ -26,13 +26,13 @@ def no_Of_Rows = excelData.getRowNumbers()
 
 for (int i = 1; i <= no_Of_Rows; i++) {
 	
-	if(excelData.getValue('Historic Type', i)!=""){
+	if(excelData.getValue('Historic Period', i)!=""){
 		
-	def historicType = new TestObject('Select_historic_Type')
+	def historicPeriod = new TestObject('Select_historic_Period')
 	
-	historicType.addProperty('xpath', ConditionType.EQUALS, "//a//span[contains(text(),\'"+excelData.getValue('Historic Type', i)+"\')]")
+	historicPeriod.addProperty('xpath', ConditionType.EQUALS, "//a//span[contains(text(),\'"+excelData.getValue('Historic Period', i)+"\')]")
 	
-	WebUI.click(historicType)
+	WebUI.click(historicPeriod)
 	}
 	
 	else{
