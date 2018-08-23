@@ -26,21 +26,10 @@ def no_Of_Rows = excelData.getRowNumbers()
 
 for (int i = 1; i <= no_Of_Rows; i++) {
 	
-	if(excelData.getValue('Travailleur Name', i)!=""){
+	def historicType = new TestObject('Select_historic_Type')
 	
-	def Select_travailleur = new TestObject('Select_travailleur_by_name')
-
-	Select_travailleur.addProperty('xpath', ConditionType.EQUALS, "//div[@id=\'select2-drop\']//ul[@class=\'select2-results\']//li[@role=\'presentation\']//div[contains(text(),\'"+excelData.getValue('Travailleur Name', i) +"\')]")
+	historicType.addProperty('xpath', ConditionType.EQUALS, "'//span[contains(text(),\'"+excelData.getValue('Historic Type', i)+"\')]'")
 	
-	WebUI.click(Select_travailleur)
-
-	WebUI.delay(1)
+	WebUI.click(historicType)
 	
-	}
-	
-	else{
-		break
-	}
 }
-
-

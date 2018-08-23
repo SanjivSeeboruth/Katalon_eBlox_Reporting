@@ -26,6 +26,8 @@ def no_Of_Rows = excelData.getRowNumbers()
 
 for (int i = 1; i <= no_Of_Rows; i++) {
 	
+	if(excelData.getValue('Dossier & Groupe', i)!=""){
+		
 	def InputDossier = new TestObject('Select_dossier_by_name')
 
 	InputDossier.addProperty('xpath', ConditionType.EQUALS, "//div[@id=\'select2-drop\']//ul[@class=\'select2-results\']//li[@role=\'presentation\']//div[contains(text(),\'"+excelData.getValue('Dossier & Groupe', i)+"\')]")
@@ -33,4 +35,10 @@ for (int i = 1; i <= no_Of_Rows; i++) {
 	WebUI.click(InputDossier)
 
 	WebUI.delay(2)
+	
+	}
+	
+	else{
+		break
+	}
 }
