@@ -41,7 +41,7 @@ WebUI.setText(findTestObject('Page_mysdworx - Log in/input_Password'), pass)
 
 WebUI.click(findTestObject('Page_mysdworx - Log in/button_Se connecter'))
 
-WebUI.waitForPageLoad(10)
+WebUI.waitForPageLoad(GlobalVariable.TimeToWait)
 
 not_run: WebUI.closeBrowser()
 

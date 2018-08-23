@@ -5,4 +5,11 @@
    <tag></tag>
    <comment></comment>
    <testCaseGuid>688dbbfd-f506-45c8-8c38-853ecd203c14</testCaseGuid>
+   <variable>
+      <defaultValue>GlobalVariable.TimeToWait</defaultValue>
+      <description></description>
+      <id>91fff6ba-c910-4e34-9c2b-191b8bbf6aba</id>
+      <masked>false</masked>
+      <name>WaitPageToLoad</name>
+   </variable>
 </TestCaseEntity>

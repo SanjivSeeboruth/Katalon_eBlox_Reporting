@@ -27,12 +27,15 @@ def no_Of_Rows = excelData.getRowNumbers()
 
 for (int i = 1; i <= no_Of_Rows; i++) {
     WebUI.setText(findTestObject('Mes rapports Obj/CONTENU/input_Contenu_Selecteur'), excelData.getValue('Name', i))
-	WebUI.delay(3)
+
+    WebUI.delay(3)
+
     WebUI.click(findTestObject('Mes rapports Obj/CONTENU/Selecteur Obj NL/' + excelData.getValue('Object Name', i)))
-	WebUI.delay(3)
+
+    WebUI.delay(3)
+
     WebUI.click(findTestObject('Mes rapports Obj/CONTENU/click_Remove_text'))
 }
 
-WebUI.waitForPageLoad(10)
-
+WebUI.waitForPageLoad(GlobalVariable.null)
 
