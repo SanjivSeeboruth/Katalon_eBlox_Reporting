@@ -23,3 +23,5 @@ WebUI.click(findTestObject('Mes rapports Obj/button_setting_dropdown'))
 
 WebUI.click(findTestObject('Mes rapports Obj/a_Masquer tout'))
 
+WebUI.waitForPageLoad(10)
+

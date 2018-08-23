@@ -33,7 +33,7 @@ WebUI.callTestCase(findTestCase('Sub Script/Navigation_Menu/Menu_Mes_rapports/Ve
 
 WebUI.waitForPageLoad(10)
 
-WebUI.callTestCase(findTestCase('Sub Script/Navigation_Menu/Menu_Mes_rapports/Mes rapports - BASE DE RAPPORT/TC1  Verify radio button creer un tout nouveau rapport'), 
+WebUI.callTestCase(findTestCase('Sub Script/Navigation_Menu/Menu_Mes_rapports/Nouveau_Rapport/Mes rapports - BASE DE RAPPORT/TC1  Verify radio button creer un tout nouveau rapport'), 
     [:], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.callTestCase(findTestCase('Sub Script/Verify URL/TC Verify Url'), [:], FailureHandling.STOP_ON_FAILURE)
@@ -46,7 +46,7 @@ WebUI.waitForPageLoad(10)
 
 WebUI.delay(2)
 
-WebUI.callTestCase(findTestCase('Sub Script/Navigation_Menu/Menu_Mes_rapports/Mes rapports - CONTENU/TC Verify input field'), [:], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('Sub Script/Navigation_Menu/Menu_Mes_rapports/Nouveau_Rapport/Mes rapports - CONTENU/TC Verify input field'), [:], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.callTestCase(findTestCase('Sub Script/Verify URL/TC Verify Url'), [:], FailureHandling.STOP_ON_FAILURE)
 
@@ -56,7 +56,7 @@ WebUI.waitForPageLoad(10)
 
 WebUI.delay(2)
 
-WebUI.callTestCase(findTestCase('Sub Script/Navigation_Menu/Menu_Mes_rapports/Mes rapports - SELECTION/Verify if checkbox is checked/TC 2 VErify Dossier and Groupe checkBox  is checked'), 
+WebUI.callTestCase(findTestCase('Sub Script/Navigation_Menu/Menu_Mes_rapports/Nouveau_Rapport/Mes rapports - SELECTION/Verify if checkbox is checked/TC 2 VErify Dossier and Groupe checkBox  is checked'), 
     [:], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.click(findTestObject('Mes rapports Obj/SELECTION/Dossier and Groupe/click on Dossier and groupe dropdown'))
@@ -65,7 +65,7 @@ WebUI.delay(2)
 
 WebUI.click(findTestObject('Mes rapports Obj/SELECTION/Dossier and Groupe/figure dans'))
 
-WebUI.callTestCase(findTestCase('Sub Script/Navigation_Menu/Menu_Mes_rapports/Mes rapports - SELECTION/Verify if checkbox is checked/TC 3 Verify Travailleur checkBox  is checked'), 
+WebUI.callTestCase(findTestCase('Sub Script/Navigation_Menu/Menu_Mes_rapports/Nouveau_Rapport/Mes rapports - SELECTION/Verify if checkbox is checked/TC 3 Verify Travailleur checkBox  is checked'), 
     [:], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.click(findTestObject('Mes rapports Obj/SELECTION/Travailleur/Click on Travailleur dropdown'))

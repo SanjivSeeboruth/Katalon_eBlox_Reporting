@@ -21,3 +21,5 @@ import internal.GlobalVariable as GlobalVariable
 
 WebUI.click(findTestObject('Mes rapports Obj/info_Icon'))
 
+WebUI.waitForPageLoad(10)
+
