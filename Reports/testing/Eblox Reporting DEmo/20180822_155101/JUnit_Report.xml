@@ -1,0 +1,601 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Eblox Reporting DEmo" time="172" tests="0" failures="1" errors="0">
+   <testsuite name="Eblox Reporting DEmo" tests="0" failures="1" errors="0" time="172" timestamp="2018-08-22 15:51:04" hostname="SEEBORUTS - 5CG7062KWD.SD.DIKA.BE" id="Test Suites/testing/Eblox Reporting DEmo">
+      <properties>
+         <property name="deviceName" value=""/>
+         <property name="devicePlatform" value=""/>
+         <property name="logFolder" value="C:\\Users\\seeboruts\\OneDrive - SD Worx\\Desktop\\Katalon_eBlox_Reporting\\Reports\\testing\\Eblox Reporting DEmo\\20180822_155101"/>
+         <property name="logFiles" value="C:\\Users\\seeboruts\\OneDrive - SD Worx\\Desktop\\Katalon_eBlox_Reporting\\Reports\\testing\\Eblox Reporting DEmo\\20180822_155101\\execution0.log"/>
+         <property name="attachments" value="C:\\Users\\seeboruts\\OneDrive - SD Worx\\Desktop\\Katalon_eBlox_Reporting\\Reports\\testing\\Eblox Reporting DEmo\\20180822_155101\\1534938835717.png"/>
+         <property name="hostName" value="SEEBORUTS - 5CG7062KWD.SD.DIKA.BE"/>
+         <property name="os" value="Windows 10 64bit"/>
+         <property name="katalonVersion" value="5.6.0.1"/>
+         <property name="browser" value="Chrome 68.0.3440.106"/>
+         <property name="hostAddress" value="10.136.82.137"/>
+         <property name="sessionId" value="b0184e810653d729285b8af27fb3a26c"/>
+         <property name="seleniumVersion" value="3.7.1"/>
+         <property name="proxyInformation" value="ProxyInformation{proxyOption=NO_PROXY, proxyServerType=HTTP, password=, proxyServerAddress=, proxyServerPort=0}"/>
+         <property name="platform" value="Windows 10"/>
+      </properties>
+      <testcase name="Test Cases/New Folder/TC2 NEW" classname="Test Cases/New Folder/TC2 NEW" status="FAILED">
+         <failure type="FAILED" message="Unable to click on object 'Object Repository/Mes rapports Obj/EXECUTION/Description_Dossier and Groupe figure dans' (Root cause: com.kms.katalon.core.webui.exception.WebElementNotFoundException: Web element with id: 'Object Repository/Mes rapports Obj/EXECUTION/Description_Dossier and Groupe figure dans' located by 'By.xpath: //*[@id=&quot;s2id_autogen113&quot;][count(. | //input[contains(@id, 's2id_autogen') and @class = 'select2-input' and @autocomplete = 'off' and @autocorrect = 'off' and @autocapitalize = 'off' and @type = 'text']) = count(//input[contains(@id, 's2id_autogen') and @class = 'select2-input' and @autocomplete = 'off' and @autocorrect = 'off' and @autocapitalize = 'off' and @type = 'text'])]' not found)"/>
+         <system-out><![CDATA[2018-08-22 15:51:04 - [TEST_CASE][FAILED] - Test Cases/New Folder/TC2 NEW: Test Cases/New Folder/TC2 NEW FAILED because (of) Unable to click on object 'Object Repository/Mes rapports Obj/EXECUTION/Description_Dossier and Groupe figure dans' (Root cause: com.kms.katalon.core.webui.exception.WebElementNotFoundException: Web element with id: 'Object Repository/Mes rapports Obj/EXECUTION/Description_Dossier and Groupe figure dans' located by 'By.xpath: //*[@id="s2id_autogen113"][count(. | //input[contains(@id, 's2id_autogen') and @class = 'select2-input' and @autocomplete = 'off' and @autocorrect = 'off' and @autocapitalize = 'off' and @type = 'text']) = count(//input[contains(@id, 's2id_autogen') and @class = 'select2-input' and @autocomplete = 'off' and @autocorrect = 'off' and @autocapitalize = 'off' and @type = 'text'])]' not found)
+
+2018-08-22 15:51:04 - [TEST_STEP][PASSED] - callTestCase: Call Test Case 'Test Cases/Login/TC1 Login to Mysdworx' successfully
+
+2018-08-22 15:51:05 - [TEST_CASE][PASSED] - Test Cases/Login/TC1 Login to Mysdworx: Test Cases/Login/TC1 Login to Mysdworx
+
+2018-08-22 15:51:05 - [TEST_STEP][PASSED] - openBrowser: Browser is opened with url: ''
+
+2018-08-22 15:51:08 - [MESSAGE][PASSED] - Browser is opened with url: ''
+
+2018-08-22 15:51:08 - [TEST_STEP][PASSED] - navigateToUrl: Navigate to 'https://internet.acc.sd.dika.be/ebloxreporting/web.sensitive/main/?lang=fr' successfully
+
+2018-08-22 15:51:13 - [MESSAGE][PASSED] - Navigate to 'https://internet.acc.sd.dika.be/ebloxreporting/web.sensitive/main/?lang=fr' successfully
+
+2018-08-22 15:51:13 - [TEST_STEP][PASSED] - maximizeWindow: Current window maximized
+
+2018-08-22 15:51:15 - [MESSAGE][PASSED] - Current window maximized
+
+2018-08-22 15:51:15 - [TEST_STEP][PASSED] - setText: Text 'DP_EBLOX_RPP_VASCO' is set on object 'Object Repository/Page_mysdworx - Log in/input_Username'
+
+2018-08-22 15:51:23 - [MESSAGE][PASSED] - Text 'DP_EBLOX_RPP_VASCO' is set on object 'Object Repository/Page_mysdworx - Log in/input_Username'
+
+2018-08-22 15:51:23 - [TEST_STEP][PASSED] - Statement - frame = new javax.swing.JFrame(User Input Frame): null
+
+2018-08-22 15:51:23 - [TEST_STEP][PASSED] - Statement - frame.requestFocus(): null
+
+2018-08-22 15:51:23 - [TEST_STEP][PASSED] - Statement - pass = javax.swing.JOptionPane.showInputDialog(frame, "Enter the password from token!!"): null
+
+2018-08-22 15:51:27 - [TEST_STEP][PASSED] - delay: Delayed 2 second(s)
+
+2018-08-22 15:51:29 - [MESSAGE][PASSED] - Delayed 2 second(s)
+
+2018-08-22 15:51:29 - [TEST_STEP][PASSED] - setText: Text '938149' is set on object 'Object Repository/Page_mysdworx - Log in/input_Password'
+
+2018-08-22 15:51:29 - [MESSAGE][PASSED] - Text '938149' is set on object 'Object Repository/Page_mysdworx - Log in/input_Password'
+
+2018-08-22 15:51:29 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Page_mysdworx - Log in/button_Se connecter' is clicked on
+
+2018-08-22 15:51:29 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_mysdworx - Log in/button_Se connecter' is clicked on
+
+2018-08-22 15:51:29 - [TEST_STEP][PASSED] - waitForPageLoad: Wait for page load successfully
+
+2018-08-22 15:51:29 - [MESSAGE][PASSED] - Wait for page load successfully
+
+2018-08-22 15:51:29 - [TEST_STEP][NOT_RUN] - closeBrowser: NOT_RUN: closeBrowser
+
+2018-08-22 15:51:29 - [MESSAGE][NOT_RUN] - NOT_RUN: closeBrowser
+
+2018-08-22 15:51:29 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Login/TC1 Login to Mysdworx' successfully
+
+2018-08-22 15:51:29 - [TEST_STEP][PASSED] - waitForPageLoad: Wait for page load successfully
+
+2018-08-22 15:51:29 - [MESSAGE][PASSED] - Wait for page load successfully
+
+2018-08-22 15:51:29 - [TEST_STEP][PASSED] - callTestCase: Call Test Case 'Test Cases/Select Language/TC1 Verify NL language' successfully
+
+2018-08-22 15:51:29 - [TEST_CASE][PASSED] - Test Cases/Select Language/TC1 Verify NL language: Test Cases/Select Language/TC1 Verify NL language
+
+2018-08-22 15:51:29 - [TEST_STEP][PASSED] - waitForElementClickable: Object 'Object Repository/Change language link Obj/NL_language' is clickable
+
+2018-08-22 15:51:56 - [MESSAGE][PASSED] - Object 'Object Repository/Change language link Obj/NL_language' is clickable
+
+2018-08-22 15:51:56 - [TEST_STEP][PASSED] - Statement - verify_NL_link = com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.verifyElementClickable(com.kms.katalon.core.testobject.ObjectRepository.findTestObject(Change language link Obj/NL_language)): Object 'Object Repository/Change language link Obj/NL_language' is clickable
+
+2018-08-22 15:51:56 - [MESSAGE][PASSED] - Object 'Object Repository/Change language link Obj/NL_language' is clickable
+
+2018-08-22 15:51:56 - [TEST_STEP][PASSED] - Statement - If (verify_NL_link.equals(true)): NL link is clickable !
+
+2018-08-22 15:51:56 - [TEST_STEP][PASSED] - Statement - com.kms.katalon.core.util.KeywordUtil.markPassed("NL link is clickable !"): NL link is clickable !
+
+2018-08-22 15:51:56 - [MESSAGE][PASSED] - NL link is clickable !
+
+2018-08-22 15:51:56 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Change language link Obj/NL_language' is clicked on
+
+2018-08-22 15:52:05 - [MESSAGE][PASSED] - Object: 'Object Repository/Change language link Obj/NL_language' is clicked on
+
+2018-08-22 15:52:05 - [TEST_STEP][PASSED] - waitForPageLoad: Wait for page load successfully
+
+2018-08-22 15:52:05 - [MESSAGE][PASSED] - Wait for page load successfully
+
+2018-08-22 15:52:05 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Select Language/TC1 Verify NL language' successfully
+
+2018-08-22 15:52:05 - [TEST_STEP][PASSED] - waitForPageLoad: Wait for page load successfully
+
+2018-08-22 15:52:05 - [MESSAGE][PASSED] - Wait for page load successfully
+
+2018-08-22 15:52:05 - [TEST_STEP][PASSED] - callTestCase: Call Test Case 'Test Cases/Mes rapports/Verify Nouveau rapport button' successfully
+
+2018-08-22 15:52:05 - [TEST_CASE][PASSED] - Test Cases/Mes rapports/Verify Nouveau rapport button: Test Cases/Mes rapports/Verify Nouveau rapport button
+
+2018-08-22 15:52:05 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Mes rapports Obj/button_Nouveau rapport' is clicked on
+
+2018-08-22 15:52:09 - [MESSAGE][PASSED] - Object: 'Object Repository/Mes rapports Obj/button_Nouveau rapport' is clicked on
+
+2018-08-22 15:52:09 - [TEST_STEP][PASSED] - waitForPageLoad: Wait for page load successfully
+
+2018-08-22 15:52:09 - [MESSAGE][PASSED] - Wait for page load successfully
+
+2018-08-22 15:52:09 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Mes rapports/Verify Nouveau rapport button' successfully
+
+2018-08-22 15:52:09 - [TEST_STEP][PASSED] - waitForPageLoad: Wait for page load successfully
+
+2018-08-22 15:52:09 - [MESSAGE][PASSED] - Wait for page load successfully
+
+2018-08-22 15:52:09 - [TEST_STEP][PASSED] - callTestCase: Call Test Case 'Test Cases/Mes rapports/Mes rapports - BASE DE RAPPORT/TC1  Verify radio button creer un tout nouveau rapport' successfully
+
+2018-08-22 15:52:10 - [TEST_CASE][PASSED] - Test Cases/Mes rapports/Mes rapports - BASE DE RAPPORT/TC1  Verify radio button creer un tout nouveau rapport: Test Cases/Mes rapports/Mes rapports - BASE DE RAPPORT/TC1  Verify radio button creer un tout nouveau rapport
+
+2018-08-22 15:52:10 - [TEST_STEP][PASSED] - Statement - radioButton = com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.modifyObjectProperty(com.kms.katalon.core.testobject.ObjectRepository.findTestObject(Mes rapports Obj/BASE DE RAPPORT/radioButton_Creer un tout nouveau rapport), "name", "equals", "typeRapport", true): Modify property of object successfully
+
+2018-08-22 15:52:10 - [MESSAGE][PASSED] - Modify property of object successfully
+
+2018-08-22 15:52:10 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Mes rapports Obj/BASE DE RAPPORT/radioButton_Creer un tout nouveau rapport' is clicked on
+
+2018-08-22 15:52:11 - [MESSAGE][PASSED] - Object: 'Object Repository/Mes rapports Obj/BASE DE RAPPORT/radioButton_Creer un tout nouveau rapport' is clicked on
+
+2018-08-22 15:52:11 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Mes rapports/Mes rapports - BASE DE RAPPORT/TC1  Verify radio button creer un tout nouveau rapport' successfully
+
+2018-08-22 15:52:11 - [TEST_STEP][PASSED] - callTestCase: Call Test Case 'Test Cases/Verify URL/TC Verify Url' successfully
+
+2018-08-22 15:52:11 - [TEST_CASE][PASSED] - Test Cases/Verify URL/TC Verify Url: Test Cases/Verify URL/TC Verify Url
+
+2018-08-22 15:52:12 - [TEST_STEP][PASSED] - waitForPageLoad: Wait for page load successfully
+
+2018-08-22 15:52:12 - [MESSAGE][PASSED] - Wait for page load successfully
+
+2018-08-22 15:52:12 - [TEST_STEP][PASSED] - Statement - url = com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.getUrl(): Current window's url is: 'https://internet.acc.sd.dika.be/ebloxreporting/web.sensitive/main/FpyDF/iIz9g8MffKNXfNyb1H/NL/#/definitie/wizard/extern/start'
+
+2018-08-22 15:52:12 - [MESSAGE][PASSED] - Current window's url is: 'https://internet.acc.sd.dika.be/ebloxreporting/web.sensitive/main/FpyDF/iIz9g8MffKNXfNyb1H/NL/#/definitie/wizard/extern/start'
+
+2018-08-22 15:52:12 - [TEST_STEP][PASSED] - Statement - p = java.util.regex.Pattern.compile("00040 ANTILOPE GROEP"): null
+
+2018-08-22 15:52:12 - [TEST_STEP][PASSED] - Statement - m = p.matcher(url): null
+
+2018-08-22 15:52:12 - [TEST_STEP][PASSED] - Statement - If (m.find()): null
+
+2018-08-22 15:52:12 - [TEST_STEP][PASSED] - Statement - Else: The user name and the concern number are not present in the URL
+
+2018-08-22 15:52:12 - [TEST_STEP][PASSED] - Statement - com.kms.katalon.core.util.KeywordUtil.markPassed("The user name and the concern number are not present in the URL"): The user name and the concern number are not present in the URL
+
+2018-08-22 15:52:12 - [MESSAGE][PASSED] - The user name and the concern number are not present in the URL
+
+2018-08-22 15:52:12 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Verify URL/TC Verify Url' successfully
+
+2018-08-22 15:52:12 - [TEST_STEP][PASSED] - waitForPageLoad: Wait for page load successfully
+
+2018-08-22 15:52:12 - [MESSAGE][PASSED] - Wait for page load successfully
+
+2018-08-22 15:52:12 - [TEST_STEP][PASSED] - callTestCase: Call Test Case 'Test Cases/Mes rapports/TC Verify the next button arrow' successfully
+
+2018-08-22 15:52:12 - [TEST_CASE][PASSED] - Test Cases/Mes rapports/TC Verify the next button arrow: Test Cases/Mes rapports/TC Verify the next button arrow
+
+2018-08-22 15:52:12 - [TEST_STEP][PASSED] - waitForElementClickable: Object 'Object Repository/Mes rapports Obj/button_Next_Arrow' is clickable
+
+2018-08-22 15:52:12 - [MESSAGE][PASSED] - Object 'Object Repository/Mes rapports Obj/button_Next_Arrow' is clickable
+
+2018-08-22 15:52:12 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Mes rapports Obj/button_Next_Arrow' is clicked on
+
+2018-08-22 15:52:12 - [MESSAGE][PASSED] - Object: 'Object Repository/Mes rapports Obj/button_Next_Arrow' is clicked on
+
+2018-08-22 15:52:12 - [TEST_STEP][PASSED] - delay: Delayed 5 second(s)
+
+2018-08-22 15:52:17 - [MESSAGE][PASSED] - Delayed 5 second(s)
+
+2018-08-22 15:52:17 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Mes rapports/TC Verify the next button arrow' successfully
+
+2018-08-22 15:52:17 - [TEST_STEP][PASSED] - waitForPageLoad: Wait for page load successfully
+
+2018-08-22 15:52:17 - [MESSAGE][PASSED] - Wait for page load successfully
+
+2018-08-22 15:52:17 - [TEST_STEP][PASSED] - delay: Delayed 2 second(s)
+
+2018-08-22 15:52:19 - [MESSAGE][PASSED] - Delayed 2 second(s)
+
+2018-08-22 15:52:19 - [TEST_STEP][PASSED] - callTestCase: Call Test Case 'Test Cases/Mes rapports/Mes rapports - CONTENU/TC Verify input field' successfully
+
+2018-08-22 15:52:19 - [TEST_CASE][PASSED] - Test Cases/Mes rapports/Mes rapports - CONTENU/TC Verify input field: Test Cases/Mes rapports/Mes rapports - CONTENU/TC Verify input field
+
+2018-08-22 15:52:19 - [TEST_STEP][PASSED] - Statement - excelData = com.kms.katalon.core.testdata.TestDataFactory.findTestData(Data Files/Data/testData): Reading excel file with source file 'C:\Users\seeboruts\OneDrive - SD Worx\Desktop\test_DAta.xlsx' and sheet name 'New'
+
+2018-08-22 15:52:20 - [TEST_STEP][PASSED] - Statement - no_Of_Rows = excelData.getRowNumbers(): null
+
+2018-08-22 15:52:20 - [TEST_STEP][PASSED] - Statement - For ([i = 1, i <= no_Of_Rows, (i++)]): Object: 'Object Repository/Mes rapports Obj/CONTENU/click_Remove_text' is clicked on
+
+2018-08-22 15:52:20 - [TEST_STEP][PASSED] - setText: Text 'Naam werknemer' is set on object 'Object Repository/Mes rapports Obj/CONTENU/input_Contenu_Selecteur'
+
+2018-08-22 15:52:20 - [MESSAGE][PASSED] - Text 'Naam werknemer' is set on object 'Object Repository/Mes rapports Obj/CONTENU/input_Contenu_Selecteur'
+
+2018-08-22 15:52:20 - [TEST_STEP][PASSED] - delay: Delayed 3 second(s)
+
+2018-08-22 15:52:23 - [MESSAGE][PASSED] - Delayed 3 second(s)
+
+2018-08-22 15:52:23 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Mes rapports Obj/CONTENU/Selecteur Obj NL/Naam werknemer' is clicked on
+
+2018-08-22 15:52:24 - [MESSAGE][PASSED] - Object: 'Object Repository/Mes rapports Obj/CONTENU/Selecteur Obj NL/Naam werknemer' is clicked on
+
+2018-08-22 15:52:24 - [TEST_STEP][PASSED] - delay: Delayed 3 second(s)
+
+2018-08-22 15:52:27 - [MESSAGE][PASSED] - Delayed 3 second(s)
+
+2018-08-22 15:52:27 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Mes rapports Obj/CONTENU/click_Remove_text' is clicked on
+
+2018-08-22 15:52:27 - [MESSAGE][PASSED] - Object: 'Object Repository/Mes rapports Obj/CONTENU/click_Remove_text' is clicked on
+
+2018-08-22 15:52:27 - [TEST_STEP][PASSED] - setText: Text 'Afdeling ' is set on object 'Object Repository/Mes rapports Obj/CONTENU/input_Contenu_Selecteur'
+
+2018-08-22 15:52:27 - [MESSAGE][PASSED] - Text 'Afdeling ' is set on object 'Object Repository/Mes rapports Obj/CONTENU/input_Contenu_Selecteur'
+
+2018-08-22 15:52:27 - [TEST_STEP][PASSED] - delay: Delayed 3 second(s)
+
+2018-08-22 15:52:30 - [MESSAGE][PASSED] - Delayed 3 second(s)
+
+2018-08-22 15:52:30 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Mes rapports Obj/CONTENU/Selecteur Obj NL/Afdeling' is clicked on
+
+2018-08-22 15:52:30 - [MESSAGE][PASSED] - Object: 'Object Repository/Mes rapports Obj/CONTENU/Selecteur Obj NL/Afdeling' is clicked on
+
+2018-08-22 15:52:30 - [TEST_STEP][PASSED] - delay: Delayed 3 second(s)
+
+2018-08-22 15:52:33 - [MESSAGE][PASSED] - Delayed 3 second(s)
+
+2018-08-22 15:52:33 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Mes rapports Obj/CONTENU/click_Remove_text' is clicked on
+
+2018-08-22 15:52:33 - [MESSAGE][PASSED] - Object: 'Object Repository/Mes rapports Obj/CONTENU/click_Remove_text' is clicked on
+
+2018-08-22 15:52:33 - [TEST_STEP][PASSED] - setText: Text 'Datum in dienst' is set on object 'Object Repository/Mes rapports Obj/CONTENU/input_Contenu_Selecteur'
+
+2018-08-22 15:52:33 - [MESSAGE][PASSED] - Text 'Datum in dienst' is set on object 'Object Repository/Mes rapports Obj/CONTENU/input_Contenu_Selecteur'
+
+2018-08-22 15:52:33 - [TEST_STEP][PASSED] - delay: Delayed 3 second(s)
+
+2018-08-22 15:52:36 - [MESSAGE][PASSED] - Delayed 3 second(s)
+
+2018-08-22 15:52:36 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Mes rapports Obj/CONTENU/Selecteur Obj NL/Datum in dienst' is clicked on
+
+2018-08-22 15:52:37 - [MESSAGE][PASSED] - Object: 'Object Repository/Mes rapports Obj/CONTENU/Selecteur Obj NL/Datum in dienst' is clicked on
+
+2018-08-22 15:52:37 - [TEST_STEP][PASSED] - delay: Delayed 3 second(s)
+
+2018-08-22 15:52:40 - [MESSAGE][PASSED] - Delayed 3 second(s)
+
+2018-08-22 15:52:40 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Mes rapports Obj/CONTENU/click_Remove_text' is clicked on
+
+2018-08-22 15:52:40 - [MESSAGE][PASSED] - Object: 'Object Repository/Mes rapports Obj/CONTENU/click_Remove_text' is clicked on
+
+2018-08-22 15:52:40 - [TEST_STEP][PASSED] - setText: Text '0010 - gewerkte dag' is set on object 'Object Repository/Mes rapports Obj/CONTENU/input_Contenu_Selecteur'
+
+2018-08-22 15:52:40 - [MESSAGE][PASSED] - Text '0010 - gewerkte dag' is set on object 'Object Repository/Mes rapports Obj/CONTENU/input_Contenu_Selecteur'
+
+2018-08-22 15:52:40 - [TEST_STEP][PASSED] - delay: Delayed 3 second(s)
+
+2018-08-22 15:52:43 - [MESSAGE][PASSED] - Delayed 3 second(s)
+
+2018-08-22 15:52:43 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Mes rapports Obj/CONTENU/Selecteur Obj NL/0010 - gewerkte dag' is clicked on
+
+2018-08-22 15:52:43 - [MESSAGE][PASSED] - Object: 'Object Repository/Mes rapports Obj/CONTENU/Selecteur Obj NL/0010 - gewerkte dag' is clicked on
+
+2018-08-22 15:52:43 - [TEST_STEP][PASSED] - delay: Delayed 3 second(s)
+
+2018-08-22 15:52:46 - [MESSAGE][PASSED] - Delayed 3 second(s)
+
+2018-08-22 15:52:46 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Mes rapports Obj/CONTENU/click_Remove_text' is clicked on
+
+2018-08-22 15:52:46 - [MESSAGE][PASSED] - Object: 'Object Repository/Mes rapports Obj/CONTENU/click_Remove_text' is clicked on
+
+2018-08-22 15:52:46 - [TEST_STEP][PASSED] - setText: Text '1010 - prestaties' is set on object 'Object Repository/Mes rapports Obj/CONTENU/input_Contenu_Selecteur'
+
+2018-08-22 15:52:47 - [MESSAGE][PASSED] - Text '1010 - prestaties' is set on object 'Object Repository/Mes rapports Obj/CONTENU/input_Contenu_Selecteur'
+
+2018-08-22 15:52:47 - [TEST_STEP][PASSED] - delay: Delayed 3 second(s)
+
+2018-08-22 15:52:50 - [MESSAGE][PASSED] - Delayed 3 second(s)
+
+2018-08-22 15:52:50 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Mes rapports Obj/CONTENU/Selecteur Obj NL/1010 - prestaties' is clicked on
+
+2018-08-22 15:52:50 - [MESSAGE][PASSED] - Object: 'Object Repository/Mes rapports Obj/CONTENU/Selecteur Obj NL/1010 - prestaties' is clicked on
+
+2018-08-22 15:52:50 - [TEST_STEP][PASSED] - delay: Delayed 3 second(s)
+
+2018-08-22 15:52:53 - [MESSAGE][PASSED] - Delayed 3 second(s)
+
+2018-08-22 15:52:53 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Mes rapports Obj/CONTENU/click_Remove_text' is clicked on
+
+2018-08-22 15:52:53 - [MESSAGE][PASSED] - Object: 'Object Repository/Mes rapports Obj/CONTENU/click_Remove_text' is clicked on
+
+2018-08-22 15:52:53 - [TEST_STEP][PASSED] - setText: Text '7010 - aantal gewerkte uren' is set on object 'Object Repository/Mes rapports Obj/CONTENU/input_Contenu_Selecteur'
+
+2018-08-22 15:52:53 - [MESSAGE][PASSED] - Text '7010 - aantal gewerkte uren' is set on object 'Object Repository/Mes rapports Obj/CONTENU/input_Contenu_Selecteur'
+
+2018-08-22 15:52:53 - [TEST_STEP][PASSED] - delay: Delayed 3 second(s)
+
+2018-08-22 15:52:56 - [MESSAGE][PASSED] - Delayed 3 second(s)
+
+2018-08-22 15:52:56 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Mes rapports Obj/CONTENU/Selecteur Obj NL/7010 - aantal gewerkte uren' is clicked on
+
+2018-08-22 15:52:56 - [MESSAGE][PASSED] - Object: 'Object Repository/Mes rapports Obj/CONTENU/Selecteur Obj NL/7010 - aantal gewerkte uren' is clicked on
+
+2018-08-22 15:52:56 - [TEST_STEP][PASSED] - delay: Delayed 3 second(s)
+
+2018-08-22 15:52:59 - [MESSAGE][PASSED] - Delayed 3 second(s)
+
+2018-08-22 15:52:59 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Mes rapports Obj/CONTENU/click_Remove_text' is clicked on
+
+2018-08-22 15:53:00 - [MESSAGE][PASSED] - Object: 'Object Repository/Mes rapports Obj/CONTENU/click_Remove_text' is clicked on
+
+2018-08-22 15:53:00 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Mes rapports/Mes rapports - CONTENU/TC Verify input field' successfully
+
+2018-08-22 15:53:00 - [TEST_STEP][PASSED] - callTestCase: Call Test Case 'Test Cases/Verify URL/TC Verify Url' successfully
+
+2018-08-22 15:53:00 - [TEST_CASE][PASSED] - Test Cases/Verify URL/TC Verify Url: Test Cases/Verify URL/TC Verify Url
+
+2018-08-22 15:53:00 - [TEST_STEP][PASSED] - waitForPageLoad: Wait for page load successfully
+
+2018-08-22 15:53:00 - [MESSAGE][PASSED] - Wait for page load successfully
+
+2018-08-22 15:53:00 - [TEST_STEP][PASSED] - Statement - url = com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.getUrl(): Current window's url is: 'https://internet.acc.sd.dika.be/ebloxreporting/web.sensitive/main/FpyDF/iIz9g8MffKNXfNyb1H/NL/#/definitie/wizard/extern/index/28231/inhoud/323384/7'
+
+2018-08-22 15:53:00 - [MESSAGE][PASSED] - Current window's url is: 'https://internet.acc.sd.dika.be/ebloxreporting/web.sensitive/main/FpyDF/iIz9g8MffKNXfNyb1H/NL/#/definitie/wizard/extern/index/28231/inhoud/323384/7'
+
+2018-08-22 15:53:00 - [TEST_STEP][PASSED] - Statement - p = java.util.regex.Pattern.compile("00040 ANTILOPE GROEP"): null
+
+2018-08-22 15:53:00 - [TEST_STEP][PASSED] - Statement - m = p.matcher(url): null
+
+2018-08-22 15:53:00 - [TEST_STEP][PASSED] - Statement - If (m.find()): null
+
+2018-08-22 15:53:00 - [TEST_STEP][PASSED] - Statement - Else: The user name and the concern number are not present in the URL
+
+2018-08-22 15:53:00 - [TEST_STEP][PASSED] - Statement - com.kms.katalon.core.util.KeywordUtil.markPassed("The user name and the concern number are not present in the URL"): The user name and the concern number are not present in the URL
+
+2018-08-22 15:53:00 - [MESSAGE][PASSED] - The user name and the concern number are not present in the URL
+
+2018-08-22 15:53:00 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Verify URL/TC Verify Url' successfully
+
+2018-08-22 15:53:00 - [TEST_STEP][PASSED] - callTestCase: Call Test Case 'Test Cases/Mes rapports/TC Verify the next button arrow' successfully
+
+2018-08-22 15:53:00 - [TEST_CASE][PASSED] - Test Cases/Mes rapports/TC Verify the next button arrow: Test Cases/Mes rapports/TC Verify the next button arrow
+
+2018-08-22 15:53:00 - [TEST_STEP][PASSED] - waitForElementClickable: Object 'Object Repository/Mes rapports Obj/button_Next_Arrow' is clickable
+
+2018-08-22 15:53:00 - [MESSAGE][PASSED] - Object 'Object Repository/Mes rapports Obj/button_Next_Arrow' is clickable
+
+2018-08-22 15:53:00 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Mes rapports Obj/button_Next_Arrow' is clicked on
+
+2018-08-22 15:53:00 - [MESSAGE][PASSED] - Object: 'Object Repository/Mes rapports Obj/button_Next_Arrow' is clicked on
+
+2018-08-22 15:53:00 - [TEST_STEP][PASSED] - delay: Delayed 5 second(s)
+
+2018-08-22 15:53:05 - [MESSAGE][PASSED] - Delayed 5 second(s)
+
+2018-08-22 15:53:05 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Mes rapports/TC Verify the next button arrow' successfully
+
+2018-08-22 15:53:05 - [TEST_STEP][PASSED] - waitForPageLoad: Wait for page load successfully
+
+2018-08-22 15:53:05 - [MESSAGE][PASSED] - Wait for page load successfully
+
+2018-08-22 15:53:05 - [TEST_STEP][PASSED] - delay: Delayed 2 second(s)
+
+2018-08-22 15:53:07 - [MESSAGE][PASSED] - Delayed 2 second(s)
+
+2018-08-22 15:53:07 - [TEST_STEP][PASSED] - callTestCase: Call Test Case 'Test Cases/Mes rapports/Mes rapports - SELECTION/Verify if checkbox is checked/TC 2 VErify Dossier and Groupe checkBox  is checked' successfully
+
+2018-08-22 15:53:07 - [TEST_CASE][PASSED] - Test Cases/Mes rapports/Mes rapports - SELECTION/Verify if checkbox is checked/TC 2 VErify Dossier and Groupe checkBox  is checked: Test Cases/Mes rapports/Mes rapports - SELECTION/Verify if checkbox is checked/TC 2 VErify Dossier and Groupe checkBox  is checked
+
+2018-08-22 15:53:07 - [TEST_STEP][PASSED] - check: Object 'Object Repository/Mes rapports Obj/SELECTION/Dossier and Groupe checkbox' is checked
+
+2018-08-22 15:53:07 - [MESSAGE][PASSED] - Object 'Object Repository/Mes rapports Obj/SELECTION/Dossier and Groupe checkbox' is checked
+
+2018-08-22 15:53:07 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Mes rapports/Mes rapports - SELECTION/Verify if checkbox is checked/TC 2 VErify Dossier and Groupe checkBox  is checked' successfully
+
+2018-08-22 15:53:07 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Mes rapports Obj/SELECTION/Dossier and Groupe/click on Dossier and groupe dropdown' is clicked on
+
+2018-08-22 15:53:08 - [MESSAGE][PASSED] - Object: 'Object Repository/Mes rapports Obj/SELECTION/Dossier and Groupe/click on Dossier and groupe dropdown' is clicked on
+
+2018-08-22 15:53:08 - [TEST_STEP][PASSED] - delay: Delayed 2 second(s)
+
+2018-08-22 15:53:10 - [MESSAGE][PASSED] - Delayed 2 second(s)
+
+2018-08-22 15:53:10 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Mes rapports Obj/SELECTION/Dossier and Groupe/figure dans' is clicked on
+
+2018-08-22 15:53:10 - [MESSAGE][PASSED] - Object: 'Object Repository/Mes rapports Obj/SELECTION/Dossier and Groupe/figure dans' is clicked on
+
+2018-08-22 15:53:10 - [TEST_STEP][PASSED] - callTestCase: Call Test Case 'Test Cases/Mes rapports/Mes rapports - SELECTION/Verify if checkbox is checked/TC 3 Verify Travailleur checkBox  is checked' successfully
+
+2018-08-22 15:53:10 - [TEST_CASE][PASSED] - Test Cases/Mes rapports/Mes rapports - SELECTION/Verify if checkbox is checked/TC 3 Verify Travailleur checkBox  is checked: Test Cases/Mes rapports/Mes rapports - SELECTION/Verify if checkbox is checked/TC 3 Verify Travailleur checkBox  is checked
+
+2018-08-22 15:53:10 - [TEST_STEP][PASSED] - check: Object 'Object Repository/Mes rapports Obj/SELECTION/Travailleur checkbox' is checked
+
+2018-08-22 15:53:10 - [MESSAGE][PASSED] - Object 'Object Repository/Mes rapports Obj/SELECTION/Travailleur checkbox' is checked
+
+2018-08-22 15:53:10 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Mes rapports/Mes rapports - SELECTION/Verify if checkbox is checked/TC 3 Verify Travailleur checkBox  is checked' successfully
+
+2018-08-22 15:53:10 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Mes rapports Obj/SELECTION/Travailleur/Click on Travailleur dropdown' is clicked on
+
+2018-08-22 15:53:10 - [MESSAGE][PASSED] - Object: 'Object Repository/Mes rapports Obj/SELECTION/Travailleur/Click on Travailleur dropdown' is clicked on
+
+2018-08-22 15:53:10 - [TEST_STEP][PASSED] - delay: Delayed 2 second(s)
+
+2018-08-22 15:53:12 - [MESSAGE][PASSED] - Delayed 2 second(s)
+
+2018-08-22 15:53:12 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Mes rapports Obj/SELECTION/Travailleur/figure dans' is clicked on
+
+2018-08-22 15:53:12 - [MESSAGE][PASSED] - Object: 'Object Repository/Mes rapports Obj/SELECTION/Travailleur/figure dans' is clicked on
+
+2018-08-22 15:53:12 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Mes rapports Obj/SELECTION/Travailleur/Select option to choose travailleur' is clicked on
+
+2018-08-22 15:53:12 - [MESSAGE][PASSED] - Object: 'Object Repository/Mes rapports Obj/SELECTION/Travailleur/Select option to choose travailleur' is clicked on
+
+2018-08-22 15:53:12 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Mes rapports Obj/SELECTION/Travailleur/travail - list option' is clicked on
+
+2018-08-22 15:53:12 - [MESSAGE][PASSED] - Object: 'Object Repository/Mes rapports Obj/SELECTION/Travailleur/travail - list option' is clicked on
+
+2018-08-22 15:53:12 - [TEST_STEP][PASSED] - Statement - inputWorker = com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.modifyObjectProperty(com.kms.katalon.core.testobject.ObjectRepository.findTestObject(Mes rapports Obj/SELECTION/Travailleur/Input field for travailleur), "id", "contains", "s2id_autogen", true): Modify property of object successfully
+
+2018-08-22 15:53:12 - [MESSAGE][PASSED] - Modify property of object successfully
+
+2018-08-22 15:53:12 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Mes rapports Obj/SELECTION/Travailleur/Input field for travailleur' is clicked on
+
+2018-08-22 15:53:13 - [MESSAGE][PASSED] - Object: 'Object Repository/Mes rapports Obj/SELECTION/Travailleur/Input field for travailleur' is clicked on
+
+2018-08-22 15:53:13 - [TEST_STEP][PASSED] - Statement - travailleur1 = new com.kms.katalon.core.testobject.TestObject(Select_travailleur_by_name): null
+
+2018-08-22 15:53:13 - [TEST_STEP][PASSED] - Statement - travailleur1.addProperty("xpath", EQUALS, "//div[@id='select2-drop']//ul[@class='select2-results']//li[@role='presentation']//div[contains(text(),'0000013 - SIHAPAN GNA PHOUANGPHANH - 1AF0273 - ANTILOPE KARTONNAGE')]"): null
+
+2018-08-22 15:53:13 - [TEST_STEP][PASSED] - click: Object: 'Select_travailleur_by_name' is clicked on
+
+2018-08-22 15:53:13 - [MESSAGE][PASSED] - Object: 'Select_travailleur_by_name' is clicked on
+
+2018-08-22 15:53:13 - [TEST_STEP][PASSED] - Statement - travailleur2 = new com.kms.katalon.core.testobject.TestObject(Select_travailleur_by_name): null
+
+2018-08-22 15:53:13 - [TEST_STEP][PASSED] - Statement - travailleur2.addProperty("xpath", EQUALS, "//div[@id='select2-drop']//ul[@class='select2-results']//li[@role='presentation']//div[contains(text(),'0000041 - CHATEL MURIEL - 1AF0273 - ANTILOPE KARTONNAGE')]"): null
+
+2018-08-22 15:53:13 - [TEST_STEP][PASSED] - click: Object: 'Select_travailleur_by_name' is clicked on
+
+2018-08-22 15:53:13 - [MESSAGE][PASSED] - Object: 'Select_travailleur_by_name' is clicked on
+
+2018-08-22 15:53:13 - [TEST_STEP][PASSED] - Statement - travailleur3 = new com.kms.katalon.core.testobject.TestObject(Select_travailleur_by_name): null
+
+2018-08-22 15:53:13 - [TEST_STEP][PASSED] - Statement - travailleur3.addProperty("xpath", EQUALS, "//div[@id='select2-drop']//ul[@class='select2-results']//li[@role='presentation']//div[contains(text(),'0000075 - CAPPAERT WIM - 1AF0273 - ANTILOPE KARTONNAGE')]"): null
+
+2018-08-22 15:53:13 - [TEST_STEP][PASSED] - click: Object: 'Select_travailleur_by_name' is clicked on
+
+2018-08-22 15:53:13 - [MESSAGE][PASSED] - Object: 'Select_travailleur_by_name' is clicked on
+
+2018-08-22 15:53:13 - [TEST_STEP][PASSED] - Statement - travailleur4 = new com.kms.katalon.core.testobject.TestObject(Select_travailleur_by_name): null
+
+2018-08-22 15:53:13 - [TEST_STEP][PASSED] - Statement - travailleur4.addProperty("xpath", EQUALS, "//div[@id='select2-drop']//ul[@class='select2-results']//li[@role='presentation']//div[contains(text(),'0000094 - PAUWELS BERT - 1AF0273 - ANTILOPE KARTONNAGE')]"): null
+
+2018-08-22 15:53:13 - [TEST_STEP][PASSED] - click: Object: 'Select_travailleur_by_name' is clicked on
+
+2018-08-22 15:53:13 - [MESSAGE][PASSED] - Object: 'Select_travailleur_by_name' is clicked on
+
+2018-08-22 15:53:13 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Mes rapports Obj/SELECTION/Travailleur/Page_eBlox Reporting/New Test Object' is clicked on
+
+2018-08-22 15:53:13 - [MESSAGE][PASSED] - Object: 'Object Repository/Mes rapports Obj/SELECTION/Travailleur/Page_eBlox Reporting/New Test Object' is clicked on
+
+2018-08-22 15:53:13 - [TEST_STEP][PASSED] - callTestCase: Call Test Case 'Test Cases/Mes rapports/Mes rapports - SELECTION/Verify if checkbox is unchecked/TC 1 Verify Contrats actifs checkbox  is un-checked' successfully
+
+2018-08-22 15:53:13 - [TEST_CASE][PASSED] - Test Cases/Mes rapports/Mes rapports - SELECTION/Verify if checkbox is unchecked/TC 1 Verify Contrats actifs checkbox  is un-checked: Test Cases/Mes rapports/Mes rapports - SELECTION/Verify if checkbox is unchecked/TC 1 Verify Contrats actifs checkbox  is un-checked
+
+2018-08-22 15:53:13 - [TEST_STEP][PASSED] - uncheck: Object 'Object Repository/Mes rapports Obj/SELECTION/Contrats actifs checkBox' is un-checked
+
+2018-08-22 15:53:14 - [MESSAGE][PASSED] - Object 'Object Repository/Mes rapports Obj/SELECTION/Contrats actifs checkBox' is un-checked
+
+2018-08-22 15:53:14 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Mes rapports/Mes rapports - SELECTION/Verify if checkbox is unchecked/TC 1 Verify Contrats actifs checkbox  is un-checked' successfully
+
+2018-08-22 15:53:14 - [TEST_STEP][PASSED] - callTestCase: Call Test Case 'Test Cases/Mes rapports/Mes rapports - SELECTION/Verify if checkbox is unchecked/TC 4 Verify Departement checkBox  is un-checked' successfully
+
+2018-08-22 15:53:14 - [TEST_CASE][PASSED] - Test Cases/Mes rapports/Mes rapports - SELECTION/Verify if checkbox is unchecked/TC 4 Verify Departement checkBox  is un-checked: Test Cases/Mes rapports/Mes rapports - SELECTION/Verify if checkbox is unchecked/TC 4 Verify Departement checkBox  is un-checked
+
+2018-08-22 15:53:14 - [TEST_STEP][PASSED] - uncheck: Object 'Object Repository/Mes rapports Obj/SELECTION/Departement checkbox' is un-checked
+
+2018-08-22 15:53:14 - [MESSAGE][PASSED] - Object 'Object Repository/Mes rapports Obj/SELECTION/Departement checkbox' is un-checked
+
+2018-08-22 15:53:14 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Mes rapports/Mes rapports - SELECTION/Verify if checkbox is unchecked/TC 4 Verify Departement checkBox  is un-checked' successfully
+
+2018-08-22 15:53:14 - [TEST_STEP][PASSED] - callTestCase: Call Test Case 'Test Cases/Mes rapports/Mes rapports - SELECTION/Verify if checkbox is unchecked/TC 5 Verify Caractere juridique du contract checBox  is un-checked' successfully
+
+2018-08-22 15:53:14 - [TEST_CASE][PASSED] - Test Cases/Mes rapports/Mes rapports - SELECTION/Verify if checkbox is unchecked/TC 5 Verify Caractere juridique du contract checBox  is un-checked: Test Cases/Mes rapports/Mes rapports - SELECTION/Verify if checkbox is unchecked/TC 5 Verify Caractere juridique du contract checBox  is un-checked
+
+2018-08-22 15:53:14 - [TEST_STEP][PASSED] - uncheck: Object 'Object Repository/Mes rapports Obj/SELECTION/Caractere juridique de contrat' is un-checked
+
+2018-08-22 15:53:14 - [MESSAGE][PASSED] - Object 'Object Repository/Mes rapports Obj/SELECTION/Caractere juridique de contrat' is un-checked
+
+2018-08-22 15:53:14 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Mes rapports/Mes rapports - SELECTION/Verify if checkbox is unchecked/TC 5 Verify Caractere juridique du contract checBox  is un-checked' successfully
+
+2018-08-22 15:53:14 - [TEST_STEP][PASSED] - callTestCase: Call Test Case 'Test Cases/Mes rapports/Mes rapports - SELECTION/Verify if checkbox is unchecked/TC 6 Verify Pays de naissance checkBox  is un-checked' successfully
+
+2018-08-22 15:53:14 - [TEST_CASE][PASSED] - Test Cases/Mes rapports/Mes rapports - SELECTION/Verify if checkbox is unchecked/TC 6 Verify Pays de naissance checkBox  is un-checked: Test Cases/Mes rapports/Mes rapports - SELECTION/Verify if checkbox is unchecked/TC 6 Verify Pays de naissance checkBox  is un-checked
+
+2018-08-22 15:53:15 - [TEST_STEP][PASSED] - uncheck: Object 'Object Repository/Mes rapports Obj/SELECTION/Pays de naisssance checkbox' is un-checked
+
+2018-08-22 15:53:15 - [MESSAGE][PASSED] - Object 'Object Repository/Mes rapports Obj/SELECTION/Pays de naisssance checkbox' is un-checked
+
+2018-08-22 15:53:15 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Mes rapports/Mes rapports - SELECTION/Verify if checkbox is unchecked/TC 6 Verify Pays de naissance checkBox  is un-checked' successfully
+
+2018-08-22 15:53:15 - [TEST_STEP][PASSED] - callTestCase: Call Test Case 'Test Cases/Mes rapports/Mes rapports - SELECTION/Verify if checkbox is unchecked/TC 7 Verify Sexe checkBox  is un-checked' successfully
+
+2018-08-22 15:53:15 - [TEST_CASE][PASSED] - Test Cases/Mes rapports/Mes rapports - SELECTION/Verify if checkbox is unchecked/TC 7 Verify Sexe checkBox  is un-checked: Test Cases/Mes rapports/Mes rapports - SELECTION/Verify if checkbox is unchecked/TC 7 Verify Sexe checkBox  is un-checked
+
+2018-08-22 15:53:15 - [TEST_STEP][PASSED] - uncheck: Object 'Object Repository/Mes rapports Obj/SELECTION/Sexe checkbox' is un-checked
+
+2018-08-22 15:53:15 - [MESSAGE][PASSED] - Object 'Object Repository/Mes rapports Obj/SELECTION/Sexe checkbox' is un-checked
+
+2018-08-22 15:53:15 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Mes rapports/Mes rapports - SELECTION/Verify if checkbox is unchecked/TC 7 Verify Sexe checkBox  is un-checked' successfully
+
+2018-08-22 15:53:15 - [TEST_STEP][PASSED] - callTestCase: Call Test Case 'Test Cases/Mes rapports/Mes rapports - SELECTION/Verify if checkbox is unchecked/TC 8 Verify Mode de remuneration checkBox  is un-checked' successfully
+
+2018-08-22 15:53:15 - [TEST_CASE][PASSED] - Test Cases/Mes rapports/Mes rapports - SELECTION/Verify if checkbox is unchecked/TC 8 Verify Mode de remuneration checkBox  is un-checked: Test Cases/Mes rapports/Mes rapports - SELECTION/Verify if checkbox is unchecked/TC 8 Verify Mode de remuneration checkBox  is un-checked
+
+2018-08-22 15:53:15 - [TEST_STEP][PASSED] - uncheck: Object 'Object Repository/Mes rapports Obj/SELECTION/Mode de remuneration checkbox' is un-checked
+
+2018-08-22 15:53:15 - [MESSAGE][PASSED] - Object 'Object Repository/Mes rapports Obj/SELECTION/Mode de remuneration checkbox' is un-checked
+
+2018-08-22 15:53:15 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Mes rapports/Mes rapports - SELECTION/Verify if checkbox is unchecked/TC 8 Verify Mode de remuneration checkBox  is un-checked' successfully
+
+2018-08-22 15:53:15 - [TEST_STEP][PASSED] - callTestCase: Call Test Case 'Test Cases/Verify URL/TC Verify Url' successfully
+
+2018-08-22 15:53:15 - [TEST_CASE][PASSED] - Test Cases/Verify URL/TC Verify Url: Test Cases/Verify URL/TC Verify Url
+
+2018-08-22 15:53:15 - [TEST_STEP][PASSED] - waitForPageLoad: Wait for page load successfully
+
+2018-08-22 15:53:15 - [MESSAGE][PASSED] - Wait for page load successfully
+
+2018-08-22 15:53:15 - [TEST_STEP][PASSED] - Statement - url = com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.getUrl(): Current window's url is: 'https://internet.acc.sd.dika.be/ebloxreporting/web.sensitive/main/FpyDF/iIz9g8MffKNXfNyb1H/NL/#/definitie/wizard/extern/index/28231/selectie'
+
+2018-08-22 15:53:15 - [MESSAGE][PASSED] - Current window's url is: 'https://internet.acc.sd.dika.be/ebloxreporting/web.sensitive/main/FpyDF/iIz9g8MffKNXfNyb1H/NL/#/definitie/wizard/extern/index/28231/selectie'
+
+2018-08-22 15:53:15 - [TEST_STEP][PASSED] - Statement - p = java.util.regex.Pattern.compile("00040 ANTILOPE GROEP"): null
+
+2018-08-22 15:53:15 - [TEST_STEP][PASSED] - Statement - m = p.matcher(url): null
+
+2018-08-22 15:53:15 - [TEST_STEP][PASSED] - Statement - If (m.find()): null
+
+2018-08-22 15:53:15 - [TEST_STEP][PASSED] - Statement - Else: The user name and the concern number are not present in the URL
+
+2018-08-22 15:53:15 - [TEST_STEP][PASSED] - Statement - com.kms.katalon.core.util.KeywordUtil.markPassed("The user name and the concern number are not present in the URL"): The user name and the concern number are not present in the URL
+
+2018-08-22 15:53:15 - [MESSAGE][PASSED] - The user name and the concern number are not present in the URL
+
+2018-08-22 15:53:15 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Verify URL/TC Verify Url' successfully
+
+2018-08-22 15:53:15 - [TEST_STEP][PASSED] - callTestCase: Call Test Case 'Test Cases/Mes rapports/TC Verify the next button arrow' successfully
+
+2018-08-22 15:53:15 - [TEST_CASE][PASSED] - Test Cases/Mes rapports/TC Verify the next button arrow: Test Cases/Mes rapports/TC Verify the next button arrow
+
+2018-08-22 15:53:15 - [TEST_STEP][PASSED] - waitForElementClickable: Object 'Object Repository/Mes rapports Obj/button_Next_Arrow' is clickable
+
+2018-08-22 15:53:15 - [MESSAGE][PASSED] - Object 'Object Repository/Mes rapports Obj/button_Next_Arrow' is clickable
+
+2018-08-22 15:53:15 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Mes rapports Obj/button_Next_Arrow' is clicked on
+
+2018-08-22 15:53:15 - [MESSAGE][PASSED] - Object: 'Object Repository/Mes rapports Obj/button_Next_Arrow' is clicked on
+
+2018-08-22 15:53:15 - [TEST_STEP][PASSED] - delay: Delayed 5 second(s)
+
+2018-08-22 15:53:20 - [MESSAGE][PASSED] - Delayed 5 second(s)
+
+2018-08-22 15:53:20 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Mes rapports/TC Verify the next button arrow' successfully
+
+2018-08-22 15:53:20 - [TEST_STEP][PASSED] - waitForPageLoad: Wait for page load successfully
+
+2018-08-22 15:53:20 - [MESSAGE][PASSED] - Wait for page load successfully
+
+2018-08-22 15:53:20 - [TEST_STEP][PASSED] - delay: Delayed 2 second(s)
+
+2018-08-22 15:53:22 - [MESSAGE][PASSED] - Delayed 2 second(s)
+
+2018-08-22 15:53:22 - [TEST_STEP][PASSED] - Statement - inputDossier = com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.modifyObjectProperty(com.kms.katalon.core.testobject.ObjectRepository.findTestObject(Mes rapports Obj/EXECUTION/Description_Dossier and Groupe figure dans), "id", "contains", "s2id_autogen", true): Modify property of object successfully
+
+2018-08-22 15:53:22 - [MESSAGE][PASSED] - Modify property of object successfully
+
+2018-08-22 15:53:22 - [TEST_STEP][FAILED] - click: Unable to click on object 'Object Repository/Mes rapports Obj/EXECUTION/Description_Dossier and Groupe figure dans' (Root cause: com.kms.katalon.core.webui.exception.WebElementNotFoundException: Web element with id: 'Object Repository/Mes rapports Obj/EXECUTION/Description_Dossier and Groupe figure dans' located by 'By.xpath: //*[@id="s2id_autogen113"][count(. | //input[contains(@id, 's2id_autogen') and @class = 'select2-input' and @autocomplete = 'off' and @autocorrect = 'off' and @autocapitalize = 'off' and @type = 'text']) = count(//input[contains(@id, 's2id_autogen') and @class = 'select2-input' and @autocomplete = 'off' and @autocorrect = 'off' and @autocapitalize = 'off' and @type = 'text'])]' not found)
+
+2018-08-22 15:53:56 - [MESSAGE][FAILED] - Unable to click on object 'Object Repository/Mes rapports Obj/EXECUTION/Description_Dossier and Groupe figure dans' (Root cause: com.kms.katalon.core.webui.exception.WebElementNotFoundException: Web element with id: 'Object Repository/Mes rapports Obj/EXECUTION/Description_Dossier and Groupe figure dans' located by 'By.xpath: //*[@id="s2id_autogen113"][count(. | //input[contains(@id, 's2id_autogen') and @class = 'select2-input' and @autocomplete = 'off' and @autocorrect = 'off' and @autocapitalize = 'off' and @type = 'text']) = count(//input[contains(@id, 's2id_autogen') and @class = 'select2-input' and @autocomplete = 'off' and @autocorrect = 'off' and @autocapitalize = 'off' and @type = 'text'])]' not found)
+[[ATTACHMENT|C:\\Users\\seeboruts\\OneDrive - SD Worx\\Desktop\\Katalon_eBlox_Reporting\\Reports\\testing\\Eblox Reporting DEmo\\20180822_155101\\1534938835717.png]]]]></system-out>
+         <system-err><![CDATA[2018-08-22 15:51:04 - [TEST_CASE][FAILED] - Test Cases/New Folder/TC2 NEW: Test Cases/New Folder/TC2 NEW FAILED because (of) Unable to click on object 'Object Repository/Mes rapports Obj/EXECUTION/Description_Dossier and Groupe figure dans' (Root cause: com.kms.katalon.core.webui.exception.WebElementNotFoundException: Web element with id: 'Object Repository/Mes rapports Obj/EXECUTION/Description_Dossier and Groupe figure dans' located by 'By.xpath: //*[@id="s2id_autogen113"][count(. | //input[contains(@id, 's2id_autogen') and @class = 'select2-input' and @autocomplete = 'off' and @autocorrect = 'off' and @autocapitalize = 'off' and @type = 'text']) = count(//input[contains(@id, 's2id_autogen') and @class = 'select2-input' and @autocomplete = 'off' and @autocorrect = 'off' and @autocapitalize = 'off' and @type = 'text'])]' not found)]]></system-err>
+      </testcase>
+      <system-out><![CDATA[2018-08-22 15:51:04 - [TEST_SUITE][FAILED] - Eblox Reporting DEmo: Test Cases/New Folder/TC2 NEW FAILED because (of) Unable to click on object 'Object Repository/Mes rapports Obj/EXECUTION/Description_Dossier and Groupe figure dans' (Root cause: com.kms.katalon.core.webui.exception.WebElementNotFoundException: Web element with id: 'Object Repository/Mes rapports Obj/EXECUTION/Description_Dossier and Groupe figure dans' located by 'By.xpath: //*[@id="s2id_autogen113"][count(. | //input[contains(@id, 's2id_autogen') and @class = 'select2-input' and @autocomplete = 'off' and @autocorrect = 'off' and @autocapitalize = 'off' and @type = 'text']) = count(//input[contains(@id, 's2id_autogen') and @class = 'select2-input' and @autocomplete = 'off' and @autocorrect = 'off' and @autocapitalize = 'off' and @type = 'text'])]' not found)]]></system-out>
+      <system-err><![CDATA[2018-08-22 15:51:04 - [TEST_SUITE][FAILED] - Eblox Reporting DEmo: Test Cases/New Folder/TC2 NEW FAILED because (of) Unable to click on object 'Object Repository/Mes rapports Obj/EXECUTION/Description_Dossier and Groupe figure dans' (Root cause: com.kms.katalon.core.webui.exception.WebElementNotFoundException: Web element with id: 'Object Repository/Mes rapports Obj/EXECUTION/Description_Dossier and Groupe figure dans' located by 'By.xpath: //*[@id="s2id_autogen113"][count(. | //input[contains(@id, 's2id_autogen') and @class = 'select2-input' and @autocomplete = 'off' and @autocorrect = 'off' and @autocapitalize = 'off' and @type = 'text']) = count(//input[contains(@id, 's2id_autogen') and @class = 'select2-input' and @autocomplete = 'off' and @autocorrect = 'off' and @autocapitalize = 'off' and @type = 'text'])]' not found)]]></system-err>
+   </testsuite>
+</testsuites>

@@ -1,0 +1,94 @@
+Suite/Test/Step Name,Browser,Description,Start time,End time,Duration,Status
+Eblox Reporting DEmo,Chrome 68.0.3440.106,,2018-08-22 16:24:56,2018-08-22 16:28:08,3m - 12.345s,PASSED
+,,,,,,
+Test Cases/New Folder/TC2 NEW,Chrome 68.0.3440.106,,2018-08-22 16:24:56,2018-08-22 16:28:08,3m - 11.873s,PASSED
+callTestCase,Chrome 68.0.3440.106,,2018-08-22 16:24:57,2018-08-22 16:25:36,39.663s,PASSED
+waitForPageLoad,Chrome 68.0.3440.106,,2018-08-22 16:25:36,2018-08-22 16:25:37,0.008s,PASSED
+callTestCase,Chrome 68.0.3440.106,,2018-08-22 16:25:37,2018-08-22 16:26:33,56.513s,PASSED
+waitForPageLoad,Chrome 68.0.3440.106,,2018-08-22 16:26:33,2018-08-22 16:26:33,0.011s,PASSED
+callTestCase,Chrome 68.0.3440.106,,2018-08-22 16:26:33,2018-08-22 16:26:36,2.539s,PASSED
+waitForPageLoad,Chrome 68.0.3440.106,,2018-08-22 16:26:36,2018-08-22 16:26:36,0.012s,PASSED
+callTestCase,Chrome 68.0.3440.106,,2018-08-22 16:26:36,2018-08-22 16:26:36,0.889s,PASSED
+callTestCase,Chrome 68.0.3440.106,,2018-08-22 16:26:36,2018-08-22 16:26:37,0.354s,PASSED
+waitForPageLoad,Chrome 68.0.3440.106,,2018-08-22 16:26:37,2018-08-22 16:26:37,0.011s,PASSED
+callTestCase,Chrome 68.0.3440.106,,2018-08-22 16:26:37,2018-08-22 16:26:42,5.451s,PASSED
+waitForPageLoad,Chrome 68.0.3440.106,,2018-08-22 16:26:42,2018-08-22 16:26:42,0.012s,PASSED
+delay,Chrome 68.0.3440.106,,2018-08-22 16:26:42,2018-08-22 16:26:44,2.003s,PASSED
+callTestCase,Chrome 68.0.3440.106,,2018-08-22 16:26:44,2018-08-22 16:27:25,41.012s,PASSED
+callTestCase,Chrome 68.0.3440.106,,2018-08-22 16:27:25,2018-08-22 16:27:25,0.106s,PASSED
+callTestCase,Chrome 68.0.3440.106,,2018-08-22 16:27:25,2018-08-22 16:27:31,5.423s,PASSED
+waitForPageLoad,Chrome 68.0.3440.106,,2018-08-22 16:27:31,2018-08-22 16:27:31,0.014s,PASSED
+delay,Chrome 68.0.3440.106,,2018-08-22 16:27:31,2018-08-22 16:27:33,2.001s,PASSED
+callTestCase,Chrome 68.0.3440.106,,2018-08-22 16:27:33,2018-08-22 16:27:33,0.346s,PASSED
+click,Chrome 68.0.3440.106,,2018-08-22 16:27:33,2018-08-22 16:27:33,0.098s,PASSED
+delay,Chrome 68.0.3440.106,,2018-08-22 16:27:33,2018-08-22 16:27:35,2.001s,PASSED
+click,Chrome 68.0.3440.106,,2018-08-22 16:27:35,2018-08-22 16:27:35,0.109s,PASSED
+callTestCase,Chrome 68.0.3440.106,,2018-08-22 16:27:35,2018-08-22 16:27:36,0.313s,PASSED
+click,Chrome 68.0.3440.106,,2018-08-22 16:27:36,2018-08-22 16:27:36,0.091s,PASSED
+delay,Chrome 68.0.3440.106,,2018-08-22 16:27:36,2018-08-22 16:27:38,2.003s,PASSED
+click,Chrome 68.0.3440.106,,2018-08-22 16:27:38,2018-08-22 16:27:38,0.098s,PASSED
+click,Chrome 68.0.3440.106,,2018-08-22 16:27:38,2018-08-22 16:27:38,0.099s,PASSED
+click,Chrome 68.0.3440.106,,2018-08-22 16:27:38,2018-08-22 16:27:38,0.145s,PASSED
+"Statement - inputWorker = com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.modifyObjectProperty(com.kms.katalon.core.testobject.ObjectRepository.findTestObject(Mes rapports Obj/SELECTION/Travailleur/Input field for travailleur), ""id"", ""contains"", ""s2id_autogen"", true)",Chrome 68.0.3440.106,,2018-08-22 16:27:38,2018-08-22 16:27:38,0.005s,PASSED
+click,Chrome 68.0.3440.106,,2018-08-22 16:27:38,2018-08-22 16:27:38,0.142s,PASSED
+Statement - travailleur1 = new com.kms.katalon.core.testobject.TestObject(Select_travailleur_by_name),Chrome 68.0.3440.106,,2018-08-22 16:27:38,2018-08-22 16:27:38,0.005s,PASSED
+"Statement - travailleur1.addProperty(""xpath"", EQUALS, ""//div[@id='select2-drop']//ul[@class='select2-results']//li[@role='presentation']//div[contains(text(),'0000013 - SIHAPAN GNA PHOUANGPHANH - 1AF0273 - ANTILOPE KARTONNAGE')]"")",Chrome 68.0.3440.106,,2018-08-22 16:27:38,2018-08-22 16:27:38,0.007s,PASSED
+click,Chrome 68.0.3440.106,,2018-08-22 16:27:38,2018-08-22 16:27:39,0.191s,PASSED
+Statement - travailleur2 = new com.kms.katalon.core.testobject.TestObject(Select_travailleur_by_name),Chrome 68.0.3440.106,,2018-08-22 16:27:39,2018-08-22 16:27:39,0.000s,PASSED
+"Statement - travailleur2.addProperty(""xpath"", EQUALS, ""//div[@id='select2-drop']//ul[@class='select2-results']//li[@role='presentation']//div[contains(text(),'0000041 - CHATEL MURIEL - 1AF0273 - ANTILOPE KARTONNAGE')]"")",Chrome 68.0.3440.106,,2018-08-22 16:27:39,2018-08-22 16:27:39,0.001s,PASSED
+click,Chrome 68.0.3440.106,,2018-08-22 16:27:39,2018-08-22 16:27:39,0.129s,PASSED
+Statement - travailleur3 = new com.kms.katalon.core.testobject.TestObject(Select_travailleur_by_name),Chrome 68.0.3440.106,,2018-08-22 16:27:39,2018-08-22 16:27:39,0.001s,PASSED
+"Statement - travailleur3.addProperty(""xpath"", EQUALS, ""//div[@id='select2-drop']//ul[@class='select2-results']//li[@role='presentation']//div[contains(text(),'0000075 - CAPPAERT WIM - 1AF0273 - ANTILOPE KARTONNAGE')]"")",Chrome 68.0.3440.106,,2018-08-22 16:27:39,2018-08-22 16:27:39,0.000s,PASSED
+click,Chrome 68.0.3440.106,,2018-08-22 16:27:39,2018-08-22 16:27:39,0.115s,PASSED
+Statement - travailleur4 = new com.kms.katalon.core.testobject.TestObject(Select_travailleur_by_name),Chrome 68.0.3440.106,,2018-08-22 16:27:39,2018-08-22 16:27:39,0.000s,PASSED
+"Statement - travailleur4.addProperty(""xpath"", EQUALS, ""//div[@id='select2-drop']//ul[@class='select2-results']//li[@role='presentation']//div[contains(text(),'0000094 - PAUWELS BERT - 1AF0273 - ANTILOPE KARTONNAGE')]"")",Chrome 68.0.3440.106,,2018-08-22 16:27:39,2018-08-22 16:27:39,0.000s,PASSED
+click,Chrome 68.0.3440.106,,2018-08-22 16:27:39,2018-08-22 16:27:39,0.115s,PASSED
+click,Chrome 68.0.3440.106,,2018-08-22 16:27:39,2018-08-22 16:27:39,0.090s,PASSED
+callTestCase,Chrome 68.0.3440.106,,2018-08-22 16:27:39,2018-08-22 16:27:39,0.403s,PASSED
+callTestCase,Chrome 68.0.3440.106,,2018-08-22 16:27:39,2018-08-22 16:27:40,0.394s,PASSED
+callTestCase,Chrome 68.0.3440.106,,2018-08-22 16:27:40,2018-08-22 16:27:40,0.319s,PASSED
+callTestCase,Chrome 68.0.3440.106,,2018-08-22 16:27:40,2018-08-22 16:27:40,0.328s,PASSED
+callTestCase,Chrome 68.0.3440.106,,2018-08-22 16:27:40,2018-08-22 16:27:41,0.298s,PASSED
+callTestCase,Chrome 68.0.3440.106,,2018-08-22 16:27:41,2018-08-22 16:27:41,0.339s,PASSED
+callTestCase,Chrome 68.0.3440.106,,2018-08-22 16:27:41,2018-08-22 16:27:41,0.087s,PASSED
+callTestCase,Chrome 68.0.3440.106,,2018-08-22 16:27:41,2018-08-22 16:27:46,5.172s,PASSED
+waitForPageLoad,Chrome 68.0.3440.106,,2018-08-22 16:27:46,2018-08-22 16:27:46,0.011s,PASSED
+delay,Chrome 68.0.3440.106,,2018-08-22 16:27:46,2018-08-22 16:27:48,2.002s,PASSED
+"Statement - inputDossier = com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.modifyObjectProperty(com.kms.katalon.core.testobject.ObjectRepository.findTestObject(Mes rapports Obj/EXECUTION/Description_Dossier and Groupe figure dans), ""id"", ""contains"", ""s2id_autogen"", true)",Chrome 68.0.3440.106,,2018-08-22 16:27:48,2018-08-22 16:27:48,0.005s,PASSED
+click,Chrome 68.0.3440.106,,2018-08-22 16:27:48,2018-08-22 16:27:48,0.152s,PASSED
+delay,Chrome 68.0.3440.106,,2018-08-22 16:27:48,2018-08-22 16:27:50,2.002s,PASSED
+Statement - myInputDossier = new com.kms.katalon.core.testobject.TestObject(Select_dossier_by_name),Chrome 68.0.3440.106,,2018-08-22 16:27:50,2018-08-22 16:27:50,0.000s,PASSED
+"Statement - myInputDossier.addProperty(""xpath"", EQUALS, ""//div[@id='select2-drop']//ul[@class='select2-results']//li[@role='presentation']//div[contains(text(),'1AS1462 - 02 - ADDAX COMMUNICATIONS NV')]"")",Chrome 68.0.3440.106,,2018-08-22 16:27:50,2018-08-22 16:27:50,0.001s,PASSED
+click,Chrome 68.0.3440.106,,2018-08-22 16:27:50,2018-08-22 16:27:51,0.126s,PASSED
+delay,Chrome 68.0.3440.106,,2018-08-22 16:27:51,2018-08-22 16:27:53,2.001s,PASSED
+Statement - myInputDossier1 = new com.kms.katalon.core.testobject.TestObject(Select_dossier_by_name),Chrome 68.0.3440.106,,2018-08-22 16:27:53,2018-08-22 16:27:53,0.001s,PASSED
+"Statement - myInputDossier1.addProperty(""xpath"", EQUALS, ""//div[@id='select2-drop']//ul[@class='select2-results']//li[@role='presentation']//div[contains(text(),'1AA0221 - 01 - DRUKKERIJ ANTILOPE NV')]"")",Chrome 68.0.3440.106,,2018-08-22 16:27:53,2018-08-22 16:27:53,0.000s,PASSED
+click,Chrome 68.0.3440.106,,2018-08-22 16:27:53,2018-08-22 16:27:53,0.113s,PASSED
+Statement - myInputDossier2 = new com.kms.katalon.core.testobject.TestObject(Select_dossier_by_name),Chrome 68.0.3440.106,,2018-08-22 16:27:53,2018-08-22 16:27:53,0.001s,PASSED
+"Statement - myInputDossier2.addProperty(""xpath"", EQUALS, ""//div[@id='select2-drop']//ul[@class='select2-results']//li[@role='presentation']//div[contains(text(),'1AF0273 - 03 - ANTILOPE KARTONNAGE')]"")",Chrome 68.0.3440.106,,2018-08-22 16:27:53,2018-08-22 16:27:53,0.000s,PASSED
+click,Chrome 68.0.3440.106,,2018-08-22 16:27:53,2018-08-22 16:27:53,0.126s,PASSED
+delay,Chrome 68.0.3440.106,,2018-08-22 16:27:53,2018-08-22 16:27:55,2.002s,PASSED
+click,Chrome 68.0.3440.106,,2018-08-22 16:27:55,2018-08-22 16:27:55,0.105s,PASSED
+delay,Chrome 68.0.3440.106,,2018-08-22 16:27:55,2018-08-22 16:27:57,2.002s,PASSED
+"Statement - historic = com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.modifyObjectProperty(com.kms.katalon.core.testobject.ObjectRepository.findTestObject(Mes rapports Obj/EXECUTION/Description _Date de reference historique), ""xpath"", ""equals"", ""//*[@id=""uitvoering-parameters""]/div/div[2]/div/div/table/tbody/tr[4]/td[2]/div/div/rapp-date-prompt/div/div/rapp-special-values/div/button"", true)",Chrome 68.0.3440.106,,2018-08-22 16:27:57,2018-08-22 16:27:57,0.006s,PASSED
+click,Chrome 68.0.3440.106,,2018-08-22 16:27:57,2018-08-22 16:27:57,0.099s,PASSED
+delay,Chrome 68.0.3440.106,,2018-08-22 16:27:57,2018-08-22 16:27:59,2.002s,PASSED
+Statement - historicType = new com.kms.katalon.core.testobject.TestObject(Select_historic_Type),Chrome 68.0.3440.106,,2018-08-22 16:27:59,2018-08-22 16:27:59,0.000s,PASSED
+"Statement - historicType.addProperty(""xpath"", EQUALS, ""//span[contains(text(),'Laatste dag vorige maand')]"")",Chrome 68.0.3440.106,,2018-08-22 16:27:59,2018-08-22 16:27:59,0.001s,PASSED
+click,Chrome 68.0.3440.106,,2018-08-22 16:27:59,2018-08-22 16:27:59,0.119s,PASSED
+check,Chrome 68.0.3440.106,,2018-08-22 16:27:59,2018-08-22 16:27:59,0.161s,PASSED
+click,Chrome 68.0.3440.106,,2018-08-22 16:27:59,2018-08-22 16:27:59,0.113s,PASSED
+click,Chrome 68.0.3440.106,,2018-08-22 16:27:59,2018-08-22 16:28:00,0.112s,PASSED
+callTestCase,Chrome 68.0.3440.106,,2018-08-22 16:28:00,2018-08-22 16:28:00,0.083s,PASSED
+click,Chrome 68.0.3440.106,,2018-08-22 16:28:00,2018-08-22 16:28:00,0.114s,PASSED
+delay,Chrome 68.0.3440.106,,2018-08-22 16:28:00,2018-08-22 16:28:05,5.002s,PASSED
+waitForPageLoad,Chrome 68.0.3440.106,,2018-08-22 16:28:05,2018-08-22 16:28:05,0.011s,PASSED
+waitForElementClickable,Chrome 68.0.3440.106,,2018-08-22 16:28:05,2018-08-22 16:28:05,0.048s,PASSED
+click,Chrome 68.0.3440.106,,2018-08-22 16:28:05,2018-08-22 16:28:05,0.102s,PASSED
+waitForPageLoad,Chrome 68.0.3440.106,,2018-08-22 16:28:05,2018-08-22 16:28:05,0.009s,PASSED
+click,Chrome 68.0.3440.106,,2018-08-22 16:28:05,2018-08-22 16:28:05,0.150s,PASSED
+delay,Chrome 68.0.3440.106,,2018-08-22 16:28:05,2018-08-22 16:28:07,2.001s,PASSED
+focus,Chrome 68.0.3440.106,,2018-08-22 16:28:07,2018-08-22 16:28:07,0.106s,PASSED
+click,Chrome 68.0.3440.106,,2018-08-22 16:28:07,2018-08-22 16:28:07,0.258s,PASSED
+waitForPageLoad,Chrome 68.0.3440.106,,2018-08-22 16:28:07,2018-08-22 16:28:07,0.014s,PASSED
+closeBrowser,Chrome 68.0.3440.106,,2018-08-22 16:28:07,2018-08-22 16:28:08,0.687s,PASSED

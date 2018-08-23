@@ -11,7 +11,7 @@
       </entry>
       <entry>
          <key>BASIC</key>
-         <value>//*[@id=&quot;s2id_autogen113&quot;][count(. | //input[contains(@id, 's2id_autogen') and @class = 'select2-input' and @autocomplete = 'off' and @autocorrect = 'off' and @autocapitalize = 'off' and @type = 'text']) = count(//input[contains(@id, 's2id_autogen') and @class = 'select2-input' and @autocomplete = 'off' and @autocorrect = 'off' and @autocapitalize = 'off' and @type = 'text'])]</value>
+         <value>//*[@id=&quot;s2id_autogen171&quot;][count(. | //input[contains(@id, 's2id_autogen') and @class = 'select2-input' and @autocomplete = 'off' and @autocorrect = 'off' and @autocapitalize = 'off' and @type = 'text']) = count(//input[contains(@id, 's2id_autogen') and @class = 'select2-input' and @autocomplete = 'off' and @autocorrect = 'off' and @autocapitalize = 'off' and @type = 'text'])]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -35,7 +35,7 @@
       <matchCondition>contains</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//*[@id=&quot;s2id_autogen113&quot;]</value>
+      <value>//*[@id=&quot;s2id_autogen171&quot;]</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>

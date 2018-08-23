@@ -83,17 +83,29 @@ def inputWorker = WebUI.modifyObjectProperty(findTestObject('Mes rapports Obj/SE
 
 WebUI.click(inputWorker)
 
-def myTestObject = new TestObject('Select_travailleur_by_name')
+def travailleur1 = new TestObject('Select_travailleur_by_name')
 
-myTestObject.addProperty('xpath', ConditionType.EQUALS, '//div[@id=\'select2-drop\']//ul[@class=\'select2-results\']//li[@role=\'presentation\']//div[contains(text(),\'0000013 - SIHAPAN GNA PHOUANGPHANH - 1AF0273 - ANTILOPE KARTONNAGE\')]')
+travailleur1.addProperty('xpath', ConditionType.EQUALS, '//div[@id=\'select2-drop\']//ul[@class=\'select2-results\']//li[@role=\'presentation\']//div[contains(text(),\'0000013 - SIHAPAN GNA PHOUANGPHANH - 1AF0273 - ANTILOPE KARTONNAGE\')]')
 
-WebUI.click(myTestObject)
+WebUI.click(travailleur1)
 
-def myTestObject2 = new TestObject('Select_travailleur_by_name')
+def travailleur2 = new TestObject('Select_travailleur_by_name')
 
-myTestObject2.addProperty('xpath', ConditionType.EQUALS, '//div[@id=\'select2-drop\']//ul[@class=\'select2-results\']//li[@role=\'presentation\']//div[contains(text(),\'0000041 - CHATEL MURIEL - 1AF0273 - ANTILOPE KARTONNAGE\')]')
+travailleur2.addProperty('xpath', ConditionType.EQUALS, '//div[@id=\'select2-drop\']//ul[@class=\'select2-results\']//li[@role=\'presentation\']//div[contains(text(),\'0000041 - CHATEL MURIEL - 1AF0273 - ANTILOPE KARTONNAGE\')]')
 
-WebUI.click(myTestObject2)
+WebUI.click(travailleur2)
+
+def travailleur3 = new TestObject('Select_travailleur_by_name')
+
+travailleur3.addProperty('xpath', ConditionType.EQUALS, '//div[@id=\'select2-drop\']//ul[@class=\'select2-results\']//li[@role=\'presentation\']//div[contains(text(),\'0000075 - CAPPAERT WIM - 1AF0273 - ANTILOPE KARTONNAGE\')]')
+
+WebUI.click(travailleur3)
+
+def travailleur4 = new TestObject('Select_travailleur_by_name')
+
+travailleur4.addProperty('xpath', ConditionType.EQUALS, '//div[@id=\'select2-drop\']//ul[@class=\'select2-results\']//li[@role=\'presentation\']//div[contains(text(),\'0000094 - PAUWELS BERT - 1AF0273 - ANTILOPE KARTONNAGE\')]')
+
+WebUI.click(travailleur4)
 
 WebUI.click(findTestObject('Mes rapports Obj/SELECTION/Travailleur/Page_eBlox Reporting/New Test Object'))
 
@@ -149,6 +161,8 @@ def myInputDossier2 = new TestObject('Select_dossier_by_name')
 myInputDossier2.addProperty('xpath', ConditionType.EQUALS, '//div[@id=\'select2-drop\']//ul[@class=\'select2-results\']//li[@role=\'presentation\']//div[contains(text(),\'1AF0273 - 03 - ANTILOPE KARTONNAGE\')]')
 
 WebUI.click(myInputDossier2)
+
+WebUI.delay(2)
 
 //1AF0273 - 03 - ANTILOPE KARTONNAGE
 //WebUI.click(findTestObject('Mes rapports Obj/SELECTION/Travailleur/Page_eBlox Reporting/closetest'), FailureHandling.STOP_ON_FAILURE)
