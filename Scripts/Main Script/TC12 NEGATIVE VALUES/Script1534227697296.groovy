@@ -25,7 +25,7 @@ WebUI.callTestCase(findTestCase('Login/TC1 Login to Mysdworx'), [:], FailureHand
 
 WebUiBuiltInKeywords.waitForPageLoad(10)
 
-WebUI.callTestCase(findTestCase('Select Language/TC1 Verify NL language'), [:], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('Sub Script/Select Language/TC1 Verify NL language'), [:], FailureHandling.STOP_ON_FAILURE)
 
 WebUiBuiltInKeywords.waitForPageLoad(10)
 

@@ -27,7 +27,7 @@ WebUI.callTestCase(findTestCase('Login/TC1 Login to Mysdworx'), [:], FailureHand
 
 WebUI.waitForPageLoad(10)
 
-WebUI.callTestCase(findTestCase('Select Language/TC1 Verify NL language'), [:], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('Sub Script/Select Language/TC1 Verify NL language'), [:], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.waitForPageLoad(10)
 
@@ -51,19 +51,19 @@ WebUI.waitForPageLoad(10)
 
 WebUiBuiltInKeywords.click(findTestObject('Page_eBlox Rapportering/Contenu'))
 
-WebUI.callTestCase(findTestCase('Verify URL/TC Verify Url'), [:], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('Sub Script/Verify URL/TC Verify Url'), [:], FailureHandling.STOP_ON_FAILURE)
 
 WebUiBuiltInKeywords.click(findTestObject('Page_eBlox Rapportering/Selection'))
 
-WebUI.callTestCase(findTestCase('Verify URL/TC Verify Url'), [:], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('Sub Script/Verify URL/TC Verify Url'), [:], FailureHandling.STOP_ON_FAILURE)
 
 WebUiBuiltInKeywords.click(findTestObject('Page_eBlox Rapportering/Tableau croise'))
 
-WebUI.callTestCase(findTestCase('Verify URL/TC Verify Url'), [:], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('Sub Script/Verify URL/TC Verify Url'), [:], FailureHandling.STOP_ON_FAILURE)
 
 WebUiBuiltInKeywords.click(findTestObject('Page_eBlox Rapportering/Graphiques'))
 
-WebUI.callTestCase(findTestCase('Verify URL/TC Verify Url'), [:], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('Sub Script/Verify URL/TC Verify Url'), [:], FailureHandling.STOP_ON_FAILURE)
 
 not_run: WebUI.verifyElementText(findTestObject('Page_eBlox Rapportering/Graphique - Grafieken/text - Historisch uitvoeren'), 
     'Niet-historisch uitvoeren')
@@ -73,7 +73,7 @@ not_run: WebUI.verifyElementText(findTestObject('Page_eBlox Rapportering/Graphiq
 
 WebUiBuiltInKeywords.click(findTestObject('Page_eBlox Rapportering/Operations'))
 
-WebUI.callTestCase(findTestCase('Verify URL/TC Verify Url'), [:], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('Sub Script/Verify URL/TC Verify Url'), [:], FailureHandling.STOP_ON_FAILURE)
 
 WebUiBuiltInKeywords.click(findTestObject('Page_eBlox Rapportering/List button'))
 
@@ -93,7 +93,7 @@ myTestObject1.addProperty('xpath', ConditionType.EQUALS, '//a[@class=\'hide-on-h
 
 WebUI.click(myTestObject1)
 
-WebUI.callTestCase(findTestCase('Verify URL/TC Verify Url'), [:], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('Sub Script/Verify URL/TC Verify Url'), [:], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.waitForPageLoad(10)
 
@@ -115,7 +115,7 @@ WebUI.delay(5)
 
 WebUI.click(findTestObject('Mes rapports Obj/EXECUTION/Graphique button'))
 
-WebUI.callTestCase(findTestCase('Select Language/TC2 Verify FR Language'), [:], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('Sub Script/Select Language/TC2 Verify FR Language'), [:], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.closeBrowser()
 
