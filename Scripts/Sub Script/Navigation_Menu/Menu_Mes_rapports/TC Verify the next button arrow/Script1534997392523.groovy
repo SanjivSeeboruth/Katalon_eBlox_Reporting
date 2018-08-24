@@ -23,7 +23,7 @@ WebUI.waitForElementClickable(findTestObject('Mes rapports Obj/button_Next_Arrow
 
 WebUI.click(findTestObject('Mes rapports Obj/button_Next_Arrow'))
 
-WebUI.delay(5)
+not_run: WebUI.delay(5)
 
-WebUI.waitForPageLoad(10)
+not_run: WebUI.waitForPageLoad(10)
 

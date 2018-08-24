@@ -20,27 +20,12 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUiBuiltInKe
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
-TestData excelData = findTestData('Data Files/Data/testData')
+def alert = new TestObject('alert')
 
-def no_Of_Rows = excelData.getRowNumbers()
+alert.addProperty('xpath', ConditionType.EQUALS, "//div[@id=\'toast-container\']//div[@class=\'toast-error\']//button//button//div[@class=\'toast-message\']")
+//alert.addProperty('xpath', ConditionType.EQUALS, "//*[@id=\"wizard-page\"]/div[2]/div/div/div/div/div[1]/div[2]/div/div/form/div/div/div[5]/div/div/div[2]")
 
-for (int i = 1; i <= no_Of_Rows; i++) {
-	
-	if(excelData.getValue('Travailleur Name', i)!=""){
-	
-	def Select_travailleur = new TestObject('Select_travailleur_by_name')
+//*[@id="wizard-page"]/div[2]/div/div/div/div/div[1]/div[2]/div/div/form/div/div/div[5]/div/div/div[2]
+def result = WebUI.getText(alert)
 
-	Select_travailleur.addProperty('xpath', ConditionType.EQUALS, "//div[@id=\'select2-drop\']//ul[@class=\'select2-results\']//li[@role=\'presentation\']//div[contains(text(),\'"+excelData.getValue('Travailleur Name', i) +"\')]")
-	
-	WebUI.click(Select_travailleur)
-
-	WebUI.delay(1)
-	
-	}
-	
-	else{
-		break
-	}
-}
-
-WebUI.waitForPageLoad(15)
+println (result)
