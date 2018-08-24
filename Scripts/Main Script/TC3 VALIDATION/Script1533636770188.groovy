@@ -50,12 +50,10 @@ WebUI.waitForPageLoad(10)
 
 WebUI.verifyElementPresent(findTestObject('Mes rapports Obj/SELECTION/Active Contrat/exclamation icon'), 20)
 
-not_run: WebUI.callTestCase(findTestCase('Sub Script/Navigation_Menu/Menu_Mes_rapports/Nouveau_Rapport/Mes rapports - SELECTION/Verify if checkbox is unchecked/TC 10 Deselect all checkbox'), 
+WebUI.callTestCase(findTestCase('Sub Script/Navigation_Menu/Menu_Mes_rapports/Nouveau_Rapport/Mes rapports - SELECTION/Verify if checkbox is unchecked/TC 10 Deselect all checkbox'), 
     [:], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.callTestCase(findTestCase('Sub Script/Navigation_Menu/Menu_Mes_rapports/TC Verify the next button arrow'), [:], FailureHandling.STOP_ON_FAILURE)
-
-WebUI.callTestCase(findTestCase('Sub Script/Navigation_Menu/Menu_Mes_rapports/TC Verify alert message'), [:], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.waitForPageLoad(10)
 
@@ -63,29 +61,17 @@ WebUI.callTestCase(findTestCase('Sub Script/Navigation_Menu/Menu_Mes_rapports/TC
 
 WebUI.verifyElementPresent(findTestObject('Mes rapports Obj/SELECTION/Active Contrat/exclamation icon'), 20)
 
+WebUI.waitForPageLoad(10)
+
 WebUI.callTestCase(findTestCase('Sub Script/Navigation_Menu/TC Verify annuler button'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.focus(findTestObject('Mes rapports Obj/EXECUTION/Annuler Modal'))
+WebUI.callTestCase(findTestCase('Sub Script/Navigation_Menu/TC Verify Return button'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.click(findTestObject('Page_mysdworx - Aanmelden/Terugkeren'))
+WebUI.callTestCase(findTestCase('Sub Script/Navigation_Menu/TC Verify annuler button'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.focus(findTestObject('Mes rapports Obj/EXECUTION/Annuler button'))
-
-WebUI.waitForElementClickable(findTestObject('Mes rapports Obj/EXECUTION/Annuler button'), 10)
-
-WebUI.click(findTestObject('Mes rapports Obj/EXECUTION/Annuler button'))
-
-WebUI.delay(2)
-
-WebUI.delay(2)
-
-WebUI.focus(findTestObject('Mes rapports Obj/EXECUTION/Annuler Modal'))
-
-WebUI.waitForElementClickable(findTestObject('Mes rapports Obj/EXECUTION/Annuler nouveau rapport'), 10)
-
-WebUI.click(findTestObject('Mes rapports Obj/EXECUTION/Annuler nouveau rapport'))
+WebUI.callTestCase(findTestCase('Sub Script/Navigation_Menu/TC Verify Annuler nouveau rapport button'), [:], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.waitForPageLoad(25)
 
-not_run: WebUI.closeBrowser()
+WebUI.closeBrowser()
 

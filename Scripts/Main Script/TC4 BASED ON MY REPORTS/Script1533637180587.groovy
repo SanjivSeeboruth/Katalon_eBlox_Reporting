@@ -22,11 +22,7 @@ import org.openqa.selenium.Keys as Keys
 
 WebUI.callTestCase(findTestCase('Login/TC1 Login to Mysdworx'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.waitForPageLoad(10)
-
 WebUI.callTestCase(findTestCase('Sub Script/Select Language/TC1 Verify NL language'), [:], FailureHandling.STOP_ON_FAILURE)
-
-WebUI.waitForPageLoad(10)
 
 WebUI.callTestCase(findTestCase('Sub Script/Navigation_Menu/Menu_Mes_rapports/TC Verify Nouveau rapport button'), [:], FailureHandling.STOP_ON_FAILURE)
 
@@ -53,7 +49,7 @@ WebUI.waitForPageLoad(10)
 
 WebUI.delay(5)
 
-WebUI.callTestCase(findTestCase('Sub Script/Navigation_Menu/Menu_Mes_rapports/Mes rapports - SELECTION/Verify if checkbox is unchecked/TC 10 Deselect all checkbox'), 
+WebUI.callTestCase(findTestCase('Sub Script/Navigation_Menu/Menu_Mes_rapports/Nouveau_Rapport/Mes rapports - SELECTION/Verify if checkbox is unchecked/TC 10 Deselect all checkbox'), 
     [:], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.callTestCase(findTestCase('Sub Script/Verify URL/TC Verify Url'), [:], FailureHandling.STOP_ON_FAILURE)
@@ -66,20 +62,15 @@ WebUI.callTestCase(findTestCase('Sub Script/Verify URL/TC Verify Url'), [:], Fai
 
 WebUI.delay(2)
 
-WebUI.click(findTestObject('Mes rapports Obj/EXECUTION/Description _Date de reference historique'))
+WebUI.callTestCase(findTestCase('Sub Script/Navigation_Menu/Menu_Mes_rapports/Nouveau_Rapport/Mes rapports - EXECUTION/Saisissez les valeurs souhaitees section/TC Click on reference historic dropdown'), 
+    [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.delay(2)
+WebUI.callTestCase(findTestCase('Sub Script/Navigation_Menu/Menu_Mes_rapports/Nouveau_Rapport/Mes rapports - EXECUTION/Saisissez les valeurs souhaitees section/TC Select historic type from the dropdown'), 
+    [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.click(findTestObject('Mes rapports Obj/EXECUTION/Description_Date de reference historique - Dernier jour mois precedent'))
-
-WebUI.waitForElementClickable(findTestObject('Mes rapports Obj/EXECUTION/Exporter button'), 5)
-
-def export1 = WebUI.modifyObjectProperty(findTestObject('Mes rapports Obj/EXECUTION/Exporter button'), 'title', 'equals', 
-    'Exporteer naar excel', true)
-
-WebUI.click(export1)
+WebUI.callTestCase(findTestCase('Sub Script/Navigation_Menu/Menu_Mes_rapports/TC Verify Exporter button'), [:], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.waitForPageLoad(20)
 
-WebUI.closeBrowser()
+not_run: WebUI.closeBrowser()
 

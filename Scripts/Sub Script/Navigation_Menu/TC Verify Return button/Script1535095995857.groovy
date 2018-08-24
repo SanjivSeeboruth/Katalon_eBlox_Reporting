@@ -19,11 +19,9 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUiBuiltInKe
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
-WebUI.waitForElementClickable(findTestObject('Mes rapports Obj/button_Next_Arrow'), 20)
+WebUI.focus(findTestObject('Mes rapports Obj/EXECUTION/Annuler Modal'))
 
-WebUI.click(findTestObject('Mes rapports Obj/button_Next_Arrow'))
-
-WebUI.delay(5)
+WebUI.click(findTestObject('Mes rapports Obj/EXECUTION/Return Button'))
 
 WebUI.waitForPageLoad(10)
 

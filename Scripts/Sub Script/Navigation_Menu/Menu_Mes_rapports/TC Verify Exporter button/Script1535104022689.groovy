@@ -19,11 +19,9 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUiBuiltInKe
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
-WebUI.waitForElementClickable(findTestObject('Mes rapports Obj/button_Next_Arrow'), 20)
+def export1 = WebUI.modifyObjectProperty(findTestObject('Mes rapports Obj/EXECUTION/Exporter button'), 'title', 'equals',
+	'Exporteer naar excel', true)
 
-WebUI.click(findTestObject('Mes rapports Obj/button_Next_Arrow'))
+WebUI.click(export1)
 
-WebUI.delay(5)
-
-WebUI.waitForPageLoad(10)
-
+WebUI.waitForPageLoad(20)
