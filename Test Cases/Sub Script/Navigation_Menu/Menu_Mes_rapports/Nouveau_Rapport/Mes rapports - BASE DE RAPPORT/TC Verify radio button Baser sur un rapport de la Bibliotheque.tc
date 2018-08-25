@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>TC3  Verify radio button Baser sur un rapport de la Bibliotheque</name>
+   <name>TC Verify radio button Baser sur un rapport de la Bibliotheque</name>
    <tag></tag>
    <comment></comment>
    <testCaseGuid>03f9388d-be2d-4bdc-8f37-6da9b8894970</testCaseGuid>

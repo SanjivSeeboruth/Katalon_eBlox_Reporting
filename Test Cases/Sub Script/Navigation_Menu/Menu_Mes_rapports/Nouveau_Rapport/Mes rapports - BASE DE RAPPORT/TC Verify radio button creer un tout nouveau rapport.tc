@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>TC1  Verify radio button creer un tout nouveau rapport</name>
+   <name>TC Verify radio button creer un tout nouveau rapport</name>
    <tag></tag>
    <comment></comment>
    <testCaseGuid>be6ef163-1521-42de-892d-463e80be0912</testCaseGuid>

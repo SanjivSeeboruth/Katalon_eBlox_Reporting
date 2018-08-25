@@ -26,7 +26,7 @@ WebUI.callTestCase(findTestCase('Sub Script/Select Language/TC1 Verify NL langua
 
 WebUI.callTestCase(findTestCase('Sub Script/Navigation_Menu/Menu_Mes_rapports/TC Verify Nouveau rapport button'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.callTestCase(findTestCase('Sub Script/Navigation_Menu/Menu_Mes_rapports/Nouveau_Rapport/Mes rapports - BASE DE RAPPORT/TC2  Verify radio button Baser sur un rapport issu de Mes rapports'), 
+WebUI.callTestCase(findTestCase('Sub Script/Navigation_Menu/Menu_Mes_rapports/Nouveau_Rapport/Mes rapports - BASE DE RAPPORT/TC Verify radio button Baser sur un rapport issu de Mes rapports'), 
     [:], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.click(findTestObject('Mes rapports Obj/BASE DE RAPPORT/Baser sur un rapport issu de mes rapport dropdown'))
