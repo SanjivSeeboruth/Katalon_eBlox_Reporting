@@ -33,4 +33,8 @@ for (int i = 1; i <= 2; i++) {
     WebUI.click(findTestObject('Mes rapports Obj/CONTENU/click_Remove_text'))
 }
 
+WebUI.waitForPageLoad(15)
 
+WebUI.click(findTestObject('Mes rapports Obj/SELECTION/Travailleur/Page_eBlox Reporting/Close_dropdown'))
+
+WebUI.delay(2)

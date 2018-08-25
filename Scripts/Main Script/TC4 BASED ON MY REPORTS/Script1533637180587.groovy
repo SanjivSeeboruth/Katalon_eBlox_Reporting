@@ -37,9 +37,7 @@ WebUI.sendKeys(findTestObject('Mes rapports Obj/BASE DE RAPPORT/Mes rapport inpu
 
 WebUI.callTestCase(findTestCase('Sub Script/Navigation_Menu/Menu_Mes_rapports/TC Verify the next button arrow'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.click(findTestObject('Mes rapports Obj/CONTENU/Click on contenu'))
-
-WebUI.click(findTestObject('Mes rapports Obj/CONTENU/delete'))
+WebUI.callTestCase(findTestCase('Sub Script/Navigation_Menu/TC Read data in table'), [:], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.callTestCase(findTestCase('Sub Script/Verify URL/TC Verify Url'), [:], FailureHandling.STOP_ON_FAILURE)
 
@@ -72,5 +70,5 @@ WebUI.callTestCase(findTestCase('Sub Script/Navigation_Menu/Menu_Mes_rapports/TC
 
 WebUI.waitForPageLoad(20)
 
-not_run: WebUI.closeBrowser()
+WebUI.closeBrowser()
 

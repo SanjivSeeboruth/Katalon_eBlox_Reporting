@@ -51,7 +51,7 @@ myDonneeCalculees.addProperty('xpath', ConditionType.EQUALS, '//div[@id=\'select
 
 WebUI.click(myDonneeCalculees)
 
-WebUI.click(findTestObject('Mes rapports Obj/SELECTION/Travailleur/Page_eBlox Reporting/New Test Object'))
+WebUI.click(findTestObject('Mes rapports Obj/SELECTION/Travailleur/Page_eBlox Reporting/Close_dropdown'))
 
 WebUI.click(findTestObject('Mes rapports Obj/EXECUTION/Button executer'))
 
