@@ -40,23 +40,26 @@ WebUI.click(myTestObject)
 
 WebUI.waitForPageLoad(10)
 
-WebUI.click(findTestObject('Page_eBlox Rapportering/Definition'))
+WebUI.callTestCase(findTestCase('Sub Script/Navigation_Menu/Menu_Mes_rapports/Inner_Content/TC Verify Definition tab'), 
+    [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.waitForPageLoad(10)
-
-WebUiBuiltInKeywords.click(findTestObject('Page_eBlox Rapportering/Contenu'))
-
-WebUI.callTestCase(findTestCase('Sub Script/Verify URL/TC Verify Url'), [:], FailureHandling.STOP_ON_FAILURE)
-
-WebUiBuiltInKeywords.click(findTestObject('Page_eBlox Rapportering/Selection'))
+WebUI.callTestCase(findTestCase('Sub Script/Navigation_Menu/Menu_Mes_rapports/Inner_Content/Content_Navigation/TC VErify Contenu tab'), 
+    [:], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.callTestCase(findTestCase('Sub Script/Verify URL/TC Verify Url'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUiBuiltInKeywords.click(findTestObject('Page_eBlox Rapportering/Tableau croise'))
+WebUI.callTestCase(findTestCase('Sub Script/Navigation_Menu/Menu_Mes_rapports/Inner_Content/Content_Navigation/TC Verify Selection tab'), 
+    [:], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.callTestCase(findTestCase('Sub Script/Verify URL/TC Verify Url'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUiBuiltInKeywords.click(findTestObject('Page_eBlox Rapportering/Graphiques'))
+WebUI.callTestCase(findTestCase('Sub Script/Navigation_Menu/Menu_Mes_rapports/Inner_Content/Content_Navigation/TC Tableau croise tab'), 
+    [:], FailureHandling.STOP_ON_FAILURE)
+
+WebUI.callTestCase(findTestCase('Sub Script/Verify URL/TC Verify Url'), [:], FailureHandling.STOP_ON_FAILURE)
+
+WebUI.callTestCase(findTestCase('Sub Script/Navigation_Menu/Menu_Mes_rapports/Inner_Content/Content_Navigation/TC VErify Graphiques tab'), 
+    [:], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.callTestCase(findTestCase('Sub Script/Verify URL/TC Verify Url'), [:], FailureHandling.STOP_ON_FAILURE)
 
@@ -66,21 +69,21 @@ not_run: WebUI.verifyElementText(findTestObject('Page_eBlox Rapportering/Graphiq
 not_run: WebUI.verifyElementText(findTestObject('Page_eBlox Rapportering/Graphique - Grafieken/text - Historisch uitvoeren'), 
     'Historisch uitvoeren')
 
-WebUiBuiltInKeywords.click(findTestObject('Page_eBlox Rapportering/Operations'))
+WebUI.callTestCase(findTestCase('Sub Script/Navigation_Menu/Menu_Mes_rapports/Inner_Content/Content_Navigation/TC Verify Operations tab'), 
+    [:], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.callTestCase(findTestCase('Sub Script/Verify URL/TC Verify Url'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUiBuiltInKeywords.click(findTestObject('Page_eBlox Rapportering/List button'))
+WebUI.callTestCase(findTestCase('Sub Script/Navigation_Menu/Menu_Mes_rapports/Inner_Content/Content_Navigation/TC Verify List button icon'), 
+    [:], FailureHandling.STOP_ON_FAILURE)
 
-result = WebUI.getText(findTestObject('Mes rapports Obj/input search filter'))
-
-if (result == 'TEST 2 MAU JAN 2018 (sanjiv)') {
-    KeywordUtil.markPassed('Text is still present')
-}
+WebUI.callTestCase(findTestCase('Sub Script/Navigation_Menu/Menu_Mes_rapports/Main_Content/TC VErify text in search textfield'), 
+    [:], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.setText(findTestObject('Mes rapports Obj/input search filter'), 'TEST RAPPORT REGRESSIE')
 
-WebUI.click(findTestObject('Page_eBlox Reporting/Search_Icon'))
+WebUI.callTestCase(findTestCase('Sub Script/Navigation_Menu/Menu_Mes_rapports/Main_Content/TC VErify Search icon'), [:], 
+    FailureHandling.STOP_ON_FAILURE)
 
 def myTestObject1 = new TestObject('Select_report_name')
 
@@ -90,25 +93,13 @@ WebUI.click(myTestObject1)
 
 WebUI.callTestCase(findTestCase('Sub Script/Verify URL/TC Verify Url'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.waitForPageLoad(10)
+WebUI.callTestCase(findTestCase('Sub Script/Navigation_Menu/Menu_Mes_rapports/Nouveau_Rapport/Mes rapports - EXECUTION/Saisissez les valeurs souhaitees section/TC Click on reference historic dropdown'), 
+    [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.waitForPageLoad(10)
+WebUI.callTestCase(findTestCase('Sub Script/Navigation_Menu/Menu_Mes_rapports/Nouveau_Rapport/Mes rapports - EXECUTION/Saisissez les valeurs souhaitees section/TC Select historic type from the dropdown'), 
+    [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.waitForElementClickable(findTestObject('Mes rapports Obj/EXECUTION/Description _Date de reference historique'), 10)
-
-WebUI.delay(2)
-
-WebUI.click(findTestObject('Mes rapports Obj/EXECUTION/Description _Date de reference historique'))
-
-WebUI.delay(5)
-
-WebUI.waitForElementClickable(findTestObject('Mes rapports Obj/EXECUTION/Aujourdhui - Vandaag'), 5)
-
-WebUI.click(findTestObject('Mes rapports Obj/EXECUTION/Aujourdhui - Vandaag'))
-
-WebUI.delay(5)
-
-WebUI.click(findTestObject('Mes rapports Obj/EXECUTION/Graphique button'))
+WebUI.callTestCase(findTestCase('Sub Script/Navigation_Menu/Menu_Mes_rapports/TC Verify Graphique button'), [:], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.callTestCase(findTestCase('Sub Script/Select Language/TC2 Verify FR Language'), [:], FailureHandling.STOP_ON_FAILURE)
 

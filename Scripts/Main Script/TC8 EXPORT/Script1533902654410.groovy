@@ -28,7 +28,8 @@ WebUI.callTestCase(findTestCase('Sub Script/Navigation_Menu/Menu_Mes_rapports/TC
 
 WebUI.setText(findTestObject('Mes rapports Obj/input search filter'), 'REG EXPORT')
 
-WebUI.click(findTestObject('Page_eBlox Reporting/Search_Icon'))
+WebUI.callTestCase(findTestCase('Sub Script/Navigation_Menu/Menu_Mes_rapports/Main_Content/TC VErify Search icon'), [:], 
+    FailureHandling.STOP_ON_FAILURE)
 
 def myTestObject = new TestObject('Select_report')
 
@@ -38,143 +39,69 @@ WebUI.click(myTestObject)
 
 WebUI.waitForPageLoad(10)
 
-WebUI.waitForElementClickable(findTestObject('Page_eBlox Rapportering/Definition'), 15)
+WebUI.callTestCase(findTestCase('Sub Script/Navigation_Menu/Menu_Mes_rapports/Inner_Content/TC Verify Definition tab'), 
+    [:], FailureHandling.STOP_ON_FAILURE)
 
-def definition = WebUI.modifyObjectProperty(findTestObject('Page_eBlox Rapportering/Definition'), 'xpath', 'contains', '//a[contains(text(),\'Definitie\')]', 
-    true)
+WebUI.callTestCase(findTestCase('Sub Script/Navigation_Menu/Menu_Mes_rapports/Inner_Content/Content_Navigation/TC Verify Properties tab'), 
+    [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.click(definition)
+WebUI.callTestCase(findTestCase('Sub Script/Navigation_Menu/Menu_Mes_rapports/Nouveau_Rapport/Mes rapports - PROPRIETES/Options dexportation section/TC Verify checkbox'), 
+    [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.waitForPageLoad(10)
+WebUI.callTestCase(findTestCase('Sub Script/Navigation_Menu/Menu_Mes_rapports/TC Verify Executer button'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.click(findTestObject('Page_eBlox Rapportering/Proprietes'))
-
-WebUI.waitForPageLoad(10)
-
-WebUI.waitForElementClickable(findTestObject('Page_eBlox Rapportering/Definition - Proprietes - Options d exportation/Contenu checkbox'), 
-    2)
-
-WebUI.verifyElementChecked(findTestObject('Page_eBlox Rapportering/Definition - Proprietes - Options d exportation/Contenu checkbox'), 
-    2)
-
-WebUI.verifyElementChecked(findTestObject('Page_eBlox Rapportering/Definition - Proprietes - Options d exportation/Graphiques - propres graphiques checkbox'), 
-    2)
-
-WebUI.verifyElementChecked(findTestObject('Page_eBlox Rapportering/Definition - Proprietes - Options d exportation/Graphiques - suggestions SD checkbox'), 
-    2)
-
-WebUI.verifyElementChecked(findTestObject('Page_eBlox Rapportering/Definition - Proprietes - Options d exportation/Tableau croise checkbox'), 
-    2)
-
-WebUI.click(findTestObject('Page_eBlox Rapportering/Execution tab'))
-
-WebUI.waitForPageLoad(10)
-
-WebUI.waitForElementClickable(findTestObject('Mes rapports Obj/EXECUTION/Description _Date de reference historique'), 10)
-
-WebUI.delay(2)
-
-WebUI.click(findTestObject('Mes rapports Obj/EXECUTION/Description _Date de reference historique'))
-
-WebUI.delay(5)
-
-WebUI.waitForElementClickable(findTestObject('Mes rapports Obj/EXECUTION/Aujourdhui - Vandaag'), 5)
-
-WebUI.click(findTestObject('Mes rapports Obj/EXECUTION/Aujourdhui - Vandaag'))
-
-WebUI.delay(2)
-
-WebUI.click(findTestObject('Mes rapports Obj/EXECUTION/Periode de paiement - Betaalperiode'))
-
-WebUI.click(findTestObject('Mes rapports Obj/EXECUTION/Periode de paiement - Betaalperiode - Huidig jaar'))
-
-WebUI.delay(2)
-
-WebUI.click(findTestObject('Mes rapports Obj/EXECUTION/Button executer'))
-
-WebUI.waitForPageLoad(20)
-
-WebUI.delay(5)
-
-WebUI.waitForElementClickable(findTestObject('Mes rapports Obj/EXECUTION/Exporter button'), 5)
-
-def export1 = WebUI.modifyObjectProperty(findTestObject('Mes rapports Obj/EXECUTION/Exporter button'), 'title', 'equals', 
-    'Exporteer naar excel', true)
-
-WebUI.click(export1)
-
-/*WebUI.waitForElementClickable(findTestObject('Mes rapports Obj/EXECUTION/Exporter button'), 5)
-
-WebUI.click(findTestObject('Mes rapports Obj/EXECUTION/Exporter button'))*/
-WebUI.waitForPageLoad(60)
-
-WebUI.waitForElementClickable(findTestObject('Page_eBlox Rapportering/Definition'), 15)
-
-def definition1 = WebUI.modifyObjectProperty(findTestObject('Page_eBlox Rapportering/Definition'), 'xpath', 'contains', 
-    '//li//div[@class=\'btn-group\']//a[contains(text(),\'Definitie\')]', true)
-
-WebUI.click(definition1)
-
-WebUI.waitForPageLoad(10)
-
-WebUI.click(findTestObject('Page_eBlox Rapportering/Proprietes'))
-
-WebUI.delay(2)
-
-WebUI.uncheck(findTestObject('Page_eBlox Rapportering/Definition - Proprietes - Options d exportation/Graphiques - propres graphiques checkbox'))
-
-WebUI.uncheck(findTestObject('Page_eBlox Rapportering/Definition - Proprietes - Options d exportation/Graphiques - suggestions SD checkbox'))
-
-WebUI.uncheck(findTestObject('Page_eBlox Rapportering/Definition - Proprietes - Options d exportation/Tableau croise checkbox'))
-
-WebUI.verifyElementChecked(findTestObject('Page_eBlox Rapportering/Definition - Proprietes - Options d exportation/Contenu checkbox'), 
-    2)
-
-WebUI.click(findTestObject('Page_eBlox Rapportering/Execution tab'))
-
-WebUI.waitForPageLoad(10)
-
-def export2 = WebUI.modifyObjectProperty(findTestObject('Mes rapports Obj/EXECUTION/Exporter button'), 'title', 'equals', 
-    'Exporteer naar excel', true)
-
-WebUI.click(export2)
-
-WebUI.waitForPageLoad(60)
-
-WebUI.waitForElementClickable(findTestObject('Page_eBlox Rapportering/Definition'), 15)
-
-//WebUI.waitForElementClickable(findTestObject('Page_eBlox Rapportering/Definition'), 5)
-//WebUI.click(findTestObject('Page_eBlox Rapportering/Definition'))
-def definition2 = WebUI.modifyObjectProperty(findTestObject('Page_eBlox Rapportering/Definition'), 'xpath', 'contains', 
-    '//li//div[@class=\'btn-group\']//a[contains(text(),\'Definitie\')]', true)
-
-WebUI.click(definition2)
-
-WebUI.waitForPageLoad(10)
-
-WebUI.click(findTestObject('Page_eBlox Rapportering/Proprietes'))
-
-WebUI.delay(2)
-
-WebUI.uncheck(findTestObject('Page_eBlox Rapportering/Definition - Proprietes - Options d exportation/Graphiques - propres graphiques checkbox'))
-
-WebUI.uncheck(findTestObject('Page_eBlox Rapportering/Definition - Proprietes - Options d exportation/Graphiques - suggestions SD checkbox'))
-
-WebUI.delay(2)
-
-WebUI.uncheck(findTestObject('Page_eBlox Rapportering/Definition - Proprietes - Options d exportation/Tableau croise checkbox'))
-
-WebUI.uncheck(findTestObject('Page_eBlox Rapportering/Definition - Proprietes - Options d exportation/Contenu checkbox'), 
+WebUI.callTestCase(findTestCase('Sub Script/Navigation_Menu/Menu_Mes_rapports/Inner_Content/TC Verify Executer tab'), [:], 
     FailureHandling.STOP_ON_FAILURE)
 
-WebUI.click(findTestObject('Page_eBlox Rapportering/Execution tab'))
+WebUI.callTestCase(findTestCase('Sub Script/Navigation_Menu/Menu_Mes_rapports/Nouveau_Rapport/Mes rapports - EXECUTION/Saisissez les valeurs souhaitees section/TC Click on reference historic dropdown'), 
+    [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.waitForPageLoad(10)
+WebUI.callTestCase(findTestCase('Sub Script/Navigation_Menu/Menu_Mes_rapports/Nouveau_Rapport/Mes rapports - EXECUTION/Saisissez les valeurs souhaitees section/TC Select historic type from the dropdown'), 
+    [:], FailureHandling.STOP_ON_FAILURE)
 
-def export3 = WebUI.modifyObjectProperty(findTestObject('Mes rapports Obj/EXECUTION/Exporter button'), 'title', 'equals', 
-    'Exporteer naar excel', true)
+WebUI.callTestCase(findTestCase('Sub Script/Navigation_Menu/Menu_Mes_rapports/Nouveau_Rapport/Mes rapports - EXECUTION/Historique section/TC Verify Historic checkbox is checked'), 
+    [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.click(export3)
+WebUI.callTestCase(findTestCase('Sub Script/Navigation_Menu/Menu_Mes_rapports/Nouveau_Rapport/Mes rapports - EXECUTION/Historique section/TC Click on historic period dropdown'), 
+    [:], FailureHandling.STOP_ON_FAILURE)
+
+WebUI.callTestCase(findTestCase('Sub Script/Navigation_Menu/Menu_Mes_rapports/Nouveau_Rapport/Mes rapports - EXECUTION/Historique section/TC Click on historic period dropdown'), 
+    [:], FailureHandling.STOP_ON_FAILURE)
+
+WebUI.callTestCase(findTestCase('Sub Script/Navigation_Menu/Menu_Mes_rapports/TC Verify Executer button'), [:], FailureHandling.STOP_ON_FAILURE)
+
+WebUI.callTestCase(findTestCase('Sub Script/Navigation_Menu/Menu_Mes_rapports/TC Verify Exporter button'), [:], FailureHandling.STOP_ON_FAILURE)
+
+WebUI.callTestCase(findTestCase('Sub Script/Navigation_Menu/Menu_Mes_rapports/Inner_Content/TC Verify Definition tab'), 
+    [:], FailureHandling.STOP_ON_FAILURE)
+
+WebUI.callTestCase(findTestCase('Sub Script/Navigation_Menu/Menu_Mes_rapports/Inner_Content/Content_Navigation/TC Verify Properties tab'), 
+    [:], FailureHandling.STOP_ON_FAILURE)
+
+WebUI.callTestCase(findTestCase('Sub Script/Navigation_Menu/Menu_Mes_rapports/Nouveau_Rapport/Mes rapports - PROPRIETES/Options dexportation section/TC Verify checkbox2'), 
+    [:], FailureHandling.STOP_ON_FAILURE)
+
+WebUI.callTestCase(findTestCase('Sub Script/Navigation_Menu/Menu_Mes_rapports/Inner_Content/TC Verify Executer tab'), [:], 
+    FailureHandling.STOP_ON_FAILURE)
+
+WebUI.callTestCase(findTestCase('Sub Script/Navigation_Menu/Menu_Mes_rapports/TC Verify Exporter button'), [:], FailureHandling.STOP_ON_FAILURE)
+
+WebUI.callTestCase(findTestCase('Sub Script/Navigation_Menu/Menu_Mes_rapports/Inner_Content/TC Verify Definition tab'), 
+    [:], FailureHandling.STOP_ON_FAILURE)
+
+WebUI.callTestCase(findTestCase('Sub Script/Navigation_Menu/Menu_Mes_rapports/Inner_Content/Content_Navigation/TC Verify Operations tab'), 
+    [:], FailureHandling.STOP_ON_FAILURE)
+
+WebUI.callTestCase(findTestCase('Sub Script/Navigation_Menu/Menu_Mes_rapports/Inner_Content/Content_Navigation/TC Verify Properties tab'), 
+    [:], FailureHandling.STOP_ON_FAILURE)
+
+WebUI.callTestCase(findTestCase('Sub Script/Navigation_Menu/Menu_Mes_rapports/Nouveau_Rapport/Mes rapports - PROPRIETES/Options dexportation section/TC Verify checkbox3'), 
+    [:], FailureHandling.STOP_ON_FAILURE)
+
+WebUI.callTestCase(findTestCase('Sub Script/Navigation_Menu/Menu_Mes_rapports/Inner_Content/TC Verify Executer tab'), [:], 
+    FailureHandling.STOP_ON_FAILURE)
+
+WebUI.callTestCase(findTestCase('Sub Script/Navigation_Menu/Menu_Mes_rapports/TC Verify Exporter button'), [:], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.waitForPageLoad(60)
 

@@ -4,7 +4,6 @@ import static com.kms.katalon.core.testdata.TestDataFactory.findTestData
 import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
 import com.kms.katalon.core.checkpoint.Checkpoint as Checkpoint
 import com.kms.katalon.core.checkpoint.CheckpointFactory as CheckpointFactory
-import com.kms.katalon.core.context.TestCaseContext
 import com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords as MobileBuiltInKeywords
 import com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords as Mobile
 import com.kms.katalon.core.model.FailureHandling as FailureHandling
@@ -22,6 +21,33 @@ import internal.GlobalVariable as GlobalVariable
 
 TestData excelData = findTestData('Data Files/Data/testData')
 
-WebUI.setText(findTestObject('Mes rapports Obj/input search filter'), 'TEST 2 MAU JAN 2018 (sanjiv)')
+def no_Of_Rows = excelData.getRowNumbers()
 
-WebUI.waitForPageLoad(10)
+String value;
+
+for (int i = 1; i <= no_Of_Rows; i++) {
+	if (excelData.getValue('Options Exportation', i)!="") {
+		Boolean verifyChecbox = WebUI.waitForElementClickable(findTestObject("'Page_eBlox Rapportering/Definition - Proprietes - Options d exportation/'"+ excelData.getValue('Options Exportation', i) +"'checkbox'"),
+			2)
+		if (verifyChecbox==true) {
+			value = "check"
+		}
+		else{
+			value = "uncheck"
+		}
+		
+		if (value == excelData.getValue('First Option', i) ) {
+			
+			WebUI.(excelData.getValue('First Option', i))(findTestObject("'Page_eBlox Rapportering/Definition - Proprietes - Options d exportation/'"+ excelData.getValue('Options Exportation', i) +"'checkbox'"))
+		}
+	}
+	
+	else{
+		break
+	}
+	
+	
+	
+}
+
+

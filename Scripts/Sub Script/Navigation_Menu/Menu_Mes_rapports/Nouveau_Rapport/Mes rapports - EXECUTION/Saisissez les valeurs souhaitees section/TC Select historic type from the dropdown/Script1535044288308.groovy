@@ -2,6 +2,7 @@ import static com.kms.katalon.core.checkpoint.CheckpointFactory.findCheckpoint
 import static com.kms.katalon.core.testcase.TestCaseFactory.findTestCase
 import static com.kms.katalon.core.testdata.TestDataFactory.findTestData
 import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
+import org.junit.After as After
 import com.kms.katalon.core.checkpoint.Checkpoint as Checkpoint
 import com.kms.katalon.core.checkpoint.CheckpointFactory as CheckpointFactory
 import com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords as MobileBuiltInKeywords
@@ -11,7 +12,7 @@ import com.kms.katalon.core.testcase.TestCase as TestCase
 import com.kms.katalon.core.testcase.TestCaseFactory as TestCaseFactory
 import com.kms.katalon.core.testdata.TestData as TestData
 import com.kms.katalon.core.testdata.TestDataFactory as TestDataFactory
-import com.kms.katalon.core.testobject.ConditionType
+import com.kms.katalon.core.testobject.ConditionType as ConditionType
 import com.kms.katalon.core.testobject.ObjectRepository as ObjectRepository
 import com.kms.katalon.core.testobject.TestObject as TestObject
 import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WSBuiltInKeywords
@@ -25,17 +26,20 @@ TestData excelData = findTestData('Data Files/Data/testData')
 def no_Of_Rows = excelData.getRowNumbers()
 
 for (int i = 1; i <= no_Of_Rows; i++) {
-	
-	if(excelData.getValue('Historic Type', i)!=""){
-		
-	def historicType = new TestObject('Select_historic_Type')
-	
-	historicType.addProperty('xpath', ConditionType.EQUALS, "//a//span[contains(text(),\'"+excelData.getValue('Historic Type', i)+"\')]")
-	
-	WebUI.click(historicType)
-	}
-	
-	else{
-		break
-	}
+    if (excelData.getValue('Historic Type', i) != '') {
+        def historicType = new TestObject('Select_historic_Type')
+
+        historicType.addProperty('xpath', ConditionType.EQUALS, ('//a//span[contains(text(),\'' + excelData.getValue('Historic Type', 
+                i)) + '\')]')
+
+        WebUI.click(historicType)
+    } else {
+        break
+    }
 }
+
+WebUI.waitForPageLoad(2)
+
+WebUI.delay(2)
+
+
