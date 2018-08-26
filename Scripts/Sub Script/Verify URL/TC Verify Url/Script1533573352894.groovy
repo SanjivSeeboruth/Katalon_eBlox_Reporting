@@ -40,3 +40,4 @@ if (m.find()) {
     KeywordUtil.markPassed('The user name and the concern number are not present in the URL')
 }
 
+WebUI.delay(2)
