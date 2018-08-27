@@ -21,6 +21,20 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
+String name = GlobalVariable.currentTestCaseId
+
+println (name)
+
+String[] parts = name.split("/")
+
+String part3 = parts[2]
+
+println (part3)
+
+GlobalVariable.currentTestCaseId = part3
+
+println (GlobalVariable.currentTestCaseId)
+
 WebUI.callTestCase(findTestCase('Login/TC1 Login to Mysdworx'), [:], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.callTestCase(findTestCase('Sub Script/Select Language/TC1 Verify NL language'), [:], FailureHandling.STOP_ON_FAILURE)

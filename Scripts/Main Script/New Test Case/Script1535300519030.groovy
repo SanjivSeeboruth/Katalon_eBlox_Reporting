@@ -25,3 +25,16 @@ import internal.GlobalVariable as GlobalVariable
 String name = GlobalVariable.currentTestCaseId
 
 println (name)
+
+String[] parts = name.split("/")
+
+String part3 = parts[2]
+
+println (part3)
+
+GlobalVariable.currentTestCaseId = part3
+
+println (GlobalVariable.currentTestCaseId)
+
+
+
