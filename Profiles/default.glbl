@@ -9,4 +9,9 @@
       <initValue>10</initValue>
       <name>TimeToWait</name>
    </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>''</initValue>
+      <name>currentTestCaseId</name>
+   </GlobalVariableEntity>
 </GlobalVariableEntities>
