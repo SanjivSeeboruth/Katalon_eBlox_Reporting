@@ -22,17 +22,14 @@ import org.openqa.selenium.Keys as Keys
 
 WebUI.callTestCase(findTestCase('Login/TC1 Login to Mysdworx'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.waitForPageLoad(20)
-
 WebUI.callTestCase(findTestCase('Sub Script/Select Language/TC1 Verify NL language'), [:], FailureHandling.STOP_ON_FAILURE)
-
-WebUI.waitForPageLoad(10)
 
 WebUI.callTestCase(findTestCase('Sub Script/Navigation_Menu/Menu_Mes_rapports/TC Verify Mes rapports tab'), [:], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.setText(findTestObject('Mes rapports Obj/input search filter'), 'REG BEWERKINGEN')
 
-WebUI.click(findTestObject('Page_eBlox Reporting/Search_Icon'))
+WebUI.callTestCase(findTestCase('Sub Script/Navigation_Menu/Menu_Mes_rapports/Main_Content/TC VErify Search icon'), [:], 
+    FailureHandling.STOP_ON_FAILURE)
 
 WebUI.delay(2)
 
@@ -40,19 +37,18 @@ WebUI.click(findTestObject('Mes rapports Obj/select report'))
 
 WebUI.waitForPageLoad(10)
 
-WebUI.click(findTestObject('Page_eBlox Rapportering/Definition'))
+WebUI.callTestCase(findTestCase('Sub Script/Navigation_Menu/Menu_Mes_rapports/Inner_Content/TC Verify Definition tab'), 
+    [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.click(findTestObject('Page_eBlox Rapportering/Contenu'))
-
-WebUI.waitForPageLoad(10)
+WebUI.callTestCase(findTestCase('Sub Script/Navigation_Menu/Menu_Mes_rapports/Inner_Content/Content_Navigation/TC VErify Contenu tab'), 
+    [:], FailureHandling.STOP_ON_FAILURE)
 
 not_run: WebUI.verifyTextPresent('Naam werknemer', false)
 
 not_run: WebUiBuiltInKeywords.verifyTextPresent('Brutoloon ', false)
 
-WebUI.click(findTestObject('Page_eBlox Rapportering/Operations'))
-
-WebUI.waitForPageLoad(10)
+WebUI.callTestCase(findTestCase('Sub Script/Navigation_Menu/Menu_Mes_rapports/Inner_Content/Content_Navigation/TC Verify Operations tab'), 
+    [:], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.click(findTestObject('Page_eBlox Rapportering/Operation/Nouvelle operation'))
 
@@ -97,12 +93,12 @@ WebUI.click(findTestObject('Page_eBlox Rapportering/Operation/Operation - input 
 WebUI.setText(findTestObject('Page_eBlox Rapportering/Operation/Operation - input condition name'), 'Conditie Bewerking 1')
 
 WebUI.closeBrowser()
+
 WebUI.click(findTestObject('Page_eBlox Rapportering/Operation/Conditions - Nom - plus icon'))
 
 WebUI.setText(findTestObject('Page_eBlox Rapportering/Operation/Input condition for plus icon'), 'Brutoloon')
 
-WebUI.sendKeys(findTestObject('Page_eBlox Rapportering/Operation/Input condition for plus icon'), Keys.chord(
-        Keys.ENTER))
+WebUI.sendKeys(findTestObject('Page_eBlox Rapportering/Operation/Input condition for plus icon'), Keys.chord(Keys.ENTER))
 
 WebUI.delay(2)
 
