@@ -19,4 +19,4 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUiBuiltInKe
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
-WebUI.click(findTestObject('Page_eBlox Rapportering/Operation/Nouvelle operation'))
+WebUI.setText(findTestObject('Page_eBlox Rapportering/Operation/Operation -Description'), 'test')

@@ -50,19 +50,19 @@ not_run: WebUiBuiltInKeywords.verifyTextPresent('Brutoloon ', false)
 WebUI.callTestCase(findTestCase('Sub Script/Navigation_Menu/Menu_Mes_rapports/Inner_Content/Content_Navigation/TC Verify Operations tab'), 
     [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.click(findTestObject('Page_eBlox Rapportering/Operation/Nouvelle operation'))
+WebUI.callTestCase(findTestCase('Sub Script/Navigation_Menu/Menu_Mes_rapports/Inner_Content/Content_Navigation/Nouvelle Operation/TC Verify nouvelle operation dropdown button'), 
+    [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.click(findTestObject('Page_eBlox Rapportering/Operation/Nouvelle operation - Numeric'))
+WebUI.callTestCase(findTestCase('Sub Script/Navigation_Menu/Menu_Mes_rapports/Inner_Content/Content_Navigation/Nouvelle Operation/TC Opearation numerique'), 
+    [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.mouseOver(findTestObject('Page_eBlox Rapportering/Operation/mouse over operation list test'))
+WebUI.callTestCase(findTestCase('Sub Script/Navigation_Menu/Menu_Mes_rapports/Inner_Content/Content_Navigation/Nouvelle Operation/TC Input nom d_operations'), 
+    [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.waitForPageLoad(5)
+WebUI.callTestCase(findTestCase('Sub Script/Navigation_Menu/Menu_Mes_rapports/Inner_Content/Content_Navigation/Nouvelle Operation/TC Input the operation description'), 
+    [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.setText(findTestObject('Page_eBlox Rapportering/Operation/Operation - Nom'), 'test')
-
-WebUI.setText(findTestObject('Page_eBlox Rapportering/Operation/Operation -Description'), 'test')
-
-WebUI.click(findTestObject('Page_eBlox Rapportering/Operation/Operation - Sauvegarder button'))
+WebUI.callTestCase(findTestCase('Sub Script/Navigation_Menu/Menu_Mes_rapports/TC Verify Sauvegarder button'), [:], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.setText(findTestObject('Page_eBlox Rapportering/Operation/Operation - Nom'), 'Bewerking 2')
 
