@@ -20,17 +20,15 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUiBuiltInKe
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
-TestData excelData = findTestData('Data/TC2 NEW')
+TestData excelData = findTestData('Data Files/Data/TestData')
 
-def no_Of_Rows = excelData.getRowNumbers()
-
-for (int i = 1; i <= no_Of_Rows; i++) {
+for (int i = 24; i <= 33; i++) {
 	
-	if(excelData.getValue('Dossier & Groupe', i)!=""){
+	if(excelData.getValue(i, (GlobalVariable.currentTestCaseId)+1)!=""){
 		
 	def InputDossier = new TestObject('Select_dossier_by_name')
 
-	InputDossier.addProperty('xpath', ConditionType.EQUALS, "//div[@id=\'select2-drop\']//ul[@class=\'select2-results\']//li[@role=\'presentation\']//div[contains(text(),\'"+excelData.getValue('Dossier & Groupe', i)+"\')]")
+	InputDossier.addProperty('xpath', ConditionType.EQUALS, "//div[@id=\'select2-drop\']//ul[@class=\'select2-results\']//li[@role=\'presentation\']//div[contains(text(),\'"+excelData.getValue(i, (GlobalVariable.currentTestCaseId)+1)+"\')]")
 
 	WebUI.click(InputDossier)
 

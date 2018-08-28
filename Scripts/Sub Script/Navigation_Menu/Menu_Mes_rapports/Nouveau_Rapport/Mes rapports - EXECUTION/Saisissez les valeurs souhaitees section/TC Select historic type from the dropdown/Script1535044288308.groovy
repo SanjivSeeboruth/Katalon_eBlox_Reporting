@@ -21,22 +21,18 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUiBuiltInKe
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
-TestData excelData = findTestData('Data/TC2 NEW')
+TestData excelData = findTestData('Data Files/Data/TestData')
 
-def no_Of_Rows = excelData.getRowNumbers()
-
-for (int i = 1; i <= no_Of_Rows; i++) {
-    if (excelData.getValue('Historic Type', i) != '') {
+    if (excelData.getValue( 43, (GlobalVariable.currentTestCaseId)+1) != '') {
         def historicType = new TestObject('Select_historic_Type')
 
-        historicType.addProperty('xpath', ConditionType.EQUALS, ('//a//span[contains(text(),\'' + excelData.getValue('Historic Type', 
-                i)) + '\')]')
+        historicType.addProperty('xpath', ConditionType.EQUALS, ('//a//span[contains(text(),\'' + excelData.getValue(43, (GlobalVariable.currentTestCaseId)+1)) + '\')]')
 
         WebUI.click(historicType)
     } else {
         break
     }
-}
+
 
 WebUI.waitForPageLoad(2)
 

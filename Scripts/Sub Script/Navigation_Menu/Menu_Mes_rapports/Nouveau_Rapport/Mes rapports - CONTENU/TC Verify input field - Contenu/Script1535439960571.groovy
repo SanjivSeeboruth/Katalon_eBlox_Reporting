@@ -25,8 +25,7 @@ TestData excelData = findTestData('Data Files/Data/TestData')
 
 //def no_Of_Columns = excelData.getColumnNumbers()
 for(int i=4;i<=13;i++){
-	if (excelData.getValue(i, 2)!="") {
-	println (excelData.getValue(i, 2))
+	if (excelData.getValue(i,(GlobalVariable.currentTestCaseId)+1)!="") {
 	WebUI.setText(findTestObject('Mes rapports Obj/CONTENU/input_Contenu_Selecteur'), excelData.getValue(i, (GlobalVariable.currentTestCaseId)+1))
 	WebUI.delay(3)
 	def selecteur = new TestObject('Choisir_selecteur')
