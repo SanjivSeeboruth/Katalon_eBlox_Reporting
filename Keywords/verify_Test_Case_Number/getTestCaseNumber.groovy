@@ -27,6 +27,7 @@ import WebUiBuiltInKeywords as WebUI
 
 public class getTestCaseNumber {
 
+	@Keyword
 	public void getTCNo(){
 
 		String Full_TC_Name = GlobalVariable.currentTestCaseId
