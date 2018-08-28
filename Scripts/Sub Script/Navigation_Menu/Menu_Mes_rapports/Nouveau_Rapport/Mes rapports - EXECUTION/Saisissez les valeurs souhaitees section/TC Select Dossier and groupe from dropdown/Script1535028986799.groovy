@@ -24,11 +24,11 @@ TestData excelData = findTestData('Data Files/Data/TestData')
 
 for (int i = 24; i <= 33; i++) {
 	
-	if(excelData.getValue(i, (GlobalVariable.currentTestCaseId)+1)!=""){
+	if(excelData.getValue(i, (GlobalVariable.currentTestCaseId))!=""){
 		
 	def InputDossier = new TestObject('Select_dossier_by_name')
 
-	InputDossier.addProperty('xpath', ConditionType.EQUALS, "//div[@id=\'select2-drop\']//ul[@class=\'select2-results\']//li[@role=\'presentation\']//div[contains(text(),\'"+excelData.getValue(i, (GlobalVariable.currentTestCaseId)+1)+"\')]")
+	InputDossier.addProperty('xpath', ConditionType.EQUALS, "//div[@id=\'select2-drop\']//ul[@class=\'select2-results\']//li[@role=\'presentation\']//div[contains(text(),\'"+excelData.getValue(i, (GlobalVariable.currentTestCaseId))+"\')]")
 
 	WebUI.click(InputDossier)
 

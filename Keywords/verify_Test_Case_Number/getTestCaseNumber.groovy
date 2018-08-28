@@ -35,9 +35,15 @@ public class getTestCaseNumber {
 		String[] parts = Full_TC_Name.split("/")
 
 		String TC_Name = parts[2]
+		
+		println (TC_Name)
 
 		String TC_No = TC_Name.replaceAll("[^0-9]", "")
+		
+		int TC_number = Integer.parseInt(TC_No)
 
-		GlobalVariable.currentTestCaseId = TC_No
+		GlobalVariable.currentTestCaseId = TC_number + 1
+		
+		println (GlobalVariable.currentTestCaseId)
 	}
 }

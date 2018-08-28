@@ -26,11 +26,11 @@ TestData excelData = findTestData('Data Files/Data/TestData')
 
 for (int i = 14; i <= 23; i++) {
 	
-	if(excelData.getValue(excelData.getValue(i, (GlobalVariable.currentTestCaseId)+1))!=""){
+	if(excelData.getValue(excelData.getValue(i, (GlobalVariable.currentTestCaseId)))!=""){
 	
 	def Select_travailleur = new TestObject('Select_travailleur_by_name')
 
-	Select_travailleur.addProperty('xpath', ConditionType.EQUALS, "//div[@id=\'select2-drop\']//ul[@class=\'select2-results\']//li[@role=\'presentation\']//div[contains(text(),\'"+excelData.getValue(i, (GlobalVariable.currentTestCaseId)+1)+"\')]")
+	Select_travailleur.addProperty('xpath', ConditionType.EQUALS, "//div[@id=\'select2-drop\']//ul[@class=\'select2-results\']//li[@role=\'presentation\']//div[contains(text(),\'"+excelData.getValue(i, (GlobalVariable.currentTestCaseId))+"\')]")
 	
 	WebUI.click(Select_travailleur)
 

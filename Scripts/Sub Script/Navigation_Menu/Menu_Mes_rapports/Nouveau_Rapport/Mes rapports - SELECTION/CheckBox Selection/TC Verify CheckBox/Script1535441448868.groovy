@@ -24,7 +24,7 @@ TestData excelData = findTestData('Data Files/Data/TestData')
 //def no_Of_Columns = excelData.getColumnNumbers()
 
 for(int i=34;i<=42;i++){
-	if (excelData.getValue(i, (GlobalVariable.currentTestCaseId)+1)!="") {
-	WebUI.(excelData.getValue(i,(GlobalVariable.currentTestCaseId)+1))(findTestObject("'Mes rapports Obj/SELECTION/'"+excelData.getValue(i, 1)+"'"))
+	if (excelData.getValue(i, (GlobalVariable.currentTestCaseId))!="") {
+	WebUI.(excelData.getValue(i,(GlobalVariable.currentTestCaseId)))(findTestObject("'Mes rapports Obj/SELECTION/'"+excelData.getValue(i, 1)+"'"))
 	}
 }
