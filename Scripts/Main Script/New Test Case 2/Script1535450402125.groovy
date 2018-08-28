@@ -32,7 +32,9 @@ String part3 = parts[2]
 
 println (part3)
 
-number = 
+String num = part3.replaceAll("[^0-9]", "")
+
+println (num)
 
 GlobalVariable.currentTestCaseId = part3
 
