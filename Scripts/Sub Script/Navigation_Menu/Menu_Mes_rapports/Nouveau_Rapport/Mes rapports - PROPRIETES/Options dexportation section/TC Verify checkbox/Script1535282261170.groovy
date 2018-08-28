@@ -19,7 +19,7 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUiBuiltInKe
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
-TestData excelData = findTestData('Data/TC NEW')
+TestData excelData = findTestData('Data/TC2 NEW')
 
 def no_Of_Rows = excelData.getRowNumbers()
 

@@ -11,6 +11,7 @@ import com.kms.katalon.core.testcase.TestCase as TestCase
 import com.kms.katalon.core.testcase.TestCaseFactory as TestCaseFactory
 import com.kms.katalon.core.testdata.TestData as TestData
 import com.kms.katalon.core.testdata.TestDataFactory as TestDataFactory
+import com.kms.katalon.core.testobject.ConditionType
 import com.kms.katalon.core.testobject.ObjectRepository as ObjectRepository
 import com.kms.katalon.core.testobject.TestObject as TestObject
 import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WSBuiltInKeywords
@@ -19,35 +20,48 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUiBuiltInKe
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
-TestData excelData = findTestData('Data/TC2 NEW')
+TestData excelData = findTestData('Data Files/Data/TestData')
+
+def no_Of_Columns = excelData.getColumnNumbers()
+
+println (no_Of_Columns)
 
 def no_Of_Rows = excelData.getRowNumbers()
 
-String value;
+println (no_Of_Rows)
 
-for (int i = 1; i <= no_Of_Rows; i++) {
-	if (excelData.getValue('Options Exportation', i)!="") {
-		Boolean verifyChecbox = WebUI.waitForElementClickable(findTestObject("'Page_eBlox Rapportering/Definition - Proprietes - Options d exportation/'"+ excelData.getValue('Options Exportation', i) +"'checkbox'"),
-			2)
-		if (verifyChecbox==true) {
-			value = "check"
-		}
-		else{
-			value = "uncheck"
-		}
-		
-		if (value == excelData.getValue('Second Option', i) ) {
-			
-			WebUI.(excelData.getValue('First Option', i))(findTestObject("'Page_eBlox Rapportering/Definition - Proprietes - Options d exportation/'"+ excelData.getValue('Options Exportation', i) +"'checkbox'"))
-		}
+/*for (int i = 1; i <= no_Of_Columns; i++){
+	for (int j = 1; j <= no_Of_Rows; j++){
+		println(excelData.getValue(i, j))
 	}
-	
-	else{
-		break
-	}
-	
-	
-	
+}*/
+
+List<String> ints = new ArrayList<>();
+
+for (int i = 1; i <= no_Of_Columns; i++){
+
+	ints.add(excelData.getValue(i, 1))
+
+	//println(excelData.getValue(i, 1))
 }
 
+if (ints.get(10).equals("1")) {
+	println ("Good")
+}
 
+/*
+for (int i = 1; i <= no_Of_Columns; i++) {
+	WebUI.setText(findTestObject('Mes rapports Obj/CONTENU/input_Contenu_Selecteur'), excelData.getValue('Name', i))
+
+	WebUI.delay(3)
+	
+	def selecteur = new TestObject('Choisir_selecteur')
+	
+	selecteur.addProperty('xpath', ConditionType.EQUALS, "//span[contains(text(),\'"+ excelData.getValue('Object Name', i) +"\')]")
+	
+	WebUI.click(selecteur)
+	
+	WebUI.delay(3)
+
+	WebUI.click(findTestObject('Mes rapports Obj/CONTENU/click_Remove_text'))
+}*/

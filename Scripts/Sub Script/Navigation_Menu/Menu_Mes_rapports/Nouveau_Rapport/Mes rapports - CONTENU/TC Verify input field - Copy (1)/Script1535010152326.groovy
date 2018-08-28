@@ -21,24 +21,27 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUiBuiltInKe
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
-TestData excelData = findTestData('Data Files/Data/'+ GlobalVariable.currentTestCaseId)
+TestData excelData = findTestData("Data Files/Data/TestData")
 
-def no_Of_Rows = excelData.getRowNumbers()
+//def no_Of_Columns = excelData.getColumnNumbers()
 
-for (int i = 1; i <= no_Of_Rows; i++) {
-    WebUI.setText(findTestObject('Mes rapports Obj/CONTENU/input_Contenu_Selecteur'), excelData.getValue('Name', i))
+for (int i = 4; i <= 13; i++) {
+	
+	println (excelData.getValue(i, 2))
 
-    WebUI.delay(3)
-	
-	def selecteur = new TestObject('Choisir_selecteur')
-	
-	selecteur.addProperty('xpath', ConditionType.EQUALS, "//span[contains(text(),\'"+ excelData.getValue('Object Name', i) +"\')]")
-	
-	WebUI.click(selecteur)
-	
-    WebUI.delay(3)
-
-    WebUI.click(findTestObject('Mes rapports Obj/CONTENU/click_Remove_text'))
+//    WebUI.setText(findTestObject('Mes rapports Obj/CONTENU/input_Contenu_Selecteur'), excelData.getValue(i, 2))
+//
+//    WebUI.delay(3)
+//	
+//	def selecteur = new TestObject('Choisir_selecteur')
+//	
+//	selecteur.addProperty('xpath', ConditionType.EQUALS, "//span[contains(text(),\'"+ excelData.getValue(i, 2) +"\')]")
+//	
+//	WebUI.click(selecteur)
+//	
+//    WebUI.delay(3)
+//
+//    WebUI.click(findTestObject('Mes rapports Obj/CONTENU/click_Remove_text'))
 }
 
 

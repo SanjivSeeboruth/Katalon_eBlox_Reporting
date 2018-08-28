@@ -21,20 +21,6 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-String name = GlobalVariable.currentTestCaseId
-
-println (name)
-
-String[] parts = name.split("/")
-
-String part3 = parts[2]
-
-println (part3)
-
-GlobalVariable.currentTestCaseId = part3
-
-println (GlobalVariable.currentTestCaseId)
-
 WebUI.callTestCase(findTestCase('Login/TC1 Login to Mysdworx'), [:], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.callTestCase(findTestCase('Sub Script/Select Language/TC1 Verify NL language'), [:], FailureHandling.STOP_ON_FAILURE)
@@ -47,6 +33,8 @@ WebUI.callTestCase(findTestCase('Sub Script/Navigation_Menu/Menu_Mes_rapports/No
 WebUI.callTestCase(findTestCase('Sub Script/Verify URL/TC Verify Url'), [:], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.callTestCase(findTestCase('Sub Script/Navigation_Menu/Menu_Mes_rapports/TC Verify the next button arrow'), [:], FailureHandling.STOP_ON_FAILURE)
+
+WebUI.delay(2)
 
 WebUI.callTestCase(findTestCase('Sub Script/Navigation_Menu/Menu_Mes_rapports/Nouveau_Rapport/Mes rapports - CONTENU/TC Verify input field - Copy (1)'), 
     [('WaitPageToLoad') : GlobalVariable.TimeToWait], FailureHandling.STOP_ON_FAILURE)
