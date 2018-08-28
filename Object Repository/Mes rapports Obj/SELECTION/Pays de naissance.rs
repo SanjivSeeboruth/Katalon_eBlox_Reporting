@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>Pays de naisssance checkbox</name>
+   <name>Pays de naissance</name>
    <tag></tag>
    <elementGuidId>e73eb289-6b0a-4ae4-a687-b8e80107e47e</elementGuidId>
    <selectorCollection>

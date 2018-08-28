@@ -30,13 +30,17 @@ def no_Of_Rows = excelData.getRowNumbers()
 
 println (no_Of_Rows)
 
+for(int i=4;i<=13;i++){
+	println (excelData.getValue(i, 2))
+}
+
 /*for (int i = 1; i <= no_Of_Columns; i++){
 	for (int j = 1; j <= no_Of_Rows; j++){
 		println(excelData.getValue(i, j))
 	}
 }*/
 
-List<String> ints = new ArrayList<>();
+/*List<String> ints = new ArrayList<>();
 
 for (int i = 1; i <= no_Of_Columns; i++){
 
@@ -47,7 +51,7 @@ for (int i = 1; i <= no_Of_Columns; i++){
 
 if (ints.get(10).equals("1")) {
 	println ("Good")
-}
+}*/
 
 /*
 for (int i = 1; i <= no_Of_Columns; i++) {

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>TC Verify input field - Copy (1)</name>
+   <name>TC Verify input field - Contenu</name>
    <tag></tag>
    <comment></comment>
    <testCaseGuid>2021b9a2-c718-40e2-85c5-c3ea9d4b4267</testCaseGuid>

@@ -32,6 +32,8 @@ String part3 = parts[2]
 
 println (part3)
 
+number = 
+
 GlobalVariable.currentTestCaseId = part3
 
 println (GlobalVariable.currentTestCaseId)

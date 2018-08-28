@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>Suspension checkbox</name>
+   <name>Departement</name>
    <tag></tag>
-   <elementGuidId>736b9c83-2586-445b-aec5-3302f4e74a98</elementGuidId>
+   <elementGuidId>f7d7f9bc-fc07-4f9b-8d35-04a695444b7f</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//*[@id=&quot;wizard-page&quot;]/div[2]/div/div/div/div/div[1]/div[2]/div/div/form/div/div/div[9]/div/span/label/input</value>
+         <value>//*[@id=&quot;wizard-page&quot;]/div[2]/div/div/div/div/div[1]/div[2]/div/div/form/div/div/div[4]/div/span/label/input</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

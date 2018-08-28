@@ -22,15 +22,15 @@ import internal.GlobalVariable as GlobalVariable
 
 TestData excelData = findTestData('Data/TC2 NEW')
 
-def no_Of_Rows = excelData.getRowNumbers()
+//def no_Of_Rows = excelData.getRowNumbers()
 
-for (int i = 1; i <= no_Of_Rows; i++) {
+for (int i = 14; i <= 23; i++) {
 	
-	if(excelData.getValue('Travailleur Name', i)!=""){
+	if(excelData.getValue(excelData.getValue(i, 2))!=""){
 	
 	def Select_travailleur = new TestObject('Select_travailleur_by_name')
 
-	Select_travailleur.addProperty('xpath', ConditionType.EQUALS, "//div[@id=\'select2-drop\']//ul[@class=\'select2-results\']//li[@role=\'presentation\']//div[contains(text(),\'"+excelData.getValue('Travailleur Name', i) +"\')]")
+	Select_travailleur.addProperty('xpath', ConditionType.EQUALS, "//div[@id=\'select2-drop\']//ul[@class=\'select2-results\']//li[@role=\'presentation\']//div[contains(text(),\'"+excelData.getValue(i, 2)+"\')]")
 	
 	WebUI.click(Select_travailleur)
 

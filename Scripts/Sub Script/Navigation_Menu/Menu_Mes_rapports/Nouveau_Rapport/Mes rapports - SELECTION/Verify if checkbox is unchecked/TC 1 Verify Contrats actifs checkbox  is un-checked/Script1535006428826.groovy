@@ -19,5 +19,5 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUiBuiltInKe
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
-WebUI.uncheck(findTestObject('Mes rapports Obj/SELECTION/Contrats actifs checkBox'))
+WebUI.uncheck(findTestObject('Mes rapports Obj/SELECTION/Contracts actifs'))
 

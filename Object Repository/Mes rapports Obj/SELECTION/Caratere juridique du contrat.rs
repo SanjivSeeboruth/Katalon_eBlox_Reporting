@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>Departement checkbox</name>
+   <name>Caratere juridique du contrat</name>
    <tag></tag>
-   <elementGuidId>f7d7f9bc-fc07-4f9b-8d35-04a695444b7f</elementGuidId>
+   <elementGuidId>30af63c9-d30e-4541-8b53-e90e602ddcbb</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//*[@id=&quot;wizard-page&quot;]/div[2]/div/div/div/div/div[1]/div[2]/div/div/form/div/div/div[4]/div/span/label/input</value>
+         <value>//*[@id=&quot;wizard-page&quot;]/div[2]/div/div/div/div/div[1]/div[2]/div/div/form/div/div/div[5]/div/span/label/input</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
