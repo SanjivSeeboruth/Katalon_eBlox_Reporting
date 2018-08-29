@@ -20,13 +20,15 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUiBuiltInKe
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
+int rowNo = Integer.parseInt(GlobalVariable.currentTestCaseId)
+
 TestData excelData = findTestData('Data Files/Data/TestData')
 
-if (excelData.getValue(44, 3) != '') 
+if (excelData.getValue(44, rowNo) != '') 
 {
   def historicPeriod = new TestObject('Select_historic_Period')
 
-  historicPeriod.addProperty('xpath', ConditionType.EQUALS, ("//a//span[contains(text(),\'"+excelData.getValue(44, 3)+"\')]"))
+  historicPeriod.addProperty('xpath', ConditionType.EQUALS, ("//a//span[contains(text(),\'"+excelData.getValue(44, rowNo)+"\')]"))
 
   WebUI.click(historicPeriod)
 } 

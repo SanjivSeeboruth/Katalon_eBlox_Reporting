@@ -21,13 +21,10 @@ import internal.GlobalVariable as GlobalVariable
 
 TestData excelData = findTestData('Data Files/Data/TestData')
 
-//def no_Of_Columns = excelData.getColumnNumbers()
+int rowNo = Integer.parseInt(GlobalVariable.currentTestCaseId)
 
 for(int i=34;i<=42;i++){
-	if (excelData.getValue(i,3)!="") {
-		WebUI.(excelData.getValue(i,3))(findTestObject("Mes rapports Obj/SELECTION/"+excelData.getValue(i, 1)))
-	}
-	else{
-		break
+	if (excelData.getValue(i,rowNo)!="") {
+		WebUI.(excelData.getValue(i,rowNo))(findTestObject("Mes rapports Obj/SELECTION/"+excelData.getValue(i, 1)))
 	}
 }

@@ -42,7 +42,7 @@ public class getTestCaseNumber {
 
 		GlobalVariable.testCaseNumber = TC_number + 1
 
-		String conV = TC_number
+		String conV = GlobalVariable.testCaseNumber
 
 		GlobalVariable.currentTestCaseId = conV
 	}

@@ -22,13 +22,15 @@ import internal.GlobalVariable as GlobalVariable
 
 TestData excelData = findTestData('Data Files/Data/TestData')
 
+int rowNo = Integer.parseInt(GlobalVariable.currentTestCaseId)
+
 for (int i = 24; i <= 33; i++) {
 	
-	if(excelData.getValue(i, 3)!=""){
+	if(excelData.getValue(i, rowNo)!=""){
 		
 	def InputDossier = new TestObject('Select_dossier_by_name')
 
-	InputDossier.addProperty('xpath', ConditionType.EQUALS, "//div[@id=\'select2-drop\']//ul[@class=\'select2-results\']//li[@role=\'presentation\']//div[contains(text(),\'"+excelData.getValue(i, 3)+"\')]")
+	InputDossier.addProperty('xpath', ConditionType.EQUALS, "//div[@id=\'select2-drop\']//ul[@class=\'select2-results\']//li[@role=\'presentation\']//div[contains(text(),\'"+excelData.getValue(i, rowNo)+"\')]")
 
 	WebUI.click(InputDossier)
 

@@ -20,8 +20,13 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUiBuiltInKe
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
-TestData excelData = findTestData('Data/TC2 NEW')
+TestData excelData = findTestData('Data Files/Data/TestData')
 
-WebUI.setText(findTestObject('Mes rapports Obj/input search filter'), 'TEST 2 MAU JAN 2018 (sanjiv)')
+int rowNo = Integer.parseInt(GlobalVariable.currentTestCaseId)
 
-WebUI.waitForPageLoad(10)
+if (excelData.getValue( 3, rowNo) != '')
+{
+	
+  WebUI.setText(findTestObject('Mes rapports Obj/input search filter'), excelData.getValue( 3, rowNo))
+  
+}

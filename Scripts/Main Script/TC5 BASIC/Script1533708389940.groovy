@@ -28,17 +28,14 @@ WebUI.callTestCase(findTestCase('Sub Script/Select Language/TC1 Verify NL langua
 
 WebUI.callTestCase(findTestCase('Sub Script/Navigation_Menu/Menu_Mes_rapports/TC Verify Mes rapports tab'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.setText(findTestObject('Mes rapports Obj/input search filter'), 'TEST 2 MAU JAN 2018 (sanjiv)')
+WebUI.callTestCase(findTestCase('Sub Script/Navigation_Menu/Menu_Mes_rapports/Main_Content/TC Input text in search textfield'), 
+    [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.click(findTestObject('Page_eBlox Reporting/Search_Icon'))
+WebUI.callTestCase(findTestCase('Sub Script/Navigation_Menu/Menu_Mes_rapports/Main_Content/TC Verify info icon function'), 
+    [:], FailureHandling.STOP_ON_FAILURE)
 
-def myTestObject = new TestObject('Select_report_name')
-
-myTestObject.addProperty('xpath', ConditionType.EQUALS, '//a[@class=\'hide-on-hover\']//span[@text=\'TEST 2 MAU JAN 2018 (SANJIV)\']')
-
-WebUI.click(myTestObject)
-
-WebUI.waitForPageLoad(10)
+WebUI.callTestCase(findTestCase('Sub Script/Navigation_Menu/Menu_Mes_rapports/Main_Content/TC Select report name'), [:], 
+    FailureHandling.STOP_ON_FAILURE)
 
 WebUI.callTestCase(findTestCase('Sub Script/Navigation_Menu/Menu_Mes_rapports/Inner_Content/TC Verify Definition tab'), 
     [:], FailureHandling.STOP_ON_FAILURE)
@@ -63,12 +60,6 @@ WebUI.callTestCase(findTestCase('Sub Script/Navigation_Menu/Menu_Mes_rapports/In
 
 WebUI.callTestCase(findTestCase('Sub Script/Verify URL/TC Verify Url'), [:], FailureHandling.STOP_ON_FAILURE)
 
-not_run: WebUI.verifyElementText(findTestObject('Page_eBlox Rapportering/Graphique - Grafieken/text - Historisch uitvoeren'), 
-    'Niet-historisch uitvoeren')
-
-not_run: WebUI.verifyElementText(findTestObject('Page_eBlox Rapportering/Graphique - Grafieken/text - Historisch uitvoeren'), 
-    'Historisch uitvoeren')
-
 WebUI.callTestCase(findTestCase('Sub Script/Navigation_Menu/Menu_Mes_rapports/Inner_Content/Content_Navigation/TC Verify Operations tab'), 
     [:], FailureHandling.STOP_ON_FAILURE)
 
@@ -80,16 +71,14 @@ WebUI.callTestCase(findTestCase('Sub Script/Navigation_Menu/Menu_Mes_rapports/In
 WebUI.callTestCase(findTestCase('Sub Script/Navigation_Menu/Menu_Mes_rapports/Main_Content/TC VErify text in search textfield'), 
     [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.setText(findTestObject('Mes rapports Obj/input search filter'), 'TEST RAPPORT REGRESSIE')
+WebUI.callTestCase(findTestCase('Sub Script/Navigation_Menu/Menu_Mes_rapports/Main_Content/TC Input text in search textfield'), 
+    [:], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.callTestCase(findTestCase('Sub Script/Navigation_Menu/Menu_Mes_rapports/Main_Content/TC VErify Search icon'), [:], 
     FailureHandling.STOP_ON_FAILURE)
 
-def myTestObject1 = new TestObject('Select_report_name')
-
-myTestObject1.addProperty('xpath', ConditionType.EQUALS, '//a[@class=\'hide-on-hover\']//span[@text=\'TEST RAPPORT REGRESSIE\']')
-
-WebUI.click(myTestObject1)
+WebUI.callTestCase(findTestCase('Sub Script/Navigation_Menu/Menu_Mes_rapports/Main_Content/TC Select report name'), [:], 
+    FailureHandling.STOP_ON_FAILURE)
 
 WebUI.callTestCase(findTestCase('Sub Script/Verify URL/TC Verify Url'), [:], FailureHandling.STOP_ON_FAILURE)
 

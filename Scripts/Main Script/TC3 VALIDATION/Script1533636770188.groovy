@@ -22,6 +22,8 @@ import org.openqa.selenium.WebDriver as WebDriver
 //import org.openqa.selenium.chrome.ChromeDriveromeDriver
 import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
 
+CustomKeywords.'verify_Test_Case_Number.getTestCaseNumber.getTCNo'()
+
 WebUI.callTestCase(findTestCase('Login/TC1 Login to Mysdworx'), [:], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.callTestCase(findTestCase('Sub Script/Select Language/TC1 Verify NL language'), [:], FailureHandling.STOP_ON_FAILURE)
@@ -39,8 +41,8 @@ WebUI.verifyTextPresent('Gelieve minstens één kolom toe te voegen.', true)
 
 WebUI.waitForPageLoad(10)
 
-WebUI.callTestCase(findTestCase('Sub Script/Navigation_Menu/Menu_Mes_rapports/Nouveau_Rapport/Mes rapports - CONTENU/TC Verify input field - Copy'), 
-    [:], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('Sub Script/Navigation_Menu/Menu_Mes_rapports/Nouveau_Rapport/Mes rapports - CONTENU/TC Verify input field - Contenu'), 
+    [('WaitPageToLoad') : GlobalVariable.TimeToWait], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.callTestCase(findTestCase('Sub Script/Navigation_Menu/Menu_Mes_rapports/TC Verify the next button arrow'), [:], FailureHandling.STOP_ON_FAILURE)
 
@@ -61,11 +63,6 @@ WebUI.callTestCase(findTestCase('Sub Script/Navigation_Menu/Menu_Mes_rapports/No
     [:], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.callTestCase(findTestCase('Sub Script/Navigation_Menu/TC Verify Return button'), [:], FailureHandling.STOP_ON_FAILURE)
-
-WebUI.callTestCase(findTestCase('Sub Script/Navigation_Menu/Menu_Mes_rapports/Nouveau_Rapport/TC Verify annuler button'), 
-    [:], FailureHandling.STOP_ON_FAILURE)
-
-WebUI.callTestCase(findTestCase('Sub Script/Navigation_Menu/TC Verify Annuler nouveau rapport button'), [:], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.waitForPageLoad(25)
 

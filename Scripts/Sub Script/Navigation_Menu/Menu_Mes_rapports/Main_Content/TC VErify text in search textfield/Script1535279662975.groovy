@@ -13,14 +13,19 @@ import com.kms.katalon.core.testdata.TestData as TestData
 import com.kms.katalon.core.testdata.TestDataFactory as TestDataFactory
 import com.kms.katalon.core.testobject.ObjectRepository as ObjectRepository
 import com.kms.katalon.core.testobject.TestObject as TestObject
+import com.kms.katalon.core.util.KeywordUtil
 import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WSBuiltInKeywords
 import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUiBuiltInKeywords
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
+TestData excelData = findTestData('Data Files/Data/TestData')
+
+int rowNo = Integer.parseInt(GlobalVariable.currentTestCaseId)
+
 result = WebUI.getText(findTestObject('Mes rapports Obj/input search filter'))
 
-if (result == 'TEST 2 MAU JAN 2018 (sanjiv)') {
+if (result == excelData.getValue( 3, rowNo)) {
 	KeywordUtil.markPassed('Text is still present')
 }
