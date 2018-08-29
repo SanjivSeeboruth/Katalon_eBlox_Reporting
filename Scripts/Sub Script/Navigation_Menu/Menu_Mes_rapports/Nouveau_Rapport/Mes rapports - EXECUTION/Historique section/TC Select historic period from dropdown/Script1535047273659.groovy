@@ -20,22 +20,15 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUiBuiltInKe
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
-TestData excelData = findTestData('Data/TC2 NEW')
+TestData excelData = findTestData('Data Files/Data/TestData')
 
-def no_Of_Rows = excelData.getRowNumbers()
+if (excelData.getValue(44, 3) != '') 
+{
+  def historicPeriod = new TestObject('Select_historic_Period')
 
-for (int i = 1; i <= no_Of_Rows; i++) {
-	
-	if(excelData.getValue('Historic Period', i)!=""){
-		
-	def historicPeriod = new TestObject('Select_historic_Period')
-	
-	historicPeriod.addProperty('xpath', ConditionType.EQUALS, "//a//span[contains(text(),\'"+excelData.getValue('Historic Period', i)+"\')]")
-	
-	WebUI.click(historicPeriod)
-	}
-	
-	else{
-		break
-	}
-}
+  historicPeriod.addProperty('xpath', ConditionType.EQUALS, ("//a//span[contains(text(),\'"+excelData.getValue(44, 3)+"\')]"))
+
+  WebUI.click(historicPeriod)
+} 
+
+WebUI.delay(1)

@@ -22,50 +22,9 @@ import internal.GlobalVariable as GlobalVariable
 
 TestData excelData = findTestData('Data Files/Data/TestData')
 
-def no_Of_Columns = excelData.getColumnNumbers()
-
-println (no_Of_Columns)
-
-def no_Of_Rows = excelData.getRowNumbers()
-
-println (no_Of_Rows)
-
-for(int i=4;i<=13;i++){
-	println (excelData.getValue(i, 2))
+for (i=14 ; i <=23; i++){
+	println (excelData.getValue(i, 3))
 }
 
-/*for (int i = 1; i <= no_Of_Columns; i++){
-	for (int j = 1; j <= no_Of_Rows; j++){
-		println(excelData.getValue(i, j))
-	}
-}*/
 
-/*List<String> ints = new ArrayList<>();
 
-for (int i = 1; i <= no_Of_Columns; i++){
-
-	ints.add(excelData.getValue(i, 1))
-
-	//println(excelData.getValue(i, 1))
-}
-
-if (ints.get(10).equals("1")) {
-	println ("Good")
-}*/
-
-/*
-for (int i = 1; i <= no_Of_Columns; i++) {
-	WebUI.setText(findTestObject('Mes rapports Obj/CONTENU/input_Contenu_Selecteur'), excelData.getValue('Name', i))
-
-	WebUI.delay(3)
-	
-	def selecteur = new TestObject('Choisir_selecteur')
-	
-	selecteur.addProperty('xpath', ConditionType.EQUALS, "//span[contains(text(),\'"+ excelData.getValue('Object Name', i) +"\')]")
-	
-	WebUI.click(selecteur)
-	
-	WebUI.delay(3)
-
-	WebUI.click(findTestObject('Mes rapports Obj/CONTENU/click_Remove_text'))
-}*/

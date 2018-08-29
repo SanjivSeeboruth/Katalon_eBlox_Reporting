@@ -22,15 +22,17 @@ import internal.GlobalVariable as GlobalVariable
 
 TestData excelData = findTestData('Data Files/Data/TestData')
 
-//def no_Of_Rows = excelData.getRowNumbers()
+int rowNo = Integer.parseInt(GlobalVariable.currentTestCaseId)
 
-for (int i = 14; i <= 23; i++) {
+//println (rowNo)
+
+for (int i=14; i<=23; i++) {
 	
-	if(excelData.getValue(excelData.getValue(i, (GlobalVariable.currentTestCaseId)))!=""){
+	if((excelData.getValue(i, rowNo))!=""){
 	
 	def Select_travailleur = new TestObject('Select_travailleur_by_name')
-
-	Select_travailleur.addProperty('xpath', ConditionType.EQUALS, "//div[@id=\'select2-drop\']//ul[@class=\'select2-results\']//li[@role=\'presentation\']//div[contains(text(),\'"+excelData.getValue(i, (GlobalVariable.currentTestCaseId))+"\')]")
+	
+	Select_travailleur.addProperty('xpath', ConditionType.EQUALS, "//div[@id=\'select2-drop\']//ul[@class=\'select2-results\']//li[@role=\'presentation\']//div[contains(text(),\'"+excelData.getValue(i, rowNo)+"\')]")
 	
 	WebUI.click(Select_travailleur)
 

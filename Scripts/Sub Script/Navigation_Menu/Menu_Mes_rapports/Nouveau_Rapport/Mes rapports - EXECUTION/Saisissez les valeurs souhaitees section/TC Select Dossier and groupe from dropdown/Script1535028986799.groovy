@@ -24,11 +24,11 @@ TestData excelData = findTestData('Data Files/Data/TestData')
 
 for (int i = 24; i <= 33; i++) {
 	
-	if(excelData.getValue(i, (GlobalVariable.currentTestCaseId))!=""){
+	if(excelData.getValue(i, 3)!=""){
 		
 	def InputDossier = new TestObject('Select_dossier_by_name')
 
-	InputDossier.addProperty('xpath', ConditionType.EQUALS, "//div[@id=\'select2-drop\']//ul[@class=\'select2-results\']//li[@role=\'presentation\']//div[contains(text(),\'"+excelData.getValue(i, (GlobalVariable.currentTestCaseId))+"\')]")
+	InputDossier.addProperty('xpath', ConditionType.EQUALS, "//div[@id=\'select2-drop\']//ul[@class=\'select2-results\']//li[@role=\'presentation\']//div[contains(text(),\'"+excelData.getValue(i, 3)+"\')]")
 
 	WebUI.click(InputDossier)
 
@@ -40,3 +40,9 @@ for (int i = 24; i <= 33; i++) {
 		break
 	}
 }
+
+WebUI.waitForPageLoad(15)
+
+WebUI.click(findTestObject('Mes rapports Obj/SELECTION/Travailleur/Page_eBlox Reporting/Close_dropdown'))
+
+WebUI.delay(2)

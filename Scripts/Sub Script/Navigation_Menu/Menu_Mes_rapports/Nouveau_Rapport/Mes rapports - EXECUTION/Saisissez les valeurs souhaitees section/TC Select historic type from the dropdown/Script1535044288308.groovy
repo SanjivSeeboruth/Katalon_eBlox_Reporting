@@ -23,16 +23,15 @@ import internal.GlobalVariable as GlobalVariable
 
 TestData excelData = findTestData('Data Files/Data/TestData')
 
-    if (excelData.getValue( 43, (GlobalVariable.currentTestCaseId)+1) != '') {
-        def historicType = new TestObject('Select_historic_Type')
+if (excelData.getValue( 43, 3) != '') 
+{
+  def historicRef = new TestObject('Select_historic_Type')
 
-        historicType.addProperty('xpath', ConditionType.EQUALS, ('//a//span[contains(text(),\'' + excelData.getValue(43, (GlobalVariable.currentTestCaseId)+1)) + '\')]')
+  historicRef.addProperty('xpath', ConditionType.EQUALS, ("//a//span[contains(text(),\'"+excelData.getValue(43, 3)+"\')]"))
 
-        WebUI.click(historicType)
-    } else {
-        break
-    }
-
+  WebUI.click(historicRef)
+		
+} 
 
 WebUI.waitForPageLoad(2)
 

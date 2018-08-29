@@ -23,13 +23,16 @@ import internal.GlobalVariable as GlobalVariable
 
 TestData excelData = findTestData('Data Files/Data/TestData')
 
-//def no_Of_Columns = excelData.getColumnNumbers()
+int rowNo = Integer.parseInt(GlobalVariable.currentTestCaseId)
+
+println (rowNo)
+
 for(int i=4;i<=13;i++){
-	if (excelData.getValue(i,(GlobalVariable.currentTestCaseId))!="") {
-	WebUI.setText(findTestObject('Mes rapports Obj/CONTENU/input_Contenu_Selecteur'), excelData.getValue(i, (GlobalVariable.currentTestCaseId)))
+	if (excelData.getValue(i,rowNo)!="") {
+	WebUI.setText(findTestObject('Mes rapports Obj/CONTENU/input_Contenu_Selecteur'), excelData.getValue(i, rowNo))
 	WebUI.delay(3)
 	def selecteur = new TestObject('Choisir_selecteur')
-	selecteur.addProperty('xpath', ConditionType.EQUALS, "//span[contains(text(),\'"+ excelData.getValue(i, (GlobalVariable.currentTestCaseId) ) +"\')]")
+	selecteur.addProperty('xpath', ConditionType.EQUALS, "//span[contains(text(),\'"+ excelData.getValue(i,rowNo ) +"\')]")
 	WebUI.click(selecteur)
 	WebUI.delay(3)
 	WebUI.click(findTestObject('Mes rapports Obj/CONTENU/click_Remove_text'))

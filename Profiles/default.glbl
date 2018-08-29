@@ -14,4 +14,9 @@
       <initValue>''</initValue>
       <name>currentTestCaseId</name>
    </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>null</initValue>
+      <name>testCaseNumber</name>
+   </GlobalVariableEntity>
 </GlobalVariableEntities>
