@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>TC Input rubrique 1 - Copy</name>
+   <name>TC Comparaison 2</name>
    <tag></tag>
    <comment></comment>
-   <testCaseGuid>aeeb7928-a192-449c-97a0-bd314b612975</testCaseGuid>
+   <testCaseGuid>b5d4ad66-49fe-412c-8b11-1afe5b9b6d14</testCaseGuid>
 </TestCaseEntity>

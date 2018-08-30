@@ -18,18 +18,7 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUiBuiltInKeywords
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
-import org.openqa.selenium.Keys as Keys
 
-TestData excelData = findTestData('Data Files/Data/TestData')
+WebUI.click(findTestObject('Page_eBlox Rapportering/Selection Etendue/Select date option'))
 
-int rowNo = Integer.parseInt(GlobalVariable.currentTestCaseId)
-
-if (excelData.getValue( 60, rowNo) != '')
-{
-	WebUI.setText(findTestObject('Page_eBlox Rapportering/Operation/Input condition for plus icon'), excelData.getValue( 60, rowNo))
-
-	WebUI.delay(1)
-	
-	WebUI.sendKeys(findTestObject('Page_eBlox Rapportering/Operation/Input condition for plus icon'), Keys.chord(Keys.ENTER))
-  
-}
+WebUI.click(findTestObject('Page_eBlox Rapportering/Selection Etendue/Select date'), FailureHandling.STOP_ON_FAILURE)

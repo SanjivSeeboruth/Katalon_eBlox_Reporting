@@ -24,16 +24,12 @@ TestData excelData = findTestData('Data Files/Data/TestData')
 
 int rowNo = Integer.parseInt(GlobalVariable.currentTestCaseId)
 
-WebUI.click(findTestObject('Page_eBlox Rapportering/Selection Etendue/Valeur - Man'))
-
-if (excelData.getValue( 62, rowNo) != '')
+if (excelData.getValue( 63, rowNo) != '')
 {
-	
-	WebUI.setText(findTestObject('Page_eBlox Rapportering/Selection Etendue/Valeur - Man'), excelData.getValue( 62, rowNo))
+	WebUI.setText(findTestObject('Page_eBlox Rapportering/Operation/Input condition for plus icon'), excelData.getValue( 63, rowNo))
 
 	WebUI.delay(1)
+	
+	WebUI.sendKeys(findTestObject('Page_eBlox Rapportering/Operation/Input condition for plus icon'), Keys.chord(Keys.ENTER))
   
 }
-
-WebUI.sendKeys(findTestObject('Page_eBlox Rapportering/Selection Etendue/Input Valeur'), Keys.chord(Keys.ENTER))
-

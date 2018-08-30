@@ -26,12 +26,12 @@ int rowNo = Integer.parseInt(GlobalVariable.currentTestCaseId)
 
 WebUI.click(findTestObject('Page_eBlox Rapportering/Operation/Dropdown criteria for condition'))
 
-if (excelData.getValue( 61, rowNo) != '')
+if (excelData.getValue( 64, rowNo) != '')
 {
 	
 	def option = new TestObject('option')
 	
-	option.addProperty('xpath', ConditionType.EQUALS, "//ul//li//a[contains(text(),\'"+excelData.getValue( 61, rowNo)+"\')]")
+	option.addProperty('xpath', ConditionType.EQUALS, "//ul//li//a[contains(text(),\'"+excelData.getValue( 64, rowNo)+"\')]")
 																																									
 	WebUI.click(option)
 
