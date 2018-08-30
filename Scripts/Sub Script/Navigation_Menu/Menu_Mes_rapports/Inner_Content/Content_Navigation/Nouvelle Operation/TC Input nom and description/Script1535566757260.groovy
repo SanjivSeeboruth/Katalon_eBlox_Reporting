@@ -19,4 +19,16 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUiBuiltInKe
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
-WebUI.setText(findTestObject('Page_eBlox Rapportering/Operation/Operation - Nom'), 'test')
+TestData excelData = findTestData('Data Files/Data/TestData')
+
+int rowNo = Integer.parseInt(GlobalVariable.currentTestCaseId)
+
+for(int i=46;i<=49;i++)
+{
+	if (excelData.getValue(i,rowNo)!="")
+	{
+		WebUI.setText(findTestObject('Page_eBlox Rapportering/Operation/Operation - Nom'), excelData.getValue(i,rowNo))
+		
+		WebUI.setText(findTestObject('Page_eBlox Rapportering/Operation/Operation -Description'), excelData.getValue(i,rowNo))
+	}
+}

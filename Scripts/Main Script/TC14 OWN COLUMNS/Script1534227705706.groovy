@@ -20,25 +20,20 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUiBuiltInKe
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
-WebUI.callTestCase(findTestCase('Login/TC1 Login to Mysdworx'), [:], FailureHandling.STOP_ON_FAILURE)
+CustomKeywords.'verify_Test_Case_Number.getTestCaseNumber.getTCNo'()
 
-WebUiBuiltInKeywords.waitForPageLoad(10)
+WebUI.callTestCase(findTestCase('Login/TC1 Login to Mysdworx'), [:], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.callTestCase(findTestCase('Sub Script/Select Language/TC1 Verify NL language'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUiBuiltInKeywords.waitForPageLoad(10)
+WebUI.callTestCase(findTestCase('Sub Script/Navigation_Menu/Menu_Mes_rapports/Main_Content/TC Input text in search textfield'), 
+    [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.setText(findTestObject('Mes rapports Obj/input search filter'), 'REG EIGEN RUBRIEK')
+WebUI.callTestCase(findTestCase('Sub Script/Navigation_Menu/Menu_Mes_rapports/Main_Content/TC VErify Search icon'), [:], 
+    FailureHandling.STOP_ON_FAILURE)
 
-WebUI.click(findTestObject('Page_eBlox Reporting/Search_Icon'))
-
-def myTestObject = new TestObject('Select_report')
-
-myTestObject.addProperty("xpath", ConditionType.EQUALS, "//span[@text=\'REG EIGEN RUBRIEK\']")
-
-WebUI.click(myTestObject)
-
-WebUI.delay(2)
+WebUI.callTestCase(findTestCase('Sub Script/Navigation_Menu/Menu_Mes_rapports/Main_Content/TC Select report name'), [:], 
+    FailureHandling.STOP_ON_FAILURE)
 
 WebUI.waitForElementClickable(findTestObject('Mes rapports Obj/EXECUTION/Description _Date de reference historique'), 10)
 
@@ -48,6 +43,7 @@ WebUI.delay(2)
 
 WebUI.click(findTestObject('Mes rapports Obj/EXECUTION/Description_Date de reference historique - Dernier jour mois precedent'))
 
-WebUI.click(findTestObject('Mes rapports Obj/EXECUTION/Button executer'))
+WebUI.callTestCase(findTestCase('Sub Script/Navigation_Menu/Menu_Mes_rapports/TC Verify Executer button'), [:], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.closeBrowser()
+

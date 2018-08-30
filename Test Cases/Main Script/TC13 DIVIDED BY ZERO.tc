@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>TC Input nom d_operations</name>
+   <name>TC13 DIVIDED BY ZERO</name>
    <tag></tag>
    <comment></comment>
-   <testCaseGuid>e5b70b1f-37d4-440f-a17a-ef672129f742</testCaseGuid>
+   <testCaseGuid>70964be9-2480-4368-be0d-9ab9c2443ffd</testCaseGuid>
 </TestCaseEntity>

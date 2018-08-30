@@ -22,23 +22,20 @@ import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 import java.awt.event.KeyEvent as KeyEvent
 
-WebUI.callTestCase(findTestCase('Login/TC1 Login to Mysdworx'), [:], FailureHandling.STOP_ON_FAILURE)
+CustomKeywords.'verify_Test_Case_Number.getTestCaseNumber.getTCNo'()
 
-WebUiBuiltInKeywords.waitForPageLoad(10)
+WebUI.callTestCase(findTestCase('Login/TC1 Login to Mysdworx'), [:], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.callTestCase(findTestCase('Sub Script/Select Language/TC1 Verify NL language'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.setText(findTestObject('Mes rapports Obj/input search filter'), 'REG HIST GROEP')
+WebUI.callTestCase(findTestCase('Sub Script/Navigation_Menu/Menu_Mes_rapports/Main_Content/TC Input text in search textfield'), 
+    [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.click(findTestObject('Page_eBlox Reporting/Search_Icon'))
+WebUI.callTestCase(findTestCase('Sub Script/Navigation_Menu/Menu_Mes_rapports/Main_Content/TC VErify Search icon'), [:], 
+    FailureHandling.STOP_ON_FAILURE)
 
-def myTestObject = new TestObject('Select_report')
-
-myTestObject.addProperty('xpath', ConditionType.EQUALS, '//span[@text=\'REG HIST GROEP\']')
-
-WebUI.click(myTestObject)
-
-WebUiBuiltInKeywords.waitForPageLoad(10)
+WebUI.callTestCase(findTestCase('Sub Script/Navigation_Menu/Menu_Mes_rapports/Main_Content/TC Select report name'), [:], 
+    FailureHandling.STOP_ON_FAILURE)
 
 def inputDossier = WebUI.modifyObjectProperty(findTestObject('Mes rapports Obj/EXECUTION/Donnees calculees - Le code salarial apparait dans'), 
     'id', 'contains', 's2id_autogen', true)
@@ -53,7 +50,7 @@ WebUI.click(myDonneeCalculees)
 
 WebUI.click(findTestObject('Mes rapports Obj/SELECTION/Travailleur/Page_eBlox Reporting/Close_dropdown'))
 
-WebUI.click(findTestObject('Mes rapports Obj/EXECUTION/Button executer'))
+WebUI.callTestCase(findTestCase('Sub Script/Navigation_Menu/Menu_Mes_rapports/TC Verify Executer button'), [:], FailureHandling.STOP_ON_FAILURE)
 
 WebUiBuiltInKeywords.waitForPageLoad(10)
 

@@ -31,8 +31,8 @@ if (excelData.getValue( 3, rowNo) != '')
   
   def myTestObject = new TestObject('Select_report_name')
 
-  myTestObject.addProperty('xpath', ConditionType.EQUALS, "'//a[@class=\'hide-on-hover\']//span[@text=\'"+excelData.getValue(3, rowNo)+"\']'")
-
+  myTestObject.addProperty('xpath', ConditionType.EQUALS, "//a[@class=\'hide-on-hover\']//span[@text=\'"+excelData.getValue(3, rowNo)+"\']")
+  
   WebUI.click(myTestObject)
 
   WebUI.waitForPageLoad(10)

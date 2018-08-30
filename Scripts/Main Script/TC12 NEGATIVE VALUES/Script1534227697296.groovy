@@ -21,27 +21,20 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WebUI.callTestCase(findTestCase('Login/TC1 Login to Mysdworx'), [:], FailureHandling.STOP_ON_FAILURE)
+CustomKeywords.'verify_Test_Case_Number.getTestCaseNumber.getTCNo'()
 
-WebUiBuiltInKeywords.waitForPageLoad(10)
+WebUI.callTestCase(findTestCase('Login/TC1 Login to Mysdworx'), [:], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.callTestCase(findTestCase('Sub Script/Select Language/TC1 Verify NL language'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUiBuiltInKeywords.waitForPageLoad(10)
+WebUI.callTestCase(findTestCase('Sub Script/Navigation_Menu/Menu_Mes_rapports/Main_Content/TC Input text in search textfield'), 
+    [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.setText(findTestObject('Mes rapports Obj/input search filter'), 'REG NEGATIEF')
+WebUI.callTestCase(findTestCase('Sub Script/Navigation_Menu/Menu_Mes_rapports/Main_Content/TC VErify Search icon'), [:], 
+    FailureHandling.STOP_ON_FAILURE)
 
-WebUI.click(findTestObject('Page_eBlox Reporting/Search_Icon'))
-
-def myTestObject = new TestObject('Select_report_NEGATIEF')
-
-myTestObject.addProperty('xpath', ConditionType.EQUALS, '//a[@ui-sref=\'uitvoering.index({id:item.id})\']//span[@text=\'REG NEGATIEF\']')
-
-WebUI.click(myTestObject)
-
-WebUiBuiltInKeywords.waitForPageLoad(10)
-
-WebUI.delay(2)
+WebUI.callTestCase(findTestCase('Sub Script/Navigation_Menu/Menu_Mes_rapports/Main_Content/TC Select report name'), [:], 
+    FailureHandling.STOP_ON_FAILURE)
 
 def historic = WebUI.modifyObjectProperty(findTestObject('Mes rapports Obj/EXECUTION/Description _Date de reference historique'), 
     'xpath', 'contains', '//*[@id="uitvoering-parameters"]/div/div[2]/div/div/table/tbody/tr[2]/td[2]/div/div/rapp-date-prompt/div/div/rapp-special-values/div/button', 

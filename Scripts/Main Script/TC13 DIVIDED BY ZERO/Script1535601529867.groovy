@@ -22,25 +22,16 @@ import internal.GlobalVariable as GlobalVariable
 
 WebUI.callTestCase(findTestCase('Login/TC1 Login to Mysdworx'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUiBuiltInKeywords.waitForPageLoad(10)
-
 WebUI.callTestCase(findTestCase('Sub Script/Select Language/TC1 Verify NL language'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUiBuiltInKeywords.waitForPageLoad(10)
+WebUI.callTestCase(findTestCase('Sub Script/Navigation_Menu/Menu_Mes_rapports/Main_Content/TC Input text in search textfield'), 
+    [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.setText(findTestObject('Mes rapports Obj/input search filter'), 'REG BEWERKING 0')
+WebUI.callTestCase(findTestCase('Sub Script/Navigation_Menu/Menu_Mes_rapports/Main_Content/TC VErify Search icon'), [:], 
+    FailureHandling.STOP_ON_FAILURE)
 
-WebUI.click(findTestObject('Page_eBlox Reporting/Search_Icon'))
-
-def myTestObject = new TestObject('Select_report')
-
-myTestObject.addProperty('xpath', ConditionType.EQUALS, '//span[@text=\'REG BEWERKING\']')
-
-WebUI.click(myTestObject)
-
-WebUiBuiltInKeywords.waitForPageLoad(10)
-
-WebUI.delay(2)
+WebUI.callTestCase(findTestCase('Sub Script/Navigation_Menu/Menu_Mes_rapports/Main_Content/TC Select report name'), [:], 
+    FailureHandling.STOP_ON_FAILURE)
 
 WebUI.click(findTestObject('Mes rapports Obj/EXECUTION/Description _Date de reference historique'))
 
