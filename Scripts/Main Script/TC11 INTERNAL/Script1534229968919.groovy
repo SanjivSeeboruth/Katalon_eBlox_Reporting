@@ -22,6 +22,8 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
+CustomKeywords.'verify_Test_Case_Number.getTestCaseNumber.getTCNo'()
+
 WebUI.callTestCase(findTestCase('Login/TC1 Login to Mysdworx'), [:], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.callTestCase(findTestCase('Sub Script/Select Language/TC1 Verify NL language'), [:], FailureHandling.STOP_ON_FAILURE)
@@ -37,8 +39,8 @@ WebUI.callTestCase(findTestCase('Sub Script/Navigation_Menu/Menu_Mes_rapports/No
 
 WebUI.callTestCase(findTestCase('Sub Script/Navigation_Menu/Menu_Mes_rapports/TC Verify the next button arrow'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.callTestCase(findTestCase('Sub Script/Navigation_Menu/Menu_Mes_rapports/Nouveau_Rapport/Mes rapports - CONTENU/TC Verify input field INTERNAL'), 
-    [:], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('Sub Script/Navigation_Menu/Menu_Mes_rapports/Nouveau_Rapport/Mes rapports - CONTENU/TC Verify input field - Contenu'), 
+    [('WaitPageToLoad') : GlobalVariable.TimeToWait], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.callTestCase(findTestCase('Sub Script/Navigation_Menu/Menu_Mes_rapports/TC Verify the next button arrow'), [:], FailureHandling.STOP_ON_FAILURE)
 
@@ -50,8 +52,6 @@ WebUI.callTestCase(findTestCase('Sub Script/Navigation_Menu/Menu_Mes_rapports/TC
 WebUI.callTestCase(findTestCase('Sub Script/Navigation_Menu/Menu_Mes_rapports/TC Verify Executer button'), [:], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.callTestCase(findTestCase('Sub Script/Navigation_Menu/Menu_Mes_rapports/TC Verify the next button arrow'), [:], FailureHandling.STOP_ON_FAILURE)
-
-WebUiBuiltInKeywords.waitForPageLoad(10)
 
 WebUI.waitForElementPresent(findTestObject('Mes rapports Obj/PROPRIETES/Generalites - input name'), 10)
 
@@ -65,30 +65,16 @@ WebUI.click(findTestObject('Mes rapports Obj/PROPRIETES/Name - Francais'))
 
 WebUI.focus(findTestObject('Mes rapports Obj/PROPRIETES/Generalites - input name'), FailureHandling.STOP_ON_FAILURE)
 
-WebUI.setText(findTestObject('Mes rapports Obj/PROPRIETES/Generalites - input name'), 'TEST REG IPS 12.08.2018')
+WebUI.callTestCase(findTestCase('Sub Script/Navigation_Menu/Menu_Mes_rapports/Nouveau_Rapport/Mes rapports - PROPRIETES/Generalites section/TC Input name'), 
+    [:], FailureHandling.STOP_ON_FAILURE)
 
-def map = WebUI.modifyObjectProperty(findTestObject('Mes rapports Obj/PROPRIETES/Generalities - Dossier dropdown'), 'xpath', 
-    'contains', '//*[@id="s2id_autogen17"]/a', true)
+WebUI.callTestCase(findTestCase('Sub Script/Navigation_Menu/Menu_Mes_rapports/Nouveau_Rapport/Mes rapports - PROPRIETES/Generalites section/TC Click on dossier dropdown'), 
+    [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.click(map)
+WebUI.callTestCase(findTestCase('Sub Script/Navigation_Menu/Menu_Mes_rapports/Nouveau_Rapport/Mes rapports - PROPRIETES/Generalites section/TC input dossier to be save'), 
+    [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.delay(1)
-
-def mapName = new TestObject('Select_map_name')
-
-mapName.addProperty('xpath', ConditionType.EQUALS, '//div[contains(text(),\'TEST REG IPS DATUM\')]')
-
-WebUI.click(mapName)
-
-//div[contains(text(),'TEST REG IPS DATUM')]
-//button[contains(text(),'Opslaan')]
-//not_run: WebUI.click(findTestObject('Page_eBlox Reporting/button_Sauvegarder'))
-def sauvegarder_Button = WebUI.modifyObjectProperty(findTestObject('Page_eBlox Reporting/button_Sauvegarder'), 'xpath', 
-    'equals', '//button[contains(text(),\'Opslaan\')]', true)
-
-WebUI.click(sauvegarder_Button)
-
-WebUiBuiltInKeywords.waitForPageLoad(10)
+WebUI.callTestCase(findTestCase('Sub Script/Navigation_Menu/Menu_Mes_rapports/TC Verify Sauvegarder button'), [:], FailureHandling.STOP_ON_FAILURE)
 
 not_run: WebUI.click(findTestObject('Mes rapports Obj/EXECUTION/Annuler nouveau rapport'))
 
@@ -124,5 +110,5 @@ not_run: WebUI.click(findTestObject('Page_eBlox Reporting/button_Vers Mes rappor
 
 not_run: WebUI.click(findTestObject('Page_eBlox Reporting/select_FolderName'))
 
-WebUI.closeBrowser()
+not_run: WebUI.closeBrowser()
 
