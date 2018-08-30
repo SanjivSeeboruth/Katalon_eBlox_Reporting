@@ -20,18 +20,30 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUiBuiltInKe
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
-
 TestData excelData = findTestData('Data Files/Data/TestData')
 
 int rowNo = Integer.parseInt(GlobalVariable.currentTestCaseId)
 
-if (excelData.getValue( 45, rowNo) != '')
-{
+
+for (int i=47; i<=51; i++) {
 	
-	WebUI.(excelData.getValue(45,rowNo))(findTestObject('Mes rapports Obj/EXECUTION/HIstorique- checkbox'))
- 		
+	if((excelData.getValue(i, rowNo))!=""){
+	
+	def myDonneeCalculees = new TestObject('Select_donnee')
+
+	myDonneeCalculees.addProperty('xpath', ConditionType.EQUALS, "'//div[@id=\'select2-drop\']//ul[@class=\'select2-results\']//li[@role=\'presentation\']//div[contains(text(),\'"+excelData.getValue(i, rowNo)+"\')]")
+	
+	WebUI.click(myDonneeCalculees)
+
+	WebUI.delay(1)
+	
+	}
+	
+	else{
+		break
+	}
 }
 
-WebUI.waitForPageLoad(2)
+WebUI.click(findTestObject('Mes rapports Obj/SELECTION/Travailleur/Page_eBlox Reporting/Close_dropdown'))
 
-WebUI.delay(2)
+WebUI.delay(1)

@@ -20,18 +20,17 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUiBuiltInKe
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
+int rowNo = Integer.parseInt(GlobalVariable.currentTestCaseId)
 
 TestData excelData = findTestData('Data Files/Data/TestData')
 
-int rowNo = Integer.parseInt(GlobalVariable.currentTestCaseId)
-
-if (excelData.getValue( 45, rowNo) != '')
+if (excelData.getValue(45, rowNo) != '')
 {
-	
-	WebUI.(excelData.getValue(45,rowNo))(findTestObject('Mes rapports Obj/EXECUTION/HIstorique- checkbox'))
- 		
+  def dateREF = new TestObject('Select_historic_date')
+
+  dateREF.addProperty('xpath', ConditionType.EQUALS, ("//a//span[contains(text(),\'"+excelData.getValue(45, rowNo)+"\')]"))
+
+  WebUI.click(dateREF)
 }
 
-WebUI.waitForPageLoad(2)
-
-WebUI.delay(2)
+WebUI.delay(1)

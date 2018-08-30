@@ -57,7 +57,7 @@
       <guid>8ada80df-ab45-4a51-a379-862416c70222</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Main Script/TC13 DIVIDED BY 0</testCaseId>
+      <testCaseId>Test Cases/Main Script/TC13 DIVIDED BY ZERO</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>b6b695a5-53ad-4ec1-9649-fbeed838998c</guid>

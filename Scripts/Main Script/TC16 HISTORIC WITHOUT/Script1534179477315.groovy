@@ -37,24 +37,13 @@ WebUI.callTestCase(findTestCase('Sub Script/Navigation_Menu/Menu_Mes_rapports/Ma
 WebUI.callTestCase(findTestCase('Sub Script/Navigation_Menu/Menu_Mes_rapports/Main_Content/TC Select report name'), [:], 
     FailureHandling.STOP_ON_FAILURE)
 
-def inputDossier = WebUI.modifyObjectProperty(findTestObject('Mes rapports Obj/EXECUTION/Donnees calculees - Le code salarial apparait dans'), 
-    'id', 'contains', 's2id_autogen', true)
+WebUI.callTestCase(findTestCase('Sub Script/Navigation_Menu/Menu_Mes_rapports/Nouveau_Rapport/Mes rapports - EXECUTION/Valeurs a indiquer/TC Click on donnees calculees'), 
+    [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.click(inputDossier)
-
-def myDonneeCalculees = new TestObject('Select_donnee')
-
-myDonneeCalculees.addProperty('xpath', ConditionType.EQUALS, '//div[@id=\'select2-drop\']//ul[@class=\'select2-results\']//li[@role=\'presentation\']//div[contains(text(),\'(alle looncodes)\')]')
-
-WebUI.click(myDonneeCalculees)
-
-WebUI.click(findTestObject('Mes rapports Obj/SELECTION/Travailleur/Page_eBlox Reporting/Close_dropdown'))
+WebUI.callTestCase(findTestCase('Sub Script/Navigation_Menu/Menu_Mes_rapports/Nouveau_Rapport/Mes rapports - EXECUTION/Valeurs a indiquer/TC Select Donnees calculees type'), 
+    [:], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.callTestCase(findTestCase('Sub Script/Navigation_Menu/Menu_Mes_rapports/TC Verify Executer button'), [:], FailureHandling.STOP_ON_FAILURE)
-
-WebUiBuiltInKeywords.waitForPageLoad(10)
-
-WebUI.delay(10)
 
 WebUI.closeBrowser()
 

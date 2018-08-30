@@ -11,7 +11,6 @@ import com.kms.katalon.core.testcase.TestCase as TestCase
 import com.kms.katalon.core.testcase.TestCaseFactory as TestCaseFactory
 import com.kms.katalon.core.testdata.TestData as TestData
 import com.kms.katalon.core.testdata.TestDataFactory as TestDataFactory
-import com.kms.katalon.core.testobject.ConditionType
 import com.kms.katalon.core.testobject.ObjectRepository as ObjectRepository
 import com.kms.katalon.core.testobject.TestObject as TestObject
 import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WSBuiltInKeywords
@@ -20,18 +19,9 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUiBuiltInKe
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
+WebUI.waitForPageLoad(10)
 
-TestData excelData = findTestData('Data Files/Data/TestData')
-
-int rowNo = Integer.parseInt(GlobalVariable.currentTestCaseId)
-
-if (excelData.getValue( 45, rowNo) != '')
-{
-	
-	WebUI.(excelData.getValue(45,rowNo))(findTestObject('Mes rapports Obj/EXECUTION/HIstorique- checkbox'))
- 		
-}
-
-WebUI.waitForPageLoad(2)
+WebUI.click(findTestObject('Mes rapports Obj/EXECUTION/Description _Date de reference historique'))
 
 WebUI.delay(2)
+
