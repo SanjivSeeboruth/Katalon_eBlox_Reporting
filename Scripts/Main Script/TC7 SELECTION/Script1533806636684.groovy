@@ -87,6 +87,27 @@ WebUI.callTestCase(findTestCase('Sub Script/Navigation_Menu/Menu_Mes_rapports/In
 
 WebUI.waitForPageLoad(15)
 
+WebUI.click(findTestObject('Page_eBlox Rapportering/Selection Etendue/Geslacht'))
+
+WebUI.click(findTestObject('Page_eBlox Rapportering/Selection Etendue/delele icon'))
+
+WebUI.click(findTestObject('Page_eBlox Rapportering/Selection Etendue/Geboortedatum'))
+
+WebUI.click(findTestObject('Page_eBlox Rapportering/Selection Etendue/delele icon'))
+
+WebUI.callTestCase(findTestCase('Sub Script/Navigation_Menu/Menu_Mes_rapports/Nouveau_Rapport/Mes rapports - SELECTION/CheckBox Selection/TC Verify CheckBox - Copy'), 
+    [:], FailureHandling.STOP_ON_FAILURE)
+
+WebUI.callTestCase(findTestCase('Sub Script/Navigation_Menu/Menu_Mes_rapports/Inner_Content/TC Verify Executer tab'), [:], 
+    FailureHandling.STOP_ON_FAILURE)
+
+WebUI.callTestCase(findTestCase('Sub Script/Navigation_Menu/Menu_Mes_rapports/TC Verify Executer button'), [:], FailureHandling.STOP_ON_FAILURE)
+
+WebUI.waitForPageLoad(15)
+
+WebUI.callTestCase(findTestCase('Sub Script/Navigation_Menu/Menu_Mes_rapports/Inner_Content/TC Verify Definition tab'), 
+    [:], FailureHandling.STOP_ON_FAILURE)
+
 //def newId = WebUI.executeJavaScript('return $("input[type="text""]").attr("id")', [])
 //println(newId)
 not_run: WebUI.closeBrowser()

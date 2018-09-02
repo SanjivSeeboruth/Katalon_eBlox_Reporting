@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>Mes rapport input</name>
+   <name>Geslacht</name>
    <tag></tag>
-   <elementGuidId>73046af3-72bf-4195-9f90-963bda650a18</elementGuidId>
+   <elementGuidId>444a423c-f97c-4c36-a23f-360bebf01ca1</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//*[@id=&quot;s2id_autogen3_search&quot;]</value>
+         <value>//*[@id=&quot;rapp-disable-toevoegen-knoppen-tabel&quot;]/table/tbody/tr/td/div[2]/div/div/div/ul/li[1]</value>
       </entry>
       <entry>
          <key>BASIC</key>
+         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

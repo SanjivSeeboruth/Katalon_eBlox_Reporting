@@ -25,10 +25,10 @@ TestData excelData = findTestData('Data Files/Data/TestData')
 
 int rowNo = Integer.parseInt(GlobalVariable.currentTestCaseId)
 
-if (excelData.getValue( 45, rowNo) != '')
+if (excelData.getValue( 46, rowNo) != '')
 {
 	
-	WebUI.(excelData.getValue(45,rowNo))(findTestObject('Mes rapports Obj/EXECUTION/HIstorique- checkbox'))
+	WebUI.(excelData.getValue(46,rowNo))(findTestObject('Mes rapports Obj/EXECUTION/HIstorique- checkbox'))
  		
 }
 

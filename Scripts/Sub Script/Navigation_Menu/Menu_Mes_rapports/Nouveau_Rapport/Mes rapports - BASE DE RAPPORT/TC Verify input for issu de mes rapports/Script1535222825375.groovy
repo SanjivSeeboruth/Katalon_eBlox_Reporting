@@ -21,13 +21,18 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-TestData excelData = findTestData('Data Files/Data/BASIC')
+TestData excelData = findTestData('Data Files/Data/TestData')
 
-def test = excelData.getRowNumbers()
+//int rowNo = Integer.parseInt(GlobalVariable.currentTestCaseId)
 
-for (int i = 1; i <= test; i++) {
-	WebUI.setText(findTestObject('Mes rapports Obj/BASE DE RAPPORT/Mes rapport input'), excelData.getValue('Report Name', i))
-	WebUI.delay(2)
+//WebUI.click('Mes rapports Obj/BASE DE RAPPORT/Mes rapport input')
+
+if (excelData.getValue( 3, 4) != '')
+{
+  WebUI.waitForElementClickable('Mes rapports Obj/BASE DE RAPPORT/Mes rapport input', 10)
+  WebUI.setText(findTestObject('Mes rapports Obj/BASE DE RAPPORT/Mes rapport input'), excelData.getValue( 3, 4))
+  WebUI.delay(2)
+  
 }
 
 WebUI.sendKeys(findTestObject('Mes rapports Obj/BASE DE RAPPORT/Mes rapport input'), Keys.chord(Keys.ENTER))

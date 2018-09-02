@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//div[@class='select2-drop select2-display-none select2-with-searchbox select2-drop-active']//div//input[contains(@id,'s2id_autogen11568_search')]</value>
+         <value>//div[@class='select2-drop select2-display-none select2-with-searchbox select2-drop-active']//div//input[contains(@id,'s2id_autogen')]</value>
       </entry>
       <entry>
          <key>BASIC</key>

@@ -20,9 +20,10 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
 def historic = WebUI.modifyObjectProperty(findTestObject('Mes rapports Obj/EXECUTION/Description _Date de reference historique'),
-	'xpath', 'equals', '//*[@id="uitvoering-parameters"]/div/div[2]/div/div/table/tbody/tr[4]/td[2]/div/div/rapp-date-prompt/div/div/rapp-special-values/div/button',
+	'xpath', 'equals', '//*[@id="uitvoering-parameters"]/div/div[2]/div/div/table/tbody/tr[2]/td[2]/div/div/rapp-date-prompt/div/div/rapp-special-values/div/button',
 	true)
 
 WebUI.click(historic)
 
 WebUI.delay(2)
+
