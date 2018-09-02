@@ -21,6 +21,8 @@ import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 import com.kms.katalon.core.testobject.ConditionType as ConditionType
 
+CustomKeywords.'verify_Test_Case_Number.getTestCaseNumber.getTCNo'()
+
 WebUI.callTestCase(findTestCase('Login/TC1 Login to Mysdworx'), [:], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.callTestCase(findTestCase('Sub Script/Select Language/TC1 Verify NL language'), [:], FailureHandling.STOP_ON_FAILURE)
@@ -55,29 +57,27 @@ WebUI.callTestCase(findTestCase('Sub Script/Navigation_Menu/Menu_Mes_rapports/No
 WebUI.callTestCase(findTestCase('Sub Script/Navigation_Menu/Menu_Mes_rapports/Nouveau_Rapport/Mes rapports - SELECTION/Selection etendue/TC Click on the plus icon'), 
     [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.setText(findTestObject('Page_eBlox Rapportering/Operation/Input condition for plus icon'), 'Geboortedatum')
+WebUI.callTestCase(findTestCase('Sub Script/Navigation_Menu/Menu_Mes_rapports/Nouveau_Rapport/Mes rapports - SELECTION/Selection etendue/TC Input rubrique 2'), 
+    [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.sendKeys(findTestObject('Page_eBlox Rapportering/Operation/Input condition for plus icon'), Keys.chord(Keys.ENTER))
+WebUI.callTestCase(findTestCase('Sub Script/Navigation_Menu/Menu_Mes_rapports/Nouveau_Rapport/Mes rapports - SELECTION/Selection etendue/TC Comparaison 2'), 
+    [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.click(findTestObject('Page_eBlox Rapportering/Operation/Dropdown criteria for condition'))
+WebUI.callTestCase(findTestCase('Sub Script/Navigation_Menu/Menu_Mes_rapports/Nouveau_Rapport/Mes rapports - SELECTION/Selection etendue/TC Select Date option'), 
+    [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.click(findTestObject('Page_eBlox Rapportering/Selection Etendue/est plus petit que - is kleiner dan'))
+WebUI.callTestCase(findTestCase('Sub Script/Navigation_Menu/Menu_Mes_rapports/Nouveau_Rapport/Mes rapports - SELECTION/Selection etendue/TC Input Valeur 2'), 
+    [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.click(findTestObject('Page_eBlox Rapportering/Selection Etendue/Select date option'))
+not_run: WebUI.callTestCase(findTestCase('Sub Script/Navigation_Menu/Menu_Mes_rapports/TC Verify Sauvegarder button'), [:], 
+    FailureHandling.STOP_ON_FAILURE)
 
-WebUI.click(findTestObject('Page_eBlox Rapportering/Selection Etendue/Select date'), FailureHandling.STOP_ON_FAILURE)
-
-WebUI.setText(findTestObject('Page_eBlox Rapportering/Selection Etendue/Input date'), '01/01/1990 ')
-
-WebUI.sendKeys(findTestObject('Page_eBlox Rapportering/Selection Etendue/Input date'), Keys.chord(Keys.ENTER))
-
-WebUI.click(findTestObject('Page_eBlox Rapportering/Operation/Operation - Sauvegarder button'))
-
-WebUI.click(findTestObject('Page_eBlox Rapportering/Selection Etendue/Execute tab button'))
+not_run: WebUI.callTestCase(findTestCase('Sub Script/Navigation_Menu/Menu_Mes_rapports/TC Verify Executer button'), [:], 
+    FailureHandling.STOP_ON_FAILURE)
 
 def newId = WebUI.executeJavaScript('return $("input[type="text""]").attr("id")', [])
 
 println(newId)
 
-WebUI.closeBrowser()
+not_run: WebUI.closeBrowser()
 

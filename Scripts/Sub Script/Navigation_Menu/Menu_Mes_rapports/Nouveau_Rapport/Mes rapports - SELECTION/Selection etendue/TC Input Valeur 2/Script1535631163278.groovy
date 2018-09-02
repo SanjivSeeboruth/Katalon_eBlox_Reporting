@@ -22,17 +22,17 @@ import org.openqa.selenium.Keys as Keys
 
 TestData excelData = findTestData('Data Files/Data/TestData')
 
-int rowNo = Integer.parseInt(GlobalVariable.currentTestCaseId)
+//int rowNo = Integer.parseInt(GlobalVariable.currentTestCaseId)
 
-WebUI.click(findTestObject('Page_eBlox Rapportering/Selection Etendue/Valeur - Man'))
-
-if (excelData.getValue( 65, rowNo) != '')
+if (excelData.getValue( 65, 8) != '')
 {
-	
-	WebUI.setText(findTestObject('Page_eBlox Rapportering/Selection Etendue/Input date'), excelData.getValue( 65, rowNo))
-	
+	//def valeurTXT = WebUI.modifyObjectProperty(findTestObject('Page_eBlox Rapportering/Selection Etendue/Input Valeur'), 'xpath', 'contains', '//*[@id="s2id_autogen"]', false)
+	//*[@id="s2id_autogen22257_search"]
+	WebUI.setText(findTestObject('Page_eBlox Rapportering/Selection Etendue/Input date'), excelData.getValue( 65, 8))
+
 	WebUI.delay(1)
   
 }
 
 WebUI.sendKeys(findTestObject('Page_eBlox Rapportering/Selection Etendue/Input date'), Keys.chord(Keys.ENTER))
+

@@ -7,14 +7,14 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//*[@id=&quot;select2-drop&quot;]/div</value>
+         <value>//*[@id=&quot;s2id_autogen8_search&quot;]</value>
       </entry>
       <entry>
          <key>BASIC</key>
-         <value>//div[@id='select2-drop']//div[@class='select2-search']//input[@role='combobox'][count(. | //input[@type = 'text' and @class = 'select2-input' and @role = 'combobox' and contains(@id, 's2id_autogen8_search') and @aria-autocomplete = 'list']) = count(//input[@type = 'text' and @class = 'select2-input' and @role = 'combobox' and contains(@id, 's2id_autogen8_search') and @aria-autocomplete = 'list'])]</value>
+         <value>//div[@id='select2-drop']//div[@class='select2-search']//input[@role='combobox'][count(. | //input[@type = 'text' and @class = 'select2-input' and @role = 'combobox' and contains(@id, 's2id_autogen8_search') and @aria-autocomplete = 'list' and @autocomplete = 'off' and @autocorrect = 'off' and @spellcheck = 'false' and @aria-expanded = 'true' and @aria-owns = 'select2-results-8']) = count(//input[@type = 'text' and @class = 'select2-input' and @role = 'combobox' and contains(@id, 's2id_autogen8_search') and @aria-autocomplete = 'list' and @autocomplete = 'off' and @autocorrect = 'off' and @spellcheck = 'false' and @aria-expanded = 'true' and @aria-owns = 'select2-results-8'])]</value>
       </entry>
    </selectorCollection>
-   <selectorMethod>BASIC</selectorMethod>
+   <selectorMethod>XPATH</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
       <isSelected>true</isSelected>

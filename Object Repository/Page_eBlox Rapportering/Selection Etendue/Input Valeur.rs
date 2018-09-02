@@ -7,13 +7,20 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//*[@id=&quot;s2id_autogen6344_search&quot;]</value>
+         <value>//*[@id=&quot;s2id_autogen30262_search&quot;]</value>
       </entry>
       <entry>
          <key>BASIC</key>
-         <value></value>
+         <value>//*[@id=&quot;s2id_autogen22257_search&quot;]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>contains</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//*[@id=&quot;s2id_autogen22257_search&quot;]</value>
+   </webElementProperties>
 </WebElementEntity>

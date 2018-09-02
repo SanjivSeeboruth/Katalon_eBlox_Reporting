@@ -22,3 +22,4 @@ import internal.GlobalVariable as GlobalVariable
 WebUI.click(findTestObject('Page_eBlox Rapportering/Operation/Conditions - Nom - plus icon'))
 
 WebUI.delay(2)
+

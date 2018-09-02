@@ -22,16 +22,16 @@ import internal.GlobalVariable as GlobalVariable
 
 TestData excelData = findTestData('Data Files/Data/TestData')
 
-int rowNo = Integer.parseInt(GlobalVariable.currentTestCaseId)
+//int rowNo = Integer.parseInt(GlobalVariable.currentTestCaseId)
 
 WebUI.click(findTestObject('Page_eBlox Rapportering/Operation/Dropdown criteria for condition'))
 
-if (excelData.getValue( 64, rowNo) != '')
+if (excelData.getValue( 64, 8) != '')
 {
 	
 	def option = new TestObject('option')
 	
-	option.addProperty('xpath', ConditionType.EQUALS, "//ul//li//a[contains(text(),\'"+excelData.getValue( 64, rowNo)+"\')]")
+	option.addProperty('xpath', ConditionType.EQUALS, "//*[@id=\"rapp-disable-toevoegen-knoppen-tabel\"]/table/tbody/tr/td/div[2]/div/div/div/ul/li/div/div/div/ui-view/div/form/div/div[1]/div/div[1]/rapp-button-dropdown/div/ul/li/a[contains(text(),\'"+excelData.getValue( 64, 8)+"\')]")
 																																									
 	WebUI.click(option)
 

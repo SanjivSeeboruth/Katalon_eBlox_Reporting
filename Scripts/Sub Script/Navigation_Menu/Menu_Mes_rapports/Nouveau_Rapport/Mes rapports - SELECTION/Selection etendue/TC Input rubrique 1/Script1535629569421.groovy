@@ -22,14 +22,25 @@ import org.openqa.selenium.Keys as Keys
 
 TestData excelData = findTestData('Data Files/Data/TestData')
 
-int rowNo = Integer.parseInt(GlobalVariable.currentTestCaseId)
+//int rowNo = Integer.parseInt(GlobalVariable.currentTestCaseId)
 
-if (excelData.getValue( 60, rowNo) != '')
+if (excelData.getValue(60, 8) != "")
 {
-	WebUI.setText(findTestObject('Page_eBlox Rapportering/Operation/Input condition for plus icon'), excelData.getValue( 60, rowNo))
-
+	
+	def inputRub = WebUI.modifyObjectProperty(findTestObject('Page_eBlox Rapportering/Operation/Input condition for plus icon'), 'xpath', 'equals', '//*[@id="s2id_autogen8_search"]', false)
+	
+	//WebUI.waitForElementClickable(inputRub, 10)
+	
+	//WebUI.click(inputRub)
+	
+	WebUI.setText(inputRub, excelData.getValue(60, 8))
+	
 	WebUI.delay(1)
+	
+	//def inputRub1 = WebUI.modifyObjectProperty(findTestObject('Page_eBlox Rapportering/Operation/Input condition for plus icon'), 'xpath', 'equals', '//*[@id="s2id_autogen8_search"]', false)
 	
 	WebUI.sendKeys(findTestObject('Page_eBlox Rapportering/Operation/Input condition for plus icon'), Keys.chord(Keys.ENTER))
   
 }
+
+WebUI.delay(1)
