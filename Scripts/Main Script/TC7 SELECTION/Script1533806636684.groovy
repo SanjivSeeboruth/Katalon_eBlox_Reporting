@@ -69,15 +69,25 @@ WebUI.callTestCase(findTestCase('Sub Script/Navigation_Menu/Menu_Mes_rapports/No
 WebUI.callTestCase(findTestCase('Sub Script/Navigation_Menu/Menu_Mes_rapports/Nouveau_Rapport/Mes rapports - SELECTION/Selection etendue/TC Input Valeur 2'), 
     [:], FailureHandling.STOP_ON_FAILURE)
 
+WebUI.callTestCase(findTestCase('Sub Script/Navigation_Menu/Menu_Mes_rapports/Inner_Content/TC Verify Executer tab'), [:], 
+    FailureHandling.STOP_ON_FAILURE)
+
 not_run: WebUI.callTestCase(findTestCase('Sub Script/Navigation_Menu/Menu_Mes_rapports/TC Verify Sauvegarder button'), [:], 
     FailureHandling.STOP_ON_FAILURE)
 
-not_run: WebUI.callTestCase(findTestCase('Sub Script/Navigation_Menu/Menu_Mes_rapports/TC Verify Executer button'), [:], 
-    FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('Sub Script/Navigation_Menu/Menu_Mes_rapports/TC Verify Executer button'), [:], FailureHandling.STOP_ON_FAILURE)
 
-def newId = WebUI.executeJavaScript('return $("input[type="text""]").attr("id")', [])
+WebUI.waitForPageLoad(15)
 
-println(newId)
+WebUI.callTestCase(findTestCase('Sub Script/Navigation_Menu/Menu_Mes_rapports/Inner_Content/TC Verify Definition tab'), 
+    [:], FailureHandling.STOP_ON_FAILURE)
 
+WebUI.callTestCase(findTestCase('Sub Script/Navigation_Menu/Menu_Mes_rapports/Inner_Content/Content_Navigation/TC Verify Selection tab'), 
+    [:], FailureHandling.STOP_ON_FAILURE)
+
+WebUI.waitForPageLoad(15)
+
+//def newId = WebUI.executeJavaScript('return $("input[type="text""]").attr("id")', [])
+//println(newId)
 not_run: WebUI.closeBrowser()
 

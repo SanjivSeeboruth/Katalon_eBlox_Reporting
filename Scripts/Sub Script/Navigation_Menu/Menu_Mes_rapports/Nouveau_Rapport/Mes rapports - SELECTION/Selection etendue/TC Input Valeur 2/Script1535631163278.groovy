@@ -15,6 +15,7 @@ import com.kms.katalon.core.testobject.ObjectRepository as ObjectRepository
 import com.kms.katalon.core.testobject.TestObject as TestObject
 import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WSBuiltInKeywords
 import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
+import com.kms.katalon.core.webui.driver.DriverFactory
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUiBuiltInKeywords
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
@@ -23,16 +24,13 @@ import org.openqa.selenium.Keys as Keys
 TestData excelData = findTestData('Data Files/Data/TestData')
 
 //int rowNo = Integer.parseInt(GlobalVariable.currentTestCaseId)
+if (excelData.getValue(65, 8) != '') {
+    //def valeurTXT = WebUI.modifyObjectProperty(findTestObject('Page_eBlox Rapportering/Selection Etendue/Input Valeur'), 'xpath', 'contains', '//*[@id="s2id_autogen"]', false)
+    //*[@id="s2id_autogen22257_search"]
+    WebUI.setText(findTestObject('Page_eBlox Rapportering/Selection Etendue/Input date'), excelData.getValue(65, 8))
 
-if (excelData.getValue( 65, 8) != '')
-{
-	//def valeurTXT = WebUI.modifyObjectProperty(findTestObject('Page_eBlox Rapportering/Selection Etendue/Input Valeur'), 'xpath', 'contains', '//*[@id="s2id_autogen"]', false)
-	//*[@id="s2id_autogen22257_search"]
-	WebUI.setText(findTestObject('Page_eBlox Rapportering/Selection Etendue/Input date'), excelData.getValue( 65, 8))
-
-	WebUI.delay(1)
-  
+    WebUI.delay(1)
 }
 
-WebUI.sendKeys(findTestObject('Page_eBlox Rapportering/Selection Etendue/Input date'), Keys.chord(Keys.ENTER))
+WebUI.sendKeys(findTestObject('Page_eBlox Rapportering/Selection Etendue/Input date'), Keys.chord(Keys.TAB))
 
