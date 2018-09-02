@@ -32,7 +32,7 @@ for (int i=47; i<=51; i++) {
 	def myDonneeCalculees = new TestObject('Select_donnee')
 
 	myDonneeCalculees.addProperty('xpath', ConditionType.EQUALS, "'//div[@id=\'select2-drop\']//ul[@class=\'select2-results\']//li[@role=\'presentation\']//div[contains(text(),\'"+excelData.getValue(i, rowNo)+"\')]")
-	
+	//div[@id='select2-drop']//ul[@class='select2-results']//li[@role='presentation']//div[contains(text(),'(alle looncodes)')]
 	WebUI.click(myDonneeCalculees)
 
 	WebUI.delay(1)

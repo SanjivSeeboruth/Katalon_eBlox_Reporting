@@ -23,16 +23,13 @@ import org.openqa.selenium.Keys as Keys
 
 TestData excelData = findTestData('Data Files/Data/TestData')
 
-//int rowNo = Integer.parseInt(GlobalVariable.currentTestCaseId)
+int rowNo = Integer.parseInt(GlobalVariable.currentTestCaseId)
 
-//WebUI.click('Mes rapports Obj/BASE DE RAPPORT/Mes rapport input')
-
-if (excelData.getValue( 3, 4) != '')
+if (excelData.getValue( 3, rowNo) != '')
 {
-  WebUI.waitForElementClickable('Mes rapports Obj/BASE DE RAPPORT/Mes rapport input', 10)
-  WebUI.setText(findTestObject('Mes rapports Obj/BASE DE RAPPORT/Mes rapport input'), excelData.getValue( 3, 4))
-  WebUI.delay(2)
-  
+	WebUI.delay(1)
+  WebUI.setText(findTestObject('Mes rapports Obj/BASE DE RAPPORT/Mes rapport input'), excelData.getValue( 3, rowNo))
+ 
 }
 
 WebUI.sendKeys(findTestObject('Mes rapports Obj/BASE DE RAPPORT/Mes rapport input'), Keys.chord(Keys.ENTER))

@@ -34,8 +34,12 @@ WebUI.callTestCase(findTestCase('Sub Script/Navigation_Menu/Menu_Mes_rapports/No
 WebUI.callTestCase(findTestCase('Sub Script/Navigation_Menu/Menu_Mes_rapports/Main_Content/TC Click on mes rapport dropdown'), 
     [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.callTestCase(findTestCase('Sub Script/Navigation_Menu/Menu_Mes_rapports/Nouveau_Rapport/Mes rapports - BASE DE RAPPORT/TC Verify input for issu de mes rapports'), 
+not_run: WebUI.callTestCase(findTestCase('Sub Script/Navigation_Menu/Menu_Mes_rapports/Nouveau_Rapport/Mes rapports - BASE DE RAPPORT/TC Verify input for issu de mes rapports'), 
     [:], FailureHandling.STOP_ON_FAILURE)
+
+WebUI.setText(findTestObject('Mes rapports Obj/BASE DE RAPPORT/Mes rapport input'), 'TEST 2 MAU JAN 2018 (SANJIV)')
+
+WebUI.sendKeys(findTestObject('Mes rapports Obj/BASE DE RAPPORT/Mes rapport input'), Keys.chord(Keys.ENTER))
 
 WebUI.callTestCase(findTestCase('Sub Script/Navigation_Menu/Menu_Mes_rapports/TC Verify the next button arrow'), [:], FailureHandling.STOP_ON_FAILURE)
 

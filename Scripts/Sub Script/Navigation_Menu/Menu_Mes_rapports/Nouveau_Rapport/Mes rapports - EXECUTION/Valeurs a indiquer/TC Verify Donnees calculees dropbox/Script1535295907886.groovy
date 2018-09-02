@@ -11,6 +11,7 @@ import com.kms.katalon.core.testcase.TestCase as TestCase
 import com.kms.katalon.core.testcase.TestCaseFactory as TestCaseFactory
 import com.kms.katalon.core.testdata.TestData as TestData
 import com.kms.katalon.core.testdata.TestDataFactory as TestDataFactory
+import com.kms.katalon.core.testobject.ConditionType
 import com.kms.katalon.core.testobject.ObjectRepository as ObjectRepository
 import com.kms.katalon.core.testobject.TestObject as TestObject
 import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WSBuiltInKeywords

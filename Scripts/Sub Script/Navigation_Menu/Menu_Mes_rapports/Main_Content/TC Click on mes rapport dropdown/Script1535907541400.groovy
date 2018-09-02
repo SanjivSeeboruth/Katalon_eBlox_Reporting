@@ -21,3 +21,5 @@ import internal.GlobalVariable as GlobalVariable
 
 WebUI.click(findTestObject('Mes rapports Obj/BASE DE RAPPORT/Baser sur un rapport issu de mes rapport dropdown'))
 
+WebUI.delay(2)
+
