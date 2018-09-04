@@ -28,7 +28,7 @@ if (excelData.getValue(45, rowNo) != '')
 {
   def dateREF = new TestObject('Select_historic_date')
 
-  dateREF.addProperty('xpath', ConditionType.EQUALS, ("//a//span[contains(text(),\'"+excelData.getValue(45, rowNo)+"\')]"))
+  dateREF.addProperty('xpath', ConditionType.EQUALS, ("//li//a//span[contains(text(),\'"+excelData.getValue(45, rowNo)+"\')]"))
 
   WebUI.click(dateREF)
 }

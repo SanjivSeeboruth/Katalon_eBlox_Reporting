@@ -21,7 +21,11 @@ import internal.GlobalVariable as GlobalVariable
 
 WebUI.waitForPageLoad(10)
 
-WebUI.click(findTestObject('Mes rapports Obj/EXECUTION/Description _Date de reference historique'))
+WebUI.waitForElementPresent(findTestObject('Object Repository/Mes rapports Obj/EXECUTION/Date de reference historique'), 10)
+
+//WebUI.waitForElementClickable(findTestObject('Mes rapports Obj/EXECUTION/Date de reference historique', 10))
+
+WebUI.click(findTestObject('Object Repository/Mes rapports Obj/EXECUTION/Date de reference historique'))
 
 WebUI.delay(2)
 

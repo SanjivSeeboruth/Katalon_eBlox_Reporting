@@ -39,4 +39,4 @@ if (excelData.getValue( 3, rowNo) != '')
 		
 }
 
-WebUI.delay(1)
+WebUI.delay(2)

@@ -28,7 +28,7 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 WebDriver driver = DriverFactory.getWebDriver()
 
 'Expected value from Table'
-String ExpectedValue = "Referentiedatum historiek";
+String ExpectedValue = "Bedrijfswagen: nummerplaat";
 
 'To locate table'
 WebElement Table = driver.findElement(By.xpath("//table/tbody"))
@@ -55,22 +55,18 @@ for (int column = 0; column < columns_count; column++) {
 'It will retrieve text from each cell'
 String celltext = Columns_row.get(column).getText()
  
-println((((('Cell Value Of row number ' + row) + ' and column number ') + column) + ' Is ') + celltext)
+//println((((('Cell Value Of row number ' + row) + ' and column number ') + column) + ' Is ') + celltext)
 
 'Checking if Cell text is matching with the expected value'
 if (celltext == ExpectedValue) {
-	
-	def clickOnContenu = new TestObject('clickOnContenu')
-	
-		clickOnContenu.addProperty('xpath', ConditionType.EQUALS, "//tr//td//strong[contains(text(),\'Bedrijfswagen: nummerplaat\')]")
+
+	def REfDate = new TestObject('Choisir_selecteur')
+	REfDate.addProperty('xpath', ConditionType.EQUALS, "//*[@id=\"uitvoering-parameters\"]/div/div[2]/div/div/table/tbody/tr["+(row+1)+"]/td[2]/div/div/rapp-date-prompt/div/div/rapp-special-values/div/button")
+	WebUI.click(REfDate)
+	WebUI.delay(1)
 		
-		WebUI.click(clickOnContenu)
+		//*[@id="uitvoering-parameters"]/div/div[2]/div/div/table/tbody/tr[4]/td[2]/div/div/rapp-date-prompt/div/div/rapp-special-values/div/button
 	
-	def deleteContenu = new TestObject('Delete_icon')
-	
-		deleteContenu.addProperty('xpath', ConditionType.EQUALS, "//*[@id=\"veldInEdit\"]/div/div[1]/div[3]/div/button")
-		
-		WebUI.click(deleteContenu)
  
 'After getting the Expected value from Table we will Terminate the loop'
 

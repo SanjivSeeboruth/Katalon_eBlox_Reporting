@@ -24,15 +24,19 @@ TestData excelData = findTestData('Data Files/Data/TestData')
 
 int rowNo = Integer.parseInt(GlobalVariable.currentTestCaseId)
 
+WebUI.delay(1)
 
+name = "(alle looncodes)"
 for (int i=47; i<=51; i++) {
 	
 	if((excelData.getValue(i, rowNo))!=""){
 	
-	def myDonneeCalculees = new TestObject('Select_donnee')
+	def myDonneeCalculees = new TestObject('Select_donnee_looncode')
 
-	myDonneeCalculees.addProperty('xpath', ConditionType.EQUALS, "'//div[@id=\'select2-drop\']//ul[@class=\'select2-results\']//li[@role=\'presentation\']//div[contains(text(),\'"+excelData.getValue(i, rowNo)+"\')]")
+	myDonneeCalculees.addProperty("xpath", ConditionType.EQUALS, "//*[@id=\"select2-drop\"]//ul//li//div[contains(text(),\'"+excelData.getValue(i, rowNo)+"\')]")
 	//div[@id='select2-drop']//ul[@class='select2-results']//li[@role='presentation']//div[contains(text(),'(alle looncodes)')]
+	//*[@id="select2-drop"]/ul/li/div[contains(text(),'(alle looncodes)')]
+	
 	WebUI.click(myDonneeCalculees)
 
 	WebUI.delay(1)

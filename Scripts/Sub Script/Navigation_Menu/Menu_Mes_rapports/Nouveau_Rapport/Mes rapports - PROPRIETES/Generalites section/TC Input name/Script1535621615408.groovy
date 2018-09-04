@@ -25,9 +25,9 @@ int rowNo = Integer.parseInt(GlobalVariable.currentTestCaseId)
 
 TestData excelData = findTestData('Data Files/Data/TestData')
 
-if (excelData.getValue(58, rowNo) != '')
+if (excelData.getValue(3, rowNo) != '')
 {
-  WebUI.setText(findTestObject('Mes rapports Obj/PROPRIETES/Generalites - input name'), (excelData.getValue(58, rowNo)))
+  WebUI.setText(findTestObject('Mes rapports Obj/PROPRIETES/Generalites - input name'), (excelData.getValue(3, rowNo)))
 }
 
 WebUI.delay(1)

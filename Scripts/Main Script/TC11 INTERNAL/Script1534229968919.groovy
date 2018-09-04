@@ -76,8 +76,6 @@ WebUI.callTestCase(findTestCase('Sub Script/Navigation_Menu/Menu_Mes_rapports/No
 
 WebUI.callTestCase(findTestCase('Sub Script/Navigation_Menu/Menu_Mes_rapports/TC Verify Sauvegarder button'), [:], FailureHandling.STOP_ON_FAILURE)
 
-not_run: WebUI.click(findTestObject('Mes rapports Obj/EXECUTION/Annuler nouveau rapport'))
-
 WebUiBuiltInKeywords.waitForPageLoad(10)
 
 WebUI.waitForElementClickable(findTestObject('Admin Obj/Admin_tab'), 10)
