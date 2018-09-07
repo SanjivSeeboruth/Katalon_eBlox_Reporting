@@ -27,7 +27,7 @@ String value;
 
 for (int i = 1; i <= no_Of_Rows; i++) {
 	if (excelData.getValue('Options Exportation', i)!="") {
-		Boolean verifyChecbox = WebUI.waitForElementClickable(findTestObject("'Page_eBlox Rapportering/Definition - Proprietes - Options d exportation/'"+ excelData.getValue('Options Exportation', i) +"'checkbox'"),
+		Boolean verifyChecbox = WebUI.waitForElementClickable(findTestObject("Page_eBlox Rapportering/Definition - Proprietes - Options d exportation/'"+ excelData.getValue('Options Exportation', i) +"checkbox'"),
 			2)
 		if (verifyChecbox==true) {
 			value = "check"
@@ -38,7 +38,7 @@ for (int i = 1; i <= no_Of_Rows; i++) {
 		
 		if (value == excelData.getValue('First Option', i) ) {
 			
-			WebUI.(excelData.getValue('First Option', i))(findTestObject("'Page_eBlox Rapportering/Definition - Proprietes - Options d exportation/'"+ excelData.getValue('Options Exportation', i) +"'checkbox'"))
+			WebUI.(excelData.getValue('First Option', i))(findTestObject("Page_eBlox Rapportering/Definition - Proprietes - Options d exportation/'"+ excelData.getValue('Options Exportation', i) +"checkbox'"))
 		}
 	}
 	

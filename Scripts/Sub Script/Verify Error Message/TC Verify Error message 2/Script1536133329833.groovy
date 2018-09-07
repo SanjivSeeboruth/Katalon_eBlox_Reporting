@@ -11,19 +11,40 @@ import com.kms.katalon.core.testcase.TestCase as TestCase
 import com.kms.katalon.core.testcase.TestCaseFactory as TestCaseFactory
 import com.kms.katalon.core.testdata.TestData as TestData
 import com.kms.katalon.core.testdata.TestDataFactory as TestDataFactory
+import com.kms.katalon.core.testobject.ConditionType as ConditionType
 import com.kms.katalon.core.testobject.ObjectRepository as ObjectRepository
 import com.kms.katalon.core.testobject.TestObject as TestObject
+import com.kms.katalon.core.util.KeywordUtil
 import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WSBuiltInKeywords
 import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUiBuiltInKeywords
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
+import org.openqa.selenium.By
+import org.openqa.selenium.WebDriver as WebDriver
+import com.kms.katalon.core.webui.driver.DriverFactory as DriverFactory
 
-//WebUI.waitForElementClickable(findTestObject('Page_eBlox Rapportering/Definition'), 15)
+TestData excelData = findTestData('Data Files/Data/TestData')
 
-def definition = WebUI.modifyObjectProperty(findTestObject('Page_eBlox Rapportering/Definition'), 'xpath', 'contains', '//a[contains(text(),\'Definitie\')]', 
-    true)
+int rowNo = Integer.parseInt(GlobalVariable.currentTestCaseId)
 
-WebUI.click(definition)
+WebDriver driver = DriverFactory.getWebDriver()
 
-WebUI.waitForPageLoad(10)
+String msg = driver.findElement(By.xpath("//div[contains(@class,'toast-message')]")).getText()
+
+
+if (excelData.getValue(67,rowNo)!="")
+{
+	if (msg==excelData.getValue(67,rowNo))
+	{
+		KeywordUtil.markPassed("Error message is present")
+	}
+	else
+	{
+		KeywordUtil.markFailed("Error message is not present")
+	}
+}
+
+
+
+

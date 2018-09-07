@@ -20,6 +20,8 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
+CustomKeywords.'verify_Test_Case_Number.getTestCaseNumber.getTCNo'()
+
 'Login eBlox Reporting'
 WebUI.callTestCase(findTestCase('Login/TC1 Login to Mysdworx'), [:], FailureHandling.STOP_ON_FAILURE)
 
@@ -79,5 +81,18 @@ WebUI.callTestCase(findTestCase('Sub Script/Navigation_Menu/Menu_Comptages/TC4 V
 
 WebUI.callTestCase(findTestCase('Sub Script/Navigation_Menu/Menu_Comptages/TC7 Verify Sauvegarder button'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.closeBrowser()
+WebUI.callTestCase(findTestCase('Sub Script/Verify Error Message/TC Verify Error message 1'), [:], FailureHandling.STOP_ON_FAILURE)
+
+WebUI.callTestCase(findTestCase('Sub Script/Select Language/TC2 Verify FR Language'), [:], FailureHandling.STOP_ON_FAILURE)
+
+WebUI.callTestCase(findTestCase('Sub Script/Navigation_Menu/Menu_Comptages/TC Verify Comptages tab'), [:], FailureHandling.STOP_ON_FAILURE)
+
+WebUI.callTestCase(findTestCase('Sub Script/Navigation_Menu/Menu_Comptages/TC2 Verify Nouveau comptage button'), [:], FailureHandling.STOP_ON_FAILURE)
+
+WebUI.callTestCase(findTestCase('Sub Script/Navigation_Menu/Menu_Comptages/TC3 Verify Montants Function'), [:], FailureHandling.STOP_ON_FAILURE)
+
+WebUI.callTestCase(findTestCase('Sub Script/Navigation_Menu/Menu_Comptages/TC4 Verify the creation of a new Comptage'), 
+    [:], FailureHandling.STOP_ON_FAILURE)
+
+not_run: WebUI.closeBrowser()
 

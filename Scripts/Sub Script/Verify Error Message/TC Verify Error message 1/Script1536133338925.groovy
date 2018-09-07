@@ -11,20 +11,43 @@ import com.kms.katalon.core.testcase.TestCase as TestCase
 import com.kms.katalon.core.testcase.TestCaseFactory as TestCaseFactory
 import com.kms.katalon.core.testdata.TestData as TestData
 import com.kms.katalon.core.testdata.TestDataFactory as TestDataFactory
-import com.kms.katalon.core.testobject.ConditionType
+import com.kms.katalon.core.testobject.ConditionType as ConditionType
 import com.kms.katalon.core.testobject.ObjectRepository as ObjectRepository
 import com.kms.katalon.core.testobject.TestObject as TestObject
+import com.kms.katalon.core.util.KeywordUtil
 import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WSBuiltInKeywords
 import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUiBuiltInKeywords
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
+import org.openqa.selenium.By
+import org.openqa.selenium.WebDriver as WebDriver
+import com.kms.katalon.core.webui.driver.DriverFactory as DriverFactory
 
 TestData excelData = findTestData('Data Files/Data/TestData')
 
-for (i=14 ; i <=23; i++){
-	println (excelData.getValue(i, 3))
+//int rowNo = Integer.parseInt(GlobalVariable.currentTestCaseId)
+
+WebDriver driver = DriverFactory.getWebDriver()
+
+String msg = driver.findElement(By.xpath("//div[contains(@class,'toast-message')]")).getText()
+
+println (msg)
+
+if (excelData.getValue(66,2)!="")
+{
+	if (msg==excelData.getValue(66,2))
+	{
+		KeywordUtil.markPassed("Error message is present")
+	}
+	else
+	{
+		KeywordUtil.markFailed("Error message is not present")
+	}
 }
+
+WebUI.waitForPageLoad(10)
+
 
 
 
