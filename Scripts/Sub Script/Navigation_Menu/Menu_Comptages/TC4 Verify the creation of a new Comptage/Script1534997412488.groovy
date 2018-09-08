@@ -13,31 +13,67 @@ import com.kms.katalon.core.testobject.TestObject as TestObject
 import com.kms.katalon.core.checkpoint.Checkpoint as Checkpoint
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
+import org.junit.After
+import org.openqa.selenium.By
+import org.openqa.selenium.WebDriver as WebDriver
+import com.kms.katalon.core.webui.driver.DriverFactory as DriverFactory
 
 TestData excelData = findTestData('Data Files/Data/TestData')
 
-int rowNo = Integer.parseInt(GlobalVariable.currentTestCaseId)
+//int rowNo = Integer.parseInt(GlobalVariable.currentTestCaseId)
+//input[@name='oms2NL']
+WebDriver driver = DriverFactory.getWebDriver()
 
-if (excelData.getValue(70,2)!="")
+String checkName = driver.findElement(By.xpath("//*[@id=\"navbar-anchor\"]/div[2]/div[1]/div/div")).getText()
+
+println (checkName)
+
+if (checkName=="Welkom ( SD admin )") 
 {
-	WebUI.setText(findTestObject('Comptages Obj/input_comptage_name'), excelData.getValue(70,2))
+	def Input_Name_NL = new TestObject('input_name_nl')
 	
-	WebUI.delay(5)
+	Input_Name_NL.addProperty('xpath', ConditionType.EQUALS, "//input[@name='oms2NL']")
+	
+	WebUI.setText(Input_Name_NL, excelData.getValue(70,2))
+	
+	WebUI.delay(2)
+}
+
+else
+{
+	def Input_Name_FR = new TestObject('input_name_fr')
+	
+	Input_Name_FR.addProperty('xpath', ConditionType.EQUALS, "//input[@name='oms2FR']")
+	
+	WebUI.setText(Input_Name_FR, excelData.getValue(71,2))
+	
+	WebUI.delay(2)
 }
 
 WebUI.click(findTestObject('Comptages Obj/dropdown_arrow'))
 
 WebUI.delay(5)
 
-if (excelData.getValue(72,2)!="")
-{
-	def comptage = new TestObject('comptage_type')
-	
-	comptage.addProperty('xpath', ConditionType.EQUALS, "//ul//li//div[contains (text(),\'"+excelData.getValue(72,2)+"\')]")
-	
-	WebUI.click(comptage)
-	
-	WebUI.setText(findTestObject('Comptages Obj/input_comptage_type'), 'Attest loonlasten')
 
-	WebUI.sendKeys(findTestObject('Comptages Obj/input_comptage_type'), Keys.chord(Keys.ENTER))
+
+if (checkName=="Welkom ( SD admin )") 
+{
+	if (excelData.getValue(72,2)!="")
+	{
+		def comptage = new TestObject('comptage_type')
+	
+		comptage.addProperty('xpath', ConditionType.EQUALS, "//ul//li//div[contains (text(),\'"+excelData.getValue(72,2)+"\')]")
+	
+		WebUI.click(comptage)
+	
+	}
+}
+
+else
+{
+	def comptageFR = new TestObject('comptage_type')
+	
+	comptageFR.addProperty('xpath', ConditionType.EQUALS, "//ul//li//div[contains (text(),\'"+excelData.getValue(73,2)+"\')]")
+	
+	WebUI.click(comptageFR)
 }

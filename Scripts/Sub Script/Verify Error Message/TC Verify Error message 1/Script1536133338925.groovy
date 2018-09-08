@@ -27,6 +27,7 @@ import com.kms.katalon.core.webui.driver.DriverFactory as DriverFactory
 TestData excelData = findTestData('Data Files/Data/TestData')
 
 //int rowNo = Integer.parseInt(GlobalVariable.currentTestCaseId)
+WebUI.waitForPageLoad(10)
 
 WebDriver driver = DriverFactory.getWebDriver()
 
