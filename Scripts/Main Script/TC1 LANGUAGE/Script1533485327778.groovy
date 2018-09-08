@@ -80,9 +80,9 @@ WebUI.callTestCase(findTestCase('Sub Script/Navigation_Menu/Menu_Comptages/TC3 V
 WebUI.callTestCase(findTestCase('Sub Script/Navigation_Menu/Menu_Comptages/TC4 Verify the creation of a new Comptage'), 
     [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.callTestCase(findTestCase('Sub Script/Navigation_Menu/Menu_Comptages/TC7 Verify Sauvegarder button'), [:], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('Sub Script/Navigation_Menu/Menu_Mes_rapports/TC Verify Sauvegarder button'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.callTestCase(findTestCase('Sub Script/Navigation_Menu/Menu_Comptages/TC7 Verify Sauvegarder button'), [:], FailureHandling.STOP_ON_FAILURE)
+WebUI.delay(1)
 
 WebUI.callTestCase(findTestCase('Sub Script/Verify Error Message/TC Verify Error message 1'), [:], FailureHandling.STOP_ON_FAILURE)
 
@@ -99,9 +99,13 @@ WebUI.callTestCase(findTestCase('Sub Script/Navigation_Menu/Menu_Comptages/TC4 V
 
 WebUI.click(findTestObject('Comptages Obj/Ajouter button'))
 
+WebUI.delay(1)
+
+WebUI.click(findTestObject('Comptages Obj/Du textfield'))
+
 WebUI.setText(findTestObject('Comptages Obj/Du textfield'), '1010')
 
-WebUI.setText(findTestObject('Comptages Obj/Jusque textfield'), '7010')
+WebUI.setText(findTestObject('Comptages Obj/Jusque textfield'), '2770')
 
 WebUI.callTestCase(findTestCase('Sub Script/Navigation_Menu/Menu_Mes_rapports/TC Verify Sauvegarder button'), [:], FailureHandling.STOP_ON_FAILURE)
 

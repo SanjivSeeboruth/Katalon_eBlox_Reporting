@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//*[@id=&quot;rapp-disable-toevoegen-knoppen-tabel&quot;]/table/tbody/tr/td[2]/div/input[count(. | //input[@type = 'text' and @name = 'van' and @class = 'form-control ng-valid-maxlength ng-touched ng-dirty ng-valid-parse ng-valid ng-valid-required ng-valid-editable']) = count(//input[@type = 'text' and @name = 'van' and @class = 'form-control ng-valid-maxlength ng-touched ng-dirty ng-valid-parse ng-valid ng-valid-required ng-valid-editable'])]</value>
+         <value>//*[@id=&quot;rapp-disable-toevoegen-knoppen-tabel&quot;]/table/tbody/tr/td[2]/div/input</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -20,28 +20,28 @@
       <value>//*[@id=&quot;rapp-disable-toevoegen-knoppen-tabel&quot;]/table/tbody/tr/td[2]/div/input</value>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>true</isSelected>
+      <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>tag</name>
       <type>Main</type>
       <value>input</value>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>true</isSelected>
+      <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>type</name>
       <type>Main</type>
       <value>text</value>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>true</isSelected>
+      <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>name</name>
       <type>Main</type>
       <value>van</value>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>true</isSelected>
+      <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>class</name>
       <type>Main</type>
