@@ -7,11 +7,10 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//*[@id=&quot;rapp-disable-toevoegen-knoppen-tabel&quot;]/table/tbody/tr/td/div[2]/div/div/div/ul/li[2]/div/div/div/ui-view/div/form/div/div[1]/div/div[2]/rapp-waarde/div/rapp-date-prompt/div/div/div[1]/button</value>
+         <value>//*[@id=&quot;rapp-disable-toevoegen-knoppen-tabel&quot;]/table/tbody/tr/td/div[2]/div/div/div/ul/li[3]/div/div/div/ui-view/div/form/div/div[1]/div/div[2]/rapp-waarde/div/rapp-date-prompt/div/div/div/button/span[2]</value>
       </entry>
       <entry>
          <key>BASIC</key>
-         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

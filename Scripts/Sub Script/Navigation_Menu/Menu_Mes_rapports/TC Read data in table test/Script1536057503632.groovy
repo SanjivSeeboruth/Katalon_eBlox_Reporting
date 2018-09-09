@@ -28,7 +28,7 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 WebDriver driver = DriverFactory.getWebDriver()
 
 'Expected value from Table'
-String ExpectedValue = "Bedrijfswagen: nummerplaat";
+String ExpectedValue = "Referentiedatum historiek";
 
 'To locate table'
 WebElement Table = driver.findElement(By.xpath("//table/tbody"))
@@ -60,7 +60,8 @@ String celltext = Columns_row.get(column).getText()
 'Checking if Cell text is matching with the expected value'
 if (celltext == ExpectedValue) {
 
-	def REfDate = new TestObject('Choisir_selecteur')
+	println(row+1)
+	def REfDate = new TestObject('Choisir_date')
 	REfDate.addProperty('xpath', ConditionType.EQUALS, "//*[@id=\"uitvoering-parameters\"]/div/div[2]/div/div/table/tbody/tr["+(row+1)+"]/td[2]/div/div/rapp-date-prompt/div/div/rapp-special-values/div/button")
 	WebUI.click(REfDate)
 	WebUI.delay(1)

@@ -6,15 +6,15 @@
    <elementGuidId>58509008-2f93-4bae-97d7-208276bcf30c</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//*[@id=&quot;parameters&quot;]/div/form/div[2]/div/div/div/ul/li[1]/div/a[3]</value>
-      </entry>
-      <entry>
          <key>BASIC</key>
          <value>//*[@id=&quot;parameters&quot;]/div/form/div[2]/div/div/div/ul/li[1]/div/a[3][count(. | //*[@class = 'btn btn-default' and @ng-class = concat('{' , &quot;'&quot; , 'btn-secondary' , &quot;'&quot; , ':pagevm.uitvoeringVisualisatie === 3}') and @ng-disabled = 'pagevm.processing || !pagevm.rapportExecuted || !pagevm.rapport.hasGrafieken' and @ng-click = 'pagevm.changeVisualisation(parametersvm.rapport,uitvoeringParametersForm,3)']) = count(//*[@class = 'btn btn-default' and @ng-class = concat('{' , &quot;'&quot; , 'btn-secondary' , &quot;'&quot; , ':pagevm.uitvoeringVisualisatie === 3}') and @ng-disabled = 'pagevm.processing || !pagevm.rapportExecuted || !pagevm.rapport.hasGrafieken' and @ng-click = 'pagevm.changeVisualisation(parametersvm.rapport,uitvoeringParametersForm,3)'])]</value>
       </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//*[@id=&quot;parameters&quot;]/div/form/div[2]/div/div/div/ul/li[1]/div/a[3]</value>
+      </entry>
    </selectorCollection>
-   <selectorMethod>BASIC</selectorMethod>
+   <selectorMethod>XPATH</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
       <isSelected>true</isSelected>

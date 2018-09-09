@@ -20,6 +20,7 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 import com.kms.katalon.core.testobject.ConditionType as ConditionType
+import com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords as CucumberKW
 
 CustomKeywords.'verify_Test_Case_Number.getTestCaseNumber.getTCNo'()
 
@@ -72,6 +73,8 @@ WebUI.callTestCase(findTestCase('Sub Script/Navigation_Menu/Menu_Mes_rapports/No
 WebUI.callTestCase(findTestCase('Sub Script/Navigation_Menu/Menu_Mes_rapports/Inner_Content/TC Verify Executer tab'), [:], 
     FailureHandling.STOP_ON_FAILURE)
 
+WebUI.delay(2)
+
 not_run: WebUI.callTestCase(findTestCase('Sub Script/Navigation_Menu/Menu_Mes_rapports/TC Verify Sauvegarder button'), [:], 
     FailureHandling.STOP_ON_FAILURE)
 
@@ -79,33 +82,36 @@ WebUI.callTestCase(findTestCase('Sub Script/Navigation_Menu/Menu_Mes_rapports/TC
 
 WebUI.waitForPageLoad(15)
 
-WebUI.callTestCase(findTestCase('Sub Script/Navigation_Menu/Menu_Mes_rapports/Inner_Content/TC Verify Definition tab'), 
+WebUI.delay(2)
+
+not_run: WebUI.callTestCase(findTestCase('Sub Script/Navigation_Menu/Menu_Mes_rapports/Inner_Content/TC Verify Definition tab'), 
     [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.callTestCase(findTestCase('Sub Script/Navigation_Menu/Menu_Mes_rapports/Inner_Content/Content_Navigation/TC Verify Selection tab'), 
+not_run: WebUI.callTestCase(findTestCase('Sub Script/Navigation_Menu/Menu_Mes_rapports/Inner_Content/Content_Navigation/TC Verify Selection tab'), 
     [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.waitForPageLoad(15)
+not_run: WebUI.waitForPageLoad(15)
 
-WebUI.click(findTestObject('Page_eBlox Rapportering/Selection Etendue/Geslacht'))
+not_run: WebUI.click(findTestObject('Page_eBlox Rapportering/Selection Etendue/Geslacht'))
 
-WebUI.click(findTestObject('Page_eBlox Rapportering/Selection Etendue/delele icon'))
+not_run: WebUI.click(findTestObject('Page_eBlox Rapportering/Selection Etendue/delele icon'))
 
-WebUI.click(findTestObject('Page_eBlox Rapportering/Selection Etendue/Geboortedatum'))
+not_run: WebUI.click(findTestObject('Page_eBlox Rapportering/Selection Etendue/Geboortedatum'))
 
-WebUI.click(findTestObject('Page_eBlox Rapportering/Selection Etendue/delele icon'))
+not_run: WebUI.click(findTestObject('Page_eBlox Rapportering/Selection Etendue/delele icon'))
 
-WebUI.callTestCase(findTestCase('Sub Script/Navigation_Menu/Menu_Mes_rapports/Nouveau_Rapport/Mes rapports - SELECTION/CheckBox Selection/TC Verify CheckBox - Copy'), 
+not_run: WebUI.callTestCase(findTestCase('Sub Script/Navigation_Menu/Menu_Mes_rapports/Nouveau_Rapport/Mes rapports - SELECTION/CheckBox Selection/TC Verify CheckBox - Copy'), 
     [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.callTestCase(findTestCase('Sub Script/Navigation_Menu/Menu_Mes_rapports/Inner_Content/TC Verify Executer tab'), [:], 
+not_run: WebUI.callTestCase(findTestCase('Sub Script/Navigation_Menu/Menu_Mes_rapports/Inner_Content/TC Verify Executer tab'), 
+    [:], FailureHandling.STOP_ON_FAILURE)
+
+not_run: WebUI.callTestCase(findTestCase('Sub Script/Navigation_Menu/Menu_Mes_rapports/TC Verify Executer button'), [:], 
     FailureHandling.STOP_ON_FAILURE)
 
-WebUI.callTestCase(findTestCase('Sub Script/Navigation_Menu/Menu_Mes_rapports/TC Verify Executer button'), [:], FailureHandling.STOP_ON_FAILURE)
+not_run: WebUI.waitForPageLoad(15)
 
-WebUI.waitForPageLoad(15)
-
-WebUI.callTestCase(findTestCase('Sub Script/Navigation_Menu/Menu_Mes_rapports/Inner_Content/TC Verify Definition tab'), 
+not_run: WebUI.callTestCase(findTestCase('Sub Script/Navigation_Menu/Menu_Mes_rapports/Inner_Content/TC Verify Definition tab'), 
     [:], FailureHandling.STOP_ON_FAILURE)
 
 //def newId = WebUI.executeJavaScript('return $("input[type="text""]").attr("id")', [])

@@ -28,7 +28,7 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 WebDriver driver = DriverFactory.getWebDriver()
 
 'Expected value from Table'
-String ExpectedValue = "Referentiedatum historiek";
+String ExpectedValue = "Bedrijfswagen: nummerplaat";
 
 'To locate table'
 WebElement Table = driver.findElement(By.xpath("//table/tbody"))
