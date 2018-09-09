@@ -84,37 +84,64 @@ WebUI.waitForPageLoad(15)
 
 WebUI.delay(2)
 
-not_run: WebUI.callTestCase(findTestCase('Sub Script/Navigation_Menu/Menu_Mes_rapports/Inner_Content/TC Verify Definition tab'), 
+WebUI.callTestCase(findTestCase('Sub Script/Navigation_Menu/Menu_Mes_rapports/Inner_Content/TC Verify Definition tab'), 
     [:], FailureHandling.STOP_ON_FAILURE)
 
-not_run: WebUI.callTestCase(findTestCase('Sub Script/Navigation_Menu/Menu_Mes_rapports/Inner_Content/Content_Navigation/TC Verify Selection tab'), 
+WebUI.callTestCase(findTestCase('Sub Script/Navigation_Menu/Menu_Mes_rapports/Inner_Content/Content_Navigation/TC Verify Selection tab'), 
     [:], FailureHandling.STOP_ON_FAILURE)
 
-not_run: WebUI.waitForPageLoad(15)
+WebUI.waitForPageLoad(15)
 
-not_run: WebUI.click(findTestObject('Page_eBlox Rapportering/Selection Etendue/Geslacht'))
+WebUI.click(findTestObject('Page_eBlox Rapportering/Selection Etendue/Geslacht'))
 
-not_run: WebUI.click(findTestObject('Page_eBlox Rapportering/Selection Etendue/delele icon'))
+WebUI.click(findTestObject('Page_eBlox Rapportering/Selection Etendue/delele icon'))
 
-not_run: WebUI.click(findTestObject('Page_eBlox Rapportering/Selection Etendue/Geboortedatum'))
+WebUI.click(findTestObject('Page_eBlox Rapportering/Selection Etendue/Geboortedatum'))
 
-not_run: WebUI.click(findTestObject('Page_eBlox Rapportering/Selection Etendue/delele icon'))
+WebUI.click(findTestObject('Page_eBlox Rapportering/Selection Etendue/delete'))
+
+WebUI.delay(2)
+
+WebUI.check(findTestObject('Page_eBlox Rapportering/Selection Etendue/Afdeling checkbox'))
 
 not_run: WebUI.callTestCase(findTestCase('Sub Script/Navigation_Menu/Menu_Mes_rapports/Nouveau_Rapport/Mes rapports - SELECTION/CheckBox Selection/TC Verify CheckBox - Copy'), 
     [:], FailureHandling.STOP_ON_FAILURE)
 
-not_run: WebUI.callTestCase(findTestCase('Sub Script/Navigation_Menu/Menu_Mes_rapports/Inner_Content/TC Verify Executer tab'), 
-    [:], FailureHandling.STOP_ON_FAILURE)
-
-not_run: WebUI.callTestCase(findTestCase('Sub Script/Navigation_Menu/Menu_Mes_rapports/TC Verify Executer button'), [:], 
+WebUI.callTestCase(findTestCase('Sub Script/Navigation_Menu/Menu_Mes_rapports/Inner_Content/TC Verify Executer tab'), [:], 
     FailureHandling.STOP_ON_FAILURE)
 
-not_run: WebUI.waitForPageLoad(15)
+WebUI.callTestCase(findTestCase('Sub Script/Navigation_Menu/Menu_Mes_rapports/TC Verify Executer button'), [:], FailureHandling.STOP_ON_FAILURE)
 
-not_run: WebUI.callTestCase(findTestCase('Sub Script/Navigation_Menu/Menu_Mes_rapports/Inner_Content/TC Verify Definition tab'), 
+WebUI.waitForPageLoad(15)
+
+WebUI.callTestCase(findTestCase('Sub Script/Navigation_Menu/Menu_Mes_rapports/Inner_Content/TC Verify Definition tab'), 
     [:], FailureHandling.STOP_ON_FAILURE)
+
+WebUI.callTestCase(findTestCase('Sub Script/Navigation_Menu/Menu_Mes_rapports/Inner_Content/Content_Navigation/TC Verify Selection tab'), 
+    [:], FailureHandling.STOP_ON_FAILURE)
+
+WebUI.uncheck(findTestObject('Page_eBlox Rapportering/Selection Etendue/Afdeling checkbox'))
+
+WebUI.check(findTestObject('Page_eBlox Rapportering/Selection Etendue/worker checkbox'))
+
+WebUI.callTestCase(findTestCase('Sub Script/Navigation_Menu/Menu_Mes_rapports/Inner_Content/TC Verify Executer tab'), [:], 
+    FailureHandling.STOP_ON_FAILURE)
+
+WebUI.click(findTestObject('Page_eBlox Rapportering/Selection Etendue/Input travailleur'))
+
+WebUI.callTestCase(findTestCase('Sub Script/Navigation_Menu/Menu_Mes_rapports/Nouveau_Rapport/Mes rapports - SELECTION/Travailleur_options/TC Select travailleur from dropdown'), 
+    [:], FailureHandling.STOP_ON_FAILURE)
+
+WebUI.callTestCase(findTestCase('Sub Script/Navigation_Menu/Menu_Mes_rapports/TC Verify Executer button'), [:], FailureHandling.STOP_ON_FAILURE)
+
+WebUI.waitForPageLoad(20)
+
+WebUI.callTestCase(findTestCase('Sub Script/Navigation_Menu/Menu_Mes_rapports/Inner_Content/TC Verify Definition tab'), 
+    [:], FailureHandling.STOP_ON_FAILURE)
+
+WebUI.uncheck(findTestObject('Page_eBlox Rapportering/Selection Etendue/worker checkbox'))
 
 //def newId = WebUI.executeJavaScript('return $("input[type="text""]").attr("id")', [])
 //println(newId)
-not_run: WebUI.closeBrowser()
+WebUI.closeBrowser()
 

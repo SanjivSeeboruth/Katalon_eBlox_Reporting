@@ -6,8 +6,12 @@
    <elementGuidId>d8e85c20-e442-46eb-a5d2-0e6b176bd6ae</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>BASIC</key>
+         <key>XPATH</key>
          <value></value>
+      </entry>
+      <entry>
+         <key>BASIC</key>
+         <value>//button[@type = 'button' and @class = 'btn btn-default ' and @title = 'Verwijderen']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
