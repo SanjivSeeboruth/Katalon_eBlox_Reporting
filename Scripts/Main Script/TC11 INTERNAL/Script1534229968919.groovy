@@ -21,6 +21,7 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUiBuiltInKe
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
+import com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords as CucumberKW
 
 CustomKeywords.'verify_Test_Case_Number.getTestCaseNumber.getTCNo'()
 
@@ -55,13 +56,13 @@ WebUI.callTestCase(findTestCase('Sub Script/Navigation_Menu/Menu_Mes_rapports/TC
 
 WebUI.waitForElementPresent(findTestObject('Mes rapports Obj/PROPRIETES/Generalites - input name'), 10)
 
-WebUI.waitForElementClickable(findTestObject('Mes rapports Obj/PROPRIETES/Name - Language dropdown'), 5)
+not_run: WebUI.waitForElementClickable(findTestObject('Mes rapports Obj/PROPRIETES/Name - Language dropdown'), 5)
 
-WebUI.click(findTestObject('Mes rapports Obj/PROPRIETES/Name - Language dropdown'))
+not_run: WebUI.click(findTestObject('Mes rapports Obj/PROPRIETES/Name - Language dropdown'))
 
-WebUI.delay(1)
+not_run: WebUI.delay(1)
 
-WebUI.click(findTestObject('Mes rapports Obj/PROPRIETES/Name - Francais'))
+not_run: WebUI.click(findTestObject('Mes rapports Obj/PROPRIETES/Name - Francais'))
 
 WebUI.focus(findTestObject('Mes rapports Obj/PROPRIETES/Generalites - input name'), FailureHandling.STOP_ON_FAILURE)
 
@@ -75,6 +76,10 @@ WebUI.callTestCase(findTestCase('Sub Script/Navigation_Menu/Menu_Mes_rapports/No
     [:], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.callTestCase(findTestCase('Sub Script/Navigation_Menu/Menu_Mes_rapports/TC Verify Sauvegarder button'), [:], FailureHandling.STOP_ON_FAILURE)
+
+not_run: WebUiBuiltInKeywords.waitForPageLoad(10)
+
+not_run: WebUI.callTestCase(findTestCase('Sub Script/Navigation_Menu/TC Verify Annuler nouveau rapport button'), [:], FailureHandling.STOP_ON_FAILURE)
 
 WebUiBuiltInKeywords.waitForPageLoad(10)
 

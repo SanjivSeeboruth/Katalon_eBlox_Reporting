@@ -6,12 +6,12 @@
    <elementGuidId>27bfbe76-f874-4c82-97e3-918c7f7869a4</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//*[@id=&quot;wizard-page&quot;]/div[2]/div/div/div/form/div[1]/div/div/div[2]/div[1]/div/div/div/div[2]/div/div/input</value>
-      </entry>
-      <entry>
          <key>BASIC</key>
          <value>//*[@id=&quot;wizard-page&quot;]/div[2]/div/div/div/form/div[1]/div/div/div[2]/div[1]/div/div/div/div[1]/div/div/input[count(. | //input[@type = 'text' and @class = 'form-control ng-pristine ng-untouched ng-scope ng-invalid ng-invalid-required ng-valid-maxlength' and @name = 'oms2FR' and @ng-model = 'lang.tekst' and @maxlength = '80' and @ng-if = '!vm.isTextarea' and @ng-blur = '!vm.showAll &amp;&amp; vm.copyTalen()' and @ng-required = 'vm.shouldBeRequired &amp;&amp; (lang.taal === $parent.vm.userLanguageCode)']) = count(//input[@type = 'text' and @class = 'form-control ng-pristine ng-untouched ng-scope ng-invalid ng-invalid-required ng-valid-maxlength' and @name = 'oms2FR' and @ng-model = 'lang.tekst' and @maxlength = '80' and @ng-if = '!vm.isTextarea' and @ng-blur = '!vm.showAll &amp;&amp; vm.copyTalen()' and @ng-required = 'vm.shouldBeRequired &amp;&amp; (lang.taal === $parent.vm.userLanguageCode)'])]</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//*[@id=&quot;wizard-page&quot;]/div[2]/div/div/div/form/div[1]/div/div/div[2]/div[1]/div/div/div/div[1]/div/div/input</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

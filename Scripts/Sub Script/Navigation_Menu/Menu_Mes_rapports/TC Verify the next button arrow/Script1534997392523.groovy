@@ -25,5 +25,5 @@ WebUI.click(findTestObject('Mes rapports Obj/button_Next_Arrow'))
 
 WebUI.delay(5)
 
-WebUI.waitForPageLoad(15)
+WebUI.waitForPageLoad(120)
 

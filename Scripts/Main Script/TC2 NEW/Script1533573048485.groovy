@@ -99,9 +99,13 @@ WebUI.callTestCase(findTestCase('Sub Script/Verify URL/TC Verify Url'), [:], Fai
 
 WebUI.callTestCase(findTestCase('Sub Script/Navigation_Menu/Menu_Mes_rapports/TC Verify Executer button'), [:], FailureHandling.STOP_ON_FAILURE)
 
+WebUI.delay(1)
+
 WebUI.callTestCase(findTestCase('Sub Script/Verify Error Message/TC Verify Error message 1'), [:], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.callTestCase(findTestCase('Sub Script/Navigation_Menu/Menu_Mes_rapports/TC Verify Graphique button'), [:], FailureHandling.STOP_ON_FAILURE)
+
+WebUI.delay(1)
 
 WebUI.callTestCase(findTestCase('Sub Script/Verify Error Message/TC Verify Error message 2'), [:], FailureHandling.STOP_ON_FAILURE)
 

@@ -63,6 +63,11 @@ WebUI.callTestCase(findTestCase('Sub Script/Verify Error Message/VErify message 
 
 WebUI.callTestCase(findTestCase('Sub Script/Navigation_Menu/TC Verify Return button'), [:], FailureHandling.STOP_ON_FAILURE)
 
+WebUI.waitForPageLoad(10)
+
+WebUI.callTestCase(findTestCase('Sub Script/Navigation_Menu/Menu_Mes_rapports/Nouveau_Rapport/TC Verify annuler button'), 
+    [:], FailureHandling.STOP_ON_FAILURE)
+
 WebUI.callTestCase(findTestCase('Sub Script/Navigation_Menu/TC Verify Annuler nouveau rapport button'), [:], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.waitForPageLoad(25)
